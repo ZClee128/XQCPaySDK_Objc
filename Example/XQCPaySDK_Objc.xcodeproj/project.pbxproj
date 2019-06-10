@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2B3B926880E7A4094BBC6019 /* Pods-XQCPaySDK_Objc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XQCPaySDK_Objc_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XQCPaySDK_Objc_Tests/Pods-XQCPaySDK_Objc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		418882D09233CDE474253ECE /* Pods_XQCPaySDK_Objc_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XQCPaySDK_Objc_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57449CBAB9E6E0D4650A707F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		57449CBAB9E6E0D4650A707F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5F389DB0452313579B2F345F /* Pods_XQCPaySDK_Objc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XQCPaySDK_Objc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* XQCPaySDK_Objc_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XQCPaySDK_Objc_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,8 +62,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		923B199CD3210BDC8CB70218 /* XQCPaySDK_Objc.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XQCPaySDK_Objc.podspec; path = ../XQCPaySDK_Objc.podspec; sourceTree = "<group>"; };
-		AEA70B538C009C6A2386E17E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		923B199CD3210BDC8CB70218 /* XQCPaySDK_Objc.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XQCPaySDK_Objc.podspec; path = ../XQCPaySDK_Objc.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEA70B538C009C6A2386E17E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BFA239CAC9EDD3DA697C4408 /* Pods-XQCPaySDK_Objc_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XQCPaySDK_Objc_Tests.release.xcconfig"; path = "Target Support Files/Pods-XQCPaySDK_Objc_Tests/Pods-XQCPaySDK_Objc_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DFA63AD70824BED19D5B4776 /* Pods-XQCPaySDK_Objc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XQCPaySDK_Objc_Example.release.xcconfig"; path = "Target Support Files/Pods-XQCPaySDK_Objc_Example/Pods-XQCPaySDK_Objc_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F8A3A20F801C47246088A73E /* Pods-XQCPaySDK_Objc_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XQCPaySDK_Objc_Example.debug.xcconfig"; path = "Target Support Files/Pods-XQCPaySDK_Objc_Example/Pods-XQCPaySDK_Objc_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 				2B3B926880E7A4094BBC6019 /* Pods-XQCPaySDK_Objc_Tests.debug.xcconfig */,
 				BFA239CAC9EDD3DA697C4408 /* Pods-XQCPaySDK_Objc_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -1,0 +1,6 @@
+framework module XQCPaySDK_Objc {
+  umbrella header "XQCPaySDK_Objc-umbrella.h"
+
+  export *
+  module * { export * }
+}
