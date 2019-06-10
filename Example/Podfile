@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'XQCPaySDK_Objc_Example' do
+  pod 'XQCPaySDK_Objc', :path => '../'
+
+  target 'XQCPaySDK_Objc_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+  end
+end
