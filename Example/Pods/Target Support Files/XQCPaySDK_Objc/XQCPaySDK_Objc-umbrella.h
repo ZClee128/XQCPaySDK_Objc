@@ -10,6 +10,13 @@
 #endif
 #endif
 
+#import "YSEPay.h"
+#import "YSEPayObjects.h"
+#import "YSEPayReq.h"
+#import "YSEPayResp.h"
+#import "YSSDK.h"
+#import "XQCNetworking.h"
+#import "XQCPayManager.h"
 
 FOUNDATION_EXPORT double XQCPaySDK_ObjcVersionNumber;
 FOUNDATION_EXPORT const unsigned char XQCPaySDK_ObjcVersionString[];

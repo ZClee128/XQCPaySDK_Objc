@@ -1,0 +1,10 @@
+module YSSDK [system] {
+    header "../YSEPaySDK.framework/Headers/YSEPay.h"
+    header "../YSEPaySDK.framework/Headers/YSEPayObjects.h"
+    header "../YSEPaySDK.framework/Headers/YSEPayReq.h"
+    header "../YSEPaySDK.framework/Headers/YSEPayResp.h"
+
+    export *
+}
+
+

@@ -7,7 +7,7 @@
 //
 
 #import "XQCAppDelegate.h"
-
+#import <XQCPaySDK_Objc>
 @implementation XQCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

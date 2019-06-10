@@ -26,7 +26,6 @@
 		212A73F973AAB86735053987B6139E52 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = EFE366D02CA3C2EE8C4F6B4FA51FA556 /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21A65C39E77B5F115C77355482913B00 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = BAAAECDA1DD0B86984B8036D41BA730F /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2218BB5DA2649FC662B5DE897F53FA8C /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = B6CD40BD62E0679438EEB8814C670631 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		282780659E1B890E80727744173090B9 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4983D05D421F563FDAC8C45E278862D1 /* ReplaceMe.m */; };
 		2871109FFA5285E6C803993E1B31E7A3 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 371451F95C82CC039477B1B69CA3608D /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2A9B5C4BDAC5F1B2E8191197DD55912F /* Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1073F1FC050D898ECE6D99E32B03649D /* Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ED3300E8988682390E03980C7C87316 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8D49414FA87DAAF9FD05FC3361277F /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,6 +87,16 @@
 		9209B2C556C05BB7C8F12B3EEBC27857 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD70B721B2A447199B8094CB7AD6717 /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		949BBE8BFF9972557B50551503831B6C /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A82449E5CC53E96CCB640BDBE06F1D8 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9693107723AB9A3C5532BC726E9A0E2C /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F4F741CF9A82EF263D3C9C6599D5CE /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B2981BA22AE63A0001CC657 /* XQCNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2981B822AE63A0001CC657 /* XQCNetworking.h */; };
+		9B2981BB22AE63A0001CC657 /* XQCNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2981B922AE63A0001CC657 /* XQCNetworking.m */; };
+		9B2981BF22AE652C001CC657 /* YSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2981BD22AE652B001CC657 /* YSSDK.framework */; };
+		9B2981C022AE652C001CC657 /* YSEPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2981BE22AE652C001CC657 /* YSEPaySDK.framework */; };
+		9B2981C822AE6619001CC657 /* XQCPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2981C622AE6619001CC657 /* XQCPayManager.h */; };
+		9B2981C922AE6619001CC657 /* XQCPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2981C722AE6619001CC657 /* XQCPayManager.m */; };
+		9B2981CD22AE711F001CC657 /* ChannelModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2981CB22AE711F001CC657 /* ChannelModel.h */; };
+		9B2981CE22AE711F001CC657 /* ChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2981CC22AE711F001CC657 /* ChannelModel.m */; };
+		9B2981D122AE79E8001CC657 /* XQCPayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2981CF22AE79E8001CC657 /* XQCPayViewController.h */; };
+		9B2981D222AE79E8001CC657 /* XQCPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2981D022AE79E8001CC657 /* XQCPayViewController.m */; };
 		9CC91D954D7DD47D3E763C67AFE27EC7 /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB1625D599B61D90A3D2D5CA5BAE837 /* SpectaDSL.m */; };
 		9EACC02648F412522FC7717427434B1D /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B06C5909D0E7AF70922A7CCE4F3C8142 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9FF59EDD8B8D07A4E5194E04B2E9A31B /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1F9DAE60CA0EFA7B29BE98826784A /* SPTCallSite.m */; };
@@ -186,23 +195,22 @@
 		365C7803EA1D67C24DF14A5B4637ACE6 /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
 		371451F95C82CC039477B1B69CA3608D /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
 		3792E7ABA6651CCDD5B6D0B12DEC1E70 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
-		38D0EA893BC7A6B161B1616C755E16F9 /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Specta.framework; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D0EA893BC7A6B161B1616C755E16F9 /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		391C4E41C1C264778A03E656107E2EDA /* Pods-XQCPaySDK_Objc_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XQCPaySDK_Objc_Tests-umbrella.h"; sourceTree = "<group>"; };
 		397C801C9B7B3E1DD24FEFD8FB551969 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
 		39A02F65B48FE3BF2D5D09C2CED67D08 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
 		3BDA2B0225C334BDB2ACF231778DFB48 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
 		446419C99EB94B242D663736EE905058 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
 		491678C9D524D75B6BDFE7EEECD9B70A /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
-		4983D05D421F563FDAC8C45E278862D1 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = XQCPaySDK_Objc/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		53E8319B37F9B14CFA49B60E7203F808 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
 		53FCD67AE1F4070BF70A160569BA2AB9 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
 		5843EE6EBED958CCF87F628E87D9A9B2 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
 		5A05D184BA51B8650576B60117B6C2C7 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
-		5EB5B1D3D337D2DC324541E9E4C6E24C /* XQCPaySDK_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XQCPaySDK_Objc.framework; path = XQCPaySDK_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB5B1D3D337D2DC324541E9E4C6E24C /* XQCPaySDK_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XQCPaySDK_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FEBD1ADA9E227575B6C735A6CE677C /* Pods-XQCPaySDK_Objc_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XQCPaySDK_Objc_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		64AE277DDBBEB6E56069CD158C801ADB /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
 		65A6128C32B58AA3324839E5EACF0B84 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
-		6616BF5702395C076A851DE7622084C6 /* Pods_XQCPaySDK_Objc_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XQCPaySDK_Objc_Tests.framework; path = "Pods-XQCPaySDK_Objc_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6616BF5702395C076A851DE7622084C6 /* Pods_XQCPaySDK_Objc_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XQCPaySDK_Objc_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		671D5538FCA8B41852BFC1E843ACE15C /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
 		6A40AD56CA17FE2E34036A9D0FD176B9 /* Pods-XQCPaySDK_Objc_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQCPaySDK_Objc_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		6A4A40564C7B84D45CCB65186F049D92 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
@@ -236,25 +244,35 @@
 		8F887CFA4E39DECF861C4D17AA931D77 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
 		92CECB659909033D86E2D2312D05B018 /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
 		93347BAE95022E03FBBA3FFB2BA59E75 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
-		935EA334E4197ACEA31865EF48D1BD7B /* XQCPaySDK_Objc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XQCPaySDK_Objc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		935EA334E4197ACEA31865EF48D1BD7B /* XQCPaySDK_Objc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XQCPaySDK_Objc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9471B09557CBD29EC21BF422763FB53C /* Pods-XQCPaySDK_Objc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQCPaySDK_Objc_Example.release.xcconfig"; sourceTree = "<group>"; };
 		979FB3043E24EC5B96A4AC1C64A697BE /* Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Expecta.modulemap; sourceTree = "<group>"; };
 		991FCEEFA0F6778FC1DAE03440D929C1 /* XQCPaySDK_Objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XQCPaySDK_Objc.xcconfig; sourceTree = "<group>"; };
 		996688FF3B7F2BD5FB4B31185B6BF2E7 /* Pods-XQCPaySDK_Objc_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XQCPaySDK_Objc_Example-dummy.m"; sourceTree = "<group>"; };
 		99EDEC83A99E87B82159CFB0CACC4840 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		9B2981B822AE63A0001CC657 /* XQCNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XQCNetworking.h; sourceTree = "<group>"; };
+		9B2981B922AE63A0001CC657 /* XQCNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XQCNetworking.m; sourceTree = "<group>"; };
+		9B2981BD22AE652B001CC657 /* YSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YSSDK.framework; sourceTree = "<group>"; };
+		9B2981BE22AE652C001CC657 /* YSEPaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YSEPaySDK.framework; sourceTree = "<group>"; };
+		9B2981C622AE6619001CC657 /* XQCPayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XQCPayManager.h; sourceTree = "<group>"; };
+		9B2981C722AE6619001CC657 /* XQCPayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XQCPayManager.m; sourceTree = "<group>"; };
+		9B2981CB22AE711F001CC657 /* ChannelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelModel.h; sourceTree = "<group>"; };
+		9B2981CC22AE711F001CC657 /* ChannelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelModel.m; sourceTree = "<group>"; };
+		9B2981CF22AE79E8001CC657 /* XQCPayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XQCPayViewController.h; sourceTree = "<group>"; };
+		9B2981D022AE79E8001CC657 /* XQCPayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XQCPayViewController.m; sourceTree = "<group>"; };
 		9B8D49414FA87DAAF9FD05FC3361277F /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F77661795A2EF2F14FD4059342FD145 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
 		9FAE6531437E6959A8A5BB4D7B653E43 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
 		A0ADA243B8DE02A056A5B77F6AB62FE7 /* XQCPaySDK_Objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XQCPaySDK_Objc.modulemap; sourceTree = "<group>"; };
 		A10B0D1B2C4D36565098B35AEF3AE984 /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
-		A3C29CA79476F1C019AC47C33389756B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A3C29CA79476F1C019AC47C33389756B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A55EEA13E0C8A1057E1C15AE70272B92 /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
 		A5876440F4A6A6B84EAAA43E344661A1 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
 		A6F4F741CF9A82EF263D3C9C6599D5CE /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
 		A87879F061475B21EC09F5B74725FAB8 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
 		ABA02826174A7AF2F0542574F710710B /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
-		ACA48F19C639602AC99630E6EC669DD1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		ACA48F19C639602AC99630E6EC669DD1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AFBF34901F9C09F179AE649E00964EE2 /* Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Specta.modulemap; sourceTree = "<group>"; };
 		B00CAC36D3B59DD9DAAB059541B99ADB /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
 		B05CDC1582CABDFE8FDF39B89A31E570 /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
@@ -263,7 +281,7 @@
 		B6CD40BD62E0679438EEB8814C670631 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
 		BA5E53216EE7DB3012A46DAC512CFB31 /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
 		BAAAECDA1DD0B86984B8036D41BA730F /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
-		BE70B81F4768ED94EAA8065A1E4FE1C2 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Expecta.framework; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE70B81F4768ED94EAA8065A1E4FE1C2 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAAB1B59707B2FEAC2A0F380E8632AF /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
 		BFB1625D599B61D90A3D2D5CA5BAE837 /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
 		BFE4262079D9DA42D3E37E1D0E43FEDA /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
@@ -278,7 +296,7 @@
 		CA3FABB23A3575760841E29211861B73 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
 		CA4336BD44DFF0ABD5CC6B9EA1EAB616 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
 		CC518C1DC3121652C71B08938239DB64 /* Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Specta.xcconfig; sourceTree = "<group>"; };
-		CC7FBC7CF15EAFB3DDD2BFCCA319F8D2 /* Pods_XQCPaySDK_Objc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XQCPaySDK_Objc_Example.framework; path = "Pods-XQCPaySDK_Objc_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7FBC7CF15EAFB3DDD2BFCCA319F8D2 /* Pods_XQCPaySDK_Objc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XQCPaySDK_Objc_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7781F4483B016AAEE706A92CEAF60F /* Expecta-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Expecta-Info.plist"; sourceTree = "<group>"; };
 		CDE92ABC2F7B9A21F56722990F2D34E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CE4A710696EC72E02B292940BDDD147A /* Specta-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Specta-Info.plist"; sourceTree = "<group>"; };
@@ -345,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				661CA2E5F322D1BBF69B754A00F60BAB /* Foundation.framework in Frameworks */,
+				9B2981C022AE652C001CC657 /* YSEPaySDK.framework in Frameworks */,
+				9B2981BF22AE652C001CC657 /* YSSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,10 +460,93 @@
 			path = "../Target Support Files/Expecta";
 			sourceTree = "<group>";
 		};
+		9B2981B222AE6343001CC657 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9B2981BC22AE6512001CC657 /* Frameworks */,
+				9B2981B622AE635D001CC657 /* Tools */,
+				9B2981B522AE6355001CC657 /* UI */,
+			);
+			name = Classes;
+			path = XQCPaySDK_Objc/Classes;
+			sourceTree = "<group>";
+		};
+		9B2981B522AE6355001CC657 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9B2981CF22AE79E8001CC657 /* XQCPayViewController.h */,
+				9B2981D022AE79E8001CC657 /* XQCPayViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9B2981B622AE635D001CC657 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9B2981C522AE65FC001CC657 /* SdkManager */,
+				9B2981B722AE637E001CC657 /* Networking */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9B2981B722AE637E001CC657 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9B2981B822AE63A0001CC657 /* XQCNetworking.h */,
+				9B2981B922AE63A0001CC657 /* XQCNetworking.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9B2981BC22AE6512001CC657 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B2981BE22AE652C001CC657 /* YSEPaySDK.framework */,
+				9B2981BD22AE652B001CC657 /* YSSDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B2981C122AE65A5001CC657 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9B2981C422AE65B5001CC657 /* images */,
+			);
+			name = Assets;
+			path = XQCPaySDK_Objc/Assets;
+			sourceTree = "<group>";
+		};
+		9B2981C422AE65B5001CC657 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		9B2981C522AE65FC001CC657 /* SdkManager */ = {
+			isa = PBXGroup;
+			children = (
+				9B2981CA22AE7107001CC657 /* Model */,
+				9B2981C622AE6619001CC657 /* XQCPayManager.h */,
+				9B2981C722AE6619001CC657 /* XQCPayManager.m */,
+			);
+			path = SdkManager;
+			sourceTree = "<group>";
+		};
+		9B2981CA22AE7107001CC657 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B2981CB22AE711F001CC657 /* ChannelModel.h */,
+				9B2981CC22AE711F001CC657 /* ChannelModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9CA7F963D8BA68F76587F6FA3FAE7B05 /* XQCPaySDK_Objc */ = {
 			isa = PBXGroup;
 			children = (
-				4983D05D421F563FDAC8C45E278862D1 /* ReplaceMe.m */,
+				9B2981C122AE65A5001CC657 /* Assets */,
+				9B2981B222AE6343001CC657 /* Classes */,
 				65C1196AC10164CF9CC348583AE766B5 /* Pod */,
 				CCEB2B007A3E73AA22ED18AA1B3F8E51 /* Support Files */,
 			);
@@ -490,7 +593,6 @@
 				1794AA15727A357A512AF010A4E82C7A /* XCTestCase+Specta.m */,
 				5775FAB06524D7B66689F138D6E8526E /* Support Files */,
 			);
-			name = Specta;
 			path = Specta;
 			sourceTree = "<group>";
 		};
@@ -619,7 +721,6 @@
 				371451F95C82CC039477B1B69CA3608D /* NSValue+Expecta.m */,
 				901D95CA82DBA844821800917A4B004F /* Support Files */,
 			);
-			name = Expecta;
 			path = Expecta;
 			sourceTree = "<group>";
 		};
@@ -725,6 +826,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A758529C39D371CE0C2CDF1BA78DC740 /* XQCPaySDK_Objc-umbrella.h in Headers */,
+				9B2981D122AE79E8001CC657 /* XQCPayViewController.h in Headers */,
+				9B2981BA22AE63A0001CC657 /* XQCNetworking.h in Headers */,
+				9B2981CD22AE711F001CC657 /* ChannelModel.h in Headers */,
+				9B2981C822AE6619001CC657 /* XQCPayManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,6 +944,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -948,8 +1054,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				282780659E1B890E80727744173090B9 /* ReplaceMe.m in Sources */,
+				9B2981BB22AE63A0001CC657 /* XQCNetworking.m in Sources */,
+				9B2981D222AE79E8001CC657 /* XQCPayViewController.m in Sources */,
 				0B437F26366DCCCC1B30820B9522AC4B /* XQCPaySDK_Objc-dummy.m in Sources */,
+				9B2981C922AE6619001CC657 /* XQCPayManager.m in Sources */,
+				9B2981CE22AE711F001CC657 /* ChannelModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1062,8 +1171,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
