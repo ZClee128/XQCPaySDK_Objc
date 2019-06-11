@@ -16,7 +16,9 @@
 #import "YSEPayResp.h"
 #import "YSSDK.h"
 #import "XQCNetworking.h"
+#import "ChannelModel.h"
 #import "XQCPayManager.h"
+#import "XQCPayViewController.h"
 
 FOUNDATION_EXPORT double XQCPaySDK_ObjcVersionNumber;
 FOUNDATION_EXPORT const unsigned char XQCPaySDK_ObjcVersionString[];

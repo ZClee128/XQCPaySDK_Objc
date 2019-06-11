@@ -8,7 +8,5 @@ target 'XQCPaySDK_Objc_Example' do
   target 'XQCPaySDK_Objc_Tests' do
     inherit! :search_paths
 
-    pod 'Specta'
-    pod 'Expecta'
   end
 end

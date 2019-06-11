@@ -1,27 +1,16 @@
 PODS:
-  - Expecta (1.0.6)
-  - Specta (1.0.7)
   - XQCPaySDK_Objc (0.1.0)
 
 DEPENDENCIES:
-  - Expecta
-  - Specta
   - XQCPaySDK_Objc (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Expecta
-    - Specta
 
 EXTERNAL SOURCES:
   XQCPaySDK_Objc:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
-  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  XQCPaySDK_Objc: 27d137aefd721013486e1e23ac4bb6c94b59f91e
+  XQCPaySDK_Objc: e426844c18f09398d327af8c107b405e251b75a9
 
-PODFILE CHECKSUM: 3ea0090e744d063519bab727e9b71735756305d7
+PODFILE CHECKSUM: 3829ca28413959508c73f8860f3bd4e9e5ef159f
 
 COCOAPODS: 1.6.1

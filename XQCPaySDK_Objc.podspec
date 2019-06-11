@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+薪起程聚合支付
                        DESC
 
   s.homepage         = 'https://github.com/ZClee128/XQCPaySDK_Objc'
@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   }
 
   s.vendored_frameworks = 'XQCPaySDK_Objc/Classes/Frameworks/YSSDK.framework', 'XQCPaySDK_Objc/Classes/Frameworks/YSEPaySDK.framework'
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

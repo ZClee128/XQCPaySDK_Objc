@@ -2,7 +2,7 @@
   "name": "XQCPaySDK_Objc",
   "version": "0.1.0",
   "summary": "A short description of XQCPaySDK_Objc.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "薪起程聚合支付",
   "homepage": "https://github.com/ZClee128/XQCPaySDK_Objc",
   "license": {
     "type": "MIT",
@@ -27,5 +27,6 @@
   "vendored_frameworks": [
     "XQCPaySDK_Objc/Classes/Frameworks/YSSDK.framework",
     "XQCPaySDK_Objc/Classes/Frameworks/YSEPaySDK.framework"
-  ]
+  ],
+  "public_header_files": "Pod/Classes/**/*.h"
 }
