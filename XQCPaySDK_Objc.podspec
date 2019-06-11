@@ -32,12 +32,12 @@ Pod::Spec.new do |s|
 
   s.source_files = 'XQCPaySDK_Objc/Classes/**/*'
   
-  s.resource_bundles = {
-      'XQCPaySDK_Objc' => ['XQCPaySDK_Objc/Assets/images/*.png']
-  }
+  #s.resource_bundles = {
+  #     'XQCPaySDK_Objc' => ['XQCPaySDK_Objc/Assets/images/*.png']
+  #}
 
   s.vendored_frameworks = 'XQCPaySDK_Objc/Classes/Frameworks/YSSDK.framework', 'XQCPaySDK_Objc/Classes/Frameworks/YSEPaySDK.framework'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

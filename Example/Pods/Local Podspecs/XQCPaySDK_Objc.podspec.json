@@ -19,14 +19,8 @@
     "ios": "9.0"
   },
   "source_files": "XQCPaySDK_Objc/Classes/**/*",
-  "resource_bundles": {
-    "XQCPaySDK_Objc": [
-      "XQCPaySDK_Objc/Assets/images/*.png"
-    ]
-  },
   "vendored_frameworks": [
     "XQCPaySDK_Objc/Classes/Frameworks/YSSDK.framework",
     "XQCPaySDK_Objc/Classes/Frameworks/YSEPaySDK.framework"
-  ],
-  "public_header_files": "Pod/Classes/**/*.h"
+  ]
 }
