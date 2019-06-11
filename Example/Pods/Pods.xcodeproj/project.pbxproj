@@ -9,31 +9,50 @@
 /* Begin PBXBuildFile section */
 		15991F816729D0D2199D001E2DB298DF /* XQCPaySDK_Objc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E096B726DC239CC4B87994BC6FA79157 /* XQCPaySDK_Objc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		186843C220E65813BE157136A7A24C0E /* YSEPayObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2BC7C6E109A76DCADDA46D06D14EC3 /* YSEPayObjects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C65E12B7DD5CAA09EE949F75947A854 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62B702A79D5AB9FD1AC404D8C3472B6 /* CoreMotion.framework */; };
 		1CB4ADA93B482D4DAB3413CE284E6B78 /* YSSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D2F2DCC17D7CA0FFE4AFEE71A5D91091 /* YSSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3084D05649794B81EED86FDC255DA8A7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C487448E4D8B3689AF0CF56EB19221 /* CoreLocation.framework */; };
 		34D73C8464F115EDE166F947D3D9B8BB /* Pods-XQCPaySDK_Objc_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4682A6DF92D166F6F06C7641DCCA78 /* Pods-XQCPaySDK_Objc_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38F991557D177D28D7E6EB7CB607CACF /* YSEPayReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 581F9651A494F42BCDB01DE233855F3A /* YSEPayReq.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A1661C91EE2E475A3940A0DCCE61FF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D5EC28F9DD83F2578B3CA8B4D3D799 /* CoreGraphics.framework */; };
+		3BDBE393CBCDB5CDA932E8610EBE900C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61DFE36BD1DAAE989D64D686A6B7B43 /* UIKit.framework */; };
 		3E296C07588386E22746A61C05D18CA8 /* Pods-XQCPaySDK_Objc_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD959B217B4352F25D50F83986C71F76 /* Pods-XQCPaySDK_Objc_Example-dummy.m */; };
+		45E10BA894E1758CD94FB7108197F0C8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5A9E412FD6FE86C9DFB05D42FC5C0D /* CoreTelephony.framework */; };
 		55D2908698B2C97C137E670B4CC5E10F /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 30553C3C803A13B87F385FBF161D1940 /* module.modulemap */; };
 		55E92EE89A7F20E2F96786373BC71E96 /* ChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A98CFB2FAAC98A689BDA48A5639656 /* ChannelModel.m */; };
+		57A52E7D15EB8E2AEBC33F410BCFF65A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC6BA9B2938501108D96D1D9BD02103 /* ImageIO.framework */; };
 		58B8971AB9488EF56BE4D8CBB6971885 /* YSSDK.xcconfig in Sources */ = {isa = PBXBuildFile; fileRef = 4D6BE1AAB4AB2119B71B3CED3E121BD6 /* YSSDK.xcconfig */; };
-		5ADC134D564F4777D41CDD4E1C1C70CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		5ADC134D564F4777D41CDD4E1C1C70CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCBE37742A7C961D366F2B57BBB5D8E /* Foundation.framework */; };
 		61EC51EEA4AD3D8B6461591C1A273D06 /* ChannelModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E078336080EBD85A2D88EAAB1978EAB4 /* ChannelModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		661CA2E5F322D1BBF69B754A00F60BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		65B97DF1C6292A89822514AA11F40B1C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D256842F8340951BA6B9CB61A7786F /* AddressBook.framework */; };
 		68BF1A6405D6916355CFEDBA8F49E954 /* XQCPaySDK_Objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EF6E096252E5FD2157EF9F7CDD5EF4 /* XQCPaySDK_Objc-dummy.m */; };
 		6E0AD8F8C806841B6ED4AA1CBC0E16E3 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = DD0734A6503C8334AECD8146CDB062BA /* Info.plist */; };
+		89F7CC250C4EEEA3202207E8AD03C41A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BD30D36E4D5B7BA359C1D72E59D9B9 /* MessageUI.framework */; };
+		8FC995BE1F2C0269B329CD360979606C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F251C9574D1A3E69A050AA0044B33C5 /* MobileCoreServices.framework */; };
 		92AA8F160EB5B72110FDC090965C20B6 /* XQCPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62081BDFD37115638C69FAAB8DD85D8E /* XQCPayManager.m */; };
+		A60E6AFDF4EE6E10FD1C40C9A8428C09 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C182F7205D891213F172BC57BC34FDB9 /* SystemConfiguration.framework */; };
+		BA48EAEF7998E4906414EDED1C4163D2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946BE340BA6DC8E09011A33BAEEBFC03 /* Security.framework */; };
 		BAECB496AF7006FF21A734431179D1AD /* XQCPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E976547DC716057DBD362E9DB1C72F /* XQCPayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB96EF18F2C0A46931217CDFB5A8E6D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCBE37742A7C961D366F2B57BBB5D8E /* Foundation.framework */; };
+		BE4F70BDBE63F9CEA25093BC8FF5CE87 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2312BDFE837BEBAAFF489DDBBC8DBE37 /* AudioToolbox.framework */; };
 		C40AC628B54A715CEB926067C0A9F194 /* XQCNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D30AEFDDA8B8C6331564C88361A45FFE /* XQCNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8FFF2C1A7C8E344DA4CB280FDF1ED42 /* Pods-XQCPaySDK_Objc_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EF7DEABA3B7EBC0A9A16E8C788111E /* Pods-XQCPaySDK_Objc_Tests-dummy.m */; };
 		CF074384E59A57C586C360F64819E282 /* Pods-XQCPaySDK_Objc_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A355C359C9FBABDFC0F2CC76A888B0FD /* Pods-XQCPaySDK_Objc_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D36A8C3000464801A3EB61950745CC7F /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0F278277E1948D3B110B1AA89BEFE0 /* AddressBookUI.framework */; };
+		D93329C1F023AA6609D12120A345E718 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89A5594BEC59D89DAC23481E7C954F1 /* CFNetwork.framework */; };
 		DAE9BD0E2444641FC229286B8FDB5148 /* YSEPayResp.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D60797338D3DEC95CEDC803E184E8B /* YSEPayResp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBF8A4AF60FFFA81F6AD570EF423147F /* YSEPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 463826B814AF9F309A42CB3DAECA6DAE /* YSEPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E55883144BD6765B517B62EEAECEF08B /* XQCPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D7235B4E06933BE9AA2AAB387F4EA0 /* XQCPayViewController.m */; };
-		EE508174AE6920423709E014F1A7A467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		E902C0D45ABFB52D57636DCBB4018427 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2810439F00A3A96A1613A547C160AC4 /* CoreVideo.framework */; };
+		EB7745E291D325395101350B0D2BF3A4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC6B01A42A807B01A3EB2E980EB5829 /* Accelerate.framework */; };
+		EC469BA949176C9756F7C02E0D745EF6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58E289AA7ED054194E743957F762D26 /* CoreMedia.framework */; };
+		EE508174AE6920423709E014F1A7A467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCBE37742A7C961D366F2B57BBB5D8E /* Foundation.framework */; };
 		EF448F06E07207B65E1D03E20A776D2F /* XQCPayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C11B873FBCAAF89869DC19443ECE04 /* XQCPayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F26F9EA758B7D168164715CA0A29CD8E /* YSSDK in Sources */ = {isa = PBXBuildFile; fileRef = 1E29433E5705513A94329A3F06DECD22 /* YSSDK */; };
 		F36852D36D218E4FF5B4A98A34E0BD9F /* YSEPaySDK in Sources */ = {isa = PBXBuildFile; fileRef = B32846E962A02D9A677A025A9E82D2B7 /* YSEPaySDK */; };
 		F9EF9BEF7C1CFC04012BFD97CD74322F /* XQCNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE2D9A7E1C90F4F297481CBA1A5F643 /* XQCNetworking.m */; };
+		FB47CAAE17271B21C0A4AB37E71CE485 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E110AB444E93BCF44824C6EC1D428530 /* AVFoundation.framework */; };
+		FB904D0B6BA064C54F6C1AA4530A1FA5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114D5262C90662919F2DED48062393FD /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +76,15 @@
 		023F5056848594136B52D78007747249 /* Pods-XQCPaySDK_Objc_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQCPaySDK_Objc_Tests-Info.plist"; sourceTree = "<group>"; };
 		066A42CA5F7BBD088E99787A9B428190 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		0796751D1991DFC6E2D91CD7628A7A9D /* XQCPaySDK_Objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XQCPaySDK_Objc.modulemap; sourceTree = "<group>"; };
+		0F251C9574D1A3E69A050AA0044B33C5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		0FD7CA1FF170A410E1854E5159D7972B /* Pods-XQCPaySDK_Objc_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQCPaySDK_Objc_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		10BD30D36E4D5B7BA359C1D72E59D9B9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		114D5262C90662919F2DED48062393FD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		16053F4076A26FBBA014CF24BFD0F049 /* XQCPaySDK_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XQCPaySDK_Objc.framework; path = XQCPaySDK_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E29433E5705513A94329A3F06DECD22 /* YSSDK */ = {isa = PBXFileReference; includeInIndex = 1; path = YSSDK; sourceTree = "<group>"; };
+		1EC6BA9B2938501108D96D1D9BD02103 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		2198D83AB8B171D4C616951CA681F7C9 /* XQCPaySDK_Objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XQCPaySDK_Objc.xcconfig; sourceTree = "<group>"; };
+		2312BDFE837BEBAAFF489DDBBC8DBE37 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		23EF6E096252E5FD2157EF9F7CDD5EF4 /* XQCPaySDK_Objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XQCPaySDK_Objc-dummy.m"; sourceTree = "<group>"; };
 		30553C3C803A13B87F385FBF161D1940 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = module.modulemap; sourceTree = "<group>"; };
 		39C11B873FBCAAF89869DC19443ECE04 /* XQCPayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayViewController.h; sourceTree = "<group>"; };
@@ -77,34 +101,48 @@
 		5CE2D9A7E1C90F4F297481CBA1A5F643 /* XQCNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCNetworking.m; sourceTree = "<group>"; };
 		5FB0E2BB8BE953F0FA2FC324F50DA452 /* Pods-XQCPaySDK_Objc_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XQCPaySDK_Objc_Example-frameworks.sh"; sourceTree = "<group>"; };
 		62081BDFD37115638C69FAAB8DD85D8E /* XQCPayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayManager.m; sourceTree = "<group>"; };
+		62D5EC28F9DD83F2578B3CA8B4D3D799 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		6EA4A2D62BA35C349D9DF7FDC9E35C8B /* YSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YSSDK.framework; sourceTree = "<group>"; };
 		70D6ECD325382B0F48D5B7AE9C1D54BE /* Pods-XQCPaySDK_Objc_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQCPaySDK_Objc_Example-Info.plist"; sourceTree = "<group>"; };
 		7944813C00CFBE1E6E31D2023DADB275 /* Pods_XQCPaySDK_Objc_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XQCPaySDK_Objc_Tests.framework; path = "Pods-XQCPaySDK_Objc_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BDF549B35D0639717C4CA679963D5E7 /* Pods-XQCPaySDK_Objc_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XQCPaySDK_Objc_Tests.modulemap"; sourceTree = "<group>"; };
+		7FCBE37742A7C961D366F2B57BBB5D8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9210D4EBC6F7FD98A4BE193645DC1F21 /* Pods_XQCPaySDK_Objc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XQCPaySDK_Objc_Example.framework; path = "Pods-XQCPaySDK_Objc_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		933AD4D8A0B3D52A43EB566B5E6380D0 /* Pods-XQCPaySDK_Objc_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XQCPaySDK_Objc_Example.modulemap"; sourceTree = "<group>"; };
+		946BE340BA6DC8E09011A33BAEEBFC03 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		94DAC444BB385B3CAFCCE405690131C5 /* Pods-XQCPaySDK_Objc_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQCPaySDK_Objc_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9A0F278277E1948D3B110B1AA89BEFE0 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AddressBookUI.framework; sourceTree = DEVELOPER_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E5A9E412FD6FE86C9DFB05D42FC5C0D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		A18147EFB52E3C9E135F0158ABA9157D /* XQCPaySDK_Objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQCPaySDK_Objc-prefix.pch"; sourceTree = "<group>"; };
 		A23FF588576C045FC95F530759BD6E3A /* XQCPaySDK_Objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XQCPaySDK_Objc-Info.plist"; sourceTree = "<group>"; };
 		A355C359C9FBABDFC0F2CC76A888B0FD /* Pods-XQCPaySDK_Objc_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XQCPaySDK_Objc_Example-umbrella.h"; sourceTree = "<group>"; };
 		A5D7235B4E06933BE9AA2AAB387F4EA0 /* XQCPayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayViewController.m; sourceTree = "<group>"; };
 		A708FA0B65B432B0FD2512BDF57D2A98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D256842F8340951BA6B9CB61A7786F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
 		AD959B217B4352F25D50F83986C71F76 /* Pods-XQCPaySDK_Objc_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XQCPaySDK_Objc_Example-dummy.m"; sourceTree = "<group>"; };
 		AE4682A6DF92D166F6F06C7641DCCA78 /* Pods-XQCPaySDK_Objc_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XQCPaySDK_Objc_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B32846E962A02D9A677A025A9E82D2B7 /* YSEPaySDK */ = {isa = PBXFileReference; includeInIndex = 1; path = YSEPaySDK; sourceTree = "<group>"; };
+		B61DFE36BD1DAAE989D64D686A6B7B43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B62B702A79D5AB9FD1AC404D8C3472B6 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		B89A5594BEC59D89DAC23481E7C954F1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		B9C487448E4D8B3689AF0CF56EB19221 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		C0CC519C72B79A2F23472BBA4703B91E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C182F7205D891213F172BC57BC34FDB9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		C1E0D7DAA100C9BE3A6BCE844EB24305 /* Pods-XQCPaySDK_Objc_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQCPaySDK_Objc_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C58E289AA7ED054194E743957F762D26 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		C7122CCDB5D422030AFB1C562A43D021 /* YSEPaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YSEPaySDK.framework; sourceTree = "<group>"; };
 		C96DCF1AAB3FA80795A4A185EB15439F /* Pods-XQCPaySDK_Objc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQCPaySDK_Objc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA296E0723F393E87FA26B094D1A8FF4 /* Pods-XQCPaySDK_Objc_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQCPaySDK_Objc_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D2F2DCC17D7CA0FFE4AFEE71A5D91091 /* YSSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YSSDK.h; sourceTree = "<group>"; };
 		D30AEFDDA8B8C6331564C88361A45FFE /* XQCNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCNetworking.h; sourceTree = "<group>"; };
 		DD0734A6503C8334AECD8146CDB062BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E078336080EBD85A2D88EAAB1978EAB4 /* ChannelModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChannelModel.h; sourceTree = "<group>"; };
 		E096B726DC239CC4B87994BC6FA79157 /* XQCPaySDK_Objc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQCPaySDK_Objc-umbrella.h"; sourceTree = "<group>"; };
+		E110AB444E93BCF44824C6EC1D428530 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		E1A98CFB2FAAC98A689BDA48A5639656 /* ChannelModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChannelModel.m; sourceTree = "<group>"; };
+		EBC6B01A42A807B01A3EB2E980EB5829 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		F2810439F00A3A96A1613A547C160AC4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
 		F9E976547DC716057DBD362E9DB1C72F /* XQCPayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,11 +163,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF9C55643B6E29115B076851BFD92E24 /* Frameworks */ = {
+		FDC65A41850FDFC87F23D11C86289E41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				661CA2E5F322D1BBF69B754A00F60BAB /* Foundation.framework in Frameworks */,
+				EB7745E291D325395101350B0D2BF3A4 /* Accelerate.framework in Frameworks */,
+				65B97DF1C6292A89822514AA11F40B1C /* AddressBook.framework in Frameworks */,
+				D36A8C3000464801A3EB61950745CC7F /* AddressBookUI.framework in Frameworks */,
+				BE4F70BDBE63F9CEA25093BC8FF5CE87 /* AudioToolbox.framework in Frameworks */,
+				FB47CAAE17271B21C0A4AB37E71CE485 /* AVFoundation.framework in Frameworks */,
+				D93329C1F023AA6609D12120A345E718 /* CFNetwork.framework in Frameworks */,
+				3A1661C91EE2E475A3940A0DCCE61FF1 /* CoreGraphics.framework in Frameworks */,
+				3084D05649794B81EED86FDC255DA8A7 /* CoreLocation.framework in Frameworks */,
+				EC469BA949176C9756F7C02E0D745EF6 /* CoreMedia.framework in Frameworks */,
+				1C65E12B7DD5CAA09EE949F75947A854 /* CoreMotion.framework in Frameworks */,
+				45E10BA894E1758CD94FB7108197F0C8 /* CoreTelephony.framework in Frameworks */,
+				E902C0D45ABFB52D57636DCBB4018427 /* CoreVideo.framework in Frameworks */,
+				BB96EF18F2C0A46931217CDFB5A8E6D7 /* Foundation.framework in Frameworks */,
+				57A52E7D15EB8E2AEBC33F410BCFF65A /* ImageIO.framework in Frameworks */,
+				89F7CC250C4EEEA3202207E8AD03C41A /* MessageUI.framework in Frameworks */,
+				8FC995BE1F2C0269B329CD360979606C /* MobileCoreServices.framework in Frameworks */,
+				BA48EAEF7998E4906414EDED1C4163D2 /* Security.framework in Frameworks */,
+				A60E6AFDF4EE6E10FD1C40C9A8428C09 /* SystemConfiguration.framework in Frameworks */,
+				3BDBE393CBCDB5CDA932E8610EBE900C /* UIKit.framework in Frameworks */,
+				FB904D0B6BA064C54F6C1AA4530A1FA5 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +260,33 @@
 			path = XQCPaySDK_Objc/Classes/Frameworks;
 			sourceTree = "<group>";
 		};
+		782E0E422A5B6287F004C33002A1233F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EBC6B01A42A807B01A3EB2E980EB5829 /* Accelerate.framework */,
+				A7D256842F8340951BA6B9CB61A7786F /* AddressBook.framework */,
+				9A0F278277E1948D3B110B1AA89BEFE0 /* AddressBookUI.framework */,
+				2312BDFE837BEBAAFF489DDBBC8DBE37 /* AudioToolbox.framework */,
+				E110AB444E93BCF44824C6EC1D428530 /* AVFoundation.framework */,
+				B89A5594BEC59D89DAC23481E7C954F1 /* CFNetwork.framework */,
+				62D5EC28F9DD83F2578B3CA8B4D3D799 /* CoreGraphics.framework */,
+				B9C487448E4D8B3689AF0CF56EB19221 /* CoreLocation.framework */,
+				C58E289AA7ED054194E743957F762D26 /* CoreMedia.framework */,
+				B62B702A79D5AB9FD1AC404D8C3472B6 /* CoreMotion.framework */,
+				9E5A9E412FD6FE86C9DFB05D42FC5C0D /* CoreTelephony.framework */,
+				F2810439F00A3A96A1613A547C160AC4 /* CoreVideo.framework */,
+				7FCBE37742A7C961D366F2B57BBB5D8E /* Foundation.framework */,
+				1EC6BA9B2938501108D96D1D9BD02103 /* ImageIO.framework */,
+				10BD30D36E4D5B7BA359C1D72E59D9B9 /* MessageUI.framework */,
+				0F251C9574D1A3E69A050AA0044B33C5 /* MobileCoreServices.framework */,
+				946BE340BA6DC8E09011A33BAEEBFC03 /* Security.framework */,
+				C182F7205D891213F172BC57BC34FDB9 /* SystemConfiguration.framework */,
+				B61DFE36BD1DAAE989D64D686A6B7B43 /* UIKit.framework */,
+				114D5262C90662919F2DED48062393FD /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		7C0A45A4C248F160D6B77A6829436429 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +295,14 @@
 				46C313FFB763D8155F911E20E6325736 /* XQCPaySDK_Objc.podspec */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		7CD12F160B7F4594FFB1B367CCFAF6B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				782E0E422A5B6287F004C33002A1233F /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		836AEEE568257D80004F56E61A0508B2 /* SdkManager */ = {
@@ -259,14 +351,6 @@
 			);
 			name = UI;
 			path = XQCPaySDK_Objc/Classes/UI;
-			sourceTree = "<group>";
-		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		9FD7FD301799F2640016F31E68E38480 /* Headers */ = {
@@ -327,18 +411,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				C88E608877A4A0D77C23E2C449B6F4DF /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				7CD12F160B7F4594FFB1B367CCFAF6B6 /* Frameworks */,
 				E7A896954AF9BDB8AC854973EF12E972 /* Products */,
 				FB4E28D08AD3AF6C8D2FBC8836376FBD /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DA14BE951F6CAF6FAA351D0E9F112A13 /* Pods-XQCPaySDK_Objc_Example */ = {
@@ -460,7 +536,7 @@
 			buildPhases = (
 				7803635983D9532DA19934B9A97F1FD3 /* Headers */,
 				206604AEE9E82B006B9FD69A0939C881 /* Sources */,
-				DF9C55643B6E29115B076851BFD92E24 /* Frameworks */,
+				FDC65A41850FDFC87F23D11C86289E41 /* Frameworks */,
 				2594CE42BB9EE47FEA2C88551566D4EA /* Resources */,
 			);
 			buildRules = (

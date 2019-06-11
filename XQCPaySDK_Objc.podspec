@@ -36,7 +36,10 @@ Pod::Spec.new do |s|
   #     'XQCPaySDK_Objc' => ['XQCPaySDK_Objc/Assets/images/*.png']
   #}
 
+  s.libraries = 'sqlite3', 'c++', 'z.1.2.5'
+  s.frameworks = 'WebKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMotion', 'CoreGraphics', 'ImageIO', 'CFNetwork', 'MobileCoreServices', 'MessageUI', 'AddressBook', 'AddressBookUI', 'Security', 'AudioToolbox', 'CoreLocation', 'CoreMedia', 'CoreVideo', 'Accelerate', 'AVFoundation'
   s.vendored_frameworks = 'XQCPaySDK_Objc/Classes/Frameworks/YSSDK.framework', 'XQCPaySDK_Objc/Classes/Frameworks/YSEPaySDK.framework'
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
