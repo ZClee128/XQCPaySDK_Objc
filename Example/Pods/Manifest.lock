@@ -1,15 +1,28 @@
 PODS:
-  - XQCPaySDK_Objc (0.1.0)
+  - MJExtension (3.0.17)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - XQCPaySDK_Objc (0.1.0):
+    - MJExtension
+    - SDWebImage
 
 DEPENDENCIES:
   - XQCPaySDK_Objc (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MJExtension
+    - SDWebImage
 
 EXTERNAL SOURCES:
   XQCPaySDK_Objc:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XQCPaySDK_Objc: e873b5c7e4b4ca24fcdaf38ca4dec0d5adbe1866
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  XQCPaySDK_Objc: 5a05e3d8dc9c1c279eb5b0cfd8ea63638a049ed4
 
 PODFILE CHECKSUM: 3829ca28413959508c73f8860f3bd4e9e5ef159f
 

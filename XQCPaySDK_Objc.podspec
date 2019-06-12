@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'XQCPaySDK_Objc/Classes/**/*'
   
-  #s.resource_bundles = {
-  #     'XQCPaySDK_Objc' => ['XQCPaySDK_Objc/Assets/images/*.png']
-  #}
+  s.resource_bundles = {
+       'XQCPaySDK_Objc' => ['XQCPaySDK_Objc/Assets/*.png']
+  }
 
   s.libraries = 'sqlite3', 'c++', 'z.1.2.5'
   s.frameworks = 'WebKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMotion', 'CoreGraphics', 'ImageIO', 'CFNetwork', 'MobileCoreServices', 'MessageUI', 'AddressBook', 'AddressBookUI', 'Security', 'AudioToolbox', 'CoreLocation', 'CoreMedia', 'CoreVideo', 'Accelerate', 'AVFoundation'
@@ -42,5 +42,6 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'MJExtension'
+  s.dependency 'SDWebImage'
 end

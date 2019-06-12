@@ -9,10 +9,22 @@
 
 @implementation ChannelModel
 
-- (instancetype)initWithDictionary:(NSDictionary *)dic{
-    if (self = [super init]){
-        [self setValuesForKeysWithDictionary:dic];
+- (id)initWithDict:(NSDictionary *)dict {
+    if (self = [super init]) {
+        self.channelType = [dict valueForKey:@"channelType"];
+        self.channelLogoUrl = [dict valueForKey:@"channelLogoUrl"];
+        self.channelName = [dict valueForKey:@"channelName"];
+        self.bizCode = [dict valueForKey:@"bizCode"];
+        self.isCheckPayPwd = [[dict valueForKey:@"isCheckPayPwd"] boolValue];
+        self.paymentUrl = [dict valueForKey:@"paymentUrl"];
+        self.sort = [[dict valueForKey:@"sort"] integerValue];
+        if (self.sort == 1) {
+            self.isClick = true;
+        }else {
+            self.isClick = false;
+        }
     }
     return self;
 }
+
 @end

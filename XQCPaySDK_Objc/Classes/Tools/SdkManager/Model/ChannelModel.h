@@ -11,16 +11,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ChannelModel : NSObject
 
-@property (nonatomic,copy)NSString *logo;
-@property (nonatomic,copy)NSString *type;
-@property (nonatomic,copy)NSString *name;
+@property (nonatomic,copy)NSString *channelLogoUrl;
+@property (nonatomic,copy)NSString *channelType;
+@property (nonatomic,copy)NSString *channelName;
 @property (nonatomic,copy)NSString *bizCode;
-@property (nonatomic,assign) BOOL  enable;
-@property (nonatomic,assign) BOOL  checkPayPwd;
+//@property (nonatomic,assign) BOOL  enable;
+@property (nonatomic,assign) BOOL  isCheckPayPwd;
 @property (nonatomic,copy)NSString *paymentUrl;
-@property (nonatomic,assign) NSInteger  source;
+@property (nonatomic,assign) NSInteger  sort;
+@property (nonatomic,assign) BOOL  isClick;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dic;
+- (id)initWithDict:(NSDictionary *)dict;
 @end
 
 NS_ASSUME_NONNULL_END

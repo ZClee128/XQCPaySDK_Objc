@@ -14,9 +14,7 @@
 {
     // Override point for customization after application launch.
     [[XQCPayManager defaultManager] setConfig:@"https://openfulipayapi.bndxqc.com"];
-    [[XQCPayManager defaultManager] setSignKey:@"IZJOIBXZCLJQBIOSGVZL4FNHGL8X74PZ"];
-    [[XQCPayManager defaultManager] setAgentKey:@"CEB9011C0946E23D4959C13EE5E1B785"];
-    [[XQCPayManager defaultManager] ]
+    [[XQCPayManager defaultManager] setMacSignKey:@"IZJOIBXZCLJQBIOSGVZL4FNHGL8X74PZ" AgentKey:@"CEB9011C0946E23D4959C13EE5E1B785" MerchantId:@"111401100000212" PartnerId:@"XQC_payforapp" Password:@"xQcMy20Pwd19" Notify:@"http://abc.com" AgentNo:@"1000001114" CompanyOpenId:@"321" UserOpenId:@"123"];
     return YES;
 }
 

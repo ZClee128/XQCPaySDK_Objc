@@ -1,6 +1,6 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/XQCPaySDK_Objc
 DEFINES_MODULE = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../XQCPaySDK_Objc/Frameworks"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/MJExtension" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_ROOT}/../../XQCPaySDK_Objc/Frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 OTHER_LDFLAGS = $(inherited) -l"c++" -l"sqlite3" -l"z.1.2.5" -framework "AVFoundation" -framework "Accelerate" -framework "AddressBook" -framework "AddressBookUI" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreTelephony" -framework "CoreVideo" -framework "ImageIO" -framework "MessageUI" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "WebKit" -framework "YSEPaySDK" -framework "YSSDK"
 PODS_BUILD_DIR = ${BUILD_DIR}

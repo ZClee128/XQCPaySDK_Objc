@@ -19,6 +19,11 @@
     "ios": "9.0"
   },
   "source_files": "XQCPaySDK_Objc/Classes/**/*",
+  "resource_bundles": {
+    "XQCPaySDK_Objc": [
+      "XQCPaySDK_Objc/Assets/*.png"
+    ]
+  },
   "libraries": [
     "sqlite3",
     "c++",
@@ -51,5 +56,13 @@
   ],
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
+  },
+  "dependencies": {
+    "MJExtension": [
+
+    ],
+    "SDWebImage": [
+
+    ]
   }
 }

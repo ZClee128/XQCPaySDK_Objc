@@ -6,7 +6,7 @@
 //
 
 #import "XQCNetworking.h"
-
+#import <CommonCrypto/CommonDigest.h>
 NSString *const ResponseErrorKey = @"com.alamofire.serialization.response.error.response";
 NSInteger const Interval = 3;
 
@@ -71,7 +71,7 @@ NSInteger const Interval = 3;
     //把字典中的参数进行拼接
     NSString *body = [self dealWithParam:params keyValue:keyValue];
     NSData *bodyData = [body dataUsingEncoding:NSUTF8StringEncoding];
-    
+    NSLog(@"body%@",body);
     //设置请求体
     [request setHTTPBody:bodyData];
     //设置本次请求的数据请求格式
@@ -80,7 +80,7 @@ NSInteger const Interval = 3;
     [request setValue:[NSString stringWithFormat:@"%ld", bodyData.length] forHTTPHeaderField:@"Content-Length"];
     //设置请求最长时间
     request.timeoutInterval = Interval;
-    
+
     NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         if (data) {
@@ -110,16 +110,41 @@ NSInteger const Interval = 3;
 {
     NSArray *allkeys = [param allKeys];
     NSMutableString *result = [NSMutableString string];
+    NSArray *resultArr = [allkeys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return [obj1 compare:obj2]; //升序
+    }];
     
-    for (NSString *key in allkeys) {
-        NSString *string = [NSString stringWithFormat:@"%@=%@&", key, param[key]];
-        [result appendString:string];
+    NSLog(@"result=%@",resultArr);
+    for (NSString *key in resultArr) {
+        if (![param[key] isEqualToString:@""]) {
+            NSString *string = [NSString stringWithFormat:@"%@=%@&", key, param[key]];
+            [result appendString:string];
+        }
     }
     keyValue = [NSString stringWithFormat:@"%@key=%@",result,keyValue];
+    NSLog(@"keyvalue%@",keyValue);
+    keyValue = [self MD5ForUpper32Bate:keyValue];
+    NSLog(@"key>>%@",keyValue);
     param[@"sign"] = keyValue;
+    NSLog(@"param%@",param);
     return [self convertToJsonData:param];
 }
 
+#pragma mark - MD5加密 32位 大写
++ (NSString *)MD5ForUpper32Bate:(NSString *)str{
+    
+    //要进行UTF8的转码
+    const char* input = [str UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(input, (CC_LONG)strlen(input), result);
+    
+    NSMutableString *digest = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for (NSInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [digest appendFormat:@"%02X", result[i]];
+    }
+    
+    return digest;
+}
 
 
 + (NSString *)convertToJsonData:(NSDictionary *)dict
