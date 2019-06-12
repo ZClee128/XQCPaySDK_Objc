@@ -7,13 +7,16 @@
 //
 
 #import "XQCAppDelegate.h"
-
+#import <XQCPaySDK_Objc-umbrella.h>
 @implementation XQCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
+    [[XQCPayManager defaultManager] setConfig:@"https://openfulipayapi.bndxqc.com"];
+    [[XQCPayManager defaultManager] setSignKey:@"IZJOIBXZCLJQBIOSGVZL4FNHGL8X74PZ"];
+    [[XQCPayManager defaultManager] setAgentKey:@"CEB9011C0946E23D4959C13EE5E1B785"];
+    [[XQCPayManager defaultManager] ]
     return YES;
 }
 

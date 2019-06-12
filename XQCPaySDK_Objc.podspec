@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'XQCPaySDK_Objc'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of XQCPaySDK_Objc.'
+  s.summary          = '薪起程聚合支付'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 
   s.libraries = 'sqlite3', 'c++', 'z.1.2.5'
   s.frameworks = 'WebKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMotion', 'CoreGraphics', 'ImageIO', 'CFNetwork', 'MobileCoreServices', 'MessageUI', 'AddressBook', 'AddressBookUI', 'Security', 'AudioToolbox', 'CoreLocation', 'CoreMedia', 'CoreVideo', 'Accelerate', 'AVFoundation'
-  s.vendored_frameworks = 'XQCPaySDK_Objc/Classes/Frameworks/YSSDK.framework', 'XQCPaySDK_Objc/Classes/Frameworks/YSEPaySDK.framework'
+  s.vendored_frameworks = 'XQCPaySDK_Objc/Frameworks/YSSDK.framework', 'XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -8,6 +8,8 @@
 #import "XQCPayManager.h"
 #import "XQCNetworking.h"
 #import "ChannelModel.h"
+#import <YSSDK/YSSDK.h>
+#import <YSEPaySDK/YSEPay.h>
 @interface XQCPayManager()
 // 统一下单
 @property (nonatomic,copy)NSString *orderUrl;
@@ -90,6 +92,11 @@ static XQCPayManager *_sharedManager = nil;
 
 - (NSString *)getAgentKey {
     return self.agentKey;
+}
+
+- (void)setWechatKey:(NSString *)wechatKey {
+    [[YSEPay sharedInstance] configureWeChatPay:wechatKey];
+    
 }
 
 @end

@@ -1,7 +1,7 @@
 {
   "name": "XQCPaySDK_Objc",
   "version": "0.1.0",
-  "summary": "A short description of XQCPaySDK_Objc.",
+  "summary": "薪起程聚合支付",
   "description": "薪起程聚合支付",
   "homepage": "https://github.com/ZClee128/XQCPaySDK_Objc",
   "license": {
@@ -46,8 +46,8 @@
     "AVFoundation"
   ],
   "vendored_frameworks": [
-    "XQCPaySDK_Objc/Classes/Frameworks/YSSDK.framework",
-    "XQCPaySDK_Objc/Classes/Frameworks/YSEPaySDK.framework"
+    "XQCPaySDK_Objc/Frameworks/YSSDK.framework",
+    "XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework"
   ],
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
