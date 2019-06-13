@@ -49,13 +49,15 @@ typedef NS_ENUM(NSInteger, YSEPayChannel) {
  - YSEPayResultCodeUserCancel: 用户点击取消并返回
  - YSEPayResultCodeSentFail: 发送失败
  - YSEPayResultCodeUnsupport: 暂不支持
+ - YSEPayResultCodeClose: 订单已关闭
  */
 typedef NS_ENUM(NSInteger, YSEPayResultCode) {
     YSEPayResultCodeSuccess    = 0,
     YSEPayResultCodeCommon     = -1,
     YSEPayResultCodeUserCancel = -2,
     YSEPayResultCodeSentFail   = -3,
-    YSEPayResultCodeUnsupport  = -4
+    YSEPayResultCodeUnsupport  = -4,
+    YSEPayResultCodeClose      = -5,
 };
 
 static NSString * const kYSDateFormat = @"yyyy-MM-dd HH:mm";

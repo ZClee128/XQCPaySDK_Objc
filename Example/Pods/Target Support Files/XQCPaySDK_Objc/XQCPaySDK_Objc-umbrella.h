@@ -10,19 +10,23 @@
 #endif
 #endif
 
+#import "MBProgressHUD+XQC.h"
 #import "NSBundle+loadImage.h"
 #import "UIImage+myImage.h"
 #import "Header.h"
 #import "XQCNetworking.h"
+#import "Api.h"
 #import "ChannelModel.h"
+#import "PasswordModel.h"
+#import "ResponseModel.h"
+#import "WhitestripModel.h"
 #import "XQCPayManager.h"
 #import "XQCNavBarView.h"
+#import "XQCPayFootView.h"
 #import "XQCPayHeaderView.h"
 #import "XQCPayItemView.h"
 #import "XQCPayViewController.h"
-#import "WechatAuthSDK.h"
-#import "WXApi.h"
-#import "WXApiObject.h"
+#import "XQCWhiteStripTableViewCell.h"
 
 FOUNDATION_EXPORT double XQCPaySDK_ObjcVersionNumber;
 FOUNDATION_EXPORT const unsigned char XQCPaySDK_ObjcVersionString[];

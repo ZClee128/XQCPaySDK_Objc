@@ -89,6 +89,12 @@
  */
 - (NSString *)currentVersion;
 
+/**
+ 取消订单状态通知
+ */
+- (void)cancelYSEPayResp;
+
+
 #pragma mark - Send Request
 /**
  发送 YSEPay Request

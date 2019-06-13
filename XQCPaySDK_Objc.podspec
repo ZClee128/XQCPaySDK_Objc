@@ -30,18 +30,24 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
+  
   s.source_files = 'XQCPaySDK_Objc/Classes/**/*'
   
   s.resource_bundles = {
        'XQCPaySDK_Objc' => ['XQCPaySDK_Objc/Assets/*.png']
   }
 
+  s.static_framework = true
+  
   s.libraries = 'sqlite3', 'c++', 'z.1.2.5'
   s.frameworks = 'WebKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMotion', 'CoreGraphics', 'ImageIO', 'CFNetwork', 'MobileCoreServices', 'MessageUI', 'AddressBook', 'AddressBookUI', 'Security', 'AudioToolbox', 'CoreLocation', 'CoreMedia', 'CoreVideo', 'Accelerate', 'AVFoundation'
-  s.vendored_frameworks = 'XQCPaySDK_Objc/Frameworks/YSSDK.framework', 'XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework'
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
-  #s.public_header_files = 'Pod/Classes/**/*.h'
+  s.vendored_frameworks = 'XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework'
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'ENABLE_BITCODE' => 'NO' }
+  s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => 'XQCPaySDK/Frameworks'}
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'MJExtension'
+  s.dependency 'MBProgressHUD'
   s.dependency 'SDWebImage'
+  s.dependency 'WechatOpenSDK'
+  s.dependency 'XQCPaymentPasswordInputView'
 end

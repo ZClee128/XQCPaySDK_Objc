@@ -24,6 +24,7 @@
       "XQCPaySDK_Objc/Assets/*.png"
     ]
   },
+  "static_framework": true,
   "libraries": [
     "sqlite3",
     "c++",
@@ -50,18 +51,26 @@
     "Accelerate",
     "AVFoundation"
   ],
-  "vendored_frameworks": [
-    "XQCPaySDK_Objc/Frameworks/YSSDK.framework",
-    "XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework"
-  ],
+  "vendored_frameworks": "XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework",
   "pod_target_xcconfig": {
-    "DEFINES_MODULE": "YES"
+    "DEFINES_MODULE": "YES",
+    "ENABLE_BITCODE": "NO"
   },
+  "xcconfig": {
+    "LD_RUNPATH_SEARCH_PATHS": "XQCPaySDK/Frameworks"
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
-    "MJExtension": [
+    "MBProgressHUD": [
 
     ],
     "SDWebImage": [
+
+    ],
+    "WechatOpenSDK": [
+
+    ],
+    "XQCPaymentPasswordInputView": [
 
     ]
   }

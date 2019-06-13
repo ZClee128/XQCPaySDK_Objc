@@ -86,6 +86,10 @@ NSInteger const Interval = 3;
         if (data) {
             //利用iOS自带原生JSON解析data数据 保存为Dictionary
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            if ([dict[@"rspCode"] integerValue] != 0000) {
+                failure(dict[@"rspMsg"]);
+                return;
+            }
             success(dict);
             
         }else{

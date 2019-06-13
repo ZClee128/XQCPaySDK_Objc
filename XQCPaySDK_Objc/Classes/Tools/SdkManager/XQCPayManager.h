@@ -7,7 +7,17 @@
 
 #import <Foundation/Foundation.h>
 #import "ChannelModel.h"
+#import "WhitestripModel.h"
+#import "PasswordModel.h"
+#import "ResponseModel.h"
+#import <YSEPaySDK/YSEPay.h>
 NS_ASSUME_NONNULL_BEGIN
+
+static NSString *WECHATPAY_YS = @"WECHATPAY_YS";
+static NSString *ALIPAY_YS = @"ALIPAY_YS";
+static NSString *ALIPAY = @"ALIPAY";
+static NSString *WECHATPAY = @"WECHATPAY";
+static NSString *IOUSPAY = @"IOUSPAY";
 
 
 @interface XQCPayManager : NSObject
@@ -32,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)GetPasswordUrl;
 
-
+- (void)setWechatKey:(NSString *)wechatKey;
 
 /**
  设置参数
@@ -59,8 +69,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)getUserOpenId;
 
+- (NSString *)getMerchantId;
+
+- (NSString *)getNotify;
+
+- (NSString *)getPartnerId;
+
+- (NSString *)getPassword;
 - (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void(^)(NSArray *list))res;
 - (void)whitestripAgentNo:(NSString *)agentNo companyOpenId:(NSString *)companyOpenId userOpenId:(NSString *)userOpenId respon:(void(^)(NSArray *list))res;
++ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode viewController:(UIViewController *)vc reuslt:(void(^)(ResponseModel *model))result;
++ (void)checkPayPwd:(NSString *)password reuslt:(void(^)(PasswordModel *model))result;
++ (void)queryOrder:(NSString *)orderId reuslt:(void(^)(ResponseModel *model))result;
 @end
 
 NS_ASSUME_NONNULL_END

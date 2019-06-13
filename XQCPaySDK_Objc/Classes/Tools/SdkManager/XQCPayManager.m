@@ -7,9 +7,7 @@
 
 #import "XQCPayManager.h"
 #import "XQCNetworking.h"
-#import <MJExtension/MJExtension.h>
-//#import <YSSDK/YSSDK.h>
-//#import <YSEPaySDK/YSEPay.h>
+#import "Api.h"
 @interface XQCPayManager()
 // 统一下单
 @property (nonatomic,copy)NSString *orderUrl;
@@ -65,19 +63,8 @@ static XQCPayManager *_sharedManager = nil;
 
 - (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void (^)(NSArray * _Nonnull))res{
     NSAssert(self.getChannelUrl != nil, @"支付渠道获取地址不能为空， OC 请使用 [XQCPayManager configWithUrl:@\"\" query:@\"\" channelControl:@\"\"];");
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    [params setValue:agentNo forKey:@"agentNo"];
-    [params setValue:channelType forKey:@"channelType"];
-    NSMutableArray *list = [[NSMutableArray alloc] init];
-    [XQCNetworking PostWithURL:self.getChannelUrl Params:params keyValue:self.agentKey success:^(id  _Nonnull responseObject) {
-        NSLog(@"responseObject%@",responseObject);
-        for (NSDictionary *dict in responseObject[@"data"]) {
-            ChannelModel *model = [[ChannelModel alloc] initWithDict:dict];
-            [list addObject:model];
-        }
+    [Api getChannels:channelType agentNo:agentNo respon:^(NSArray * _Nonnull list) {
         res(list);
-    } failure:^(NSString * _Nonnull error) {
-        NSLog(@"error->%@",error);
     }];
 }
 
@@ -100,11 +87,25 @@ static XQCPayManager *_sharedManager = nil;
         NSLog(@"userOpenId不能为空");
         return;
     }
-    [XQCNetworking PostWithURL:self.whitestripUrl Params:[@{@"agentNo":agentNo,@"companyOpenId":companyOpenId,@"userOpenId":userOpenId} mutableCopy] keyValue:self.agentKey success:^(id  _Nonnull responseObject) {
-        NSLog(@"whitestripUrl%@",responseObject);
-    } failure:^(NSString * _Nonnull error) {
-        NSLog(@"error->%@",error);
+    [Api whitestripAgentNo:agentNo companyOpenId:companyOpenId userOpenId:userOpenId respon:^(NSArray * _Nonnull list) {
+        res(list);
     }];
+}
+
++ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode viewController:(UIViewController *)vc reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result{
+    [Api payRequsetAmount:amount payType:type bizCode:bizCode Body:body orderId:orderId iousCode:iousCode viewController:vc error:^(NSString * _Nonnull error) {
+        if ([type isEqualToString:IOUSPAY]) {
+            [self queryOrder:orderId reuslt:result];
+        }
+    }];
+}
+
++ (void)checkPayPwd:(NSString *)password reuslt:(nonnull void (^)(PasswordModel * _Nonnull))result{
+    [Api checkPayPwd:password reuslt:result];
+}
+
++ (void)queryOrder:(NSString *)orderId reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result {
+    [Api queryOrder:orderId reuslt:result];
 }
 
 
@@ -160,8 +161,24 @@ static XQCPayManager *_sharedManager = nil;
     return _userOpenId;
 }
 
+- (NSString *)getMerchantId {
+    return _merchantId;
+}
+
+- (NSString *)getNotify {
+    return _notify;
+}
+
+- (NSString *)getPartnerId {
+    return _partnerId;
+}
+
+- (NSString *)getPassword {
+    return _password;
+}
+
 - (void)setWechatKey:(NSString *)wechatKey {
-//    [[YSEPay sharedInstance] configureWeChatPay:wechatKey];
+    [[YSEPay sharedInstance] configureWeChatPay:wechatKey];
     
 }
 

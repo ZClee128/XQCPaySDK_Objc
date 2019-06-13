@@ -9,7 +9,9 @@
 #define Header_h
 
 #import "UIImage+myImage.h"
+#import "MBProgressHUD+XQC.h"
 #import <SDWebImage/SDWebImage.h>
+
 //屏幕宽
 #define XQCPHONE_WIDTH [UIScreen mainScreen].bounds.size.width
 //屏幕高
@@ -32,4 +34,8 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 #define XQCTAB_SAFE_HEIGHT (iPhoneX ? 34.f : 0.f)
 
 #define Hex(rgbValue) ([UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0])
+
+#define WidthOfScale(x)  (x)*(XQCPHONE_WIDTH/375.0)
+
+#define WeakSelf(type) __weak typeof(type) weak##type = type;
 #endif /* Header_h */

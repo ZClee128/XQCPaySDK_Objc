@@ -1,2 +1,0 @@
-MODULEMAP_FILE[sdk=iphoneos] = $(SRCROOT)/YSSDK/YSSDK.modulemap
-MODULEMAP_FILE[sdk=iphonesimulator] = $(SRCROOT)/YSSDK/YSSDK.modulemap

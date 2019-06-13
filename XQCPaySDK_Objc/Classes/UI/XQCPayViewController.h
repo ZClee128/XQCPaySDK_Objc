@@ -6,14 +6,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "XQCPayManager.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XQCPayViewController : UIViewController
 
-- (void)sendPrice:(CGFloat )price;
+- (void)sendPrice:(CGFloat)price;
 
 - (instancetype)initWithOrderTitle:(NSString *)title OrderId:(NSString *)orderId;
+
+@property (nonatomic,copy)void(^reuslt)(ResponseModel *model);
+@property (nonatomic,copy)void(^back)(void);
 
 @end
 

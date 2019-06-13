@@ -19,6 +19,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = UIColor.whiteColor;
         self.logoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(19, (self.frame.size.height-43)/2, 43, 43)];
         [self addSubview:self.logoImageView];
         self.logoImageView.contentMode = UIViewContentModeScaleAspectFit;
