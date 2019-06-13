@@ -59,7 +59,6 @@
   "xcconfig": {
     "LD_RUNPATH_SEARCH_PATHS": "XQCPaySDK/Frameworks"
   },
-  "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
     "MBProgressHUD": [
 

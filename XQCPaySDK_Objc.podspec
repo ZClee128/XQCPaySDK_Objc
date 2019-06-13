@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'ENABLE_BITCODE' => 'NO' }
   s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => 'XQCPaySDK/Frameworks'}
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MBProgressHUD'
   s.dependency 'SDWebImage'
