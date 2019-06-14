@@ -8,7 +8,11 @@
 #import "XQCPayManager.h"
 #import "XQCNetworking.h"
 #import "Api.h"
-@interface XQCPayManager()
+#import "Header.h"
+static NSString *outTradeNo = @"";
+static BOOL isEnterForeground = NO;
+
+@interface XQCPayManager()<YSEPayDelegate>
 // 统一下单
 @property (nonatomic,copy)NSString *orderUrl;
 // 查询订单
@@ -53,6 +57,17 @@ static XQCPayManager *_sharedManager = nil;
     return _sharedManager;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [[YSEPay sharedInstance] setYSEPayDelegate:self];
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+        [SVProgressHUD setMinimumDismissTimeInterval:1.5];
+    }
+    return self;
+}
+
 - (void)setConfig:(NSString *)url {
     self.orderUrl = [NSString stringWithFormat:@"%@/api/v1/trade/unifiedPay",url];
     self.queryUrl = [NSString stringWithFormat:@"%@/api/v1/trade/query",url];
@@ -93,10 +108,17 @@ static XQCPayManager *_sharedManager = nil;
 }
 
 + (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode viewController:(UIViewController *)vc reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result{
+    [SVProgressHUD showWithStatus:@"  支付中   "];
     [Api payRequsetAmount:amount payType:type bizCode:bizCode Body:body orderId:orderId iousCode:iousCode viewController:vc error:^(NSString * _Nonnull error) {
+        if ([error isEqualToString:@""]) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+        }
         if ([type isEqualToString:IOUSPAY]) {
             [self queryOrder:orderId reuslt:result];
         }
+        outTradeNo = orderId;
     }];
 }
 
@@ -182,4 +204,34 @@ static XQCPayManager *_sharedManager = nil;
     
 }
 
++ (BOOL)handler:(NSURL *)url {
+    return [[YSEPay sharedInstance] handleApplicationOpenURL:url];
+}
+
+
++ (void)applicationWillEnterForeground:(UIApplication *)application {
+    isEnterForeground = YES;
+    [[YSEPay sharedInstance] applicationWillEnterForeground:application];
+    if (isEnterForeground) {
+        isEnterForeground = NO;
+        [self queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
+            if ([XQCPayManager defaultManager].reuslt) {
+                [XQCPayManager defaultManager].reuslt(model);
+            }
+        }];
+    }
+}
+
+
+#pragma mark =======================YSEPayDelegate================
+
+- (void)onYSEPayResp:(YSEPayBaseResp *)resp {
+    if (!isEnterForeground) {
+        [XQCPayManager queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
+            if (self.reuslt) {
+                self.reuslt(model);
+            }
+        }];
+    }
+}
 @end

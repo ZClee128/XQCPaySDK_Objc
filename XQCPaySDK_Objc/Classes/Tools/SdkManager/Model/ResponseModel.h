@@ -14,10 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy)NSString *amount;
 @property (nonatomic,copy)NSString *outTradeNo;
 @property (nonatomic,copy)NSString *merchantId;
-@property (nonatomic,copy)NSString *payState;
+@property (nonatomic,assign)NSInteger payState;
 @property (nonatomic,copy)NSString *payTime;
 @property (nonatomic,copy)NSString *tradeNo;
 @property (nonatomic,copy)NSString *outTransactionId;
+@property (nonatomic,copy)NSString *message;
 
 - (id)initWithDict:(NSDictionary *)dict;
 @end

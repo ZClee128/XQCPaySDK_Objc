@@ -132,20 +132,20 @@
     BOOL isHasAlipay = [[YSEPay sharedInstance] isAliPayAppInstalled];
     BOOL isHasWechat = [WXApi isWXAppInstalled];
     if (self.price < 0.1) {
-        [MBProgressHUD showError:@"支付金额不能低于0.1元"];
+        [SVProgressHUD showErrorWithStatus:@"支付金额不能低于0.1元"];
         return;
     }
     for (ChannelModel *model in self.dataSource) {
         if (model.isClick) {
             if ([model.channelType isEqualToString:WECHATPAY] || [model.channelType isEqualToString:WECHATPAY_YS]) {
                 if (!isHasWechat) {
-                    [MBProgressHUD showError:@"未安装微信"];
+                    [SVProgressHUD showErrorWithStatus:@"未安装微信"];
                     return;
                 }
             }
             if ([model.channelType isEqualToString:ALIPAY] || [model.channelType isEqualToString:ALIPAY_YS]) {
                 if (!isHasAlipay) {
-                    [MBProgressHUD showError:@"未安装支付宝"];
+                    [SVProgressHUD showErrorWithStatus:@"未安装支付宝"];
                     return;
                 }
             }
@@ -161,13 +161,15 @@
                                     if ([Passmodel.state intValue] == 1) {
                                         [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:whiteModel.iousCode viewController:self reuslt:^(ResponseModel * _Nonnull model) {
                                             @strongify(self);
-                                            self.reuslt(model);
+                                            if ([XQCPayManager defaultManager].reuslt) {
+                                                [XQCPayManager defaultManager].reuslt(model);
+                                            }
                                             [self close];
                                         }];
                                         [subscriber sendCompleted];
                                     }else {
                                         [[RACScheduler mainThreadScheduler] schedule:^{
-                                            [MBProgressHUD showError:Passmodel.info];
+                                            [SVProgressHUD showErrorWithStatus:Passmodel.info];
                                         }];
                                     }
                                 }];
@@ -255,7 +257,7 @@
 
 - (void)selectView:(UITapGestureRecognizer *)tap {
     if (self.whiteStripSource.count == 0) {
-        [MBProgressHUD showError:@"暂无白条"];
+        [SVProgressHUD showErrorWithStatus:@"暂无白条"];
         return;
     }
     ChannelModel *model = self.dataSource[tap.view.tag-100];

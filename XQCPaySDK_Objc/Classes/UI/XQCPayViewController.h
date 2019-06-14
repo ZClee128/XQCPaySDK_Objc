@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithOrderTitle:(NSString *)title OrderId:(NSString *)orderId;
 
-@property (nonatomic,copy)void(^reuslt)(ResponseModel *model);
 @property (nonatomic,copy)void(^back)(void);
 
 @end

@@ -29,8 +29,8 @@
 - (void)click {
     XQCPayViewController *pay = [[XQCPayViewController alloc] initWithOrderTitle:@"薪起程测试" OrderId:[self getOrderId]];
     [pay sendPrice:0.1];
-    pay.reuslt = ^(ResponseModel * _Nonnull model) {
-        NSLog(@"reuslt>>>%@",model.amount);
+    [XQCPayManager defaultManager].reuslt = ^(ResponseModel * _Nonnull model) {
+        NSLog(@"model===>%@",model.message);
     };
     
 //    pay.back = ^{

@@ -103,8 +103,8 @@
                 payReq.privatePassword = [manager getPassword];//"xQcMy20Pwd19"
                 payReq.type = YSEPayEvenTypePayReq;
                 payReq.viewController = vc;
-                [[YSEPay sharedInstance] sendYSEPayRequest:payReq];
-                errorMsg(@"");
+                [[YSEPay sharedInstance] sendYSEPayRequest:payReq] ? errorMsg(@"") : errorMsg(@"请求失败");
+                
             }else if ([type isEqualToString:WECHATPAY]) {
                 NSError * error = nil;
                 NSData *jsondata = [responseObject[@"payInfo"] dataUsingEncoding:(NSUTF8StringEncoding)];
@@ -130,7 +130,8 @@
             }
         });
     } failure:^(NSString * _Nonnull error) {
-        
+        [SVProgressHUD showErrorWithStatus:error];
+        errorMsg(error);
     }];
 }
 

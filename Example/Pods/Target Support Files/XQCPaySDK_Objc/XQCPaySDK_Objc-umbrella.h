@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "MBProgressHUD+XQC.h"
 #import "NSBundle+loadImage.h"
 #import "UIImage+myImage.h"
 #import "Header.h"

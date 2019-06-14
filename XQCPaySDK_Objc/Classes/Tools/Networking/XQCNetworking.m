@@ -7,6 +7,7 @@
 
 #import "XQCNetworking.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "NSString+number.h"
 NSString *const ResponseErrorKey = @"com.alamofire.serialization.response.error.response";
 NSInteger const Interval = 3;
 

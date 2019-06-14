@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XQCPaySDK_Objc'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '薪起程聚合支付'
 
 # This description is used to generate tags and improve search results.
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => 'XQCPaySDK/Frameworks'}
   #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'MBProgressHUD'
+  s.dependency 'SVProgressHUD'
   s.dependency 'SDWebImage'
   s.dependency 'WechatOpenSDK'
   s.dependency 'XQCPaymentPasswordInputView'

@@ -9,9 +9,8 @@
 #define Header_h
 
 #import "UIImage+myImage.h"
-#import "MBProgressHUD+XQC.h"
 #import <SDWebImage/SDWebImage.h>
-
+#import "SVProgressHUD.h"
 //屏幕宽
 #define XQCPHONE_WIDTH [UIScreen mainScreen].bounds.size.width
 //屏幕高

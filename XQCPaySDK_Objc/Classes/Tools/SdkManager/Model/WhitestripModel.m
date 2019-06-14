@@ -12,7 +12,7 @@
 - (id)initWithDict:(NSDictionary *)dict {
     if (self = [super init]) {
         self.bizKind = [[dict valueForKey:@"bizKind"] integerValue];
-        self.canUseAmt = [dict valueForKey:@"canUseAmt"];
+        self.canUseAmt = [NSString stringWithFormat:@"%.2f",[[dict valueForKey:@"canUseAmt"] floatValue]];
         self.iousCode = [dict valueForKey:@"iousCode"];
         self.iousUsage = [dict valueForKey:@"iousUsage"];
         self.totalAmt = [dict valueForKey:@"totalAmt"];
