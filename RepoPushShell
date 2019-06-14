@@ -1,9 +1,12 @@
 #!/bin/bash
 #huangsongyao -> https://github.com/huangsongyao
 
+
+
 #脚本绝对路径必须和私有库的.git隐藏文件在同一绝对路径下【需要查看时，请使用快捷键】# shname=$(basename $BASH_SOURCE) -> 获取脚本名称
 work_path=$(dirname $0)
 cd $work_path
+
 
 #获取本地的repo列表
 repoList=$(pod repo list)
@@ -72,10 +75,24 @@ if [[ $? -eq 0 ]]; then
 #判断校验指令是否成功，根据结果决定接下去的操作步骤
 	if [[ $? -eq 0 ]]; then
 #将合法的私有库/公有库文件.podspec推送至远端仓库
-		if [[ $isyes == *$privates* ]]; then
-			pod repo push $hsyCocoapodsSDK $hsyCocoapodsSDK.podspec --allow-warnings --use-libraries
+		read -p "是否第一次提交pod？ -> 是[y] -> 不是[n]：" isFrist
+		isy="yes"
+		if [[ $isy == *$isFrist* ]]; then
+			read -p "请输入邮箱:" email
+			read -p "请输入库名:" name
+			read -p "请输入描述:" desc
+			pod trunk register $email `$name` --description= `$desc`
+			read -p "是否已经点击邮箱链接提交到pod -> 是[y] -> 不是[n]:" isup
+			isupy="yes"
+			if [[ $isupy == *$isup* ]]; then
+				pod trunk push $name.podspec --allow-warnings
+			fi
 		else
-			pod trunk push $hsyCocoapodsSDK.podspec --allow-warnings --use-libraries
+			if [[ $isyes == *$privates* ]]; then
+				pod repo push $hsyCocoapodsSDK $hsyCocoapodsSDK.podspec --allow-warnings --use-libraries
+			else
+				pod trunk push $hsyCocoapodsSDK.podspec --allow-warnings --use-libraries	
+			fi			
 		fi
 #完成后执行拉去操作，将远端仓库的内容拉取至本地
 		git pull $origin master
