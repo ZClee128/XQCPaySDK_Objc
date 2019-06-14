@@ -7,7 +7,7 @@
 
 #import "Api.h"
 #import "XQCNetworking.h"
-#import "Header.h"
+#import "PaySDKHeader.h"
 #import "WXApi.h"
 @implementation Api
 

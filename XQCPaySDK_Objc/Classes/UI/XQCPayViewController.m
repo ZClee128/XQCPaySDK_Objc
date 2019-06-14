@@ -7,7 +7,7 @@
 
 #import "XQCPayViewController.h"
 #import "XQCNavBarView.h"
-#import "Header.h"
+#import "PaySDKHeader.h"
 #import "XQCPayHeaderView.h"
 #import "XQCPayItemView.h"
 #import "XQCPayFootView.h"

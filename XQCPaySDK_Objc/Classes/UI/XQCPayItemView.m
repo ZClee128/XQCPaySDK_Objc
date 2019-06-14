@@ -6,7 +6,7 @@
 //
 
 #import "XQCPayItemView.h"
-#import "Header.h"
+#import "PaySDKHeader.h"
 @interface XQCPayItemView()
 
 @property (nonatomic,strong)UIImageView *logoImageView;

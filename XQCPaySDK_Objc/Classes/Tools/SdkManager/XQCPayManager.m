@@ -8,7 +8,7 @@
 #import "XQCPayManager.h"
 #import "XQCNetworking.h"
 #import "Api.h"
-#import "Header.h"
+#import "PaySDKHeader.h"
 static NSString *outTradeNo = @"";
 static BOOL isEnterForeground = NO;
 

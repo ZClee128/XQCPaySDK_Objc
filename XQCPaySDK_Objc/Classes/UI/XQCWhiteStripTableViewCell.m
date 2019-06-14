@@ -6,7 +6,7 @@
 //
 
 #import "XQCWhiteStripTableViewCell.h"
-#import "Header.h"
+#import "PaySDKHeader.h"
 @interface XQCWhiteStripTableViewCell()
 
 @property (nonatomic,strong)UILabel *titleLab;

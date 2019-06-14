@@ -6,7 +6,7 @@
 //
 
 #import "XQCNavBarView.h"
-#import "Header.h"
+#import "PaySDKHeader.h"
 @implementation XQCNavBarView
 
 - (instancetype)initWithFrame:(CGRect)frame{

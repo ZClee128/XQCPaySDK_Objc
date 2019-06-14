@@ -6,7 +6,7 @@
 //
 
 #import "XQCPayHeaderView.h"
-#import "Header.h"
+#import "PaySDKHeader.h"
 @implementation XQCPayHeaderView
 
 - (instancetype)initWithFrame:(CGRect)frame {

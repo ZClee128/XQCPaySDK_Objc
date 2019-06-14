@@ -6,7 +6,7 @@
 //
 
 #import "XQCPayFootView.h"
-#import "Header.h"
+#import "PaySDKHeader.h"
 
 
 @implementation XQCPayFootView
