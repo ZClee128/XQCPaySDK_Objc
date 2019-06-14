@@ -11,6 +11,7 @@
 #endif
 
 #import "NSBundle+loadImage.h"
+#import "NSString+number.h"
 #import "UIImage+myImage.h"
 #import "Header.h"
 #import "XQCNetworking.h"
