@@ -157,7 +157,8 @@
                             
                         } completion:^RACSignal * _Nonnull(NSString * _Nonnull pwd) {
                             return [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-                                [XQCPayManager checkPayPwd:@"c9mzKT1WzqRTWzibWhvC72f7HwFNAOUI47lxBMFTG9DsxoFHak26%2B3UZEYptQ19OKUSFNtMxkLqfkdXL2dkfKLjnHwS/PzzEygN6YEV8wIApY8DdZrAWQXsQknMA%2BJtKbVw7DC4i1sxBcxIC/pEKQonwl7uBzPyiCuV5RQ9xAq0=" reuslt:^(PasswordModel * _Nonnull Passmodel) {
+//                                @"c9mzKT1WzqRTWzibWhvC72f7HwFNAOUI47lxBMFTG9DsxoFHak26%2B3UZEYptQ19OKUSFNtMxkLqfkdXL2dkfKLjnHwS/PzzEygN6YEV8wIApY8DdZrAWQXsQknMA%2BJtKbVw7DC4i1sxBcxIC/pEKQonwl7uBzPyiCuV5RQ9xAq0="
+                                [XQCPayManager checkPayPwd:pwd reuslt:^(PasswordModel * _Nonnull Passmodel) {
                                     if ([Passmodel.state intValue] == 1) {
                                         [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:whiteModel.iousCode viewController:self reuslt:^(ResponseModel * _Nonnull model) {
                                             @strongify(self);
