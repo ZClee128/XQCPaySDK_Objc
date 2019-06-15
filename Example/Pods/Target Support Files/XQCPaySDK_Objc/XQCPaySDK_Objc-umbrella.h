@@ -13,6 +13,7 @@
 #import "NSBundle+loadImage.h"
 #import "NSString+number.h"
 #import "UIImage+myImage.h"
+#import "XQCPayViewController+PayController.h"
 #import "XQCNetworking.h"
 #import "PaySDKHeader.h"
 #import "Api.h"
