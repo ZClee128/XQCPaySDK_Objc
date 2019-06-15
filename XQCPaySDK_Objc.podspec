@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XQCPaySDK_Objc'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = '薪起程聚合支付'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   
-  s.source_files = 'XQCPaySDK_Objc/Classes/**/*'
+#  s.source_files = 'XQCPaySDK_Objc/Classes/**/*'
+  s.source_files = 'XQCPaySDK_Objc/XQCPaySDK_Objc.framework/Headers/*.{h}'；
   
   s.resource_bundles = {
        'XQCPaySDK_Objc' => ['XQCPaySDK_Objc/Assets/*.png']
@@ -41,10 +42,12 @@ Pod::Spec.new do |s|
   
   s.libraries = 'sqlite3', 'c++', 'z.1.2.5'
   s.frameworks = 'WebKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMotion', 'CoreGraphics', 'ImageIO', 'CFNetwork', 'MobileCoreServices', 'MessageUI', 'AddressBook', 'AddressBookUI', 'Security', 'AudioToolbox', 'CoreLocation', 'CoreMedia', 'CoreVideo', 'Accelerate', 'AVFoundation'
-  s.vendored_frameworks = 'XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework'
+#  s.vendored_frameworks = 'XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework'
+  s.vendored_frameworks = 'XQCPaySDK_Objc/XQCPaySDK_Objc.framework'；
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'ENABLE_BITCODE' => 'NO' }
   #s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => 'XQCPaySDK/Frameworks'}
-  s.public_header_files = 'XQCPaySDK_Objc/Classes/**/*.h'
+#  s.public_header_files = 'XQCPaySDK_Objc/Classes/**/*.h'
+  s.public_header_files = 'XQCPaySDK_Objc/XQCPaySDK_Objc.framework/Headers/XQCPaySDK_Objc-umbrella.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'SVProgressHUD'
   s.dependency 'SDWebImage'
