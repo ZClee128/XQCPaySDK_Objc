@@ -1,6 +1,6 @@
 {
   "name": "XQCPaySDK_Objc",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "summary": "薪起程聚合支付",
   "description": "薪起程聚合支付",
   "homepage": "https://github.com/ZClee128/XQCPaySDK_Objc",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ZClee128/XQCPaySDK_Objc.git",
-    "tag": "1.0.4"
+    "tag": "1.0.5"
   },
   "platforms": {
     "ios": "9.0"
@@ -56,7 +56,6 @@
     "DEFINES_MODULE": "YES",
     "ENABLE_BITCODE": "NO"
   },
-  "public_header_files": "XQCPaySDK_Objc/Classes/**/*.h",
   "dependencies": {
     "SVProgressHUD": [
 

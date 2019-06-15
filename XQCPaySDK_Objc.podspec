@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XQCPaySDK_Objc'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = '薪起程聚合支付'
 
 # This description is used to generate tags and improve search results.
@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'ENABLE_BITCODE' => 'NO' }
   #s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => 'XQCPaySDK/Frameworks'}
-  s.public_header_files = 'XQCPaySDK_Objc/Classes/**/*.h'
+#  s.public_header_files = 'XQCPaySDK_Objc/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'SVProgressHUD'
   s.dependency 'SDWebImage'
