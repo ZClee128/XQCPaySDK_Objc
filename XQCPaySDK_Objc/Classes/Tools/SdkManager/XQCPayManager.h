@@ -33,16 +33,46 @@ static NSString *IOUSPAY = @"IOUSPAY";
  */
 - (void)setConfig:(NSString *)url;
 
+/**
+ 统一下单url
+
+ @return url
+ */
 - (NSString *)GetOrderUrl;
 
+/**
+ 订单查询url
+
+ @return url
+ */
 - (NSString *)GetQuerUrl;
 
+/**
+ 渠道url
+
+ @return url
+ */
 - (NSString *)GetChannelUrl;
 
+/**
+ 白条查询url
+
+ @return url
+ */
 - (NSString *)GetWhitesTripUrl;
 
+/**
+ 校验支付密码rurl
+
+ @return url
+ */
 - (NSString *)GetPasswordUrl;
 
+/**
+ 设置微信key
+
+ @param wechatKey 微信key
+ */
 - (void)setWechatKey:(NSString *)wechatKey;
 
 /**
@@ -60,27 +90,117 @@ static NSString *IOUSPAY = @"IOUSPAY";
  */
 - (void)setMacSignKey:(NSString *)Key AgentKey:(NSString *)agentKey MerchantId:(NSString *)merchantId PartnerId:(NSString *)partnerId Password:(NSString *)password Notify:(NSString *)notify AgentNo:(NSString *)agentNo CompanyOpenId:(NSString *)companyOpenId UserOpenId:(NSString *)userOpenId;
 
+
+/**
+ 获取商户签名
+
+ @return NSString
+ */
 - (NSString *)getSignKey;
 
+/**
+ 获取代理商签名
+
+ @return NSString
+ */
 - (NSString *)getAgentKey;
 
+/**
+ 获取代理商编号
+
+ @return NSString
+ */
 - (NSString *)getAgentNo;
 
+/**
+ 获取企业唯一标识
+
+ @return NSString
+ */
 - (NSString *)getCompanyOpenId;
 
+/**
+ 获取用户唯一标识
+
+ @return NSString
+ */
 - (NSString *)getUserOpenId;
 
+/**
+ 获取平台商户号
+
+ @return NSString
+ */
 - (NSString *)getMerchantId;
 
+/**
+ 获取回调地址
+
+ @return NSString
+ */
 - (NSString *)getNotify;
 
+/**
+ 获取银盛商户名
+
+ @return NSString
+ */
 - (NSString *)getPartnerId;
 
+/**
+ 获取银盛证书密码
+
+ @return NSString
+ */
 - (NSString *)getPassword;
-- (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void(^)(NSArray *list))res;
-- (void)whitestripAgentNo:(NSString *)agentNo companyOpenId:(NSString *)companyOpenId userOpenId:(NSString *)userOpenId respon:(void(^)(NSArray *list))res;
+
+/**
+ 获取渠道
+
+ @param channelType 渠道类型
+ @param agentNo 代理商编号
+ @param res 结果
+ */
++ (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void(^)(NSArray *list))res;
+
+/**
+ 获取白条
+
+ @param agentNo 代理商编号
+ @param companyOpenId 企业唯一标识
+ @param userOpenId 用户唯一标识
+ @param res 结果
+ */
++ (void)whitestripAgentNo:(NSString *)agentNo companyOpenId:(NSString *)companyOpenId userOpenId:(NSString *)userOpenId respon:(void(^)(NSArray *list))res;
+
+/**
+ 统一下单
+
+ @param amount 金额
+ @param type 支付类型
+ @param bizCode 交易类型
+ @param body 订单描述
+ @param orderId 订单id
+ @param iousCode 白条编码
+ @param vc 控制器
+ @param result 结果
+ */
 + (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode viewController:(UIViewController *)vc reuslt:(void(^)(ResponseModel *model))result;
+
+/**
+ 交易支付密码
+
+ @param password 密码
+ @param result 结果
+ */
 + (void)checkPayPwd:(NSString *)password reuslt:(void(^)(PasswordModel *model))result;
+
+/**
+ 查询订单
+
+ @param orderId 订单id
+ @param result 结果
+ */
 + (void)queryOrder:(NSString *)orderId reuslt:(void(^)(ResponseModel *model))result;
 
 /**
@@ -90,6 +210,13 @@ static NSString *IOUSPAY = @"IOUSPAY";
  @return return value description
  */
 + (BOOL)handler:(NSURL *)url;
+
+
+/**
+ 后台回到前台
+
+ @param application application
+ */
 + (void)applicationWillEnterForeground:(UIApplication *)application;
 @end
 

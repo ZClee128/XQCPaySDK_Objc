@@ -11,13 +11,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ResponseModel : NSObject
 
+// 金额
 @property (nonatomic,copy)NSString *amount;
+// 商户订单号
 @property (nonatomic,copy)NSString *outTradeNo;
+// 商户号
 @property (nonatomic,copy)NSString *merchantId;
+// 订单实际支付状态
 @property (nonatomic,assign)NSInteger payState;
+// 订单支付时间
 @property (nonatomic,copy)NSString *payTime;
+// 平台订单号
 @property (nonatomic,copy)NSString *tradeNo;
+// 第三方支付订单号
 @property (nonatomic,copy)NSString *outTransactionId;
+// 支付回调结果信息
 @property (nonatomic,copy)NSString *message;
 
 - (id)initWithDict:(NSDictionary *)dict;

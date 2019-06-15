@@ -73,7 +73,7 @@
     };
     [self setUI];
     XQCPayManager *manager = [XQCPayManager defaultManager];
-    [manager getChannels:@"" agentNo:[manager getAgentNo] respon:^(NSArray * _Nonnull list) {
+    [XQCPayManager getChannels:@"" agentNo:[manager getAgentNo] respon:^(NSArray * _Nonnull list) {
         NSLog(@"list ==>%@",list);
         self.dataSource = [list mutableCopy];
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -81,7 +81,7 @@
         });
     }];
     
-    [manager whitestripAgentNo:[manager getAgentNo] companyOpenId:[manager getCompanyOpenId] userOpenId:[manager getUserOpenId] respon:^(NSArray * _Nonnull list) {
+    [XQCPayManager whitestripAgentNo:[manager getAgentNo] companyOpenId:[manager getCompanyOpenId] userOpenId:[manager getUserOpenId] respon:^(NSArray * _Nonnull list) {
         self.whiteStripSource = [list mutableCopy];
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.myTable reloadData];

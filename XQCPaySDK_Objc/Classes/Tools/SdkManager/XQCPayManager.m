@@ -76,16 +76,15 @@ static XQCPayManager *_sharedManager = nil;
     self.payPasswordUrl = [NSString stringWithFormat:@"%@/api/v1/trade/checkPayPwd",url];
 }
 
-- (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void (^)(NSArray * _Nonnull))res{
-    NSAssert(self.getChannelUrl != nil, @"支付渠道获取地址不能为空， OC 请使用 [XQCPayManager configWithUrl:@\"\" query:@\"\" channelControl:@\"\"];");
++ (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void (^)(NSArray * _Nonnull))res{
     [Api getChannels:channelType agentNo:agentNo respon:^(NSArray * _Nonnull list) {
         res(list);
     }];
 }
 
 
-- (void)whitestripAgentNo:(NSString *)agentNo companyOpenId:(NSString *)companyOpenId userOpenId:(NSString *)userOpenId respon:(nonnull void (^)(NSArray * _Nonnull))res {
-    if (self.agentKey.length == 0 && self.agentKey == nil) {
++ (void)whitestripAgentNo:(NSString *)agentNo companyOpenId:(NSString *)companyOpenId userOpenId:(NSString *)userOpenId respon:(nonnull void (^)(NSArray * _Nonnull))res {
+    if ([_sharedManager getAgentKey].length == 0 && [_sharedManager getAgentKey] == nil) {
         NSLog(@"agentKey不能为空");
         return;
     }
