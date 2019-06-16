@@ -440,15 +440,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XQCPaySDK_Objc_Example/Pods-XQCPaySDK_Objc_Example-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/XQCPaySDK_Objc/XQCPaySDK_Objc.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XQCPaySDK_Objc.bundle",
 			);
@@ -462,8 +458,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XQCPaySDK_Objc_Example/Pods-XQCPaySDK_Objc_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
@@ -473,8 +467,6 @@
 				"${BUILT_PRODUCTS_DIR}/XQCPaymentPasswordInputView/XQCPaymentPasswordInputView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",

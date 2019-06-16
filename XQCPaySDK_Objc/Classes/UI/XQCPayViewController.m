@@ -257,11 +257,13 @@
 }
 
 - (void)selectView:(UITapGestureRecognizer *)tap {
-    if (self.whiteStripSource.count == 0) {
-        [SVProgressHUD showErrorWithStatus:@"暂无白条"];
-        return;
-    }
     ChannelModel *model = self.dataSource[tap.view.tag-100];
+    if ([model.channelType isEqualToString:IOUSPAY]) {
+        if (self.whiteStripSource.count == 0) {
+            [SVProgressHUD showErrorWithStatus:@"暂无白条"];
+            return;
+        }
+    }
     model.isClick = YES;
     NSMutableArray *new = [[NSMutableArray alloc] init];
     for (ChannelModel *listmodel in self.dataSource) {
