@@ -3052,37 +3052,6 @@
 			};
 			name = Release;
 		};
-		55EDC6428106C05F06413145C31FF3B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FC8B0E0B7D25BCC0A8C9990EAE119EA /* XQCPaySDK_Objc.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc.modulemap";
-				PRODUCT_MODULE_NAME = XQCPaySDK_Objc;
-				PRODUCT_NAME = XQCPaySDK_Objc;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		58EB9047EADAA7A9E5EE80620EBB9C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 962C760ADDF859854EBA523703314FC4 /* Masonry.xcconfig */;
@@ -3357,6 +3326,35 @@
 			};
 			name = Debug;
 		};
+		9AC6FE2ADB24477B1963E88160ACE0D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC8B0E0B7D25BCC0A8C9990EAE119EA /* XQCPaySDK_Objc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc.modulemap";
+				PRODUCT_MODULE_NAME = XQCPaySDK_Objc;
+				PRODUCT_NAME = XQCPaySDK_Objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B073834A854DB6060D2B832FA6A93A33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 962C760ADDF859854EBA523703314FC4 /* Masonry.xcconfig */;
@@ -3435,36 +3433,6 @@
 			};
 			name = Release;
 		};
-		D3BBE87FFDEAFF5807C96300EB3B1176 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FC8B0E0B7D25BCC0A8C9990EAE119EA /* XQCPaySDK_Objc.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc.modulemap";
-				PRODUCT_MODULE_NAME = XQCPaySDK_Objc;
-				PRODUCT_NAME = XQCPaySDK_Objc;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E175DF56C5A20A799BAC68F6683B9380 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A3688FF30EC3463B3CFFC3F91CF6F32 /* Pods-XQCPaySDK_Objc_Tests.debug.xcconfig */;
@@ -3525,6 +3493,36 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC29A9E598784122DA406160EDBE6E08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC8B0E0B7D25BCC0A8C9990EAE119EA /* XQCPaySDK_Objc.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/XQCPaySDK_Objc/XQCPaySDK_Objc.modulemap";
+				PRODUCT_MODULE_NAME = XQCPaySDK_Objc;
+				PRODUCT_NAME = XQCPaySDK_Objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3658,8 +3656,8 @@
 		E26629C29199FAEE23DC62AB923EF767 /* Build configuration list for PBXNativeTarget "XQCPaySDK_Objc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3BBE87FFDEAFF5807C96300EB3B1176 /* Debug */,
-				55EDC6428106C05F06413145C31FF3B1 /* Release */,
+				9AC6FE2ADB24477B1963E88160ACE0D9 /* Debug */,
+				EC29A9E598784122DA406160EDBE6E08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
