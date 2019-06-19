@@ -27,16 +27,23 @@
 }
 
 - (void)click {
+//    订单名  订单id
     XQCPayViewController *pay = [[XQCPayViewController alloc] initWithOrderTitle:@"薪起程测试" OrderId:[self getOrderId]];
-    [pay sendPrice:0.1];
+    [pay sendPrice:0.1]; // 设置金额
     [XQCPayManager defaultManager].reuslt = ^(ResponseModel * _Nonnull model) {
         NSLog(@"model===>%@",model.message);
     };
-    
-//    pay.back = ^{
-//        [self dismissViewControllerAnimated:YES completion:nil];
-//    };
-    
+
+    [XQCPayManager defaultManager].reuslt = ^(ResponseModel * _Nonnull model) {
+//        这里是支付结果
+    };
+    pay.back = ^{
+//        这里是手动返回操作，如果不需要则不需要实现
+    };
+//
+    [XQCPayManager showPasswordViewControllerResult:^{
+        
+    }];
     [self presentViewController:pay animated:YES completion:nil];
 }
 

@@ -39,6 +39,14 @@
     return YES;
 }
 
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    [XQCPayManager applicationWillEnterForeground:application];
+    
+}
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -51,11 +59,7 @@
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    [XQCPayManager applicationWillEnterForeground:application];
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
+
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {

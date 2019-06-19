@@ -218,6 +218,14 @@ static NSString *IOUSPAY = @"IOUSPAY";
  @param application application
  */
 + (void)applicationWillEnterForeground:(UIApplication *)application;
+
+
+/**
+ 唤起密码输入
+
+ @param success 成功回调
+ */
++ (void)showPasswordViewControllerResult:(void(^)(void))success;
 @end
 
 NS_ASSUME_NONNULL_END

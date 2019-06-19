@@ -9,6 +9,8 @@
 #import "XQCNetworking.h"
 #import "Api.h"
 #import "PaySDKHeader.h"
+#import "XQCPaymentPasswordInputView.h"
+#import "ReactiveObjC.h"
 static NSString *outTradeNo = @"";
 static BOOL isEnterForeground = NO;
 
@@ -221,6 +223,27 @@ static XQCPayManager *_sharedManager = nil;
     }
 }
 
++ (void)showPasswordViewControllerResult:(void (^)(void))success {
+    [[[XQCPaymentPasswordInputView alloc] initWithStyle:(XQCPaymentPasswordStyleXQC) forgetPwd:NO forgotten:^(XQCPaymentPasswordStyle style) {
+        
+    } completion:^RACSignal * _Nonnull(NSString * _Nonnull pwd) {
+        return [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            [XQCPayManager checkPayPwd:pwd reuslt:^(PasswordModel * _Nonnull Passmodel) {
+                if ([Passmodel.state intValue] == 1) {
+                    success();
+                    [subscriber sendCompleted];
+                }else {
+                    [[RACScheduler mainThreadScheduler] schedule:^{
+                        [SVProgressHUD showErrorWithStatus:Passmodel.info];
+                    }];
+                }
+            }];
+            return [RACDisposable disposableWithBlock:^{
+                
+            }];
+        }] deliverOn:[RACScheduler mainThreadScheduler]];
+    }] show];
+}
 
 #pragma mark =======================YSEPayDelegate================
 
