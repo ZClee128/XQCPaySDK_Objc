@@ -11,12 +11,19 @@
 #import "Masonry.h"
 #import "ReactiveObjC.h"
 
-#define bolderColor RGB16(0xEFF1F0)
-#define keyHeight  260
+#define bolderColor RGB16(0x999999)
+
+// 相对于参照宽度计算尺寸
+#define SizeOfScaleRefW(orgW,orgH,refW) CGSizeMake(kPHONE_WIDTH*(orgW)/(refW), kPHONE_WIDTH*(orgH)/(refW))
+// 相对于参照高度计算尺寸
+#define SizeOfScaleRefH(orgW,orgH,refH) CGSizeMake(orgW*kPHONE_WIDTH/(refH),kPHONE_WIDTH*(orgH)/(refH))
+// 相对于设计标准(宽375)计算数值
+#define StandardScale(x) SizeOfScaleRefW(375, x, 375).height
+
+#define keyHeight  StandardScale(260)
 
 typedef void (^XQCCompletedBlock)(NSString *btnText,NSInteger btnTag);
-typedef RACSignal *(^Completion)(NSString *password);
-typedef void(^Forgotten)(void);
+typedef RACSignal *(^PayButtonBlock)(NSString *password);
 typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
 
 @interface XQCKeyBoardNumber : UIView
@@ -136,10 +143,9 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
 @property (nonatomic,strong) UIView *inputFrameView;
 @property (nonatomic,strong) NSMutableArray <UILabel *>*labels;
 @property (nonatomic,strong) UIButton *closeButton;
-@property (nonatomic,strong) UIButton *forgetPwdButton;
-@property (nonatomic, copy)  Completion completion;
-@property (nonatomic, copy) Forgotten forgoten;
-@property (nonatomic, copy) ForgottenWithStyle forgottenstyle;
+@property (nonatomic,strong) UIButton *payButton;
+@property (nonatomic,strong) UIView *lineView;
+@property (nonatomic, copy) PayButtonBlock payCompletion;
 @property (nonatomic,assign)  XQCPaymentPasswordStyle style;
 
 @property (nonatomic, strong) XQCKeyBoardNumber *NumKeyBoard;
@@ -150,7 +156,7 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
 
 @implementation XQCPaymentPasswordInputView
 
-- (instancetype)initWithForgetPwd:(BOOL)showForgetPwd forgotten:(void (^)(void))forgotten completion:(RACSignal *(^)(NSString *pwd))completion
+- (instancetype)initWithForgetPwd:(BOOL)showForgetPwd payButtonclick:(RACSignal * (^)(NSString *pwd))payButtonClick
 {
     self = [super init];
     
@@ -158,16 +164,13 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
         
         _labels = [NSMutableArray new];
         self.subTitle = @"";
-        self.isForgotten = showForgetPwd;
-        self.forgoten = forgotten;
-        self.completion = completion;
-        
+        self.payCompletion = payButtonClick;
     }
     
     return self;
 }
 
-- (instancetype)initWithStyle:(XQCPaymentPasswordStyle)style forgetPwd:(BOOL)showForgetPwd forgotten:(void (^)(XQCPaymentPasswordStyle style))forgotten completion:(RACSignal * (^)(NSString *pwd))completion
+- (instancetype)initWithStyle:(XQCPaymentPasswordStyle)style payButtonclick:(RACSignal * (^)(NSString *pwd))payButtonClick
 {
     self = [super init];
     
@@ -175,11 +178,8 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
         
         _labels = [NSMutableArray new];
         self.subTitle = @"";
-        self.isForgotten = showForgetPwd;
-        self.forgottenstyle = forgotten;
         self.style = style;
-        self.completion = completion;
-        
+        self.payCompletion = payButtonClick;
     }
     
     return self;
@@ -229,16 +229,16 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
     [self addSubview:self.contentView];
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.closeButton];
-    [self.contentView addSubview:self.subTitleLabel];
     [self.contentView addSubview:self.inputFrameView];
-    [self.contentView addSubview:self.forgetPwdButton];
+    [self.contentView addSubview:self.payButton];
+    [self.contentView addSubview:self.lineView];
     [self.contentView addSubview:self.textField];
     
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.left.mas_equalTo(self).offset(30);
         make.right.mas_equalTo(self).offset(-30);
-        make.height.mas_equalTo(175);
+        make.height.mas_equalTo(StandardScale(156));
         make.centerX.mas_equalTo(self);
         make.centerY.mas_equalTo(self).offset(-40);
     }];
@@ -252,22 +252,16 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
     [self.closeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.size.mas_equalTo(CGSizeMake(40, 40));
-        make.right.equalTo(_contentView).offset(-10);
+        make.right.equalTo(self.contentView).offset(-10);
         make.centerY.equalTo(self.titleLabel);
     }];
-    
-    [self.subTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.top.equalTo(self.titleLabel.mas_bottom).offset(10);
-        make.centerX.equalTo(self.contentView);
-    }];
-    
+  
     [self.inputFrameView mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.left.equalTo(self.contentView).offset(10);
-        make.right.equalTo(self.contentView).offset(-10);
-        make.height.mas_equalTo(50);
-        make.top.equalTo(self.subTitleLabel.mas_bottom).offset(20);
+        make.left.equalTo(self.contentView).offset(28);
+        make.right.equalTo(self.contentView).offset(-28);
+        make.height.mas_equalTo(StandardScale(36));
+        make.top.equalTo(self.titleLabel.mas_bottom).offset(20);
     }];
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] init];
@@ -289,7 +283,7 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
     }];
     [self.inputFrameView addGestureRecognizer:tapGesture];
     
-    CGFloat labelWidth = (kPHONE_WIDTH-60-20)/6;
+    CGFloat labelWidth = (kPHONE_WIDTH-60-56)/6;
     for (int i = 0; i < 6; i++) {
         // 标签
         UILabel *label = [UILabel new];
@@ -317,20 +311,28 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
         [_labels addObject:label];
     }
     
-    [self.forgetPwdButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.left.right.equalTo(self.contentView);
+        make.top.equalTo(self.inputFrameView.mas_bottom).offset(20);
+        make.height.equalTo(@1);
         
-        make.top.equalTo(self.inputFrameView.mas_bottom);
-        make.bottom.equalTo(self.contentView);
-        make.right.equalTo(self.contentView).offset(-20);
     }];
     
-    self.forgetPwdButton.hidden = !self.isForgotten;
+    [self.payButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.equalTo(self.lineView.mas_bottom);
+        make.bottom.equalTo(self.contentView);
+        make.centerX.equalTo(self.contentView);
+    }];
+    
     [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.edges.equalTo(self.contentView);
     }];
     
     [self.textField setHidden:YES];
+    self.closeButton.hidden = YES;
 }
 
 - (UIView *)contentView
@@ -339,8 +341,8 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
         
         _contentView = [[UIView alloc]init];
         [_contentView setBackgroundColor:WhiteColor];
-//        kViewBorderRadius(_contentView, 6.0f, 0.0, WhiteColor);
-        
+        _contentView.layer.cornerRadius = 5;
+        _contentView.layer.masksToBounds = YES;
     }
     
     return _contentView;
@@ -351,8 +353,12 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
     if (!_titleLabel) {
         
         _titleLabel = [[UILabel alloc]init];
-        _titleLabel.textColor = kGlobalMainTextColor;
-        _titleLabel.font = XQC_REGULAR_FONT_18;
+        _titleLabel.textColor = kGlobalPrimaryTextColor;
+        if (@available(iOS 8.2, *)) {
+            _titleLabel.font = XQC_REGULAR_FONT_17;
+        } else {
+            _titleLabel.font = [UIFont systemFontOfSize:17];
+        }
         _titleLabel.text = @"请输入6位支付密码";
         
     }
@@ -366,7 +372,11 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
         
         _subTitleLabel = [[UILabel alloc]init];
         _subTitleLabel.textColor = kGlobalMainTextColor;
-        _subTitleLabel.font = XQC_REGULAR_FONT_16;
+        if (@available(iOS 8.2, *)) {
+            _subTitleLabel.font = XQC_REGULAR_FONT_16;
+        } else {
+            _subTitleLabel.font = [UIFont systemFontOfSize:16];
+        }
         _subTitleLabel.text = self.subTitle;
     }
     
@@ -398,9 +408,11 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
     if (!_inputFrameView) {
         
         _inputFrameView = [[UIView alloc]init];
-        //        kViewBorderRadius(_inputFrameView, 4, 1, bolderColor);
         _inputFrameView.layer.borderWidth = 1;
-        _inputFrameView.layer.borderColor = RGB16(0xEFF1F0).CGColor;
+        _inputFrameView.layer.borderColor = RGB16(0x999999).CGColor;
+        _inputFrameView.layer.masksToBounds = YES;
+        _inputFrameView.layer.cornerRadius = 5;
+        _inputFrameView.layer.masksToBounds = YES;
     }
     
     return _inputFrameView;
@@ -427,34 +439,54 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
     return _closeButton;
 }
 
-- (UIButton *)forgetPwdButton
+- (UIButton *)payButton
 {
-    if (!_forgetPwdButton) {
+    if (!_payButton) {
         
         @weakify(self);
         
-        _forgetPwdButton = [UIButton buttonWithAction:^(UIButton *button) {
+        _payButton = [UIButton buttonWithAction:^(UIButton *button) {
             
             @strongify(self);
             
-            if (self.forgoten) {
+            if (self.textField.text.length >= 6) {
                 
-                self.forgoten();
+                [[RACScheduler mainThreadScheduler] afterDelay:0.25 schedule:^{
+                    
+                    if (self.payCompletion) {
+                        
+                        [self.payCompletion([self.textField.text rasedPwdStr])subscribeCompleted:^{
+                            
+                            [self removeFromSuperview];
+                            [self.NumKeyBoard dismiss];
+                            self.NumKeyBoard = nil;
+                        }];
+                    }
+                }];
             }
-            
-            if (self.forgottenstyle) {
-                
-                self.forgottenstyle(self.style);
-            }
-            [self removeFromSuperview];
-            [self.NumKeyBoard dismiss];
         }];
-        [_forgetPwdButton setTitle:@"忘记密码?" forState:(UIControlStateNormal)];
-        _forgetPwdButton.titleLabel.font = XQC_REGULAR_FONT_14;
-        [_forgetPwdButton setTitleColor:kGlobalMainColor forState:(UIControlStateNormal)];
+        [_payButton setTitle:@"立即支付" forState:(UIControlStateNormal)];
+        if (@available(iOS 8.2, *)) {
+            _payButton.titleLabel.font = XQC_REGULAR_FONT_17;
+        } else {
+            // Fallback on earlier versions
+            _payButton.titleLabel.font = [UIFont systemFontOfSize:17];
+        }
+        [_payButton setTitleColor:RGB16(0xFDB300) forState:(UIControlStateNormal)];
     }
     
-    return _forgetPwdButton;
+    return _payButton;
+}
+
+- (UIView *)lineView
+{
+    if (!_lineView) {
+        
+        _lineView = [[UIView alloc]init];
+        _lineView.backgroundColor = RGB16(0xDDDDDD);
+    }
+    
+    return _lineView;
 }
 
 #pragma mark - Private Method
@@ -488,32 +520,6 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
                     
                     self.textField.text = [self.textField.text substringToIndex:6];
                     
-                    @weakify(self);
-                    
-                    [[RACScheduler mainThreadScheduler] afterDelay:0.25 schedule:^{
-                        
-                        @strongify(self);
-                        
-                        if (self.completion) {
-                            [self.completion([self.textField.text rasedPwdStr]) subscribeCompleted:^{
-                                [self removeFromSuperview];
-                                [self.NumKeyBoard dismiss];
-                                self.NumKeyBoard = nil;
-                            }];
-                        }
-                    }];
-                    
-//                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//                        if (self.completion) {
-//
-//                           if(self.completion([self.textField.text rasedPwdStr]))
-//                            {
-//                                [self removeFromSuperview];
-//                                [self.NumKeyBoard dismiss];
-//                                self.NumKeyBoard = nil;
-//                            }
-//                        }
-//                    });
                 }
                 
                 break;

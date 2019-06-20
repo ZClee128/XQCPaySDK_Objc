@@ -8,6 +8,7 @@
 #import "XQCNetworking.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "NSString+number.h"
+#import "PaySDKHeader.h"
 NSString *const ResponseErrorKey = @"com.alamofire.serialization.response.error.response";
 NSInteger const Interval = 3;
 
@@ -99,10 +100,12 @@ NSInteger const Interval = 3;
             if (httpResponse.statusCode != 0) {
                 
                 NSString *ResponseStr = [self showErrorInfoWithStatusCode:httpResponse.statusCode];
+                [SVProgressHUD showErrorWithStatus:ResponseStr];
                 failure(ResponseStr);
                 
             } else {
                 NSString *ErrorCode = [self showErrorInfoWithStatusCode:error.code];
+                [SVProgressHUD showErrorWithStatus:ErrorCode];
                 failure(ErrorCode);
             }
         }

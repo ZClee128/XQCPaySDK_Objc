@@ -130,7 +130,6 @@
             }
         });
     } failure:^(NSString * _Nonnull error) {
-        [SVProgressHUD showErrorWithStatus:error];
         errorMsg(error);
     }];
 }

@@ -25,11 +25,11 @@ typedef NS_ENUM(NSUInteger, XQCPaymentPasswordStyle) {
 /**
  初始化
  @param showForgetPwd   是否显示“忘记密码”
- @param forgotten       忘记密码Block
- @param completion      输入完成后的Block
+ @param payButtonClick  点击立即支付回调
  */
-- (instancetype)initWithForgetPwd:(BOOL)showForgetPwd forgotten:(void (^)(void))forgotten completion:(RACSignal *(^)(NSString *pwd))completion;
-- (instancetype)initWithStyle:(XQCPaymentPasswordStyle)style forgetPwd:(BOOL)showForgetPwd forgotten:(void (^)(XQCPaymentPasswordStyle style))forgotten completion:(RACSignal * (^)(NSString *pwd))completion;
+- (instancetype)initWithForgetPwd:(BOOL)showForgetPwd payButtonclick:(RACSignal * (^)(NSString *pwd))payButtonClick;
+
+- (instancetype)initWithStyle:(XQCPaymentPasswordStyle)style payButtonclick:(RACSignal * (^)(NSString *pwd))payButtonClick;
 
 - (void)show;
 

@@ -26,6 +26,8 @@ static NSString *IOUSPAY = @"IOUSPAY";
 + (instancetype)defaultManager;
 
 @property (nonatomic,copy)void(^result)(ResponseModel *model);
+// 弹窗忘记密码回调
+//@property (nonatomic,copy)void(^ForgetPassword)(void);
 /**
  配置接口地址
 
@@ -221,11 +223,13 @@ static NSString *IOUSPAY = @"IOUSPAY";
 
 
 /**
- 唤起密码输入
+ 密码框唤起
 
- @param success 成功回调
+ @param success 校验成功回调
  */
 + (void)showPasswordViewControllerResult:(void(^)(void))success;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -14,6 +14,7 @@
 #import "NSString+number.h"
 #import "UIImage+myImage.h"
 #import "XQCNetworking.h"
+#import "PayAlertView.h"
 #import "PaySDKHeader.h"
 #import "Api.h"
 #import "ChannelModel.h"

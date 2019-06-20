@@ -11,6 +11,7 @@
 #import "PaySDKHeader.h"
 #import "XQCPaymentPasswordInputView.h"
 #import "ReactiveObjC.h"
+#import "PayAlertView.h"
 static NSString *outTradeNo = @"";
 static BOOL isEnterForeground = NO;
 
@@ -223,10 +224,10 @@ static XQCPayManager *_sharedManager = nil;
     }
 }
 
+
 + (void)showPasswordViewControllerResult:(void (^)(void))success {
-    [[[XQCPaymentPasswordInputView alloc] initWithStyle:(XQCPaymentPasswordStyleXQC) forgetPwd:NO forgotten:^(XQCPaymentPasswordStyle style) {
-        
-    } completion:^RACSignal * _Nonnull(NSString * _Nonnull pwd) {
+    
+    [[[XQCPaymentPasswordInputView alloc] initWithStyle:(XQCPaymentPasswordStyleXQC) payButtonclick:^RACSignal * _Nonnull(NSString * _Nonnull pwd) {
         return [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             [XQCPayManager checkPayPwd:pwd reuslt:^(PasswordModel * _Nonnull Passmodel) {
                 if ([Passmodel.state intValue] == 1) {
@@ -235,6 +236,14 @@ static XQCPayManager *_sharedManager = nil;
                 }else {
                     [[RACScheduler mainThreadScheduler] schedule:^{
                         [SVProgressHUD showErrorWithStatus:Passmodel.info];
+                        [subscriber sendCompleted];
+//                        [self showAlertViewWithTitle:@"支付密码错误，请重试！" leftBtnTitle:@"重试" rightBtnTitle:@"忘记密码" leftBolck:^{
+//                            [self showPasswordViewControllerResult:success];
+//                        } rightBlock:^{
+//                            if (_sharedManager.ForgetPassword) {
+//                                _sharedManager.ForgetPassword();
+//                            }
+//                        }];
                     }];
                 }
             }];
@@ -243,6 +252,42 @@ static XQCPayManager *_sharedManager = nil;
             }];
         }] deliverOn:[RACScheduler mainThreadScheduler]];
     }] show];
+    
+    
+    
+//    [[[XQCPaymentPasswordInputView alloc] initWithStyle:(XQCPaymentPasswordStyleXQC) forgetPwd:NO forgotten:^(XQCPaymentPasswordStyle style) {
+//        
+//    } completion:^RACSignal * _Nonnull(NSString * _Nonnull pwd) {
+//        return [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+//            [XQCPayManager checkPayPwd:pwd reuslt:^(PasswordModel * _Nonnull Passmodel) {
+//                if ([Passmodel.state intValue] == 1) {
+//                    success();
+//                    [subscriber sendCompleted];
+//                }else {
+//                    [[RACScheduler mainThreadScheduler] schedule:^{
+////                        [SVProgressHUD showErrorWithStatus:Passmodel.info];
+//                        [subscriber sendCompleted];
+//                        [self showAlertViewWithTitle:@"支付密码错误，请重试！" leftBtnTitle:@"重试" rightBtnTitle:@"忘记密码" leftBolck:^{
+//                            [self showPasswordViewControllerResult:success];
+//                        } rightBlock:^{
+//                            if (_sharedManager.ForgetPassword) {
+//                                _sharedManager.ForgetPassword();
+//                            }
+//                        }];
+//                    }];
+//                }
+//            }];
+//            return [RACDisposable disposableWithBlock:^{
+//                
+//            }];
+//        }] deliverOn:[RACScheduler mainThreadScheduler]];
+//    }] show];
+}
+
+
++ (void)showAlertViewWithTitle:(NSString *)title leftBtnTitle:(NSString *)leftTitle rightBtnTitle:(NSString *)rightTitle leftBolck:(void (^)(void))leftBlock rightBlock:(void (^)(void))rightBlock {
+    PayAlertView *payAler = [[PayAlertView alloc] initWithWithTitle:title leftBtnTitle:leftTitle rightBtnTitle:rightTitle leftBolck:leftBlock rightBlock:rightBlock];
+    [payAler show];
 }
 
 #pragma mark =======================YSEPayDelegate================

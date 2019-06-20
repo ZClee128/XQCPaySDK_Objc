@@ -38,10 +38,16 @@
 ////        这里是手动返回操作，如果不需要则不需要实现
 //    };
 //
-//    [XQCPayManager showPasswordViewControllerResult:^{
-//
-//    }];
     [self presentViewController:pay animated:YES completion:nil];
+    
+//    [XQCPayManager showPasswordViewControllerResult:^{
+//    
+//    }];
+    
+//    弹框忘记密码回调
+//    [XQCPayManager defaultManager].ForgetPassword = ^{
+//        NSLog(@"forget");
+//    };
 }
 
 - (NSString *)getOrderId {
