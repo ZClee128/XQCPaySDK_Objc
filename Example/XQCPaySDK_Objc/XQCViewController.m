@@ -37,13 +37,13 @@
     [XQCPayManager defaultManager].reuslt = ^(ResponseModel * _Nonnull model) {
 //        这里是支付结果
     };
-    pay.back = ^{
-//        这里是手动返回操作，如果不需要则不需要实现
-    };
+//    pay.back = ^{
+////        这里是手动返回操作，如果不需要则不需要实现
+//    };
 //
-    [XQCPayManager showPasswordViewControllerResult:^{
-        
-    }];
+//    [XQCPayManager showPasswordViewControllerResult:^{
+//
+//    }];
     [self presentViewController:pay animated:YES completion:nil];
 }
 
