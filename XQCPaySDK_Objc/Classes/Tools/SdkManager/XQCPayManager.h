@@ -25,7 +25,7 @@ static NSString *IOUSPAY = @"IOUSPAY";
 // 单例
 + (instancetype)defaultManager;
 
-@property (nonatomic,copy)void(^reuslt)(ResponseModel *model);
+@property (nonatomic,copy)void(^result)(ResponseModel *model);
 /**
  配置接口地址
 

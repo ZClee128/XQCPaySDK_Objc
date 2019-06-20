@@ -156,8 +156,8 @@
                         [XQCPayManager showPasswordViewControllerResult:^{
                             [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:whiteModel.iousCode viewController:self reuslt:^(ResponseModel * _Nonnull model) {
                                 @strongify(self);
-                                if ([XQCPayManager defaultManager].reuslt) {
-                                    [XQCPayManager defaultManager].reuslt(model);
+                                if ([XQCPayManager defaultManager].result) {
+                                    [XQCPayManager defaultManager].result(model);
                                 }
                                 [self close];
                             }];

@@ -216,8 +216,8 @@ static XQCPayManager *_sharedManager = nil;
     if (isEnterForeground) {
         isEnterForeground = NO;
         [self queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
-            if ([XQCPayManager defaultManager].reuslt) {
-                [XQCPayManager defaultManager].reuslt(model);
+            if ([XQCPayManager defaultManager].result) {
+                [XQCPayManager defaultManager].result(model);
             }
         }];
     }
@@ -250,8 +250,8 @@ static XQCPayManager *_sharedManager = nil;
 - (void)onYSEPayResp:(YSEPayBaseResp *)resp {
     if (!isEnterForeground) {
         [XQCPayManager queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
-            if (self.reuslt) {
-                self.reuslt(model);
+            if (self.result) {
+                self.result(model);
             }
         }];
     }

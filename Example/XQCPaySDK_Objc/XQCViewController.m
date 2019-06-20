@@ -30,12 +30,9 @@
 //    订单名  订单id
     XQCPayViewController *pay = [[XQCPayViewController alloc] initWithOrderTitle:@"薪起程测试" OrderId:[self getOrderId]];
     [pay sendPrice:0.1]; // 设置金额
-    [XQCPayManager defaultManager].reuslt = ^(ResponseModel * _Nonnull model) {
+    [XQCPayManager defaultManager].result = ^(ResponseModel * _Nonnull model) {
+//        支付结果回调
         NSLog(@"model===>%@",model.message);
-    };
-
-    [XQCPayManager defaultManager].reuslt = ^(ResponseModel * _Nonnull model) {
-//        这里是支付结果
     };
 //    pay.back = ^{
 ////        这里是手动返回操作，如果不需要则不需要实现
