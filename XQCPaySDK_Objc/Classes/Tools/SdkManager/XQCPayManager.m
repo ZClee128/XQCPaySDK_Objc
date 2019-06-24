@@ -165,6 +165,14 @@ static XQCPayManager *_sharedManager = nil;
     self.userOpenId = userOpenId;
 }
 
+- (void)setCompanyOpenId:(NSString *)companyOpenId {
+    _companyOpenId = companyOpenId;
+}
+
+- (void)setUserOpenId:(NSString *)userOpenId {
+    _userOpenId = userOpenId;
+}
+
 - (NSString *)getSignKey{
     return _signKey;
 }

@@ -94,6 +94,22 @@ static NSString *IOUSPAY = @"IOUSPAY";
 
 
 /**
+ 设置companyOpenId
+
+ @param companyOpenId companyOpenId
+ */
+- (void)setCompanyOpenId:(NSString *)companyOpenId;
+
+
+
+/**
+ 设置userOpenId
+
+ @param userOpenId setUserOpenId
+ */
+- (void)setUserOpenId:(NSString *)userOpenId;
+
+/**
  获取商户签名
 
  @return NSString
