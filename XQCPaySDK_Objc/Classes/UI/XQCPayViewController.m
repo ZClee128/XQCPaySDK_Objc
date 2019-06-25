@@ -26,6 +26,7 @@
 @property (nonatomic,strong)NSMutableArray *whiteStripSource;
 @property (nonatomic,strong)XQCPayHeaderView *tableHeaderView;
 @property (nonatomic,assign) CGFloat  price;
+@property (nonatomic,assign) feeType  myFeeType;
 @property (nonatomic,copy)NSString *orderTitle;
 @property (nonatomic,copy)NSString *orderId;
 @property (nonatomic,strong)XQCPayFootView *tableFootView;
@@ -154,7 +155,7 @@
                 for (WhitestripModel *whiteModel in self.whiteStripSource) {
                     if (whiteModel.isCheck) {
                         [XQCPayManager showPasswordViewControllerResult:^{
-                            [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:whiteModel.iousCode viewController:self reuslt:^(ResponseModel * _Nonnull model) {
+                            [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:whiteModel.iousCode FeeType:self.myFeeType viewController:self reuslt:^(ResponseModel * _Nonnull model) {
                                 @strongify(self);
                                 if ([XQCPayManager defaultManager].result) {
                                     [XQCPayManager defaultManager].result(model);
@@ -167,7 +168,7 @@
                 }
             }else {
                 @weakify(self);
-                [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:@"" viewController:self reuslt:^(ResponseModel * _Nonnull model) {
+                [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:@"" FeeType:self.myFeeType viewController:self reuslt:^(ResponseModel * _Nonnull model) {
                     @strongify(self);
                     [self close];
                 }];
@@ -177,8 +178,9 @@
     }
 }
 
-- (void)sendPrice:(CGFloat )price {
+- (void)sendPrice:(CGFloat )price feeType:(feeType)type{
     self.price = price;
+    self.myFeeType = type;
 }
 
 #pragma mark =======================UITableViewDelegate,UITableViewDataSource================

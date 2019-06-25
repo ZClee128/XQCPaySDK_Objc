@@ -11,7 +11,29 @@
 #import "PasswordModel.h"
 #import "ResponseModel.h"
 #import <YSEPaySDK/YSEPay.h>
+
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ 费用类型
+ 
+ - feeTypeShop: 薪商城
+ - feeTypeLife: 本地生活
+ - feeTypeGift: 薪礼
+ - feeTypeBanquet: 宴请
+ - feeTypeWelfare: 薪福利
+ - feeTypeCollection: 薪集采
+ - feeTypeTel: 话费
+ */
+typedef NS_ENUM(NSUInteger, feeType) {
+    feeTypeShop = 1001,
+    feeTypeLife = 1002,
+    feeTypeGift = 1003,
+    feeTypeBanquet = 1004,
+    feeTypeWelfare = 1005,
+    feeTypeCollection = 1006,
+    feeTypeTel = 1007,
+};
 
 static NSString *WECHATPAY_YS = @"WECHATPAY_YS";
 static NSString *ALIPAY_YS = @"ALIPAY_YS";
@@ -203,7 +225,7 @@ static NSString *IOUSPAY = @"IOUSPAY";
  @param vc 控制器
  @param result 结果
  */
-+ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode viewController:(UIViewController *)vc reuslt:(void(^)(ResponseModel *model))result;
++ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(feeType)Mytype viewController:(UIViewController *)vc reuslt:(void(^)(ResponseModel *model))result;
 
 /**
  交易支付密码

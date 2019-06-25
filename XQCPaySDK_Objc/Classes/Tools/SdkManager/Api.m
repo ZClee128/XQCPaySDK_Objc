@@ -75,7 +75,7 @@
     }];
 }
 
-+ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode viewController:(UIViewController *)vc error:(nonnull void (^)(NSString * _Nonnull))errorMsg{
++ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(feeType)myFeeType viewController:(nonnull UIViewController *)vc error:(nonnull void (^)(NSString * _Nonnull))errorMsg{
     NSMutableDictionary *para = [@{
                                    @"amount": [NSString stringWithFormat:@"%ld",(long)(amount*100)],
                                    @"bizCode": bizCode,
@@ -83,6 +83,7 @@
                                    @"merchantId": [manager getMerchantId],
                                    @"outTradeNo":orderId,
                                    @"notifyUrl":[manager getNotify],
+                                   @"feeType" : @(myFeeType),
                                    } mutableCopy];
     
     if ([bizCode integerValue] == 7104) {

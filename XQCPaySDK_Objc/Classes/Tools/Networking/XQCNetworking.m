@@ -124,7 +124,7 @@ NSInteger const Interval = 3;
     
     NSLog(@"result=%@",resultArr);
     for (NSString *key in resultArr) {
-        if (![param[key] isEqualToString:@""]) {
+        if (![[NSString stringWithFormat:@"%@",param[key]] isEqualToString:@""]) {
             NSString *string = [NSString stringWithFormat:@"%@=%@&", key, param[key]];
             [result appendString:string];
         }

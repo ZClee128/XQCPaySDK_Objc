@@ -109,9 +109,9 @@ static XQCPayManager *_sharedManager = nil;
     }];
 }
 
-+ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode viewController:(UIViewController *)vc reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result{
++ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(feeType)Mytype viewController:(nonnull UIViewController *)vc reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result {
     [SVProgressHUD showWithStatus:@"  支付中   "];
-    [Api payRequsetAmount:amount payType:type bizCode:bizCode Body:body orderId:orderId iousCode:iousCode viewController:vc error:^(NSString * _Nonnull error) {
+    [Api payRequsetAmount:amount payType:type bizCode:bizCode Body:body orderId:orderId iousCode:iousCode FeeType:Mytype viewController:vc error:^(NSString * _Nonnull error) {
         if ([error isEqualToString:@""]) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 [SVProgressHUD dismiss];

@@ -29,7 +29,7 @@
 - (void)click {
 //    订单名  订单id
     XQCPayViewController *pay = [[XQCPayViewController alloc] initWithOrderTitle:@"薪起程测试" OrderId:[self getOrderId]];
-    [pay sendPrice:0.1]; // 设置金额
+    [pay sendPrice:0.1 feeType:(feeTypeLife)]; // 设置金额
     [XQCPayManager defaultManager].result = ^(ResponseModel * _Nonnull model) {
 //        支付结果回调
         NSLog(@"model===>%@",model.message);
