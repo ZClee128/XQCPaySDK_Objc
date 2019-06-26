@@ -7,6 +7,7 @@
 
 #import "XQCNavBarView.h"
 #import "PaySDKHeader.h"
+#import "UIButton+LXExpandBtn.h"
 @implementation XQCNavBarView
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -17,7 +18,7 @@
         [self addSubview:back];
         [back setImage:[UIImage my_bundleImageNamed:@"navi_back_black"] forState:(UIControlStateNormal)];
         [back addTarget:self action:@selector(black:) forControlEvents:(UIControlEventTouchUpInside)];
-        
+        back.hitTestEdgeInsets = UIEdgeInsetsMake(-30, -30, -30, -30);
         UILabel *titleLab = [[UILabel alloc]initWithFrame:CGRectMake((XQCPHONE_WIDTH-100)/2, XQCSTATUS_BAR_HEIGHT+14, 100, 17)];
         [self addSubview:titleLab];
         titleLab.textColor = Hex(0x333333);
