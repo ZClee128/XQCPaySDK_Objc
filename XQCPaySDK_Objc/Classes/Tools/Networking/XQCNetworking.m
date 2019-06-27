@@ -10,7 +10,7 @@
 #import "NSString+number.h"
 #import "PaySDKHeader.h"
 NSString *const ResponseErrorKey = @"com.alamofire.serialization.response.error.response";
-NSInteger const Interval = 3;
+NSInteger const Interval = 10;
 
 @interface XQCNetworking ()
 

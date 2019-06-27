@@ -116,10 +116,12 @@ static XQCPayManager *_sharedManager = nil;
             dispatch_async(dispatch_get_main_queue(), ^{
                 [SVProgressHUD dismiss];
             });
+        }else {
+            [SVProgressHUD showErrorWithStatus:error];
         }
-        if ([type isEqualToString:IOUSPAY]) {
-            [self queryOrder:orderId reuslt:result];
-        }
+//        if ([type isEqualToString:IOUSPAY]) {
+        [self queryOrder:orderId reuslt:result];
+//        }
         outTradeNo = orderId;
     }];
 }
