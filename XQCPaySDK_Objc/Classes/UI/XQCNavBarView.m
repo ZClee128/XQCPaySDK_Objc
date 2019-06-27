@@ -7,7 +7,7 @@
 
 #import "XQCNavBarView.h"
 #import "PaySDKHeader.h"
-#import "UIButton+LXExpandBtn.h"
+#import "UIButton+paySDkBtn.h"
 @implementation XQCNavBarView
 
 - (instancetype)initWithFrame:(CGRect)frame{

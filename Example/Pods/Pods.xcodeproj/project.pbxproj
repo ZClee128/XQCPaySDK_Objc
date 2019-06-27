@@ -274,8 +274,8 @@
 		98E96E05A7E693B95646B016174F9346 /* XQCNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 373CA907BAE48BB7B01274D6FAC093FA /* XQCNetworking.m */; };
 		98ED8316E59B3C3F361949E2200644D7 /* NSObject+RACDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 9398B772025D939CA56CDFE9CF3CB131 /* NSObject+RACDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A2E810D397A5708E5DEFEA86AFC998A /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F95598EE4C1AB520E0838D0FABC373 /* UITextView+RACSignalSupport.m */; };
-		9B14FBA722C3692500FD88A8 /* UIButton+LXExpandBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B14FBA522C3692500FD88A8 /* UIButton+LXExpandBtn.m */; };
-		9B14FBA822C3692500FD88A8 /* UIButton+LXExpandBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B14FBA622C3692500FD88A8 /* UIButton+LXExpandBtn.h */; };
+		9B14FBA722C3692500FD88A8 /* UIButton+paySDkBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B14FBA522C3692500FD88A8 /* UIButton+paySDkBtn.m */; };
+		9B14FBA822C3692500FD88A8 /* UIButton+paySDkBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B14FBA622C3692500FD88A8 /* UIButton+paySDkBtn.h */; };
 		9BF822246192792F5BF137CC82E13E89 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F9E23D6A587985875E9817C392AC52 /* UIView+WebCache.m */; };
 		9CB0FE18F2271B91EC96817A0748FD96 /* RACSignalSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DB6DE682A1E4871E924889A9ED645 /* RACSignalSequence.m */; };
 		9D2FA41EF95735BEEB147FFD3A6F281D /* RACDynamicSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF5711421453BEE13733315D9D88206 /* RACDynamicSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -869,8 +869,8 @@
 		9A0FCE46BCC9200B09EE97FC14CCAEC9 /* NSArray+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RACSequenceAdditions.m"; path = "ReactiveObjC/NSArray+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		9A6BDC841F19B62BA4DAA35E7D49119A /* XQCPaySDK_Objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQCPaySDK_Objc-prefix.pch"; sourceTree = "<group>"; };
 		9A729608F47B24D75D784CE2EED437B0 /* NSOrderedSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+RACSequenceAdditions.h"; path = "ReactiveObjC/NSOrderedSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
-		9B14FBA522C3692500FD88A8 /* UIButton+LXExpandBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LXExpandBtn.m"; sourceTree = "<group>"; };
-		9B14FBA622C3692500FD88A8 /* UIButton+LXExpandBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXExpandBtn.h"; sourceTree = "<group>"; };
+		9B14FBA522C3692500FD88A8 /* UIButton+paySDkBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+paySDkBtn.m"; sourceTree = "<group>"; };
+		9B14FBA622C3692500FD88A8 /* UIButton+paySDkBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+paySDkBtn.h"; sourceTree = "<group>"; };
 		9BCE810323AFFBD378D586B50594636F /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		9CB81BFC4F773EEADE78308CAF0AB762 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/SDWebImageDefine.m; sourceTree = "<group>"; };
 		9CE6323D0CA88A383ED7CC693E70AD2C /* Pods-XQCPaySDK_Objc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQCPaySDK_Objc_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -1806,8 +1806,8 @@
 		B2060795039E9DFCC4C4FD817CD36EA0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				9B14FBA622C3692500FD88A8 /* UIButton+LXExpandBtn.h */,
-				9B14FBA522C3692500FD88A8 /* UIButton+LXExpandBtn.m */,
+				9B14FBA622C3692500FD88A8 /* UIButton+paySDkBtn.h */,
+				9B14FBA522C3692500FD88A8 /* UIButton+paySDkBtn.m */,
 				38AA9996281AD4950DADF9A4D14907E7 /* NSBundle+loadImage.h */,
 				F473BC4D26515BFACC14BB7FDFB47F5D /* NSBundle+loadImage.m */,
 				72DBA6F84A70501A13BD2055BEEBDC95 /* NSString+number.h */,
@@ -2076,7 +2076,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				718B80C2770A65916B9A907530602E02 /* Api.h in Headers */,
-				9B14FBA822C3692500FD88A8 /* UIButton+LXExpandBtn.h in Headers */,
+				9B14FBA822C3692500FD88A8 /* UIButton+paySDkBtn.h in Headers */,
 				6ACABC2AD034FD67791FFFA6F3B8FDB4 /* ChannelModel.h in Headers */,
 				657EC4624C45603872733505E8653984 /* NSBundle+loadImage.h in Headers */,
 				F57F17286ED8E5851DF75A9E93B5F359 /* NSString+number.h in Headers */,
@@ -2518,7 +2518,7 @@
 				AD5011E7B98994A801191E78EFF67C57 /* ChannelModel.m in Sources */,
 				B7EA0FEBB010CE8B1522AA9E0D732C9F /* NSBundle+loadImage.m in Sources */,
 				29A80EACEA6180C377B917B9CFBABB59 /* NSString+number.m in Sources */,
-				9B14FBA722C3692500FD88A8 /* UIButton+LXExpandBtn.m in Sources */,
+				9B14FBA722C3692500FD88A8 /* UIButton+paySDkBtn.m in Sources */,
 				A94178C32570649F7AD8CB18F406266C /* PasswordModel.m in Sources */,
 				06996AC08702579D47721635FC858FC0 /* PayAlertView.m in Sources */,
 				9E47E3221CB59900C4A93CF77EFA7DA8 /* ResponseModel.m in Sources */,

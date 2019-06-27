@@ -6,7 +6,7 @@
 //  Copyright © 2018年 漫漫. All rights reserved.
 //
 
-#import "UIButton+LXExpandBtn.h"
+#import "UIButton+paySDkBtn.h"
 #import <objc/runtime.h>
 
 static const NSString *KEY_ButtonId = @"buttonId";
@@ -16,7 +16,7 @@ static const NSString *KEY_ButtonBlock = @"buttonBlock";
 
 static const NSString *KEY_HitTestEdgeInsets = @"hitTestEdgeInsets";
 
-@implementation UIButton (LXExpandBtn)
+@implementation UIButton (paySDkBtn)
 
 
 //扩大点击区域
@@ -71,7 +71,7 @@ static const NSString *KEY_HitTestEdgeInsets = @"hitTestEdgeInsets";
     self.block(button);
 }
 
-- (void)layoutButtonWithEdgeInsetsStyle:(LXButtonEdgeInsetsStyle)style
+- (void)layoutButtonWithEdgeInsetsStyle:(paySDkButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space
 {
     //    self.backgroundColor = [UIColor cyanColor];
@@ -104,25 +104,25 @@ static const NSString *KEY_HitTestEdgeInsets = @"hitTestEdgeInsets";
     
     // 3. 根据style和space得到imageEdgeInsets和labelEdgeInsets的值
     switch (style) {
-        case LXButtonEdgeInsetsStyleTop:
+        case paySDkButtonEdgeInsetsStyleTop:
         {
             imageEdgeInsets = UIEdgeInsetsMake(-labelHeight-space/2.0, 0, 0, -labelWidth);
             labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith, -imageHeight-space/2.0, 0);
         }
             break;
-        case LXButtonEdgeInsetsStyleLeft:
+        case paySDkButtonEdgeInsetsStyleLeft:
         {
             imageEdgeInsets = UIEdgeInsetsMake(0, -space/2.0, 0, space/2.0);
             labelEdgeInsets = UIEdgeInsetsMake(0, space/2.0, 0, -space/2.0);
         }
             break;
-        case LXButtonEdgeInsetsStyleBottom:
+        case paySDkButtonEdgeInsetsStyleBottom:
         {
             imageEdgeInsets = UIEdgeInsetsMake(0, 0, -labelHeight-space/2.0, -labelWidth);
             labelEdgeInsets = UIEdgeInsetsMake(-imageHeight-space/2.0, -imageWith, 0, 0);
         }
             break;
-        case LXButtonEdgeInsetsStyleRight:
+        case paySDkButtonEdgeInsetsStyleRight:
         {
             imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth+space/2.0, 0, -labelWidth-space/2.0);
             labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith-space/2.0, 0, imageWith+space/2.0);
