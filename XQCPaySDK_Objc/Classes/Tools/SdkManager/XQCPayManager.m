@@ -262,36 +262,6 @@ static XQCPayManager *_sharedManager = nil;
             }];
         }] deliverOn:[RACScheduler mainThreadScheduler]];
     }] show];
-    
-    
-    
-//    [[[XQCPaymentPasswordInputView alloc] initWithStyle:(XQCPaymentPasswordStyleXQC) forgetPwd:NO forgotten:^(XQCPaymentPasswordStyle style) {
-//        
-//    } completion:^RACSignal * _Nonnull(NSString * _Nonnull pwd) {
-//        return [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-//            [XQCPayManager checkPayPwd:pwd reuslt:^(PasswordModel * _Nonnull Passmodel) {
-//                if ([Passmodel.state intValue] == 1) {
-//                    success();
-//                    [subscriber sendCompleted];
-//                }else {
-//                    [[RACScheduler mainThreadScheduler] schedule:^{
-////                        [SVProgressHUD showErrorWithStatus:Passmodel.info];
-//                        [subscriber sendCompleted];
-//                        [self showAlertViewWithTitle:@"支付密码错误，请重试！" leftBtnTitle:@"重试" rightBtnTitle:@"忘记密码" leftBolck:^{
-//                            [self showPasswordViewControllerResult:success];
-//                        } rightBlock:^{
-//                            if (_sharedManager.ForgetPassword) {
-//                                _sharedManager.ForgetPassword();
-//                            }
-//                        }];
-//                    }];
-//                }
-//            }];
-//            return [RACDisposable disposableWithBlock:^{
-//                
-//            }];
-//        }] deliverOn:[RACScheduler mainThreadScheduler]];
-//    }] show];
 }
 
 

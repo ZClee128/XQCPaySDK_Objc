@@ -67,6 +67,12 @@ NSInteger const Interval = 10;
 //原生POST请求
 + (void)PostWithURL:(NSString *)url Params:(NSMutableDictionary *)params keyValue:(NSString *)keyValue success:(SuccessBlock)success failure:(FailureBlock)failure{
     
+    
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    config.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+    config.URLCache = nil;
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
+    
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:@"POST"];
     
@@ -83,7 +89,8 @@ NSInteger const Interval = 10;
     //设置请求最长时间
     request.timeoutInterval = Interval;
 
-    NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+    
+    NSURLSessionTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         if (data) {
             //利用iOS自带原生JSON解析data数据 保存为Dictionary
