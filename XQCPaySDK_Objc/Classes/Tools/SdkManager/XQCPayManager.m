@@ -13,6 +13,7 @@
 #import "ReactiveObjC.h"
 #import "PayAlertView.h"
 static NSString *outTradeNo = @"";
+static NSString *PayType = @"";
 static BOOL isEnterForeground = NO;
 
 @interface XQCPayManager()<YSEPayDelegate>
@@ -110,6 +111,7 @@ static XQCPayManager *_sharedManager = nil;
 }
 
 + (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(feeType)Mytype viewController:(nonnull UIViewController *)vc reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result {
+    PayType = type;
     [SVProgressHUD showWithStatus:@"  支付中   "];
     [Api payRequsetAmount:amount payType:type bizCode:bizCode Body:body orderId:orderId iousCode:iousCode FeeType:Mytype viewController:vc error:^(NSString * _Nonnull error) {
         if ([error isEqualToString:@""]) {
@@ -131,7 +133,7 @@ static XQCPayManager *_sharedManager = nil;
 }
 
 + (void)queryOrder:(NSString *)orderId reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result {
-    [Api queryOrder:orderId reuslt:result];
+    [Api queryOrder:orderId PayType:PayType reuslt:result];
 }
 
 

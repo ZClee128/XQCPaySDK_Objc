@@ -27,7 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy)NSString *outTransactionId;
 // 支付回调结果信息
 @property (nonatomic,copy)NSString *message;
-
+// 支付渠道类型
+@property (nonatomic,copy)NSString *payType;
 - (id)initWithDict:(NSDictionary *)dict;
 @end
 

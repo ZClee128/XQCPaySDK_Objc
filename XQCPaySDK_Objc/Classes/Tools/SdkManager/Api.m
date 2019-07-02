@@ -13,7 +13,7 @@
 
 #define manager [XQCPayManager defaultManager]
 
-+ (void)queryOrder:(NSString *)orderId reuslt:(void (^)(ResponseModel *))result{
++ (void)queryOrder:(NSString *)orderId PayType:(nonnull NSString *)paytype reuslt:(void (^)(ResponseModel *))result{
     if ([manager getMerchantId]) {
         NSMutableDictionary *para = [@{
                                        @"outTradeNo": orderId,
@@ -22,6 +22,7 @@
                                        } mutableCopy];
         [XQCNetworking PostWithURL:[manager GetQuerUrl] Params:para keyValue:[manager getSignKey] success:^(id  _Nonnull responseObject) {
             ResponseModel *model = [[ResponseModel alloc] initWithDict:responseObject];
+            model.payType = paytype;
             result(model);
         } failure:^(NSString * _Nonnull error) {
             
