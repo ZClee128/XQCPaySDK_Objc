@@ -32,7 +32,7 @@
     [pay sendPrice:0.1 feeType:(feeTypeLife)]; // 设置金额
     [XQCPayManager defaultManager].result = ^(ResponseModel * _Nonnull model) {
 //        支付结果回调
-        NSLog(@"model===>%@",model.payType);
+        NSLog(@"model===>%@,%@",model.payType,model.message);
     };
 //    pay.back = ^{
 ////        这里是手动返回操作，如果不需要则不需要实现

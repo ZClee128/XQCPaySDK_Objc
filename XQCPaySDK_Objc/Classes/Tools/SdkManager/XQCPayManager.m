@@ -225,13 +225,18 @@ static XQCPayManager *_sharedManager = nil;
 }
 
 + (BOOL)handler:(NSURL *)url {
-    return [[YSEPay sharedInstance] handleApplicationOpenURL:url];
+    if ([PayType isEqualToString:WECHATPAY_YS] || [PayType isEqualToString:WECHATPAY]) {
+        return [[YSEPay sharedInstance] handleApplicationOpenURL:url];
+    }else {
+        return [UMSPPPayUnifyPayPlugin handleOpenURL:url];
+    }
+    
 }
 
 
 + (void)applicationWillEnterForeground:(UIApplication *)application {
-    isEnterForeground = YES;
     [[YSEPay sharedInstance] applicationWillEnterForeground:application];
+    isEnterForeground = YES;
     if (isEnterForeground) {
         isEnterForeground = NO;
         [self queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
@@ -280,13 +285,13 @@ static XQCPayManager *_sharedManager = nil;
 
 #pragma mark =======================YSEPayDelegate================
 
-- (void)onYSEPayResp:(YSEPayBaseResp *)resp {
-    if (!isEnterForeground) {
-        [XQCPayManager queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
-            if (self.result) {
-                self.result(model);
-            }
-        }];
-    }
-}
+//- (void)onYSEPayResp:(YSEPayBaseResp *)resp {
+//    if (!isEnterForeground) {
+//        [XQCPayManager queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
+//            if (self.result) {
+//                self.result(model);
+//            }
+//        }];
+//    }
+//}
 @end
