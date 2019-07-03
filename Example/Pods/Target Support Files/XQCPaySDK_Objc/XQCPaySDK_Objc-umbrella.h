@@ -12,6 +12,7 @@
 
 #import "NSBundle+loadImage.h"
 #import "NSString+number.h"
+#import "UIButton+paySDkBtn.h"
 #import "UIImage+myImage.h"
 #import "XQCNetworking.h"
 #import "PayAlertView.h"
@@ -28,6 +29,13 @@
 #import "XQCPayItemView.h"
 #import "XQCPayViewController.h"
 #import "XQCWhiteStripTableViewCell.h"
+#import "UMSPPPayFastPay.h"
+#import "UMSPPPayOrder.h"
+#import "UMSPPPayPluginSettings.h"
+#import "UMSPPPayPosPay.h"
+#import "UMSPPPayUnifyPayPlugin.h"
+#import "UMSPPPayVersionsInfo.h"
+#import "UPPaymentControl.h"
 
 FOUNDATION_EXPORT double XQCPaySDK_ObjcVersionNumber;
 FOUNDATION_EXPORT const unsigned char XQCPaySDK_ObjcVersionString[];

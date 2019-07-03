@@ -31,8 +31,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   
-  s.source_files = 'XQCPaySDK_Objc/Classes/**/*'
-  
+  s.source_files = 'XQCPaySDK_Objc/Classes/**/*.{h,m,a}'
+  s.resource = 'XQCPaySDK_Objc/Classes/UMSPosPayOnly/*.bundle'
   s.resource_bundles = {
        'XQCPaySDK_Objc' => ['XQCPaySDK_Objc/Assets/*.png']
   }
@@ -42,6 +42,7 @@ Pod::Spec.new do |s|
   s.libraries = 'sqlite3', 'c++', 'z.1.2.5'
   s.frameworks = 'WebKit', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMotion', 'CoreGraphics', 'ImageIO', 'CFNetwork', 'MobileCoreServices', 'MessageUI', 'AddressBook', 'AddressBookUI', 'Security', 'AudioToolbox', 'CoreLocation', 'CoreMedia', 'CoreVideo', 'Accelerate', 'AVFoundation'
   s.vendored_frameworks = 'XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework'
+  s.vendored_libraries = 'XQCPaySDK_Objc/Classes/UMSPosPayOnly/libUMSPosPayOnly.a','XQCPaySDK_Objc/Classes/UPPaymentControl/libPaymentControl.a'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'ENABLE_BITCODE' => 'NO' }
   s.xcconfig = { 'LD_RUNPATH_SEARCH_PATHS' => 'XQCPaySDK/Frameworks'}
 #  s.public_header_files = 'pod/Classes/**/*.h'

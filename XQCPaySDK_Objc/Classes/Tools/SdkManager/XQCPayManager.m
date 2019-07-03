@@ -12,6 +12,8 @@
 #import "XQCPaymentPasswordInputView.h"
 #import "ReactiveObjC.h"
 #import "PayAlertView.h"
+
+
 static NSString *outTradeNo = @"";
 static NSString *PayType = @"";
 static BOOL isEnterForeground = NO;
@@ -215,7 +217,11 @@ static XQCPayManager *_sharedManager = nil;
 
 - (void)setWechatKey:(NSString *)wechatKey {
     [[YSEPay sharedInstance] configureWeChatPay:wechatKey];
-    
+     [UMSPPPayUnifyPayPlugin registerApp:wechatKey];
+}
+
++ (void)setUmspEnviroment:(UMSPluginEnvironment)enviroment {
+    [UMSPPPayPluginSettings sharedInstance].umspEnviroment = enviroment;
 }
 
 + (BOOL)handler:(NSURL *)url {

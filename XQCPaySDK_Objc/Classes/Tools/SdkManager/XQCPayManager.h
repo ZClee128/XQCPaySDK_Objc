@@ -11,6 +11,8 @@
 #import "PasswordModel.h"
 #import "ResponseModel.h"
 #import <YSEPaySDK/YSEPay.h>
+#import "UMSPPPayUnifyPayPlugin.h"
+#import "UMSPPPayPluginSettings.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -268,6 +270,7 @@ static NSString *IOUSPAY = @"IOUSPAY";
 + (void)showPasswordViewControllerResult:(void(^)(void))success;
 
 
++ (void)setUmspEnviroment:(UMSPluginEnvironment)enviroment;
 @end
 
 NS_ASSUME_NONNULL_END

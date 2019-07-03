@@ -98,17 +98,19 @@
         NSLog(@"order>>%@",responseObject);
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([type isEqualToString:WECHATPAY_YS] || [type isEqualToString:ALIPAY_YS]) {
-                YSEPayReq *payReq = [[YSEPayReq alloc] init];
-                payReq.channel = [type isEqualToString:WECHATPAY_YS] ? YSEPayChannelWxApp : YSEPayChannelAliApp;
-                payReq.payInfo = responseObject[@"payInfo"];
-                payReq.tradeNo = responseObject[@"tradeNo"];
-                payReq.outTradeNo = responseObject[@"outTransactionId"];
-                payReq.partnerId = [manager getPartnerId];//"XQC_payforapp"//resp["merchantId"]
-                payReq.privatePassword = [manager getPassword];//"xQcMy20Pwd19"
-                payReq.type = YSEPayEvenTypePayReq;
-                payReq.viewController = vc;
-                [[YSEPay sharedInstance] sendYSEPayRequest:payReq] ? errorMsg(@"") : errorMsg(@"请求失败");
-                
+//                YSEPayReq *payReq = [[YSEPayReq alloc] init];
+//                payReq.channel = [type isEqualToString:WECHATPAY_YS] ? YSEPayChannelWxApp : YSEPayChannelAliApp;
+//                payReq.payInfo = responseObject[@"payInfo"];
+//                payReq.tradeNo = responseObject[@"tradeNo"];
+//                payReq.outTradeNo = responseObject[@"outTransactionId"];
+//                payReq.partnerId = [manager getPartnerId];//"XQC_payforapp"//resp["merchantId"]
+//                payReq.privatePassword = [manager getPassword];//"xQcMy20Pwd19"
+//                payReq.type = YSEPayEvenTypePayReq;
+//                payReq.viewController = vc;
+//                [[YSEPay sharedInstance] sendYSEPayRequest:payReq] ? errorMsg(@"") : errorMsg(@"请求失败");
+                [UMSPPPayUnifyPayPlugin payWithPayChannel:CHANNEL_ALIPAY payData:responseObject[@"payInfo"] callbackBlock:^(NSString *resultCode, NSString *resultInfo) {
+                    
+                }];
             }else if ([type isEqualToString:WECHATPAY]) {
                 NSError * error = nil;
                 NSData *jsondata = [responseObject[@"payInfo"] dataUsingEncoding:(NSUTF8StringEncoding)];
@@ -131,6 +133,8 @@
                 errorMsg(@"");
             }else if ([type isEqualToString:IOUSPAY]) {
                 errorMsg(@"");
+            }else {
+                
             }
         });
     } failure:^(NSString * _Nonnull error) {
