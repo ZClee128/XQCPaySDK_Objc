@@ -238,7 +238,6 @@ static XQCPayManager *_sharedManager = nil;
     [[YSEPay sharedInstance] applicationWillEnterForeground:application];
     isEnterForeground = YES;
     if (isEnterForeground) {
-        isEnterForeground = NO;
         [self queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
             if ([XQCPayManager defaultManager].result) {
                 [XQCPayManager defaultManager].result(model);
@@ -285,13 +284,14 @@ static XQCPayManager *_sharedManager = nil;
 
 #pragma mark =======================YSEPayDelegate================
 
-//- (void)onYSEPayResp:(YSEPayBaseResp *)resp {
-//    if (!isEnterForeground) {
-//        [XQCPayManager queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
-//            if (self.result) {
-//                self.result(model);
-//            }
-//        }];
-//    }
-//}
+- (void)onYSEPayResp:(YSEPayBaseResp *)resp {
+    if (!isEnterForeground) {
+        isEnterForeground = NO;
+        [XQCPayManager queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
+            if (self.result) {
+                self.result(model);
+            }
+        }];
+    }
+}
 @end
