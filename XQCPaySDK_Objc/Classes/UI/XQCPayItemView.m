@@ -43,7 +43,7 @@
 }
 
 - (void)setDataWithModel:(ChannelModel *)model {
-    [self.logoImageView sd_setImageWithURL:[NSURL URLWithString:model.channelLogoUrl]];
+    [self.logoImageView sd_setImageWithURL:[NSURL URLWithString:model.channelLogoUrl] placeholderImage:[UIImage my_bundleImageNamed:@"xqc"]];
     self.titleLab.text = model.channelName;
     self.selectBtn.selected = model.isClick;
     [self.selectBtn setImage:[UIImage my_bundleImageNamed:@"unchecked"] forState:(UIControlStateNormal)];
