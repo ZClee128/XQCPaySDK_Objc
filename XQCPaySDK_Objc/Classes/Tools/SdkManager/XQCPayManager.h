@@ -42,6 +42,7 @@ static NSString *ALIPAY_YS = @"ALIPAY_YS";
 static NSString *ALIPAY = @"ALIPAY";
 static NSString *WECHATPAY = @"WECHATPAY";
 static NSString *IOUSPAY = @"IOUSPAY";
+static NSString *ALIPAY_HYL = @"ALIPAY_HYL";
 
 
 @interface XQCPayManager : NSObject

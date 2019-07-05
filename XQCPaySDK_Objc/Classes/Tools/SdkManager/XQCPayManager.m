@@ -77,9 +77,10 @@ static XQCPayManager *_sharedManager = nil;
 - (void)setConfig:(NSString *)url {
     self.orderUrl = [NSString stringWithFormat:@"%@/api/v1/trade/unifiedPay",url];
     self.queryUrl = [NSString stringWithFormat:@"%@/api/v1/trade/query",url];
-    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/trade/channelQuery",url];
-    self.whitestripUrl = [NSString stringWithFormat:@"%@/api/v1/trade/iousQuery",url];
-    self.payPasswordUrl = [NSString stringWithFormat:@"%@/api/v1/trade/checkPayPwd",url];
+//    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/trade/channelQuery",url];
+//    self.whitestripUrl = [NSString stringWithFormat:@"%@/api/v1/trade/iousQuery",url];
+//    self.payPasswordUrl = [NSString stringWithFormat:@"%@/api/v1/trade/checkPayPwd",url];
+    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/combopay/app/v1/getchannels",url];
 }
 
 + (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void (^)(NSArray * _Nonnull))res{
@@ -124,7 +125,7 @@ static XQCPayManager *_sharedManager = nil;
             [SVProgressHUD showErrorWithStatus:error];
         }
 //        if ([type isEqualToString:IOUSPAY]) {
-        [self queryOrder:orderId reuslt:result];
+            [self queryOrder:orderId reuslt:result];
 //        }
         outTradeNo = orderId;
     }];
@@ -235,15 +236,17 @@ static XQCPayManager *_sharedManager = nil;
 
 
 + (void)applicationWillEnterForeground:(UIApplication *)application {
-    [[YSEPay sharedInstance] applicationWillEnterForeground:application];
-    isEnterForeground = YES;
-    if (isEnterForeground) {
-        [self queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
-            if ([XQCPayManager defaultManager].result) {
-                [XQCPayManager defaultManager].result(model);
-            }
-        }];
-    }
+        [[YSEPay sharedInstance] applicationWillEnterForeground:application];
+        isEnterForeground = YES;
+        if (isEnterForeground) {
+            [[RACScheduler mainThreadScheduler] afterDelay:0.1 schedule:^{
+                [self queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
+                    if ([XQCPayManager defaultManager].result) {
+                        [XQCPayManager defaultManager].result(model);
+                    }
+                }];
+            }];
+        }
 }
 
 

@@ -97,6 +97,10 @@
     [XQCNetworking PostWithURL:[manager GetOrderUrl] Params:para keyValue:[manager getSignKey] success:^(id  _Nonnull responseObject) {
         NSLog(@"order>>%@",responseObject);
         dispatch_async(dispatch_get_main_queue(), ^{
+            if ([responseObject[@"code"] intValue] != 0000) {
+                errorMsg(responseObject[@"msg"]);
+                return;
+            }
             if ([type isEqualToString:WECHATPAY_YS] || [type isEqualToString:ALIPAY_YS]) {
                 YSEPayReq *payReq = [[YSEPayReq alloc] init];
                 payReq.channel = [type isEqualToString:WECHATPAY_YS] ? YSEPayChannelWxApp : YSEPayChannelAliApp;
@@ -108,9 +112,6 @@
                 payReq.type = YSEPayEvenTypePayReq;
                 payReq.viewController = vc;
                 [[YSEPay sharedInstance] sendYSEPayRequest:payReq] ? errorMsg(@"") : errorMsg(@"请求失败");
-//                [UMSPPPayUnifyPayPlugin payWithPayChannel:CHANNEL_ALIPAY payData:responseObject[@"payInfo"] callbackBlock:^(NSString *resultCode, NSString *resultInfo) {
-                
-//                }];
             }else if ([type isEqualToString:WECHATPAY]) {
                 NSError * error = nil;
                 NSData *jsondata = [responseObject[@"payInfo"] dataUsingEncoding:(NSUTF8StringEncoding)];
@@ -133,8 +134,16 @@
                 errorMsg(@"");
             }else if ([type isEqualToString:IOUSPAY]) {
                 errorMsg(@"");
-            }else {
-                
+            }else if ([type isEqualToString:ALIPAY_HYL]){
+                [UMSPPPayUnifyPayPlugin payWithPayChannel:CHANNEL_ALIPAY payData:responseObject[@"payInfo"] callbackBlock:^(NSString *resultCode, NSString *resultInfo) {
+//                    支付宝这里拿不到回调
+//                    if (resultCode.intValue == 0000) {
+//                        errorMsg(@"");
+//                    }else {
+//                        errorMsg(resultCode);
+//                    }
+                }];
+                errorMsg(@"");
             }
         });
     } failure:^(NSString * _Nonnull error) {

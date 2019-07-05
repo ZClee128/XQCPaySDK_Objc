@@ -19,6 +19,10 @@
     [[XQCPayManager defaultManager] setMacSignKey:@"IZJOIBXZCLJQBIOSGVZL4FNHGL8X74PZ" AgentKey:@"CEB9011C0946E23D4959C13EE5E1B785" MerchantId:@"111401100000212" PartnerId:@"XQC_payforapp" Password:@"xQcMy20Pwd19" Notify:@"http://abc.com" AgentNo:@"1000001114" CompanyOpenId:@"123456789" UserOpenId:@"112233"];
 //    [[XQCPayManager defaultManager] setConfig:@"http://172.16.2.11:8081/"];
 //    [[XQCPayManager defaultManager] setMacSignKey:@"XSXORALBEXNCUIAI9RS2MEI9BAKGSJKK" AgentKey:@"AB6578B81922467C8E92E9D7B61DDC4A" MerchantId:@"137801100000583" PartnerId:@"XQC_payforapp" Password:@"xQcMy20Pwd19" Notify:@"http://abc.com" AgentNo:@"1000001378" CompanyOpenId:@"123456789" UserOpenId:@"112233"];
+    
+//    好易联
+//    [[XQCPayManager defaultManager] setConfig:@"http://24p426488q.qicp.vip"];
+//    [[XQCPayManager defaultManager] setMacSignKey:@"UFVMAJWSYR8C8TUN8CZ9GJFI6U1D7QAE" AgentKey:@"C06D1693E7D6BD5B8702B3731BE19979" MerchantId:@"146601100000627" PartnerId:@"XQC_payforapp" Password:@"xQcMy20Pwd19" Notify:@"http://abc.com" AgentNo:@"1000001466" CompanyOpenId:@"123456789" UserOpenId:@"112233"];
     return YES;
 }
 

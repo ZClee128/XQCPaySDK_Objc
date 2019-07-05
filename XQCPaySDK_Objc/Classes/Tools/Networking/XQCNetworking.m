@@ -76,16 +76,23 @@ NSInteger const Interval = 10;
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:@"POST"];
     
-    //把字典中的参数进行拼接
-    NSString *body = [self dealWithParam:params keyValue:keyValue];
-    NSData *bodyData = [body dataUsingEncoding:NSUTF8StringEncoding];
-    NSLog(@"body%@",body);
-    //设置请求体
-    [request setHTTPBody:bodyData];
+    
     //设置本次请求的数据请求格式
-    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    // 设置本次请求请求体的长度(因为服务器会根据你这个设定的长度去解析你的请求体中的参数内容)
-    [request setValue:[NSString stringWithFormat:@"%ld", bodyData.length] forHTTPHeaderField:@"Content-Length"];
+    if ([url containsString:@"api/v1/combopay/app/v1/getchannels"]) {
+        [request setValue:@"application/x-www-form-urlencoded; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+        //把字典中的参数进行拼接
+        [request setHTTPBody:[[self formDatadealWithParam:params keyValue:keyValue] dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO]];
+    }else {
+        [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        //把字典中的参数进行拼接
+        NSString *body = [self dealWithParam:params keyValue:keyValue];
+        NSData *bodyData = [body dataUsingEncoding:NSUTF8StringEncoding];
+        NSLog(@"body%@",body);
+        //设置请求体
+        [request setHTTPBody:bodyData];
+    }
+//    // 设置本次请求请求体的长度(因为服务器会根据你这个设定的长度去解析你的请求体中的参数内容)
+//    [request setValue:[NSString stringWithFormat:@"%ld", bodyData.length] forHTTPHeaderField:@"Content-Length"];
     //设置请求最长时间
     request.timeoutInterval = Interval;
 
@@ -143,6 +150,47 @@ NSInteger const Interval = 10;
     param[@"sign"] = keyValue;
     NSLog(@"param%@",param);
     return [self convertToJsonData:param];
+}
+
++ (NSString *)formDatadealWithParam:(NSMutableDictionary *)param keyValue:(NSString *)keyValue
+{
+    NSArray *allkeys = [param allKeys];
+    NSMutableString *result = [NSMutableString string];
+    NSArray *resultArr = [allkeys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return [obj1 compare:obj2]; //升序
+    }];
+    
+    NSLog(@"result=%@",resultArr);
+    for (NSString *key in resultArr) {
+        if (![[NSString stringWithFormat:@"%@",param[key]] isEqualToString:@""]) {
+            NSString *string = [NSString stringWithFormat:@"%@=%@&", key, param[key]];
+            [result appendString:string];
+        }
+    }
+    keyValue = [NSString stringWithFormat:@"%@key=%@",result,keyValue];
+    NSLog(@"keyvalue%@",keyValue);
+    keyValue = [self MD5ForUpper32Bate:keyValue];
+    NSLog(@"key>>%@",keyValue);
+    param[@"sign"] = keyValue;
+    NSLog(@"param%@",param);
+    return [self keyValue:param];
+}
+
++ (NSString *)keyValue:(NSMutableDictionary *)param {
+    NSArray *allkeys = [param allKeys];
+    NSMutableArray *strs = [[NSMutableArray alloc] init];
+    NSArray *resultArr = [allkeys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        return [obj1 compare:obj2]; //升序
+    }];
+    
+    NSLog(@"result=%@",resultArr);
+    for (NSString *key in resultArr) {
+        if (![[NSString stringWithFormat:@"%@",param[key]] isEqualToString:@""]) {
+            NSString *string = [NSString stringWithFormat:@"%@=%@", key, param[key]];
+            [strs addObject:string];
+        }
+    }
+    return [strs componentsJoinedByString:@"&"];
 }
 
 #pragma mark - MD5加密 32位 大写

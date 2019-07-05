@@ -69,7 +69,7 @@
     nav.click = ^(UIButton * _Nonnull btn) {
         [[RACScheduler mainThreadScheduler] schedule:^{
             @strongify(self);
-            [self close];
+            [self navBack];
         }];
     };
     [self setUI];
@@ -82,12 +82,37 @@
         });
     }];
     
-    [XQCPayManager whitestripAgentNo:[manager getAgentNo] companyOpenId:[manager getCompanyOpenId] userOpenId:[manager getUserOpenId] respon:^(NSArray * _Nonnull list) {
-        self.whiteStripSource = [list mutableCopy];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.myTable reloadData];
-        });
-    }];
+    //    [XQCPayManager whitestripAgentNo:[manager getAgentNo] companyOpenId:[manager getCompanyOpenId] userOpenId:[manager getUserOpenId] respon:^(NSArray * _Nonnull list) {
+    //        self.whiteStripSource = [list mutableCopy];
+    //        dispatch_async(dispatch_get_main_queue(), ^{
+    //            [self.myTable reloadData];
+    //        });
+    //    }];
+}
+
+- (void)navBack {
+    NSString *payType = @"";
+    for (ChannelModel *model in self.dataSource) {
+        if (model.isClick) {
+            payType = model.channelType;
+        }
+    }
+    NSDictionary *dict = @{@"amount": @(self.price * 100),
+                           @"outTradeNo" : self.orderId,
+                           @"payState" : @(10),
+                           @"payType" : payType,
+                           @"isBack" : @(YES),
+                           };
+    ResponseModel *model = [[ResponseModel alloc] initWithDict:dict];
+    if ([XQCPayManager defaultManager].result) {
+        [XQCPayManager defaultManager].result(model);
+    }
+    UINavigationController *navigation = self.navigationController;
+    if (navigation) {
+        [navigation popViewControllerAnimated:YES];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (void)close {
@@ -98,10 +123,22 @@
         if (navigation) {
             [navigation popViewControllerAnimated:YES];
         } else {
-            [self dismissViewControllerAnimated:YES completion:nil];
+            [self dissmissAllModalControllerAnimated:YES];
         }
     }
 }
+
+- (void)dissmissAllModalControllerAnimated:(BOOL)flag{
+    UIViewController *presentingViewController = self.presentingViewController ;
+    UIViewController *lastVC = self ;
+    while (presentingViewController) {
+        id temp = presentingViewController;
+        presentingViewController = [presentingViewController presentingViewController];
+        lastVC = temp ;
+    }
+    [lastVC dismissViewControllerAnimated:flag completion:^{}];
+}
+
 
 - (void)setUI {
     self.tableHeaderView = [[XQCPayHeaderView alloc] initWithFrame:CGRectMake(0, XQCNAVIGATION_BAR_HEIGHT, XQCPHONE_WIDTH, 128)];
