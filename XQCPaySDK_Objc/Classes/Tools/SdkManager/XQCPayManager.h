@@ -14,27 +14,35 @@
 #import "UMSPPPayUnifyPayPlugin.h"
 #import "UMSPPPayPluginSettings.h"
 #import <AlipaySDK/AlipaySDK.h>
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
  费用类型
- 
+ 1000:薪商城
+ 1001:薪集采
+ 1002:薪礼品
+ 1003:本地生活
+ 1004:薪福利
+ 1005:薪宴请
+ 1006:话费
  - feeTypeShop: 薪商城
  - feeTypeLife: 本地生活
- - feeTypeGift: 薪礼
- - feeTypeBanquet: 宴请
+ - feeTypeGift: 薪礼品
+ - feeTypeBanquet: 薪宴请
  - feeTypeWelfare: 薪福利
  - feeTypeCollection: 薪集采
  - feeTypeTel: 话费
  */
 typedef NS_ENUM(NSUInteger, feeType) {
-    feeTypeShop = 1001,
-    feeTypeLife = 1002,
-    feeTypeGift = 1003,
-    feeTypeBanquet = 1004,
-    feeTypeWelfare = 1005,
-    feeTypeCollection = 1006,
-    feeTypeTel = 1007,
+    feeTypeShop = 1000,
+    feeTypeCollection = 1001,
+    feeTypeGift = 1002,
+    feeTypeLife = 1003,
+    feeTypeWelfare = 1004,
+    feeTypeBanquet = 1005,
+    feeTypeTel = 1006,
 };
 
 static NSString *WECHATPAY_YS = @"WECHATPAY_YS";
