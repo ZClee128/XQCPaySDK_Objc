@@ -19,7 +19,10 @@
     "ios": "9.0"
   },
   "source_files": "XQCPaySDK_Objc/Classes/**/*.{h,m,a}",
-  "resources": "XQCPaySDK_Objc/Classes/UMSPosPayOnly/*.bundle",
+  "resources": [
+    "XQCPaySDK_Objc/Classes/UMSPosPayOnly/*.bundle",
+    "XQCPaySDK_Objc/Frameworks/AlipaySDK.bundle"
+  ],
   "resource_bundles": {
     "XQCPaySDK_Objc": [
       "XQCPaySDK_Objc/Assets/*.png"
@@ -52,7 +55,10 @@
     "Accelerate",
     "AVFoundation"
   ],
-  "vendored_frameworks": "XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework",
+  "vendored_frameworks": [
+    "XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework",
+    "XQCPaySDK_Objc/Frameworks/AlipaySDK.framework"
+  ],
   "vendored_libraries": [
     "XQCPaySDK_Objc/Classes/UMSPosPayOnly/libUMSPosPayOnly.a",
     "XQCPaySDK_Objc/Classes/UPPaymentControl/libPaymentControl.a"

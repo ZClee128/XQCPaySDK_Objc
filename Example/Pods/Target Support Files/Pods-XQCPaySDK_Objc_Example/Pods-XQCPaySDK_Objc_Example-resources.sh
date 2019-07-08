@@ -99,11 +99,13 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../XQCPaySDK_Objc/Classes/UMSPosPayOnly/PosPay_Resource.bundle"
   install_resource "${PODS_ROOT}/../../XQCPaySDK_Objc/Classes/UMSPosPayOnly/UMSSecKeyboardLibResource.bundle"
+  install_resource "${PODS_ROOT}/../../XQCPaySDK_Objc/Frameworks/AlipaySDK.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/XQCPaySDK_Objc/XQCPaySDK_Objc.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../XQCPaySDK_Objc/Classes/UMSPosPayOnly/PosPay_Resource.bundle"
   install_resource "${PODS_ROOT}/../../XQCPaySDK_Objc/Classes/UMSPosPayOnly/UMSSecKeyboardLibResource.bundle"
+  install_resource "${PODS_ROOT}/../../XQCPaySDK_Objc/Frameworks/AlipaySDK.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/XQCPaySDK_Objc/XQCPaySDK_Objc.bundle"
 fi
 

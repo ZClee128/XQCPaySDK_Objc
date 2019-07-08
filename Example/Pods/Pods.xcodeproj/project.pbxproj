@@ -19,7 +19,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0092F82C2BE4FED9DFE573774898A8B6 /* XQCPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 233C3F750627FF44503F2B8E6085C4BC /* XQCPayViewController.m */; };
+		0092F82C2BE4FED9DFE573774898A8B6 /* XQCPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ADE5AAD3468991E6B9760DAFC180F0 /* XQCPayViewController.m */; };
 		00DBF7CB30F7C059252BA49F844407ED /* SDImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C27B3428457A4F4E69E2C166FDECA9 /* SDImageCoderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0235B182AE23EA19504BE77AAF33C9F9 /* NSObject+RACDeallocating.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D8A9F81A5167230033376C034671EC /* NSObject+RACDeallocating.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		023C15C25BB49E39BC9FC016EFDC3ED3 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D238123F930279ACB095D7E099B156A0 /* SVProgressHUD-dummy.m */; };
@@ -27,7 +27,7 @@
 		03EBEA4F2381B3856E70D1ECBFF26875 /* NSString+XQCMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 51387A3711DC895D83A52623D81A24AC /* NSString+XQCMd5.m */; };
 		03F4271074E26B5AB058FD531F88C364 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EF7F9EF46A03A101AD303F4A77DB49 /* UIImageView+WebCache.m */; };
 		04C897CDD619673E941EF248E7999C47 /* RACIndexSetSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 423E7BE3F09AAB9D52E6C1102F0AA63B /* RACIndexSetSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		057D53C50A89ACBDCB892A1D4E656D35 /* ChannelModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 115EA91083B05AFBDA98369106127106 /* ChannelModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057D53C50A89ACBDCB892A1D4E656D35 /* ChannelModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 062AF04FF033EADF5F5D385648E84046 /* ChannelModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05B0DA2ABA7BFD5994851349C826E1BE /* NSData+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 77BF4A89EF123E0FA5B96AA3B1A34874 /* NSData+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		071E3D434D2959973139EFE4F8D4EF83 /* RACSignalProvider.d in Sources */ = {isa = PBXBuildFile; fileRef = 07CADE9CFC2325D959E11637379AC547 /* RACSignalProvider.d */; };
 		076BEEB6796E2F7FDCB131CB480EF5A8 /* XQCHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AEFF7562F214335BA6155EDD1EA3B861 /* XQCHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,7 +36,7 @@
 		07D6E1E920301210A1D338FEA61083DF /* RACReplaySubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 82D73BA5852AE48FB83B560358B474B2 /* RACReplaySubject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08E5583C851CD75ED72BA58B831FFA3F /* RACSignal+Operations.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF58408C48F45BED005851128E0C64B /* RACSignal+Operations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08E8E6F8B63CAFE66E4AA19972CB1936 /* RACStream.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A0DE514C6A06767156E8A4B6D9D025 /* RACStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08FE15C628459EB0BAD175A471320B4A /* XQCPayFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = D09D0D8DD3001A5FC965AA9A96E240ED /* XQCPayFootView.m */; };
+		08FE15C628459EB0BAD175A471320B4A /* XQCPayFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5B276D0C4D69AD5FFF7531C4919EE0 /* XQCPayFootView.m */; };
 		0BE617F893E2C53A02D7742F5C62D00C /* RACSerialDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE53D9C8BB4216CD70AB38E30A0F58F /* RACSerialDisposable.m */; };
 		0C522363C9BBD3E481F2FEFAA799BB67 /* SDImageLoadersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DD18C6C257D88A2588C41DF80237E612 /* SDImageLoadersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C7FD9CE2F95D7A96FC7F06D8B0973C8 /* SDAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBCE88C7F041E43F86E40D1C57C0E34 /* SDAnimatedImageView.m */; };
@@ -44,22 +44,22 @@
 		0D2FDE4EAB792B1ACBE7465CF28FEDFE /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B5ABF4D11B8445F24D4EEE03C1D1849C /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EA7E086229EAFD36691F8C71D6609E2 /* NSButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B02163F7F8A22A31E91188761B74681 /* NSButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0F65004842A96E19DD05DBB36C7BC340 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3938A87CB6DBEBF0E44EBB7822EC43AD /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10BE7DB992EFD774B8B0348A4CB74291 /* libUMSPosPayOnly.a in Sources */ = {isa = PBXBuildFile; fileRef = 93309B1C269B024330205B07970BE892 /* libUMSPosPayOnly.a */; };
+		10BE7DB992EFD774B8B0348A4CB74291 /* libUMSPosPayOnly.a in Sources */ = {isa = PBXBuildFile; fileRef = E96485B1CB5638D384F343A94063CA92 /* libUMSPosPayOnly.a */; };
 		1226AF1E4A50F6CA2C8E843A0C54DA6A /* UICollectionReusableView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF9F7A26C1541FAD872C2B0BDE37761 /* UICollectionReusableView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13735C6EC7B985949E2BDDD119FD4508 /* Api.h in Headers */ = {isa = PBXBuildFile; fileRef = 76129DF2AD161CB84631EC87FA08A9A5 /* Api.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13735C6EC7B985949E2BDDD119FD4508 /* Api.h in Headers */ = {isa = PBXBuildFile; fileRef = 074527FBC9DE1BC41971BB0021FFCD10 /* Api.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		139E7117334C264196986229D38FA164 /* NSDictionary+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CABB36270102956F76303F165EE50164 /* NSDictionary+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CF24549FA862851C8ADF5CFE22FEFD /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 037432964F3EF6FE6C81790FCB238C52 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14CC35038F24328952A72CD688E09BA5 /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D78196F64C9C9375C19988299D9932 /* ReactiveObjC.framework */; };
 		16F51A4005D43E20572E1C9A33FE189E /* SDWebImageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 061054CD7A4DEC6427D5B8CE85EDF8EA /* SDWebImageDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17039C4F05A222632D5CBB6A74E023AF /* NSString+XQCMd5.h in Headers */ = {isa = PBXBuildFile; fileRef = 110E39604FE1C28255F42A648B24E088 /* NSString+XQCMd5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1705630E1E434BE5C5B71C73E77DCF22 /* XQCPayItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 612B2FC05CA98C5ABA07DB74E5E4D6AF /* XQCPayItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1705630E1E434BE5C5B71C73E77DCF22 /* XQCPayItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 082B287470840F07382EB8013E524874 /* XQCPayItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		175819ABB352B858F9BFEC0FCD231A38 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D4135FD7DF25103279134D767F3E44E0 /* UIImageView+HighlightedWebCache.m */; };
 		181D1F64256371E364F3AE3D5DEFDB09 /* RACSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BFC53CC4FEFAFBF81BDD4E71B4A227 /* RACSubscriber.m */; };
 		1827C8EB337CB82BB936B317A58F4516 /* UIImagePickerController+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 13233331CE9BAA969CD18C6D2354144E /* UIImagePickerController+RACSignalSupport.m */; };
 		18695EC8737F1A16A1A135BE4E65252C /* NSString+RACKeyPathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D87E854B2F748E289726819D7C945D6E /* NSString+RACKeyPathUtilities.m */; };
 		18FF96F3CD5C05BBC4AF44C76E2D84F2 /* RACGroupedSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4B44F5F73D58E2306F052096BD1C80 /* RACGroupedSignal.m */; };
 		1B3F453521FDB70F081EF1FF32BF7645 /* SDDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 84249AA4A033DFE94A58ACB187892FB4 /* SDDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C2B5A136BD9635B3365BDC94E1A2BC8 /* UIButton+paySDkBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 240AEC76CE538A55D2437F08C00DFBD1 /* UIButton+paySDkBtn.m */; };
+		1C2B5A136BD9635B3365BDC94E1A2BC8 /* UIButton+paySDkBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 127D08E0B5D4CA6EEEBAECD938B51234 /* UIButton+paySDkBtn.m */; };
 		1CA8F6C333841E9F1206BCC35D4BAE61 /* RACCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D1A6481C422B9BC3C6F211A1ED6B4 /* RACCommand.m */; };
 		1D87D5AD6DF5420680F57935787408E0 /* SDImageCacheDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 09471723A5A67D9B250CEF53D5137E67 /* SDImageCacheDefine.m */; };
 		1E4A6B1CF05EF0F0CB54ED8903C53847 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A7F3E5E3E6A5BC60414EF5301A2981 /* SDWebImageDownloaderOperation.m */; };
@@ -93,13 +93,13 @@
 		2EC04FCA64317A97A2BAE79BBBEE88AF /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F87E531E068855A83D6FE6B972467E /* UIColor+HexString.m */; };
 		2F29245ECEB20F83FF7C73D3E0FF866B /* RACErrorSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = AA27389C8D4A18E4C6417DAA0D3B0A96 /* RACErrorSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FBE88AB6732B2F224FCEA7F490757EB /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = FA948B81E39437BE04E6F0181ED58E4A /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FC8CE437A4E05767E06C898FD006AB1 /* NSBundle+loadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BC4F7ABA772F2AFF6905D1CF6AD5AF /* NSBundle+loadImage.m */; };
+		2FC8CE437A4E05767E06C898FD006AB1 /* NSBundle+loadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1757FA11FC7F65F1E7F9F54AD0C7B1BF /* NSBundle+loadImage.m */; };
 		30968B3D0AFAF8AAC5C1403F6FA277F0 /* RACDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C671ADCBE166D0A21E1FABF1447DF9 /* RACDisposable.m */; };
 		316F0B0AD8E9819C1D4D171C14CA6EBB /* UISlider+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D96BF6E8D80191CDD7925AAFD2E84DC6 /* UISlider+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31CE42B3EBA34326DE069F7C03F6B42F /* navi_back_black.png in Resources */ = {isa = PBXBuildFile; fileRef = FE4AFC5D7D5B1E373FB81724651D7717 /* navi_back_black.png */; };
+		31CE42B3EBA34326DE069F7C03F6B42F /* navi_back_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 288623F8AB6D001ADD4D72B759FAC6E1 /* navi_back_black.png */; };
 		31DF31C06BF071DD2B06014540BA0668 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8075085C4E641F0922BCE66949551F6A /* Foundation.framework */; };
 		32151DA3E164E1CDD9F79FA2E9D77D2A /* SDWebImageError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D70E5867FB3CB27062ECF4B4B2C4EB5 /* SDWebImageError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3374116A3F4A14F2628117E89A508B10 /* XQCPayItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EA8ABAD822F80A31C2F16D9B10D0E9 /* XQCPayItemView.m */; };
+		3374116A3F4A14F2628117E89A508B10 /* XQCPayItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE0993B65B1ABE0395EEED3B2BD75F4 /* XQCPayItemView.m */; };
 		34279CFE2234E53F1B114B7530F59724 /* UIControl+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1044A8A6DB5C63998CB8AB2AD9F51213 /* UIControl+RACSignalSupport.m */; };
 		3427F714ADDE233180870543278F2937 /* RACUnarySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = B4115B31604DF7E169223567C1DCE007 /* RACUnarySequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34D73C8464F115EDE166F947D3D9B8BB /* Pods-XQCPaySDK_Objc_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B144F11FF91A1496A8ED101C709B3511 /* Pods-XQCPaySDK_Objc_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -121,6 +121,7 @@
 		41C5894217377B72F822D9B8E5752429 /* SDImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9380184E5AB7ACDBF512DE4664E9B2A1 /* SDImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4350EB38C9C82E066CA5B7EF14D27276 /* RACTestScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5283342E7BE6EB2550EA6EAD1656F56F /* RACTestScheduler.m */; };
 		44659F0193D01084A81973193AAF4151 /* NSURLConnection+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE2BE70FCDECF0A0DF998AE01BD3D77 /* NSURLConnection+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44697F9E3C2D1BAB3BC0ED76C6117364 /* XQCPaySDK_Objc.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DD322D772315661B6990B9A61DC0993 /* XQCPaySDK_Objc.bundle */; };
 		465DBF910F4087DFB290CEE9A077EAAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8075085C4E641F0922BCE66949551F6A /* Foundation.framework */; };
 		48690B422BA1CF7D3FBDA584209AB85D /* RACDynamicSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 68738DDA33977F1EF19502AC7F7159D8 /* RACDynamicSequence.m */; };
 		48F84DEF26C492DD623116A9770F87A3 /* RACImmediateScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = E97A2B1B8B027F616D6506147D7FF543 /* RACImmediateScheduler.m */; };
@@ -148,7 +149,7 @@
 		537654F56DA73CC72B33A38989BD01AC /* SDWebImageCacheSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85635958FD6A30DF86208EA7E05D5593 /* SDWebImageCacheSerializer.m */; };
 		53DF4000A23043E37BE74F2B158EBEF4 /* RACTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0725CB69FC0168101451837E2CCCFD /* RACTuple.m */; };
 		53F7BEF795CF5F7C7FD3DD6E8ED855F4 /* RACEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A466A7B0FCF368C7C5742A7CABF646F /* RACEXTRuntimeExtensions.m */; };
-		56B6E1E5AFC60F2D10FA9CC3FB046CB0 /* NSString+number.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AC46BC9900E72C3BC34C8366930C1D /* NSString+number.m */; };
+		56B6E1E5AFC60F2D10FA9CC3FB046CB0 /* NSString+number.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EF1B14B337A66CCDE0C7A00CB280AA /* NSString+number.m */; };
 		56E5AA0028DCCFB61B529B5A29C8F1F0 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5743FAA6EC0198DA9756B125A8398E24 /* SDWebImageManager.m */; };
 		577E7E7BF1858A64AF249AAB2B74DE7F /* XQCPaymentPasswordInputView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A78DCAB6C65C5B922658AC45294C8BB1 /* XQCPaymentPasswordInputView-dummy.m */; };
 		5783F4E5C569A2CDBC32DBC461478A75 /* MKAnnotationView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8769AEE6973983E2047CF697DBDB7C26 /* MKAnnotationView+RACSignalSupport.m */; };
@@ -164,40 +165,39 @@
 		5C89531DA08C7C8289AC442915440B15 /* NSObject+RACPropertySubscribing.h in Headers */ = {isa = PBXBuildFile; fileRef = 389F04D8A24768A884913ED489A35CCF /* NSObject+RACPropertySubscribing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CFBF4666B38B23CDE7E7A614C5D0659 /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DBE59B30F1C6F8D5676BA019673046 /* UIImage+ForceDecode.m */; };
 		5D1FD8AA654734C6565CB93F17D222BD /* SDImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAC1747FCA0D97D1431107F75013BF4 /* SDImageCodersManager.m */; };
-		5DC79B1BC439F7D24864499C3B34FCF8 /* UMSPPPayFastPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C42FBB23D703BD1EC95FD0BF553994F /* UMSPPPayFastPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E18DBC6476344944AD40707962D8D9C /* UMSPPPayVersionsInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 853BE34315683DE316E3F2E8E8D9FFC1 /* UMSPPPayVersionsInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DC79B1BC439F7D24864499C3B34FCF8 /* UMSPPPayFastPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D9905A7C2DF6AEE47DF66A6C5D4A184 /* UMSPPPayFastPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E18DBC6476344944AD40707962D8D9C /* UMSPPPayVersionsInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D3FDAA417FE0C4C9B93DCC690075F43E /* UMSPPPayVersionsInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F099EC0E8EC1F39EFB4F5D0816A4576 /* NSImage+Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD92886FC7D772C9E6A4ECD3E75E435 /* NSImage+Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FFA64E535DFC44A958AE302099CBA29 /* XQCWhiteStripTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 399898C05BED50A73C6593C7BDE0DDC7 /* XQCWhiteStripTableViewCell.m */; };
+		5FFA64E535DFC44A958AE302099CBA29 /* XQCWhiteStripTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4247CD7E59F7CE2E54E46A9BF19E8F /* XQCWhiteStripTableViewCell.m */; };
 		5FFD39E983B4A236C2EC4634F5A8343A /* UIControl+RACSignalSupportPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD30FD3BA1BB610F5E687F1C6D304FB /* UIControl+RACSignalSupportPrivate.m */; };
 		614413CFDC3B3A541EAEB903B285032E /* UICollectionReusableView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AAE93AC25D31189451BC1077445A84 /* UICollectionReusableView+RACSignalSupport.m */; };
 		61857B6C5894C00CAC76F97782DE8599 /* UISwitch+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 480301B2E7E6FD9E31E14B66CB4DCC2A /* UISwitch+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		619575623E2E2079469EDE3C4FD7EB96 /* baitiao.png in Resources */ = {isa = PBXBuildFile; fileRef = 85BBEB353AE770E3CA11705FC5028217 /* baitiao.png */; };
-		61FFB4381677E88B5E820F073309F896 /* libPaymentControl.a in Sources */ = {isa = PBXBuildFile; fileRef = A61574D19AA8F46C47B10072AA8FA330 /* libPaymentControl.a */; };
+		619575623E2E2079469EDE3C4FD7EB96 /* baitiao.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAFCF04EE77009B557C99021648BE18 /* baitiao.png */; };
+		61FFB4381677E88B5E820F073309F896 /* libPaymentControl.a in Sources */ = {isa = PBXBuildFile; fileRef = 62AAD4A8C4DD5B7113BF3C8A97DA81C4 /* libPaymentControl.a */; };
 		62449CA0C38A2DC85B0982B25394E90E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AA92F420CA5D47B2A96789D31EBAC9 /* MASConstraint.m */; };
 		626B143296611EBC98F20F738CFB4AA8 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5913FC809F594CAD84BE17A77F1B831C /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63ADAC8E3663107B85CBDBCE74319791 /* SDImageGIFCoderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D9741826A42C9ACC73DA560FCA4F2ECA /* SDImageGIFCoderInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		63C22A97B892045474C99EBCF60FDFB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1A8503DE83A02A14EA0753C75F8291 /* UIKit.framework */; };
 		6497BB6E34B2BC55C62E96E1EF2DFEA4 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 066B9F26655DD6A8CCF7CDA2907BAA07 /* UITableViewHeaderFooterView+RACSignalSupport.m */; };
-		64BC17AE5223108CDDAC31484BAB9071 /* XQCNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 52554D1641A5B2B02CA5CA4FA73AFB4D /* XQCNetworking.m */; };
+		64BC17AE5223108CDDAC31484BAB9071 /* XQCNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1F4626B1698EC5DDF38DF21FEA50DA /* XQCNetworking.m */; };
 		64D9CD371644577999B77B9EAA3BCDBD /* NSEnumerator+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE42AD5537909BEF3DA10C7C5F31297 /* NSEnumerator+RACSequenceAdditions.m */; };
-		658150BEF2E7575FB31CD8D2D0DDA60B /* WhitestripModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F86DCBBD895A7B839CEE1BE6AC63B901 /* WhitestripModel.m */; };
+		658150BEF2E7575FB31CD8D2D0DDA60B /* WhitestripModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB899C70C2B14FFA96593EF170460FD1 /* WhitestripModel.m */; };
 		6653EACD286ED73B823DB81870B60695 /* RACEmptySignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6747F3330467CAC279ED912CEAC649FA /* RACEmptySignal.m */; };
-		6773A43761410CD9A556DE5A9C61523D /* UMSPPPayPosPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 2434AF944FC9CF80DB89F4419AB1120E /* UMSPPPayPosPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6773A43761410CD9A556DE5A9C61523D /* UMSPPPayPosPay.h in Headers */ = {isa = PBXBuildFile; fileRef = 30925D30B4A439B0FE48BBAE9F8628E1 /* UMSPPPayPosPay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6779CD3C6A1FE3547F223601DE944FE0 /* NSArray+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0FCE46BCC9200B09EE97FC14CCAEC9 /* NSArray+RACSequenceAdditions.m */; };
 		67843D6939DCFB92F851C88AD853EB8B /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B43D38BF4710C8E148D61344CD09CD7 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6787B9AB81636BC3A738AA0FC013E624 /* PasswordModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E7DD23B2E98CD144D27D58A10B8C99A1 /* PasswordModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6787B9AB81636BC3A738AA0FC013E624 /* PasswordModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB7C0DAE0A90863EB10DA8B0FADC58F /* PasswordModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67EF44CC8D9D1215CF637E7E964014E4 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C316E617B181FD3598B2995332382360 /* SDWebImagePrefetcher.m */; };
 		6824DE77D71E24835CA2886945F66CE3 /* NSObject+RACDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CA5C2AC2CC950A70309C13DEF38F8D /* NSObject+RACDeallocating.m */; };
-		697C68262CAF523C2F4479DFDF9A1790 /* PosPay_Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE9E8919B01A649251EBB9AE048201DF /* PosPay_Resource.bundle */; };
-		6A74FCBC4C87B1568FD052C96CFE396C /* UMSSecKeyboardLibResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5479539E86C0C9B72ECA9A205262294E /* UMSSecKeyboardLibResource.bundle */; };
 		6AECFBCD76999264C21663745E4C3325 /* UITableViewCell+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = F340A898A58ADDF103E640249796DB5F /* UITableViewCell+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BEF20B8830F1A95273A5E05D6BE69B1 /* PosPay_Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E0AE4167CA2ADD3EB0F3BC58B3EAD9BA /* PosPay_Resource.bundle */; };
 		6BF0563CB2F852112CC89B730201ABF3 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9207DDAD5D414F54BC8B886A69CB5048 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C05E3AB52F35A9C999933884D843D65 /* RACEagerSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 26EA82FA3F36F25517561A8DA7D04D59 /* RACEagerSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D60ED0D507AE0DAD1319BDBD722A607 /* NSIndexSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F625DD83178C085B2F525C93C865B6 /* NSIndexSet+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D66A204F4EA5C07C6FA1F3C52AD7BD9 /* RACUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6B4A560126ED6C2F47255C560ED53D /* RACUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DEC21DA4517E417B499059D775C8BCE /* RACSignalSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A9C4A6EEC4F661FB341D0BA385870A7 /* RACSignalSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E1B8F0D990F92702A70840732D71DA3 /* UIRefreshControl+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD76F72BCAE71F0742186B03F8209CC /* UIRefreshControl+RACCommandSupport.m */; };
-		6FCD631FFDCD35E27CADA584FE1814F7 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = B58AF0F86D4E7B199B751F23CF54AEB2 /* unchecked.png */; };
+		6FCD631FFDCD35E27CADA584FE1814F7 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5AB900D99CF66A73F1A8E377CD39F8 /* unchecked.png */; };
 		71B9543AD3E4130AD23E9596A991D490 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E26642D8E38E9E89C9C61F734F1946 /* UIButton+Extension.m */; };
 		7324BE687C3FF7BD445B49DBCAE27319 /* NSOrderedSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A729608F47B24D75D784CE2EED437B0 /* NSOrderedSet+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73300003438DC542B9D0546D73877707 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B14B344D90518632ECCD68F9C7C3FC30 /* MASViewConstraint.m */; };
@@ -212,9 +212,9 @@
 		76BD4C069E6914B59F87E7AB6FF6C6C7 /* RACScheduler+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = DD028BDA99759EDDAC681F489E8C9B56 /* RACScheduler+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		76C76F13D400516E60A3B9BFDB49D7DA /* SDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ACFF9691F5121045E0E4D4C5A21561 /* SDImageCoder.m */; };
 		77645F32C84A02D0CF0FE7FD1D508CE1 /* RACChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5684C8F56B2AA87C5ECBB5E9576FFCBC /* RACChannel.m */; };
-		77700E7CCE8A73E2115926628B4F4969 /* NSString+number.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA5310F6B34319EF1429B2EB4B0E230 /* NSString+number.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77700E7CCE8A73E2115926628B4F4969 /* NSString+number.h in Headers */ = {isa = PBXBuildFile; fileRef = BE6F18B166AE5E47D1FDDD335CF9C041 /* NSString+number.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78B21E8A551B1352B7670E3C380DC1BB /* RACSerialDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = B03187761FFB53EAD842B30A133320D4 /* RACSerialDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79E56C5BDC5A5B61D967585AF1BDC504 /* xqc.png in Resources */ = {isa = PBXBuildFile; fileRef = A1B36B4AD6222EE91EC61F7E5D7F6268 /* xqc.png */; };
+		79E56C5BDC5A5B61D967585AF1BDC504 /* xqc.png in Resources */ = {isa = PBXBuildFile; fileRef = C48D1E347B56AFFB174754BE2280A5A4 /* xqc.png */; };
 		7A02CF186E1FEBBE032C4998A401B03E /* ReactiveObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CA9CDF3EFB554383876504A6B12547 /* ReactiveObjC-dummy.m */; };
 		7A5A5B5E3A588954CF546D1BF253E438 /* RACEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 966DC0FDB5CF0BDB6B79ADDBD66BA356 /* RACEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AB643D7AF0C3BA6BE90A32F4E261A58 /* NSInvocation+RACTypeParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F77540D8A23A2640DC4FD1F8E55B0D1 /* NSInvocation+RACTypeParsing.m */; };
@@ -223,17 +223,18 @@
 		7C3C298512CD9C3C0314A2DFC9CD8E45 /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C89E8A2CDE62D6F8A33CA5432FCA10 /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C8E81F12DF9EC316472BACF43A95F5A /* SDImageGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D95E4BEE3F1FFBC36537AA7F60D2119 /* SDImageGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D29385BFF62F56CCB40065137F3F5DD /* UIDatePicker+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 12518FAB1DB1EBEAA739802A09CF5354 /* UIDatePicker+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DC047EC641434ECED53DE96E3C26E6F /* PayAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD79A07B83D9870DD1368178A85855B /* PayAlertView.m */; };
+		7DC047EC641434ECED53DE96E3C26E6F /* PayAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A712207E5F9C3F9F4ADAB7E9B21590FA /* PayAlertView.m */; };
 		7DFE50BA0F40EA8493893A10533D85B9 /* SDImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = E374EF90BACEBD44BE40260E569B34D9 /* SDImageLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8057A81D0E38C859134CF7970AA614E2 /* ChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD509D9953ABD4D5EC502984CE53DA4 /* ChannelModel.m */; };
+		8057A81D0E38C859134CF7970AA614E2 /* ChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E014F79726E5A7C0E11DDF9849CB04 /* ChannelModel.m */; };
 		812783E8C884E9BCBE417AC1B43AE513 /* RACSubscriptionScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = FE59F74F1D5CEDB56379248B438DE45C /* RACSubscriptionScheduler.m */; };
 		814B7C1F2FDEBE3B6A5BCE899B19993F /* UITextField+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E634ABE3E5B1833E5D2B77FD62D292 /* UITextField+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82418CD8B8D7E106FA30A2520BF3B7B7 /* RACScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A35E69A16F8E31707FA0F8E462925D8 /* RACScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82646E8B52ED91C5F7641CF2BAF6A985 /* SDImageLoadersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 908BF71DCF5E2910C97DDA7A34DA8D4E /* SDImageLoadersManager.m */; };
+		82C9CF8F3049B15252B7FEBACFE0258A /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88BDAABC4494BEBAABF17DF9D5A8DA30 /* AlipaySDK.bundle */; };
 		838D1B28295580E35A06E30ABD1DAA00 /* UIButton+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C30C28AF44DFEEAF560A56AA50DA1AA7 /* UIButton+RACCommandSupport.m */; };
 		8430D04E29C93606545DB4119B23ED2B /* RACSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B30FD14C1501C8B06DB259990D61C3A /* RACSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84A60509CE9FB78C57E87FD1523A8BA4 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1FAC041171BFA946ECB49F8DC642B14D /* SVProgressHUD.bundle */; };
-		85678CCE2F03A273D33F97A667ECAD41 /* UIImage+myImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 92BB9D72C1C6FDAB423EEDFDF92437E9 /* UIImage+myImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85678CCE2F03A273D33F97A667ECAD41 /* UIImage+myImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F15E599CB4B36891AFBD67E45FB7C40 /* UIImage+myImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85A7D6A553BD1C5937BB581C783E5C8D /* NSIndexSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D22E9384B9B6C0921A47CC446527F00 /* NSIndexSet+RACSequenceAdditions.m */; };
 		8699DC5A52A3A2CAA7B4A9A17B8E850A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E7882651B08EB2CECDA47B748114419F /* SVProgressHUD.m */; };
 		870CB267252091E039DCABF8308C0D35 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = FE74AE557A3CAC6201E8261B3D5F96A9 /* NSData+ImageContentType.m */; };
@@ -243,7 +244,7 @@
 		87CE6D683AD2A33B6386D9DC6F2A2EE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8075085C4E641F0922BCE66949551F6A /* Foundation.framework */; };
 		88DD38A4631C8BF44D79DC9123BE6939 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = E15151F3D2FC976AEE49136AD3D837C6 /* SDWebImageDownloader.m */; };
 		8907844F081B5B383BBBCE190CE564C3 /* RACKVOChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = E0240013F62A846EFBD510CB1BC309C5 /* RACKVOChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A26A0EE0DE5F88150DA39D7A53D2F05 /* XQCPayFootView.h in Headers */ = {isa = PBXBuildFile; fileRef = 76335AA144A104978988AA6A76886ED7 /* XQCPayFootView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A26A0EE0DE5F88150DA39D7A53D2F05 /* XQCPayFootView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EBCB98A38AAF06C971F98F63C4889F8 /* XQCPayFootView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A77A8DB437B7B8A362821CBC84F9341 /* UIActionSheet+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B339AC6F7723B8F1F740663F793A27 /* UIActionSheet+RACSignalSupport.m */; };
 		8AEDD7C1DA0EB0920753CAE43B0D2A2A /* RACMulticastConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = BA28149DC66E7961C1A205ED56FAED32 /* RACMulticastConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B0B2A102675CD03853B1E8DB75139B5 /* SDImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 755FEB4B3330F9ECAA646270053DD1B5 /* SDImageLoader.m */; };
@@ -251,11 +252,11 @@
 		8C22EEC0D21E2E5266CF8E095EDEC19F /* RACKVOTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E0EB9263008FCD671C46197EAB49AF6 /* RACKVOTrampoline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CB5A9BFC0F8D21BA78889E002EFF01A /* RACStream+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 17F01EB5D4C869C9698DCCBEF874FABE /* RACStream+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8D6F8120585B07C0BB67B9C41E1DA4EC /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2FEEF7BE7D24AD55182661433B662F /* SDImageTransformer.m */; };
-		8DC991FDF56EB5AB7EA41CD6ED5DD041 /* PasswordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3AB36A907AF17E51348B44C3B6AD75 /* PasswordModel.m */; };
+		8DC991FDF56EB5AB7EA41CD6ED5DD041 /* PasswordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3E2C7E39BDAD0CBE27CAD9BC3AFF0D /* PasswordModel.m */; };
 		8DF77D4DF621A5C559529DDE9C43E16A /* RACKVOTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7EFA7B835C5BCA99D547A58D5DF998 /* RACKVOTrampoline.m */; };
 		8F190949F143DCAE629ADA5EA42F322F /* RACSignal+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB223EC6478D4648EF058A216F15145 /* RACSignal+Operations.m */; };
-		8FCEC73EC5486E67B985DC270F9867E4 /* XQCNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C8C6A3BBAEF2D84786564CE06A1CDF /* XQCNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90612A3C19A4BBEB60F6D1D47CC7DD51 /* PayAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0061E74E78603B74049597B623ECB109 /* PayAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FCEC73EC5486E67B985DC270F9867E4 /* XQCNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C07FAE2BF712E609637D4190F522D5 /* XQCNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90612A3C19A4BBEB60F6D1D47CC7DD51 /* PayAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 689A630AFC7A85C1FE58E7C8CA531958 /* PayAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9062ABDA4C43299DC5DD687A8C8CD916 /* RSAEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 57201B15039672DACB10DC8D93ECF676 /* RSAEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90D3CE682152A45843A0020CDA4DABF9 /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = BF884EF8BBFF4F3808710C739A7AC347 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90F26787520A6996C9FF890B08AA83C9 /* RACPassthroughSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6F9D7664DCF99DA2E47C1671A21F7 /* RACPassthroughSubscriber.m */; };
@@ -280,27 +281,27 @@
 		9847943C029860A4DFCDE7761BF4093B /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C41510DD1877D0A4A085C266853118 /* SDWebImageTransition.m */; };
 		98ED8316E59B3C3F361949E2200644D7 /* NSObject+RACDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 9398B772025D939CA56CDFE9CF3CB131 /* NSObject+RACDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A2E810D397A5708E5DEFEA86AFC998A /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F95598EE4C1AB520E0838D0FABC373 /* UITextView+RACSignalSupport.m */; };
-		9B3165BC885123C3BC1574DD0E56BAC8 /* NSBundle+loadImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FB35EC26B92D2F2207E2C3BEB38BBC /* NSBundle+loadImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B3165BC885123C3BC1574DD0E56BAC8 /* NSBundle+loadImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A16C7656E3316B57DE9F51CC77325A7 /* NSBundle+loadImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BF822246192792F5BF137CC82E13E89 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F9E23D6A587985875E9817C392AC52 /* UIView+WebCache.m */; };
 		9CB0FE18F2271B91EC96817A0748FD96 /* RACSignalSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3DB6DE682A1E4871E924889A9ED645 /* RACSignalSequence.m */; };
 		9D2FA41EF95735BEEB147FFD3A6F281D /* RACDynamicSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF5711421453BEE13733315D9D88206 /* RACDynamicSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F56CC10E7609BBC2308357F4071B076 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19BC01BCFD79EF682D519B15DDDD80A /* Masonry.framework */; };
 		9FB14D8D94986B7B2F26753E134D44B1 /* SDImageGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E9F5685185F8A9F8BE6BA7436D8062 /* SDImageGraphics.m */; };
-		A11F9FAD6FC3036739C2F92D7B1510EF /* XQCWhiteStripTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C075AB56C402F933FA0BFC851C4F1C9 /* XQCWhiteStripTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A11F9FAD6FC3036739C2F92D7B1510EF /* XQCWhiteStripTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E391ABCB4BD4B0D02373726D5BB099 /* XQCWhiteStripTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A19EE9C71ECF10BB29DD8D608F881D69 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D98B693812358F6BA19B979AE5A94042 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1CFED781CF2C02910DAD70C59645266 /* SDImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B082776F94AE98CF1210070E33331A5C /* SDImageGIFCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2E53353220CEDB91085D1530E0F5798 /* XQCPaySDK_Objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E12C9AE3ACDBC54EE5E8C37694BED /* XQCPaySDK_Objc-dummy.m */; };
+		A2E53353220CEDB91085D1530E0F5798 /* XQCPaySDK_Objc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C7BA4CF1310C58B545FA7DC91A5D84 /* XQCPaySDK_Objc-dummy.m */; };
 		A2F7A25C90DD23D8BE4C6C35D97390F0 /* RACSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE5A8F7ED66BB958D5E03BA61A18CC4 /* RACSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A32E570AE4C55F3409FED3A6C284FAB1 /* UMSPPPayUnifyPayPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B50F0F03DCFE789C6D59C976A3CD70 /* UMSPPPayUnifyPayPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A32E570AE4C55F3409FED3A6C284FAB1 /* UMSPPPayUnifyPayPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 100E95765AB85ED7353D11018D78BDAE /* UMSPPPayUnifyPayPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A33519A19628B9A31E1BD9EAB8CD9D70 /* SDWebImageError.m in Sources */ = {isa = PBXBuildFile; fileRef = 431AC0C7BC79A2B0F92334F64BAD7289 /* SDWebImageError.m */; };
 		A37758037745C2F054C996615D241CE5 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1740C6706139694DF2AC637BCC268CB2 /* SVIndefiniteAnimatedView.m */; };
 		A432D0BF19111196278675B1E5535C72 /* RACSubscriptingAssignmentTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 992435F07481403C992B8BEFC9712CFC /* RACSubscriptingAssignmentTrampoline.m */; };
 		A43A06F1B8A28DEDA32BE7EB59EB39A4 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5328185A14E9F311FA711FE954ECC /* SVProgressAnimatedView.m */; };
-		A4EBA5B16C438F3CDD3051C26D1BDE66 /* UIImage+myImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F1754C8D30B88670CF3B415448036BD5 /* UIImage+myImage.m */; };
+		A4EBA5B16C438F3CDD3051C26D1BDE66 /* UIImage+myImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0275B585C025930C3FE803A19D0CCA8 /* UIImage+myImage.m */; };
 		A57119B4D19CEFDAC19D6DFEDEB0E903 /* RACReturnSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD230DECC1E2E70FA316999122F73C4 /* RACReturnSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5C3DDE71F7B399A9C060F7CE417C553 /* RACSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 942B89AB555883B1E44A4D80D5614122 /* RACSubject.m */; };
 		A5FBE15473CCC3B8FF439E0D33912F89 /* NSBezierPath+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB1D332D7B833C49FAEB626AB34178C /* NSBezierPath+RoundedCorners.m */; };
-		A6C5E6EBC995BFEC9E21F4812581A34E /* XQCNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B008FBE70230092227872CA4341CE66 /* XQCNavBarView.m */; };
+		A6C5E6EBC995BFEC9E21F4812581A34E /* XQCNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC603C3AFCE75CCF9E5A3CC8DD3F864 /* XQCNavBarView.m */; };
 		A7EB96B7FFAA94214DDE64811B725D27 /* SDWebImageCacheKeyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D806C3CD889AB2F6D7436827FC4E04CA /* SDWebImageCacheKeyFilter.m */; };
 		A844DB068205C378FB2EE88297C7B5D8 /* SDImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DF62E869C68E6679F8468E944134CC /* SDImageGIFCoder.m */; };
 		A8BBE72B2FF4D8C68E33414E20D1ADCD /* UIImage+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 363295E8E22C00E073F4F8DAE8FE2A69 /* UIImage+Transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -312,7 +313,7 @@
 		ADCCA2AD955C0F60458B47C3AAD84996 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B623CAF65089392C05EB066191FE5 /* UIImage+GIF.m */; };
 		AE7F57ECAD31533D402AA01C9A379FD3 /* NSDictionary+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4E971F9CBEC38C291F408590507DA1 /* NSDictionary+RACSequenceAdditions.m */; };
 		AF1DEDF00082F809EBD6ED8340784BD3 /* SDImageCachesManagerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F3BE3AB3942A300DD64951444E681FF /* SDImageCachesManagerOperation.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AF8A3424C5153EB76B394FC73269476F /* PaySDKHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 25356DAEE8912F708318AEA0DC5C4020 /* PaySDKHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF8A3424C5153EB76B394FC73269476F /* PaySDKHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D8CE4EC7B6B664802E1E42ECAECDB6BD /* PaySDKHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF8D1F185647E5EBA633F75EEAA0EAC6 /* SDMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CF40C4D48D003F33B04642A33FBDB2 /* SDMemoryCache.m */; };
 		B02B2974180AC143E9C058367FABC4EE /* RACTargetQueueScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A5EFA575FFEBFE5853B8B5633EDA64 /* RACTargetQueueScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B08FFDE921A8BE2EF150B4E58A838B5E /* SDmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D19088749D101F4819A659C8758E8E7A /* SDmetamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -328,22 +329,21 @@
 		B9E10EB002AB909FFCF3699E25D604B3 /* NSString+XQCPwdRsaTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E97D6DC817A83885816909BEF5595 /* NSString+XQCPwdRsaTool.m */; };
 		BA95274852A90D3DD601262CC0A12B78 /* RACScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0117C96DC98038CBE35AC68391833648 /* RACScheduler.m */; };
 		BC3DCF0BDC425AB3BE4A939D6DCB8C2C /* SDAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 580FE1690EBA3AA982AD9B20B8178BAF /* SDAnimatedImage.m */; };
-		BC5A76F3C63E8814A4AF3F4B76B4FD3E /* XQCPayHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B001CB2410A40AC3A9976B2AC89D5AE3 /* XQCPayHeaderView.m */; };
+		BC5A76F3C63E8814A4AF3F4B76B4FD3E /* XQCPayHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250EE02177EF498AB980EC95C5C4670 /* XQCPayHeaderView.m */; };
 		BC9D138592743C6138E5EEBDCF679053 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E439EE71BC265B6F499E2352DA4ECBC9 /* MASLayoutConstraint.m */; };
 		BCBC3FF4EADFA06C716DF8262CD58800 /* RACEXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 542FD1256338028DE65186F14A138587 /* RACEXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE319236BF4A423FA6A71F55E620AEB0 /* SDInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC1CD189611839E6C5746C70E9E0044 /* SDInternalMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BE5109F8F4B914BC6EA1B8FB56B25C49 /* SDWebImageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6E4FC83AA82E40CFAFB72E30E5796 /* SDWebImageIndicator.m */; };
 		BE6E0888A03CC483369C7A1C28DDDFC0 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8AC0B01BCC3BCB4CC662F8851D0ECE /* SDWebImage-dummy.m */; };
-		BEA27DAF0101D20973DCDC19125F3208 /* XQCPaySDK_Objc.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DD322D772315661B6990B9A61DC0993 /* XQCPaySDK_Objc.bundle */; };
-		C037E8B4F797F37A3B9A6DF09F21CFB7 /* UPPaymentControl.h in Headers */ = {isa = PBXBuildFile; fileRef = A05E11F0484067A19F97B8505D78D6FD /* UPPaymentControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C037E8B4F797F37A3B9A6DF09F21CFB7 /* UPPaymentControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 751A0EFDAC6BF85FF8C5D00943756589 /* UPPaymentControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C072D789AB0270657B32E9893F38E794 /* RACEmptySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B196C2F998BC30809C48BC8575A9FBD5 /* RACEmptySequence.m */; };
 		C0DD6736449205C5D41D63A0002E0286 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8075085C4E641F0922BCE66949551F6A /* Foundation.framework */; };
 		C1441745B5E1329B0051A36762A5560C /* UIStepper+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE7BEDCB9E1EB4681639319C7486AE3 /* UIStepper+RACSignalSupport.m */; };
 		C1A3598FED1CD4569E22DCEFB33CE523 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAFD161E57AB5478C7379712B4D254F /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1D492EC8F44F970843B06C0EFF69349 /* UITextView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E3DA130C6FC06D614A2768D87137F94 /* UITextView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C29A4B253673978FD64366D04B9815FC /* UMSPPPayOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 26EC7D213C07C4B76F6C3448E6895C73 /* UMSPPPayOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C29A4B253673978FD64366D04B9815FC /* UMSPPPayOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = F495A3A190BDFF9DB4D727BBB969DC15 /* UMSPPPayOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2C2DE58456C4B409A8218C207AA10AA /* RACBlockTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A767C46E9C3F3CA0F66075C23BF4AE /* RACBlockTrampoline.m */; };
-		C381BEEF7ACFF5BE573B9733DBE681A8 /* XQCPayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFC60C6CB59BE6E02C361FD29FA1D48 /* XQCPayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C381BEEF7ACFF5BE573B9733DBE681A8 /* XQCPayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8580F6A12D96A961C2EB4EF639AD2341 /* XQCPayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3CE131C2C9919BDB97535098962C22E /* UIActionSheet+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 04049AC8FAC470D95673E921765B1F57 /* UIActionSheet+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C44DC5B6A037690AE1CDA6E75B2A8DA0 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2AEFF8FBF87B2C4AD5AA0DBB8309FD /* SDImageCacheConfig.m */; };
 		C494DB53F24B1E0590190756B3008BA3 /* RACStringSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = C533028E3B358B021222FAD72AACAE9E /* RACStringSequence.m */; };
@@ -354,11 +354,11 @@
 		C58C96ECEB8DA48FD48BF98210048834 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BE0B025B416755D7A1331A42F30CC /* ViewController+MASAdditions.m */; };
 		C6A2EE078B2C196D7BF98B77D38B2791 /* RACErrorSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F95EBFD97EFBEA49804EF32492F6462 /* RACErrorSignal.m */; };
 		C798F6A0665B85C32FE586AA6E3646AE /* passWrodCancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81CD358825D3DAF4C095DE5DCCAFDDDC /* passWrodCancel@3x.png */; };
-		C7A08D1DAFF4F8C3E812CDF6E126E868 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EE7752F7004426FB47903DB22D45AA5 /* checked.png */; };
+		C7A08D1DAFF4F8C3E812CDF6E126E868 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE96555649D6A1135CCECAB62D1A69A /* checked.png */; };
 		C8A32AF06DBC95E1E417F617671A86A0 /* SDImageAPNGCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DACC402C0718A2AC8C6B853CBC2C9D /* SDImageAPNGCoder.m */; };
 		C8B2C44773021FE52AE8D492B90F5787 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 39A2A9F556C3C50A7919C0A5057A618A /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8FFF2C1A7C8E344DA4CB280FDF1ED42 /* Pods-XQCPaySDK_Objc_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68851BA548DA6B97882B2D0B375D7277 /* Pods-XQCPaySDK_Objc_Tests-dummy.m */; };
-		C906580CEF0E15CFAF159375952AEB3C /* UIButton+paySDkBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 84706E09F6C43D07E35200A8E025778E /* UIButton+paySDkBtn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C906580CEF0E15CFAF159375952AEB3C /* UIButton+paySDkBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = 69977B44A5D0DCEAF963D49C2114E611 /* UIButton+paySDkBtn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C979EC2CDFCF0113BA8AF5C42454F2C5 /* UITextField+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6779CB8E9EB69CAAE5095E3412B2C66A /* UITextField+RACSignalSupport.m */; };
 		CA117E25BB80F85F5A836ED6EC1F22FC /* NSObject+RACPropertySubscribing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3796861379E301C88BEBD6770BD79 /* NSObject+RACPropertySubscribing.m */; };
 		CA5C0056704B4D42B15CEB19367655BC /* NSNotificationCenter+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 284D970FF13BFACD398DC9DD615ABEC2 /* NSNotificationCenter+RACSupport.m */; };
@@ -377,13 +377,13 @@
 		D0FE394E692A30796B0B8260680542A7 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C2129437BED5A74A517BA3C3E3344C6E /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1E644DC3C9653207E5CBF442E6B8B27 /* NSSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE35F5E384E1225E0FF08B58574369C /* NSSet+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2B5C5FF9335E53862398E2688E6EC05 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 23E1087C5912CE81EF80086BBCC19A58 /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D41CF69A2B17923B36EBB09051CFCBD8 /* WhitestripModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E3E01CFEC117F97EB9B77A485762FCC6 /* WhitestripModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D41CF69A2B17923B36EBB09051CFCBD8 /* WhitestripModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4396A8E47099843E39E3A789618F621 /* WhitestripModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D62A100E1C8A7AE7B6EE7B69AFB1A1F2 /* UIImage+MemoryCacheCost.h in Headers */ = {isa = PBXBuildFile; fileRef = 038100A8708F42EE271E268E537F7F5B /* UIImage+MemoryCacheCost.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D68850964A0212148C2686E4BDF17F2E /* SDMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 65502BE0B4B5C825CAFE02384116A0D0 /* SDMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D68FCDA1E090EBBA77299F1C7D3D2597 /* UIBarButtonItem+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = C128F93DD0FF016BADD869E3A6117C52 /* UIBarButtonItem+RACCommandSupport.m */; };
 		D76FAC37F790B971F5543233A16AAC51 /* XQCPaymentPasswordInputView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2463D3DDFC2CE624E062AE26EED6E1 /* XQCPaymentPasswordInputView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7D9D78A2534A298F12406FBE426E3E6 /* RACDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 902434CE03D77433A52F4342E5B6B330 /* RACDelegateProxy.m */; };
-		D88F286E580500DAC4D242AFC7781319 /* ResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6456BD4FACA29548EB75D93702953E19 /* ResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D88F286E580500DAC4D242AFC7781319 /* ResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D5B8B38BFBCAF8A0C9CD86BE9A049D77 /* ResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D892D5CB8E1711B1FE8FCA30D5D1713F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D67872FBA4AC0F47E3B309555F13FEB /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		D8B148B4A587920E9FCDCB851DD78866 /* SDImageAPNGCoderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB9189A80D97342255ADD7BC6DDDC3C /* SDImageAPNGCoderInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D8BB062A9CC35B817FC490A499F4F764 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 98240EE4AC89D44C3594ADB219DD2D8F /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -400,13 +400,14 @@
 		DE18A3C66370074EB9BA067804A27214 /* UIStepper+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BBC5BD703B547418C0A733CB78AC96 /* UIStepper+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEDC90A636DD2B5F237296C73CC33CCA /* NSString+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0743A1BFE7A3E86A22A8766849F78038 /* NSString+RACSequenceAdditions.m */; };
 		DEDD2C2DF56A94FA79DD761F15729AF3 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A206FDC1ABE1E5F5BC2C006938240B /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E01BBBC33A609E5C1BE74DD4105C921C /* UMSPPPayPluginSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 357F710F21551C0FC2FBB1442D8D350C /* UMSPPPayPluginSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E026EE3C546296F95BCFA086C06C5424 /* XQCPayHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = F0BF76EA4CE8F24BEA61925146E32E41 /* XQCPayHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E01BBBC33A609E5C1BE74DD4105C921C /* UMSPPPayPluginSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = E3E46809D2422C961731CE2534E837F2 /* UMSPPPayPluginSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E026EE3C546296F95BCFA086C06C5424 /* XQCPayHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D4C20C6406C70041E8D397FC47BA27 /* XQCPayHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0A7128BEA008D34AB35FE4D0432CA29 /* NSFileHandle+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7027C99778E0DB5BBC0A0ED2AE26087F /* NSFileHandle+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0FE47AB330E7854320E569EB37BF93C /* SDImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 288D0200115EB22DD5EEA68AE970F6F5 /* SDImageFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1308B4622E98D411B95B8FA53AC8357 /* NSObject+RACKVOWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 985D7F29283F0BB0D9C9AE7AEC8A4797 /* NSObject+RACKVOWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E17D5537EBB1908240B6B2859F2FC604 /* SDWebImageCacheSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8975D8A2A71B9100B494789372AFD695 /* SDWebImageCacheSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1890EE6BEA8EF89100C96D7E356489F /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC7EC2E0EB26B12D4F1EFD9CBF7405B /* ResponseModel.m */; };
+		E1890EE6BEA8EF89100C96D7E356489F /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0BC60DF14C16EC5EAF683C7BAC031D /* ResponseModel.m */; };
+		E215A0BD61F18954168F40110BFBC95E /* UMSSecKeyboardLibResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 599AC186AEA9EF09E203E33580F9ABF9 /* UMSSecKeyboardLibResource.bundle */; };
 		E221CB69D6A27760CA9179AEC44737B4 /* UIImage+Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 295578B668F86569A5458B7D79367BEA /* UIImage+Metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E24F8682D2108D76E396C141164825D1 /* XQCPaymentPasswordInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F34D933484A2CFA90A4CCA1D51C5ACB /* XQCPaymentPasswordInputView.m */; };
 		E2AC28A590EEE4E4DC49F7C56413E6A1 /* SDWebImageDownloaderConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F74F0D4D7A24B880DC66C42558B81772 /* SDWebImageDownloaderConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -436,10 +437,10 @@
 		ED99CADE4876A189222264FA55F4F50D /* RACQueueScheduler+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = B1D6910D13809B8ECB697E60E9DBC86C /* RACQueueScheduler+Subclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDF21C03B1FFBAB62FEE4B9FBA7E5E55 /* SDDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C753FAD09049760D279D82A8D2291 /* SDDiskCache.m */; };
 		EE508174AE6920423709E014F1A7A467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8075085C4E641F0922BCE66949551F6A /* Foundation.framework */; };
-		F1D75663719715B55A19FD88C6514050 /* XQCPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A198C78B7F42EE131175C946B2672 /* XQCPayManager.m */; };
+		F1D75663719715B55A19FD88C6514050 /* XQCPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D09EBC50759D69C361CBB41E6B550412 /* XQCPayManager.m */; };
 		F24ACBD882CD2A107A225DCA4A19F95C /* RACBlockTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = F76CDECD440F00ABBECC277874BE423E /* RACBlockTrampoline.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2819793BE2DF87B1549817825FDAE40 /* XQCPaySDK_Objc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B39001E0B4C116A279DD0FDF8925A5DC /* XQCPaySDK_Objc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2B5758CAB3FE4232ACE82703697E129 /* Api.m in Sources */ = {isa = PBXBuildFile; fileRef = 48528C182FC83D275C50BD9B35F4EA00 /* Api.m */; };
+		F2819793BE2DF87B1549817825FDAE40 /* XQCPaySDK_Objc-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3522F244B4135261509DFDA692F89D59 /* XQCPaySDK_Objc-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2B5758CAB3FE4232ACE82703697E129 /* Api.m in Sources */ = {isa = PBXBuildFile; fileRef = D30ABA62B636986B7982B3D51271A5DE /* Api.m */; };
 		F2F4B1408DF89A21C91AA0DED85363A5 /* NSString+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CF79607CD965567E39FEDEE9C1D6BA51 /* NSString+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4BE94B99978A17EB8AD5FD0EB65AFCB /* UIBarButtonItem+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 51EB5319096B0533BA43B3C28F5C66F4 /* UIBarButtonItem+RACCommandSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F50920C2026473CF11E5C635750F12EE /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A2A074DC34A6D2ABE44CD07A03CF29 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -447,11 +448,11 @@
 		F63E67F2D1E70DFF09C5988690EC7DD6 /* Pods-XQCPaySDK_Objc_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B378EE7D8C0BFBBB6A89DD52DA4BD6A4 /* Pods-XQCPaySDK_Objc_Example-dummy.m */; };
 		F7D8340D28D3BA1C4BAB0E8F06391B7E /* UIGestureRecognizer+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = BFEC5E2F4C1558E31B405ED4C617F478 /* UIGestureRecognizer+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F82F30CF10226F80614D3A6E6FF417FC /* NSImage+Compatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = C7287752D1D3D53ABE98AF9973F3CFB7 /* NSImage+Compatibility.m */; };
-		F84E5AC2A7D5A742A61844CC8A6EA3BD /* XQCPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E11AA1ABC195B50ECA4754442673874 /* XQCPayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84E5AC2A7D5A742A61844CC8A6EA3BD /* XQCPayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3BB01F1960F8C1DB2B1BFF5C4453FE /* XQCPayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8D2A2FF47E511F6C378DBED5775724E /* SDAnimatedImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CED403654D1F12A1401C02C36924ADB /* SDAnimatedImageView+WebCache.m */; };
 		F95F731C63090FE27EA0ACD3454EE849 /* UIImage+xqcBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC71968954EB0DBC3DB1B9432D70A29 /* UIImage+xqcBundle.m */; };
 		FBF11CC510FC8AB8AE121B9BE0A87A5C /* SDImageCachesManagerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5179B1454CF774BE250635F27E1AF056 /* SDImageCachesManagerOperation.m */; };
-		FCC5EB98C663A980E9C3858D67818BC9 /* XQCNavBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D5D840747511BEE8354EDE01467F42 /* XQCNavBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCC5EB98C663A980E9C3858D67818BC9 /* XQCNavBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB6023CBAC51FFD2400C6EE7701C721 /* XQCNavBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCD4F9310445D59D285D61CF386EF7E6 /* UIImage+MemoryCacheCost.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B95EB174AC92126546D9AC8B2393FCB /* UIImage+MemoryCacheCost.m */; };
 		FD651555CB6D678C7DFE103BB766F57A /* NSString+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A8EF5F8D1662648749BD87B983EF83 /* NSString+RACSupport.m */; };
 		FDD01B6898CBCC8B6921B5BEB7B48E5D /* UIButton+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F42C3CE8CF7A14A8837E58E49FA79B /* UIButton+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -577,7 +578,6 @@
 /* Begin PBXFileReference section */
 		00118A5BE20A5739787880BB4BA1B006 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		00291C483036A7DD259B107EAE8B460C /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		0061E74E78603B74049597B623ECB109 /* PayAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PayAlertView.h; sourceTree = "<group>"; };
 		0117C96DC98038CBE35AC68391833648 /* RACScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScheduler.m; path = ReactiveObjC/RACScheduler.m; sourceTree = "<group>"; };
 		01CA5C2AC2CC950A70309C13DEF38F8D /* NSObject+RACDeallocating.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDeallocating.m"; path = "ReactiveObjC/NSObject+RACDeallocating.m"; sourceTree = "<group>"; };
 		02A323127EB55B4F942BAC5FE4A0098E /* SDImageCachesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManager.h; path = SDWebImage/SDImageCachesManager.h; sourceTree = "<group>"; };
@@ -589,19 +589,21 @@
 		04049AC8FAC470D95673E921765B1F57 /* UIActionSheet+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+RACSignalSupport.h"; path = "ReactiveObjC/UIActionSheet+RACSignalSupport.h"; sourceTree = "<group>"; };
 		0518BBB279EFB5620294437819E95967 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
 		061054CD7A4DEC6427D5B8CE85EDF8EA /* SDWebImageDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDefine.h; path = SDWebImage/SDWebImageDefine.h; sourceTree = "<group>"; };
+		062AF04FF033EADF5F5D385648E84046 /* ChannelModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChannelModel.h; sourceTree = "<group>"; };
 		066B9F26655DD6A8CCF7CDA2907BAA07 /* UITableViewHeaderFooterView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewHeaderFooterView+RACSignalSupport.m"; path = "ReactiveObjC/UITableViewHeaderFooterView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		06EDB1E9B9D6B2F3555AC0421FDD5C98 /* RACKVOChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOChannel.m; path = ReactiveObjC/RACKVOChannel.m; sourceTree = "<group>"; };
+		070698D9207BB63DC6C40D3CDA17F564 /* ResourceBundle-XQCPaySDK_Objc-XQCPaySDK_Objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XQCPaySDK_Objc-XQCPaySDK_Objc-Info.plist"; sourceTree = "<group>"; };
 		0743A1BFE7A3E86A22A8766849F78038 /* NSString+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSequenceAdditions.m"; path = "ReactiveObjC/NSString+RACSequenceAdditions.m"; sourceTree = "<group>"; };
+		074527FBC9DE1BC41971BB0021FFCD10 /* Api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
 		07AB52C913DEA68C1A88931BE0EA5705 /* SDWebImageCacheKeyFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheKeyFilter.h; path = SDWebImage/SDWebImageCacheKeyFilter.h; sourceTree = "<group>"; };
 		07CADE9CFC2325D959E11637379AC547 /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
-		08FB35EC26B92D2F2207E2C3BEB38BBC /* NSBundle+loadImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+loadImage.h"; sourceTree = "<group>"; };
+		082B287470840F07382EB8013E524874 /* XQCPayItemView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayItemView.h; sourceTree = "<group>"; };
 		0925F2A2781362B9AB024BCA22E00165 /* SDWebImageDownloaderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderConfig.m; path = SDWebImage/SDWebImageDownloaderConfig.m; sourceTree = "<group>"; };
 		09471723A5A67D9B250CEF53D5137E67 /* SDImageCacheDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheDefine.m; path = SDWebImage/SDImageCacheDefine.m; sourceTree = "<group>"; };
 		095893AFFD6176ACE55C3C968E974209 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		0A16F7542459557E0B4B25FF2B5051F0 /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveObjC.framework; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9EE292D292589303B1336C2FDC5C20 /* ReactiveObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReactiveObjC.modulemap; sourceTree = "<group>"; };
 		0AF8E06E3FB3E11B78BC16DF0F719948 /* Pods-XQCPaySDK_Objc_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XQCPaySDK_Objc_Tests.modulemap"; sourceTree = "<group>"; };
-		0B008FBE70230092227872CA4341CE66 /* XQCNavBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCNavBarView.m; sourceTree = "<group>"; };
 		0B2AEFF8FBF87B2C4AD5AA0DBB8309FD /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
 		0BDB4E7F0C51478AA7F7C156B018C30D /* RACValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACValueTransformer.m; path = ReactiveObjC/RACValueTransformer.m; sourceTree = "<group>"; };
 		0BFF27BA3F245EB7A5BC0E4422610C76 /* SDAsyncBlockOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAsyncBlockOperation.h; path = SDWebImage/Private/SDAsyncBlockOperation.h; sourceTree = "<group>"; };
@@ -609,16 +611,18 @@
 		0C5920C460CDD79F3FE67188B4D76BA2 /* UITextField+MyExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+MyExtension.m"; path = "XQCPaymentPasswordInputView/Classes/UITextField+MyExtension.m"; sourceTree = "<group>"; };
 		0DB94CE043E2C38473646C49F2F1524B /* NSInvocation+RACTypeParsing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+RACTypeParsing.h"; path = "ReactiveObjC/NSInvocation+RACTypeParsing.h"; sourceTree = "<group>"; };
 		0DF58408C48F45BED005851128E0C64B /* RACSignal+Operations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSignal+Operations.h"; path = "ReactiveObjC/RACSignal+Operations.h"; sourceTree = "<group>"; };
+		0E3BB01F1960F8C1DB2B1BFF5C4453FE /* XQCPayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayManager.h; sourceTree = "<group>"; };
 		0E487C47EB22DC8C1D1B6D5D7C05EEB2 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		0EE7752F7004426FB47903DB22D45AA5 /* checked.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = checked.png; path = XQCPaySDK_Objc/Assets/checked.png; sourceTree = "<group>"; };
 		0F711BFEA47E3907FC133A218933BC18 /* RACCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACCommand.h; path = ReactiveObjC/RACCommand.h; sourceTree = "<group>"; };
+		100E95765AB85ED7353D11018D78BDAE /* UMSPPPayUnifyPayPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayUnifyPayPlugin.h; sourceTree = "<group>"; };
 		102C9F08939286BFA9F64FF77E290E2F /* RACSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignal.m; path = ReactiveObjC/RACSignal.m; sourceTree = "<group>"; };
 		1044A8A6DB5C63998CB8AB2AD9F51213 /* UIControl+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+RACSignalSupport.m"; path = "ReactiveObjC/UIControl+RACSignalSupport.m"; sourceTree = "<group>"; };
 		10511202CB9368ECBAD5D00062B83C43 /* ReactiveObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactiveObjC.h; path = ReactiveObjC/ReactiveObjC.h; sourceTree = "<group>"; };
 		110E39604FE1C28255F42A648B24E088 /* NSString+XQCMd5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XQCMd5.h"; path = "XQCPaymentPasswordInputView/Classes/NSString+XQCMd5.h"; sourceTree = "<group>"; };
-		115EA91083B05AFBDA98369106127106 /* ChannelModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ChannelModel.h; sourceTree = "<group>"; };
 		11BE11267EC9FFE502EB4053E43038D3 /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/SDWebImageTransition.h; sourceTree = "<group>"; };
+		11C7BA4CF1310C58B545FA7DC91A5D84 /* XQCPaySDK_Objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XQCPaySDK_Objc-dummy.m"; sourceTree = "<group>"; };
 		12518FAB1DB1EBEAA739802A09CF5354 /* UIDatePicker+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDatePicker+RACSignalSupport.h"; path = "ReactiveObjC/UIDatePicker+RACSignalSupport.h"; sourceTree = "<group>"; };
+		127D08E0B5D4CA6EEEBAECD938B51234 /* UIButton+paySDkBtn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+paySDkBtn.m"; sourceTree = "<group>"; };
 		13233331CE9BAA969CD18C6D2354144E /* UIImagePickerController+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+RACSignalSupport.m"; path = "ReactiveObjC/UIImagePickerController+RACSignalSupport.m"; sourceTree = "<group>"; };
 		14E80204B2DDE9FC7005A3F0C2FC7E2B /* NSFileHandle+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RACSupport.m"; path = "ReactiveObjC/NSFileHandle+RACSupport.m"; sourceTree = "<group>"; };
 		14F412799818F0447B8FC4B32560531F /* SDWebImageDownloaderRequestModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderRequestModifier.h; path = SDWebImage/SDWebImageDownloaderRequestModifier.h; sourceTree = "<group>"; };
@@ -626,8 +630,10 @@
 		15D9725FDA1702BA78980FE4A2D5D23E /* Pods-XQCPaySDK_Objc_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQCPaySDK_Objc_Tests-Info.plist"; sourceTree = "<group>"; };
 		16A2A074DC34A6D2ABE44CD07A03CF29 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		16B0604216D5B5969F48E88FCA4DEBF1 /* RACScopedDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScopedDisposable.m; path = ReactiveObjC/RACScopedDisposable.m; sourceTree = "<group>"; };
+		16C07FAE2BF712E609637D4190F522D5 /* XQCNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCNetworking.h; sourceTree = "<group>"; };
 		16C7DC7C9E99054526F33ACA2258BC3F /* SDImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageFrame.m; path = SDWebImage/SDImageFrame.m; sourceTree = "<group>"; };
 		1740C6706139694DF2AC637BCC268CB2 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		1757FA11FC7F65F1E7F9F54AD0C7B1BF /* NSBundle+loadImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+loadImage.m"; sourceTree = "<group>"; };
 		175BE8E3250A8ADAA00817368B443984 /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
 		17874B7FE764F25979C336569B40F468 /* SDAnimatedImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SDAnimatedImageView+WebCache.h"; path = "SDWebImage/SDAnimatedImageView+WebCache.h"; sourceTree = "<group>"; };
 		17A7C876383789ED2A52F0E74F02DB25 /* RACTupleSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTupleSequence.h; path = ReactiveObjC/RACTupleSequence.h; sourceTree = "<group>"; };
@@ -646,30 +652,23 @@
 		1D3FD8E472DCD5EBEE721C7B85A043EF /* XQCPaymentPasswordInputView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XQCPaymentPasswordInputView-Info.plist"; sourceTree = "<group>"; };
 		1DA66E724C343361D802CC64BD5A6CC1 /* SDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImage.h; path = WebImage/SDWebImage.h; sourceTree = "<group>"; };
 		1DC6F9D7664DCF99DA2E47C1671A21F7 /* RACPassthroughSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACPassthroughSubscriber.m; path = ReactiveObjC/RACPassthroughSubscriber.m; sourceTree = "<group>"; };
-		1E11AA1ABC195B50ECA4754442673874 /* XQCPayManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayManager.h; sourceTree = "<group>"; };
 		1E9DB66772B5379CFFABCB6FAAFCEC0D /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
 		1FAC041171BFA946ECB49F8DC642B14D /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		1FEE5B4B0005B2831D93A6447DF540C9 /* Pods-XQCPaySDK_Objc_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XQCPaySDK_Objc_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		21B50F0F03DCFE789C6D59C976A3CD70 /* UMSPPPayUnifyPayPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayUnifyPayPlugin.h; sourceTree = "<group>"; };
 		22036BD7A1B70C745245C5419E1F765F /* RACArraySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACArraySequence.h; path = ReactiveObjC/RACArraySequence.h; sourceTree = "<group>"; };
 		2266E63ACE5896D55D0B89463469D376 /* Pods-XQCPaySDK_Objc_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XQCPaySDK_Objc_Example-frameworks.sh"; sourceTree = "<group>"; };
 		228A5FABBBACDDB5621F33E40DA5C846 /* RACDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDisposable.h; path = ReactiveObjC/RACDisposable.h; sourceTree = "<group>"; };
 		22E6944502A63FCC7082525275968EE2 /* RACQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACQueueScheduler.h; path = ReactiveObjC/RACQueueScheduler.h; sourceTree = "<group>"; };
-		233C3F750627FF44503F2B8E6085C4BC /* XQCPayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayViewController.m; sourceTree = "<group>"; };
 		23E1087C5912CE81EF80086BBCC19A58 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
-		240AEC76CE538A55D2437F08C00DFBD1 /* UIButton+paySDkBtn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+paySDkBtn.m"; sourceTree = "<group>"; };
-		2434AF944FC9CF80DB89F4419AB1120E /* UMSPPPayPosPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayPosPay.h; sourceTree = "<group>"; };
-		243FD66B0359C0597863C7FB28A72BA6 /* XQCPaySDK_Objc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XQCPaySDK_Objc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		252DA1F7EC1ACB5DA923BD3573889237 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		25356DAEE8912F708318AEA0DC5C4020 /* PaySDKHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PaySDKHeader.h; sourceTree = "<group>"; };
-		2583921E21175DEF7739F923383FA099 /* XQCPaySDK_Objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XQCPaySDK_Objc.modulemap; sourceTree = "<group>"; };
+		25D4C20C6406C70041E8D397FC47BA27 /* XQCPayHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayHeaderView.h; sourceTree = "<group>"; };
 		25F6B8EC50071B1B0FC978B58327B7E6 /* RACmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACmetamacros.h; path = ReactiveObjC/extobjc/RACmetamacros.h; sourceTree = "<group>"; };
 		2603C96F74853654FE547FE86A39CD86 /* ReactiveObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveObjC.xcconfig; sourceTree = "<group>"; };
 		26EA82FA3F36F25517561A8DA7D04D59 /* RACEagerSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEagerSequence.h; path = ReactiveObjC/RACEagerSequence.h; sourceTree = "<group>"; };
-		26EC7D213C07C4B76F6C3448E6895C73 /* UMSPPPayOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayOrder.h; sourceTree = "<group>"; };
 		26ECA0D682461A947B019CCE934B487A /* XQCPaymentPasswordInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XQCPaymentPasswordInputView.h; path = XQCPaymentPasswordInputView/Classes/XQCPaymentPasswordInputView.h; sourceTree = "<group>"; };
 		27F625DD83178C085B2F525C93C865B6 /* NSIndexSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+RACSequenceAdditions.h"; path = "ReactiveObjC/NSIndexSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		284D970FF13BFACD398DC9DD615ABEC2 /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.m"; sourceTree = "<group>"; };
+		288623F8AB6D001ADD4D72B759FAC6E1 /* navi_back_black.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = navi_back_black.png; path = XQCPaySDK_Objc/Assets/navi_back_black.png; sourceTree = "<group>"; };
 		288D0200115EB22DD5EEA68AE970F6F5 /* SDImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageFrame.h; path = SDWebImage/SDImageFrame.h; sourceTree = "<group>"; };
 		28F42C3CE8CF7A14A8837E58E49FA79B /* UIButton+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Extension.h"; path = "XQCPaymentPasswordInputView/Classes/UIButton+Extension.h"; sourceTree = "<group>"; };
 		29111D08E5ECDAF20EC5765FBD80129D /* NSObject+RACSelectorSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACSelectorSignal.h"; path = "ReactiveObjC/NSObject+RACSelectorSignal.h"; sourceTree = "<group>"; };
@@ -679,28 +678,29 @@
 		2B2A022380C75C39C107FAA8A9DAA719 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		2B52792B2BDD21D5EC863B6CB190AD57 /* NSObject+RACDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDescription.m"; path = "ReactiveObjC/NSObject+RACDescription.m"; sourceTree = "<group>"; };
 		2B95EB174AC92126546D9AC8B2393FCB /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
+		2C3E2C7E39BDAD0CBE27CAD9BC3AFF0D /* PasswordModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PasswordModel.m; sourceTree = "<group>"; };
 		2D67872FBA4AC0F47E3B309555F13FEB /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		2DB223EC6478D4648EF058A216F15145 /* RACSignal+Operations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RACSignal+Operations.m"; path = "ReactiveObjC/RACSignal+Operations.m"; sourceTree = "<group>"; };
 		2E0EB9263008FCD671C46197EAB49AF6 /* RACKVOTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOTrampoline.h; path = ReactiveObjC/RACKVOTrampoline.h; sourceTree = "<group>"; };
 		2E3DA130C6FC06D614A2768D87137F94 /* UITextView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+RACSignalSupport.h"; path = "ReactiveObjC/UITextView+RACSignalSupport.h"; sourceTree = "<group>"; };
+		2F15E599CB4B36891AFBD67E45FB7C40 /* UIImage+myImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+myImage.h"; sourceTree = "<group>"; };
 		2F3BE3AB3942A300DD64951444E681FF /* SDImageCachesManagerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManagerOperation.h; path = SDWebImage/Private/SDImageCachesManagerOperation.h; sourceTree = "<group>"; };
 		2F9A3EEF347A5D4F344A7ED053B05C30 /* RACCompoundDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACCompoundDisposable.h; path = ReactiveObjC/RACCompoundDisposable.h; sourceTree = "<group>"; };
 		302637AA0E9E63D287E30C0D7EBB276A /* Pods-XQCPaySDK_Objc_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XQCPaySDK_Objc_Example-umbrella.h"; sourceTree = "<group>"; };
 		304F29AD291BE1FAE011C410221E721C /* RSAEncryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSAEncryptor.m; path = XQCPaymentPasswordInputView/Classes/RSAEncryptor.m; sourceTree = "<group>"; };
+		30925D30B4A439B0FE48BBAE9F8628E1 /* UMSPPPayPosPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayPosPay.h; sourceTree = "<group>"; };
 		315A9F39076BB4A9E8EFBE4FD7C01384 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		3250EE02177EF498AB980EC95C5C4670 /* XQCPayHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayHeaderView.m; sourceTree = "<group>"; };
 		32DACC402C0718A2AC8C6B853CBC2C9D /* SDImageAPNGCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAPNGCoder.m; path = SDWebImage/SDImageAPNGCoder.m; sourceTree = "<group>"; };
-		33EA8ABAD822F80A31C2F16D9B10D0E9 /* XQCPayItemView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayItemView.m; sourceTree = "<group>"; };
 		343F63B0D71CA3BD137FC748036BFAB0 /* NSUserDefaults+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+RACSupport.h"; path = "ReactiveObjC/NSUserDefaults+RACSupport.h"; sourceTree = "<group>"; };
 		34566DF16D7523012464264C70983764 /* XQCPaymentPasswordInputView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XQCPaymentPasswordInputView.modulemap; sourceTree = "<group>"; };
-		34F8A788ADD64A7E2937615FF33BF12D /* YSEPaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YSEPaySDK.framework; path = XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework; sourceTree = "<group>"; };
-		357F710F21551C0FC2FBB1442D8D350C /* UMSPPPayPluginSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayPluginSettings.h; sourceTree = "<group>"; };
+		3522F244B4135261509DFDA692F89D59 /* XQCPaySDK_Objc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQCPaySDK_Objc-umbrella.h"; sourceTree = "<group>"; };
 		363295E8E22C00E073F4F8DAE8FE2A69 /* UIImage+Transform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Transform.h"; path = "SDWebImage/UIImage+Transform.h"; sourceTree = "<group>"; };
 		371E34DA967141A1786627B851223B52 /* RACMulticastConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACMulticastConnection.m; path = ReactiveObjC/RACMulticastConnection.m; sourceTree = "<group>"; };
 		37E07AAB1C2009DFFCD0335439FFD9AE /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		389F04D8A24768A884913ED489A35CCF /* NSObject+RACPropertySubscribing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACPropertySubscribing.h"; path = "ReactiveObjC/NSObject+RACPropertySubscribing.h"; sourceTree = "<group>"; };
 		38A65DA9F7F5C8C21F9D9D74FDAF0351 /* SDImageAPNGCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoder.h; path = SDWebImage/SDImageAPNGCoder.h; sourceTree = "<group>"; };
 		3938A87CB6DBEBF0E44EBB7822EC43AD /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
-		399898C05BED50A73C6593C7BDE0DDC7 /* XQCWhiteStripTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCWhiteStripTableViewCell.m; sourceTree = "<group>"; };
 		39A2A9F556C3C50A7919C0A5057A618A /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		39A9351D1EB1A2BCBE5387DFE7F58883 /* RACReturnSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReturnSignal.m; path = ReactiveObjC/RACReturnSignal.m; sourceTree = "<group>"; };
 		3A7E624A585C0475ECCD7B8CCE03B05A /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
@@ -714,6 +714,8 @@
 		3DE3796861379E301C88BEBD6770BD79 /* NSObject+RACPropertySubscribing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACPropertySubscribing.m"; path = "ReactiveObjC/NSObject+RACPropertySubscribing.m"; sourceTree = "<group>"; };
 		3DEF99E043E498AF5B5580C2699F90B5 /* SDAnimatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageView.h; path = SDWebImage/SDAnimatedImageView.h; sourceTree = "<group>"; };
 		3E089991E24FE01A41809185C2DE25C1 /* SDImageCacheDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheDefine.h; path = SDWebImage/SDImageCacheDefine.h; sourceTree = "<group>"; };
+		3E4247CD7E59F7CE2E54E46A9BF19E8F /* XQCWhiteStripTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCWhiteStripTableViewCell.m; sourceTree = "<group>"; };
+		3EBCB98A38AAF06C971F98F63C4889F8 /* XQCPayFootView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayFootView.h; sourceTree = "<group>"; };
 		40CF40C4D48D003F33B04642A33FBDB2 /* SDMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDMemoryCache.m; path = SDWebImage/SDMemoryCache.m; sourceTree = "<group>"; };
 		423E7BE3F09AAB9D52E6C1102F0AA63B /* RACIndexSetSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACIndexSetSequence.h; path = ReactiveObjC/RACIndexSetSequence.h; sourceTree = "<group>"; };
 		431AC0C7BC79A2B0F92334F64BAD7289 /* SDWebImageError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageError.m; path = SDWebImage/SDWebImageError.m; sourceTree = "<group>"; };
@@ -731,10 +733,10 @@
 		46E693C9654412E6AC74CBBA61E36E67 /* Pods-XQCPaySDK_Objc_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQCPaySDK_Objc_Example-Info.plist"; sourceTree = "<group>"; };
 		473457E0C49C19318DDB94BC7E4280EE /* Pods-XQCPaySDK_Objc_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XQCPaySDK_Objc_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		480301B2E7E6FD9E31E14B66CB4DCC2A /* UISwitch+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISwitch+RACSignalSupport.h"; path = "ReactiveObjC/UISwitch+RACSignalSupport.h"; sourceTree = "<group>"; };
-		48528C182FC83D275C50BD9B35F4EA00 /* Api.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Api.m; sourceTree = "<group>"; };
 		4854BEBE00DC7040141B342FC73AAA2F /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/SDWebImageIndicator.h; sourceTree = "<group>"; };
 		48AD9F936F30F2DDD71B3DDCF3876521 /* RACQueueScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACQueueScheduler.m; path = ReactiveObjC/RACQueueScheduler.m; sourceTree = "<group>"; };
 		48CC900E310F342F157AB766B52424E2 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		497D6E3A495450D3CEBF5F1DE4530577 /* XQCPaySDK_Objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XQCPaySDK_Objc.xcconfig; sourceTree = "<group>"; };
 		4A466A7B0FCF368C7C5742A7CABF646F /* RACEXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEXTRuntimeExtensions.m; path = ReactiveObjC/extobjc/RACEXTRuntimeExtensions.m; sourceTree = "<group>"; };
 		4A5D2A5AE3DA725551BD5A3DFF5CBF8C /* Pods-XQCPaySDK_Objc_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XQCPaySDK_Objc_Example-resources.sh"; sourceTree = "<group>"; };
 		4A646CC615FBCB136013BBB7EA56B34F /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
@@ -744,16 +746,17 @@
 		4B73206DFA2CFBF1B71BDC0DBC7DB505 /* Pods-XQCPaySDK_Objc_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQCPaySDK_Objc_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4D1DDFAA1BC42ED31767CFF831BB0359 /* RACSubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubject.h; path = ReactiveObjC/RACSubject.h; sourceTree = "<group>"; };
 		4DA1B73A7E3178D75FD2E57E15B112AA /* SDWebImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SDWebImage-Info.plist"; sourceTree = "<group>"; };
+		4DB7C0DAE0A90863EB10DA8B0FADC58F /* PasswordModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PasswordModel.h; sourceTree = "<group>"; };
 		4FBCE88C7F041E43F86E40D1C57C0E34 /* SDAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageView.m; path = SDWebImage/SDAnimatedImageView.m; sourceTree = "<group>"; };
+		5025DB49D151DF64B3FFAE9A48D07E18 /* XQCPaySDK_Objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQCPaySDK_Objc-prefix.pch"; sourceTree = "<group>"; };
 		502A54BAF3244A1F6E394CB03DC914D6 /* Pods-XQCPaySDK_Objc_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XQCPaySDK_Objc_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		503C753FAD09049760D279D82A8D2291 /* SDDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDiskCache.m; path = SDWebImage/SDDiskCache.m; sourceTree = "<group>"; };
 		51387A3711DC895D83A52623D81A24AC /* NSString+XQCMd5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+XQCMd5.m"; path = "XQCPaymentPasswordInputView/Classes/NSString+XQCMd5.m"; sourceTree = "<group>"; };
 		5179B1454CF774BE250635F27E1AF056 /* SDImageCachesManagerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCachesManagerOperation.m; path = SDWebImage/Private/SDImageCachesManagerOperation.m; sourceTree = "<group>"; };
 		51EB5319096B0533BA43B3C28F5C66F4 /* UIBarButtonItem+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+RACCommandSupport.h"; path = "ReactiveObjC/UIBarButtonItem+RACCommandSupport.h"; sourceTree = "<group>"; };
-		52554D1641A5B2B02CA5CA4FA73AFB4D /* XQCNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCNetworking.m; sourceTree = "<group>"; };
+		51EF1B14B337A66CCDE0C7A00CB280AA /* NSString+number.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+number.m"; sourceTree = "<group>"; };
 		5283342E7BE6EB2550EA6EAD1656F56F /* RACTestScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTestScheduler.m; path = ReactiveObjC/RACTestScheduler.m; sourceTree = "<group>"; };
 		542FD1256338028DE65186F14A138587 /* RACEXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTKeyPathCoding.h; path = ReactiveObjC/extobjc/RACEXTKeyPathCoding.h; sourceTree = "<group>"; };
-		5479539E86C0C9B72ECA9A205262294E /* UMSSecKeyboardLibResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = UMSSecKeyboardLibResource.bundle; path = XQCPaySDK_Objc/Classes/UMSPosPayOnly/UMSSecKeyboardLibResource.bundle; sourceTree = "<group>"; };
 		54D5C4F2FA91377A17C2E8D563A7ECCB /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		556E90BE77BE42C142B35579CC8D82CA /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		55C41510DD1877D0A4A085C266853118 /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/SDWebImageTransition.m; sourceTree = "<group>"; };
@@ -766,6 +769,7 @@
 		580FE1690EBA3AA982AD9B20B8178BAF /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/SDAnimatedImage.m; sourceTree = "<group>"; };
 		584C5FBB49613663A824AA767E668388 /* RACStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStream.m; path = ReactiveObjC/RACStream.m; sourceTree = "<group>"; };
 		5913FC809F594CAD84BE17A77F1B831C /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		599AC186AEA9EF09E203E33580F9ABF9 /* UMSSecKeyboardLibResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = UMSSecKeyboardLibResource.bundle; sourceTree = "<group>"; };
 		5A21D89EE1656F9012EA8701E899486D /* UISegmentedControl+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISegmentedControl+RACSignalSupport.m"; path = "ReactiveObjC/UISegmentedControl+RACSignalSupport.m"; sourceTree = "<group>"; };
 		5AC1CD189611839E6C5746C70E9E0044 /* SDInternalMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDInternalMacros.h; path = SDWebImage/Private/SDInternalMacros.h; sourceTree = "<group>"; };
 		5B02163F7F8A22A31E91188761B74681 /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/NSButton+WebCache.h"; sourceTree = "<group>"; };
@@ -783,22 +787,22 @@
 		602656626C60C619CAE5F3CAC8813079 /* RACScheduler+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Subclass.h"; path = "ReactiveObjC/RACScheduler+Subclass.h"; sourceTree = "<group>"; };
 		60F042EA621899F9DA99CFF8EF4B09BD /* RACValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACValueTransformer.h; path = ReactiveObjC/RACValueTransformer.h; sourceTree = "<group>"; };
 		60F87E531E068855A83D6FE6B972467E /* UIColor+HexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "SDWebImage/Private/UIColor+HexString.m"; sourceTree = "<group>"; };
-		612B2FC05CA98C5ABA07DB74E5E4D6AF /* XQCPayItemView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayItemView.h; sourceTree = "<group>"; };
 		6264A8783357AAFB530A970FD453474A /* RACCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCompoundDisposable.m; path = ReactiveObjC/RACCompoundDisposable.m; sourceTree = "<group>"; };
+		62AAD4A8C4DD5B7113BF3C8A97DA81C4 /* libPaymentControl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
 		62CB1F44416867FDD0C5D9E2DBB02E3E /* SDImageCachesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCachesManager.m; path = SDWebImage/SDImageCachesManager.m; sourceTree = "<group>"; };
 		63AA92F420CA5D47B2A96789D31EBAC9 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		6456BD4FACA29548EB75D93702953E19 /* ResponseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ResponseModel.h; sourceTree = "<group>"; };
 		65502BE0B4B5C825CAFE02384116A0D0 /* SDMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDMemoryCache.h; path = SDWebImage/SDMemoryCache.h; sourceTree = "<group>"; };
 		6747F3330467CAC279ED912CEAC649FA /* RACEmptySignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEmptySignal.m; path = ReactiveObjC/RACEmptySignal.m; sourceTree = "<group>"; };
 		6779CB8E9EB69CAAE5095E3412B2C66A /* UITextField+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RACSignalSupport.m"; path = "ReactiveObjC/UITextField+RACSignalSupport.m"; sourceTree = "<group>"; };
 		68738DDA33977F1EF19502AC7F7159D8 /* RACDynamicSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSequence.m; path = ReactiveObjC/RACDynamicSequence.m; sourceTree = "<group>"; };
 		68851BA548DA6B97882B2D0B375D7277 /* Pods-XQCPaySDK_Objc_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XQCPaySDK_Objc_Tests-dummy.m"; sourceTree = "<group>"; };
+		689A630AFC7A85C1FE58E7C8CA531958 /* PayAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PayAlertView.h; sourceTree = "<group>"; };
 		68A5EFA575FFEBFE5853B8B5633EDA64 /* RACTargetQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTargetQueueScheduler.h; path = ReactiveObjC/RACTargetQueueScheduler.h; sourceTree = "<group>"; };
+		69977B44A5D0DCEAF963D49C2114E611 /* UIButton+paySDkBtn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+paySDkBtn.h"; sourceTree = "<group>"; };
 		69C4F4D3A6870F757A665A1BF5D9423B /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = WeChatSDK1.8.4/WechatAuthSDK.h; sourceTree = "<group>"; };
 		6A9874F9F9D2C655D747560C0AF23A2B /* UIImage+Metadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Metadata.m"; path = "SDWebImage/UIImage+Metadata.m"; sourceTree = "<group>"; };
 		6AC71968954EB0DBC3DB1B9432D70A29 /* UIImage+xqcBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+xqcBundle.m"; path = "XQCPaymentPasswordInputView/Classes/UIImage+xqcBundle.m"; sourceTree = "<group>"; };
 		6B7EFA7B835C5BCA99D547A58D5DF998 /* RACKVOTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOTrampoline.m; path = ReactiveObjC/RACKVOTrampoline.m; sourceTree = "<group>"; };
-		6CE2B1160E12136D0BE994AA8030C434 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		6D70E5867FB3CB27062ECF4B4B2C4EB5 /* SDWebImageError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageError.h; path = SDWebImage/SDWebImageError.h; sourceTree = "<group>"; };
 		6DD322D772315661B6990B9A61DC0993 /* XQCPaySDK_Objc.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XQCPaySDK_Objc.bundle; path = "XQCPaySDK_Objc-XQCPaySDK_Objc.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE5455CCD91C3E422E3046FF2CE8EC1 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
@@ -809,24 +813,25 @@
 		70F9E23D6A587985875E9817C392AC52 /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
 		71716152AC4EB386C999FA0A8CFB44A1 /* RACEagerSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEagerSequence.m; path = ReactiveObjC/RACEagerSequence.m; sourceTree = "<group>"; };
 		7216AD34CA0E5116533060953C62DA78 /* RACEmptySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySequence.h; path = ReactiveObjC/RACEmptySequence.h; sourceTree = "<group>"; };
-		722E205A5E60D2CEF372B91882041799 /* XQCPaySDK_Objc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XQCPaySDK_Objc.xcconfig; sourceTree = "<group>"; };
 		7256963087E691A18CDAC886C4B563B5 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
-		73AC46BC9900E72C3BC34C8366930C1D /* NSString+number.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+number.m"; sourceTree = "<group>"; };
-		74BC4F7ABA772F2AFF6905D1CF6AD5AF /* NSBundle+loadImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+loadImage.m"; sourceTree = "<group>"; };
+		73BD8E8AB29E10EDD8092C7348189D14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		751A0EFDAC6BF85FF8C5D00943756589 /* UPPaymentControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
 		755FEB4B3330F9ECAA646270053DD1B5 /* SDImageLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoader.m; path = SDWebImage/SDImageLoader.m; sourceTree = "<group>"; };
 		75D8A9F81A5167230033376C034671EC /* NSObject+RACDeallocating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDeallocating.h"; path = "ReactiveObjC/NSObject+RACDeallocating.h"; sourceTree = "<group>"; };
-		76129DF2AD161CB84631EC87FA08A9A5 /* Api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
-		76335AA144A104978988AA6A76886ED7 /* XQCPayFootView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayFootView.h; sourceTree = "<group>"; };
 		77BF4A89EF123E0FA5B96AA3B1A34874 /* NSData+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+RACSupport.h"; path = "ReactiveObjC/NSData+RACSupport.h"; sourceTree = "<group>"; };
 		780E58AC15E06889E1DE3017C6B07B20 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		78541F6FF6216053F1712FFC903C0596 /* SDWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWeakProxy.m; path = SDWebImage/Private/SDWeakProxy.m; sourceTree = "<group>"; };
 		789A1945A579CA24D9C9D6A256ED4141 /* RACTargetQueueScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTargetQueueScheduler.m; path = ReactiveObjC/RACTargetQueueScheduler.m; sourceTree = "<group>"; };
 		7A35E69A16F8E31707FA0F8E462925D8 /* RACScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACScheduler.h; path = ReactiveObjC/RACScheduler.h; sourceTree = "<group>"; };
+		7A5AB900D99CF66A73F1A8E377CD39F8 /* unchecked.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = unchecked.png; path = XQCPaySDK_Objc/Assets/unchecked.png; sourceTree = "<group>"; };
 		7AA8513B1978F94AC4CC026A4D0F85D2 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		7AE5A8F7ED66BB958D5E03BA61A18CC4 /* RACSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignal.h; path = ReactiveObjC/RACSignal.h; sourceTree = "<group>"; };
 		7C2FEEF7BE7D24AD55182661433B662F /* SDImageTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageTransformer.m; path = SDWebImage/SDImageTransformer.m; sourceTree = "<group>"; };
+		7CAFCF04EE77009B557C99021648BE18 /* baitiao.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = baitiao.png; path = XQCPaySDK_Objc/Assets/baitiao.png; sourceTree = "<group>"; };
 		7D1FB000DB3ABE71350620A4E482AF13 /* UITableViewHeaderFooterView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewHeaderFooterView+RACSignalSupport.h"; path = "ReactiveObjC/UITableViewHeaderFooterView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		7DBF49FE7DD862DF7C07E8C37243F931 /* RACEXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTScope.h; path = ReactiveObjC/extobjc/RACEXTScope.h; sourceTree = "<group>"; };
+		7DE0993B65B1ABE0395EEED3B2BD75F4 /* XQCPayItemView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayItemView.m; sourceTree = "<group>"; };
+		7EC5C290FAFCC7EC8757EA38CBADE0D5 /* YSEPaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YSEPaySDK.framework; path = XQCPaySDK_Objc/Frameworks/YSEPaySDK.framework; sourceTree = "<group>"; };
 		7F1D1A6481C422B9BC3C6F211A1ED6B4 /* RACCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCommand.m; path = ReactiveObjC/RACCommand.m; sourceTree = "<group>"; };
 		7F34D933484A2CFA90A4CCA1D51C5ACB /* XQCPaymentPasswordInputView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XQCPaymentPasswordInputView.m; path = XQCPaymentPasswordInputView/Classes/XQCPaymentPasswordInputView.m; sourceTree = "<group>"; };
 		7F5BE0B025B416755D7A1331A42F30CC /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
@@ -834,38 +839,35 @@
 		80A8EF5F8D1662648749BD87B983EF83 /* NSString+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSupport.m"; path = "ReactiveObjC/NSString+RACSupport.m"; sourceTree = "<group>"; };
 		81CD358825D3DAF4C095DE5DCCAFDDDC /* passWrodCancel@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "passWrodCancel@3x.png"; path = "XQCPaymentPasswordInputView/Assets/passWrodCancel@3x.png"; sourceTree = "<group>"; };
 		82D73BA5852AE48FB83B560358B474B2 /* RACReplaySubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACReplaySubject.h; path = ReactiveObjC/RACReplaySubject.h; sourceTree = "<group>"; };
-		83BCE0814804B58FA7D8D91E2DBFF3E7 /* XQCPaySDK_Objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XQCPaySDK_Objc-Info.plist"; sourceTree = "<group>"; };
 		84249AA4A033DFE94A58ACB187892FB4 /* SDDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDiskCache.h; path = SDWebImage/SDDiskCache.h; sourceTree = "<group>"; };
-		84706E09F6C43D07E35200A8E025778E /* UIButton+paySDkBtn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+paySDkBtn.h"; sourceTree = "<group>"; };
-		853BE34315683DE316E3F2E8E8D9FFC1 /* UMSPPPayVersionsInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayVersionsInfo.h; sourceTree = "<group>"; };
+		849DF5814EE4E9B9B34F4D76503270AD /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = XQCPaySDK_Objc/Frameworks/AlipaySDK.framework; sourceTree = "<group>"; };
 		85635958FD6A30DF86208EA7E05D5593 /* SDWebImageCacheSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheSerializer.m; path = SDWebImage/SDWebImageCacheSerializer.m; sourceTree = "<group>"; };
-		85BBEB353AE770E3CA11705FC5028217 /* baitiao.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = baitiao.png; path = XQCPaySDK_Objc/Assets/baitiao.png; sourceTree = "<group>"; };
-		85C8C6A3BBAEF2D84786564CE06A1CDF /* XQCNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCNetworking.h; sourceTree = "<group>"; };
+		8580F6A12D96A961C2EB4EF639AD2341 /* XQCPayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayViewController.h; sourceTree = "<group>"; };
 		86E26642D8E38E9E89C9C61F734F1946 /* UIButton+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Extension.m"; path = "XQCPaymentPasswordInputView/Classes/UIButton+Extension.m"; sourceTree = "<group>"; };
 		86F27FA8AAA1B036C4F534F9B643322E /* RACEXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTRuntimeExtensions.h; path = ReactiveObjC/extobjc/RACEXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		8769AEE6973983E2047CF697DBDB7C26 /* MKAnnotationView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKAnnotationView+RACSignalSupport.m"; path = "ReactiveObjC/MKAnnotationView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		87A206FDC1ABE1E5F5BC2C006938240B /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		87E014F79726E5A7C0E11DDF9849CB04 /* ChannelModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChannelModel.m; sourceTree = "<group>"; };
 		88293F8CB35C6B447113C33BE1917435 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		88B785F6690EB1C3D2E8F926C1B24782 /* Pods-XQCPaySDK_Objc_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQCPaySDK_Objc_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		88BDAABC4494BEBAABF17DF9D5A8DA30 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		8975D8A2A71B9100B494789372AFD695 /* SDWebImageCacheSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheSerializer.h; path = SDWebImage/SDWebImageCacheSerializer.h; sourceTree = "<group>"; };
 		898B99AC086C1F1316CF92E9E508783C /* ResourceBundle-XQCPaymentPasswordInputView-XQCPaymentPasswordInputView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XQCPaymentPasswordInputView-XQCPaymentPasswordInputView-Info.plist"; sourceTree = "<group>"; };
+		8A16C7656E3316B57DE9F51CC77325A7 /* NSBundle+loadImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+loadImage.h"; sourceTree = "<group>"; };
 		8A9C4A6EEC4F661FB341D0BA385870A7 /* RACSignalSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignalSequence.h; path = ReactiveObjC/RACSignalSequence.h; sourceTree = "<group>"; };
+		8B721FE5A3E288848D85460ABDCDDDB9 /* XQCPaySDK_Objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XQCPaySDK_Objc-Info.plist"; sourceTree = "<group>"; };
 		8BA5F63C8882257A6066A911D07754BE /* XQCPaymentPasswordInputView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XQCPaymentPasswordInputView.xcconfig; sourceTree = "<group>"; };
 		8BD76F72BCAE71F0742186B03F8209CC /* UIRefreshControl+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+RACCommandSupport.m"; path = "ReactiveObjC/UIRefreshControl+RACCommandSupport.m"; sourceTree = "<group>"; };
-		8C075AB56C402F933FA0BFC851C4F1C9 /* XQCWhiteStripTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCWhiteStripTableViewCell.h; sourceTree = "<group>"; };
-		8C42FBB23D703BD1EC95FD0BF553994F /* UMSPPPayFastPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayFastPay.h; sourceTree = "<group>"; };
 		8D27B65DEA18BF87C5AAF6DAF0C162C5 /* Pods_XQCPaySDK_Objc_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_XQCPaySDK_Objc_Example.framework; path = "Pods-XQCPaySDK_Objc_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D95E4BEE3F1FFBC36537AA7F60D2119 /* SDImageGraphics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGraphics.h; path = SDWebImage/SDImageGraphics.h; sourceTree = "<group>"; };
+		8D9905A7C2DF6AEE47DF66A6C5D4A184 /* UMSPPPayFastPay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayFastPay.h; sourceTree = "<group>"; };
 		8E52719C0EBB0601A8A1A744C26BEFA1 /* NSOrderedSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSOrderedSet+RACSequenceAdditions.m"; path = "ReactiveObjC/NSOrderedSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
+		8F0BC60DF14C16EC5EAF683C7BAC031D /* ResponseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ResponseModel.m; sourceTree = "<group>"; };
 		8F54E1E2AD4BE6857C44F3F8399A639E /* SDWebImageDownloaderRequestModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderRequestModifier.m; path = SDWebImage/SDWebImageDownloaderRequestModifier.m; sourceTree = "<group>"; };
-		8FA5310F6B34319EF1429B2EB4B0E230 /* NSString+number.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+number.h"; sourceTree = "<group>"; };
-		8FD509D9953ABD4D5EC502984CE53DA4 /* ChannelModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ChannelModel.m; sourceTree = "<group>"; };
 		8FE53D9C8BB4216CD70AB38E30A0F58F /* RACSerialDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSerialDisposable.m; path = ReactiveObjC/RACSerialDisposable.m; sourceTree = "<group>"; };
 		902434CE03D77433A52F4342E5B6B330 /* RACDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDelegateProxy.m; path = ReactiveObjC/RACDelegateProxy.m; sourceTree = "<group>"; };
 		908BF71DCF5E2910C97DDA7A34DA8D4E /* SDImageLoadersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoadersManager.m; path = SDWebImage/SDImageLoadersManager.m; sourceTree = "<group>"; };
 		9207DDAD5D414F54BC8B886A69CB5048 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
-		92BB9D72C1C6FDAB423EEDFDF92437E9 /* UIImage+myImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+myImage.h"; sourceTree = "<group>"; };
-		93309B1C269B024330205B07970BE892 /* libUMSPosPayOnly.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libUMSPosPayOnly.a; sourceTree = "<group>"; };
 		936E05BF5E91F9458DAA8845DD5204E4 /* RACTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTuple.h; path = ReactiveObjC/RACTuple.h; sourceTree = "<group>"; };
 		936F81DCA886E991E1729CEC82C8CE0E /* ReactiveObjC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReactiveObjC-Info.plist"; sourceTree = "<group>"; };
 		9380184E5AB7ACDBF512DE4664E9B2A1 /* SDImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCodersManager.h; path = SDWebImage/SDImageCodersManager.h; sourceTree = "<group>"; };
@@ -883,6 +885,7 @@
 		992435F07481403C992B8BEFC9712CFC /* RACSubscriptingAssignmentTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriptingAssignmentTrampoline.m; path = ReactiveObjC/RACSubscriptingAssignmentTrampoline.m; sourceTree = "<group>"; };
 		9A0FCE46BCC9200B09EE97FC14CCAEC9 /* NSArray+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RACSequenceAdditions.m"; path = "ReactiveObjC/NSArray+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		9A729608F47B24D75D784CE2EED437B0 /* NSOrderedSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+RACSequenceAdditions.h"; path = "ReactiveObjC/NSOrderedSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
+		9A84E9EA40350EC73347234625D0C08E /* XQCPaySDK_Objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XQCPaySDK_Objc.modulemap; sourceTree = "<group>"; };
 		9BCE810323AFFBD378D586B50594636F /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		9CB81BFC4F773EEADE78308CAF0AB762 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/SDWebImageDefine.m; sourceTree = "<group>"; };
 		9CE6323D0CA88A383ED7CC693E70AD2C /* Pods-XQCPaySDK_Objc_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQCPaySDK_Objc_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -890,19 +893,18 @@
 		9CF9F7A26C1541FAD872C2B0BDE37761 /* UICollectionReusableView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionReusableView+RACSignalSupport.h"; path = "ReactiveObjC/UICollectionReusableView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		9D22E9384B9B6C0921A47CC446527F00 /* NSIndexSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSIndexSet+RACSequenceAdditions.m"; path = "ReactiveObjC/NSIndexSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EC603C3AFCE75CCF9E5A3CC8DD3F864 /* XQCNavBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCNavBarView.m; sourceTree = "<group>"; };
 		9F03DA7C63ECE3C93A11C40590DA0B8A /* RACDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDelegateProxy.h; path = ReactiveObjC/RACDelegateProxy.h; sourceTree = "<group>"; };
 		9FC7019F63833DCA4664ABA029614D01 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		9FCD89A60D52334058CAA7C58E4AA3C9 /* NSNotificationCenter+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+RACSupport.h"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.h"; sourceTree = "<group>"; };
-		A05E11F0484067A19F97B8505D78D6FD /* UPPaymentControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
 		A140EF510B3BDCEEBE380EA710C8FFA8 /* NSURLConnection+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+RACSupport.m"; path = "ReactiveObjC/NSURLConnection+RACSupport.m"; sourceTree = "<group>"; };
 		A198E2CD581FC069D8D74C6AAA503CFC /* SDImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOCoder.h; path = SDWebImage/SDImageIOCoder.h; sourceTree = "<group>"; };
-		A1B36B4AD6222EE91EC61F7E5D7F6268 /* xqc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = xqc.png; path = XQCPaySDK_Objc/Assets/xqc.png; sourceTree = "<group>"; };
 		A204D486602AC3758681A031034A28D9 /* RACReplaySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReplaySubject.m; path = ReactiveObjC/RACReplaySubject.m; sourceTree = "<group>"; };
 		A392002B751AD910F7A24442CED6E97D /* SDImageTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageTransformer.h; path = SDWebImage/SDImageTransformer.h; sourceTree = "<group>"; };
 		A3E9F5685185F8A9F8BE6BA7436D8062 /* SDImageGraphics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGraphics.m; path = SDWebImage/SDImageGraphics.m; sourceTree = "<group>"; };
 		A3FA62A2E34D94D068E9ED885C572418 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		A5E3096D33A8154472631E40ADD87293 /* UISwitch+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISwitch+RACSignalSupport.m"; path = "ReactiveObjC/UISwitch+RACSignalSupport.m"; sourceTree = "<group>"; };
-		A61574D19AA8F46C47B10072AA8FA330 /* libPaymentControl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		A712207E5F9C3F9F4ADAB7E9B21590FA /* PayAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PayAlertView.m; sourceTree = "<group>"; };
 		A78DCAB6C65C5B922658AC45294C8BB1 /* XQCPaymentPasswordInputView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XQCPaymentPasswordInputView-dummy.m"; sourceTree = "<group>"; };
 		A7928BBB831E2B129EAE44060ABB3256 /* NSBezierPath+RoundedCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+RoundedCorners.h"; path = "SDWebImage/Private/NSBezierPath+RoundedCorners.h"; sourceTree = "<group>"; };
 		A88CBB18CB24B6CDF73854ED8FFE33E6 /* NSData+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+RACSupport.m"; path = "ReactiveObjC/NSData+RACSupport.m"; sourceTree = "<group>"; };
@@ -918,7 +920,6 @@
 		ADD230DECC1E2E70FA316999122F73C4 /* RACReturnSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACReturnSignal.h; path = ReactiveObjC/RACReturnSignal.h; sourceTree = "<group>"; };
 		AE8AC0B01BCC3BCB4CC662F8851D0ECE /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
 		AEFF7562F214335BA6155EDD1EA3B861 /* XQCHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XQCHeader.h; path = XQCPaymentPasswordInputView/Classes/XQCHeader.h; sourceTree = "<group>"; };
-		B001CB2410A40AC3A9976B2AC89D5AE3 /* XQCPayHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayHeaderView.m; sourceTree = "<group>"; };
 		B03187761FFB53EAD842B30A133320D4 /* RACSerialDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSerialDisposable.h; path = ReactiveObjC/RACSerialDisposable.h; sourceTree = "<group>"; };
 		B05327767D0D0437A8396EC983611B88 /* NSString+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSupport.h"; path = "ReactiveObjC/NSString+RACSupport.h"; sourceTree = "<group>"; };
 		B082776F94AE98CF1210070E33331A5C /* SDImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoder.h; path = SDWebImage/SDImageGIFCoder.h; sourceTree = "<group>"; };
@@ -930,12 +931,11 @@
 		B1EE93956871912C78D52ED80AE32E6F /* RACArraySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACArraySequence.m; path = ReactiveObjC/RACArraySequence.m; sourceTree = "<group>"; };
 		B200A6891E7AE5B55538C0F1A37C4DF8 /* ReactiveObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveObjC-umbrella.h"; sourceTree = "<group>"; };
 		B378EE7D8C0BFBBB6A89DD52DA4BD6A4 /* Pods-XQCPaySDK_Objc_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XQCPaySDK_Objc_Example-dummy.m"; sourceTree = "<group>"; };
-		B39001E0B4C116A279DD0FDF8925A5DC /* XQCPaySDK_Objc-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQCPaySDK_Objc-umbrella.h"; sourceTree = "<group>"; };
 		B4115B31604DF7E169223567C1DCE007 /* RACUnarySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnarySequence.h; path = ReactiveObjC/RACUnarySequence.h; sourceTree = "<group>"; };
+		B4396A8E47099843E39E3A789618F621 /* WhitestripModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WhitestripModel.h; sourceTree = "<group>"; };
 		B43C28152C33D1D5D1B160380171EA25 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		B4B3B0E8C9E6740B5D02AA2D4D24BB99 /* RACImmediateScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACImmediateScheduler.h; path = ReactiveObjC/RACImmediateScheduler.h; sourceTree = "<group>"; };
 		B5681135349ECF61D3F4632E2FC96665 /* UISegmentedControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISegmentedControl+RACSignalSupport.h"; path = "ReactiveObjC/UISegmentedControl+RACSignalSupport.h"; sourceTree = "<group>"; };
-		B58AF0F86D4E7B199B751F23CF54AEB2 /* unchecked.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = unchecked.png; path = XQCPaySDK_Objc/Assets/unchecked.png; sourceTree = "<group>"; };
 		B5ABF4D11B8445F24D4EEE03C1D1849C /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		B6B2B866D73D770BCCC93AFCCB319F07 /* SDImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoderHelper.m; path = SDWebImage/SDImageCoderHelper.m; sourceTree = "<group>"; };
 		B6C27B3428457A4F4E69E2C166FDECA9 /* SDImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoderHelper.h; path = SDWebImage/SDImageCoderHelper.h; sourceTree = "<group>"; };
@@ -944,15 +944,16 @@
 		B97490811B26FF8E8D9A555FC3E33B0A /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		BA28149DC66E7961C1A205ED56FAED32 /* RACMulticastConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACMulticastConnection.h; path = ReactiveObjC/RACMulticastConnection.h; sourceTree = "<group>"; };
 		BB510B0A46BE3E85910BD31D2981DEE0 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		BB5B276D0C4D69AD5FFF7531C4919EE0 /* XQCPayFootView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayFootView.m; sourceTree = "<group>"; };
+		BD1F4626B1698EC5DDF38DF21FEA50DA /* XQCNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCNetworking.m; sourceTree = "<group>"; };
 		BD2ABAE54ABD637C66A15704C50F2970 /* SDImageAssetManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAssetManager.m; path = SDWebImage/Private/SDImageAssetManager.m; sourceTree = "<group>"; };
-		BDD79A07B83D9870DD1368178A85855B /* PayAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PayAlertView.m; sourceTree = "<group>"; };
 		BDE2BE70FCDECF0A0DF998AE01BD3D77 /* NSURLConnection+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+RACSupport.h"; path = "ReactiveObjC/NSURLConnection+RACSupport.h"; sourceTree = "<group>"; };
+		BE6F18B166AE5E47D1FDDD335CF9C041 /* NSString+number.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+number.h"; sourceTree = "<group>"; };
 		BEEC11804D224CC097AD9A1BCBF9A281 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = WeChatSDK1.8.4/WXApiObject.h; sourceTree = "<group>"; };
 		BF2463D3DDFC2CE624E062AE26EED6E1 /* XQCPaymentPasswordInputView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQCPaymentPasswordInputView-umbrella.h"; sourceTree = "<group>"; };
 		BF884EF8BBFF4F3808710C739A7AC347 /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/SDAnimatedImageRep.h; sourceTree = "<group>"; };
 		BF8EAE3D0CDD08506EEFDDB1777399FF /* RACSubscriber+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSubscriber+Private.h"; path = "ReactiveObjC/RACSubscriber+Private.h"; sourceTree = "<group>"; };
 		BFEC5E2F4C1558E31B405ED4C617F478 /* UIGestureRecognizer+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+RACSignalSupport.h"; path = "ReactiveObjC/UIGestureRecognizer+RACSignalSupport.h"; sourceTree = "<group>"; };
-		BFFC60C6CB59BE6E02C361FD29FA1D48 /* XQCPayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayViewController.h; sourceTree = "<group>"; };
 		C04F8A6A21C2F2AE603676F6770F6AC9 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C128F93DD0FF016BADD869E3A6117C52 /* UIBarButtonItem+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+RACCommandSupport.m"; path = "ReactiveObjC/UIBarButtonItem+RACCommandSupport.m"; sourceTree = "<group>"; };
 		C1890A8DDC1DAE23446C3EED305B2159 /* XQCPaymentPasswordInputView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XQCPaymentPasswordInputView.bundle; path = "XQCPaymentPasswordInputView-XQCPaymentPasswordInputView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -961,8 +962,8 @@
 		C30C28AF44DFEEAF560A56AA50DA1AA7 /* UIButton+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RACCommandSupport.m"; path = "ReactiveObjC/UIButton+RACCommandSupport.m"; sourceTree = "<group>"; };
 		C316E617B181FD3598B2995332382360 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		C3AAE93AC25D31189451BC1077445A84 /* UICollectionReusableView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionReusableView+RACSignalSupport.m"; path = "ReactiveObjC/UICollectionReusableView+RACSignalSupport.m"; sourceTree = "<group>"; };
-		C3DFD901408BCD315B73D96C3D18CB0B /* ResourceBundle-XQCPaySDK_Objc-XQCPaySDK_Objc-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XQCPaySDK_Objc-XQCPaySDK_Objc-Info.plist"; sourceTree = "<group>"; };
 		C4896525C8E5BC06355942531CD48126 /* NSObject+RACSelectorSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACSelectorSignal.m"; path = "ReactiveObjC/NSObject+RACSelectorSignal.m"; sourceTree = "<group>"; };
+		C48D1E347B56AFFB174754BE2280A5A4 /* xqc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = xqc.png; path = XQCPaySDK_Objc/Assets/xqc.png; sourceTree = "<group>"; };
 		C4D11DFEFB945AF5EFA6CBAB9C370C34 /* UIControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RACSignalSupport.h"; path = "ReactiveObjC/UIControl+RACSignalSupport.h"; sourceTree = "<group>"; };
 		C533028E3B358B021222FAD72AACAE9E /* RACStringSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStringSequence.m; path = ReactiveObjC/RACStringSequence.m; sourceTree = "<group>"; };
 		C5F95598EE4C1AB520E0838D0FABC373 /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+RACSignalSupport.m"; path = "ReactiveObjC/UITextView+RACSignalSupport.m"; sourceTree = "<group>"; };
@@ -977,28 +978,30 @@
 		CDD9D3C9B6F38F7DEEF6C21146DAEFBA /* XQCPaySDK_Objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XQCPaySDK_Objc.framework; path = XQCPaySDK_Objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3DB6DE682A1E4871E924889A9ED645 /* RACSignalSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignalSequence.m; path = ReactiveObjC/RACSignalSequence.m; sourceTree = "<group>"; };
 		CF79607CD965567E39FEDEE9C1D6BA51 /* NSString+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSequenceAdditions.h"; path = "ReactiveObjC/NSString+RACSequenceAdditions.h"; sourceTree = "<group>"; };
-		D09D0D8DD3001A5FC965AA9A96E240ED /* XQCPayFootView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayFootView.m; sourceTree = "<group>"; };
+		D09EBC50759D69C361CBB41E6B550412 /* XQCPayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayManager.m; sourceTree = "<group>"; };
 		D19088749D101F4819A659C8758E8E7A /* SDmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDmetamacros.h; path = SDWebImage/Private/SDmetamacros.h; sourceTree = "<group>"; };
 		D1C671ADCBE166D0A21E1FABF1447DF9 /* RACDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDisposable.m; path = ReactiveObjC/RACDisposable.m; sourceTree = "<group>"; };
+		D1E391ABCB4BD4B0D02373726D5BB099 /* XQCWhiteStripTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCWhiteStripTableViewCell.h; sourceTree = "<group>"; };
 		D238123F930279ACB095D7E099B156A0 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		D25B623CAF65089392C05EB066191FE5 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
 		D27F4192671F2A006226A2188A8E17D5 /* RACMulticastConnection+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACMulticastConnection+Private.h"; path = "ReactiveObjC/RACMulticastConnection+Private.h"; sourceTree = "<group>"; };
 		D2CA9CDF3EFB554383876504A6B12547 /* ReactiveObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveObjC-dummy.m"; sourceTree = "<group>"; };
+		D30ABA62B636986B7982B3D51271A5DE /* Api.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Api.m; sourceTree = "<group>"; };
 		D332E568A6073815700AEF262FC0F905 /* XQCPaymentPasswordInputView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQCPaymentPasswordInputView-prefix.pch"; sourceTree = "<group>"; };
 		D3DF9A9880D058138FF3379FB8F2F658 /* passWrodCancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "passWrodCancel@2x.png"; path = "XQCPaymentPasswordInputView/Assets/passWrodCancel@2x.png"; sourceTree = "<group>"; };
+		D3FDAA417FE0C4C9B93DCC690075F43E /* UMSPPPayVersionsInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayVersionsInfo.h; sourceTree = "<group>"; };
 		D4135FD7DF25103279134D767F3E44E0 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
-		D48A198C78B7F42EE131175C946B2672 /* XQCPayManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayManager.m; sourceTree = "<group>"; };
 		D4B58D1E422073F77D862F638CE2AB12 /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/SDAnimatedImageRep.m; sourceTree = "<group>"; };
 		D4C5513C291CDBB0AC03D7589307488F /* NSEnumerator+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEnumerator+RACSequenceAdditions.h"; path = "ReactiveObjC/NSEnumerator+RACSequenceAdditions.h"; sourceTree = "<group>"; };
+		D5B8B38BFBCAF8A0C9CD86BE9A049D77 /* ResponseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ResponseModel.h; sourceTree = "<group>"; };
 		D5E634ABE3E5B1833E5D2B77FD62D292 /* UITextField+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+RACSignalSupport.h"; path = "ReactiveObjC/UITextField+RACSignalSupport.h"; sourceTree = "<group>"; };
 		D611BDF43CDF1135F902A74D6B0C9CBD /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
 		D806C3CD889AB2F6D7436827FC4E04CA /* SDWebImageCacheKeyFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheKeyFilter.m; path = SDWebImage/SDWebImageCacheKeyFilter.m; sourceTree = "<group>"; };
 		D812DAB1C4E507E155EC35184C4FA834 /* RACTupleSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTupleSequence.m; path = ReactiveObjC/RACTupleSequence.m; sourceTree = "<group>"; };
-		D858D0C844B07F0683B56A666C52CAD5 /* XQCPaySDK_Objc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XQCPaySDK_Objc-prefix.pch"; sourceTree = "<group>"; };
 		D87E854B2F748E289726819D7C945D6E /* NSString+RACKeyPathUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACKeyPathUtilities.m"; path = "ReactiveObjC/NSString+RACKeyPathUtilities.m"; sourceTree = "<group>"; };
 		D890848B96816266A4929FD5176802FA /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		D8ACFF9691F5121045E0E4D4C5A21561 /* SDImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoder.m; path = SDWebImage/SDImageCoder.m; sourceTree = "<group>"; };
-		D8D5D840747511BEE8354EDE01467F42 /* XQCNavBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCNavBarView.h; sourceTree = "<group>"; };
+		D8CE4EC7B6B664802E1E42ECAECDB6BD /* PaySDKHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PaySDKHeader.h; sourceTree = "<group>"; };
 		D9477D2AD4C46C6C42CB11BEAF1835DB /* Pods-XQCPaySDK_Objc_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XQCPaySDK_Objc_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D96BF6E8D80191CDD7925AAFD2E84DC6 /* UISlider+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISlider+RACSignalSupport.h"; path = "ReactiveObjC/UISlider+RACSignalSupport.h"; sourceTree = "<group>"; };
 		D9741826A42C9ACC73DA560FCA4F2ECA /* SDImageGIFCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGIFCoderInternal.h; path = SDWebImage/Private/SDImageGIFCoderInternal.h; sourceTree = "<group>"; };
@@ -1008,8 +1011,8 @@
 		D9B723AAA27C96F2F420C11B4BCC2629 /* UISlider+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISlider+RACSignalSupport.m"; path = "ReactiveObjC/UISlider+RACSignalSupport.m"; sourceTree = "<group>"; };
 		D9BFC53CC4FEFAFBF81BDD4E71B4A227 /* RACSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriber.m; path = ReactiveObjC/RACSubscriber.m; sourceTree = "<group>"; };
 		D9DA816202C5A4E6B0E09D41E57FE625 /* RACBehaviorSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBehaviorSubject.m; path = ReactiveObjC/RACBehaviorSubject.m; sourceTree = "<group>"; };
+		DB899C70C2B14FFA96593EF170460FD1 /* WhitestripModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WhitestripModel.m; sourceTree = "<group>"; };
 		DBB9189A80D97342255ADD7BC6DDDC3C /* SDImageAPNGCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoderInternal.h; path = SDWebImage/Private/SDImageAPNGCoderInternal.h; sourceTree = "<group>"; };
-		DBC7EC2E0EB26B12D4F1EFD9CBF7405B /* ResponseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ResponseModel.m; sourceTree = "<group>"; };
 		DBE7BEDCB9E1EB4681639319C7486AE3 /* UIStepper+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStepper+RACSignalSupport.m"; path = "ReactiveObjC/UIStepper+RACSignalSupport.m"; sourceTree = "<group>"; };
 		DD028BDA99759EDDAC681F489E8C9B56 /* RACScheduler+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Private.h"; path = "ReactiveObjC/RACScheduler+Private.h"; sourceTree = "<group>"; };
 		DD18C6C257D88A2588C41DF80237E612 /* SDImageLoadersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoadersManager.h; path = SDWebImage/SDImageLoadersManager.h; sourceTree = "<group>"; };
@@ -1017,53 +1020,53 @@
 		DDC59A9BAA4D7C11421924DD4E65A5E2 /* RACEmptySignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySignal.h; path = ReactiveObjC/RACEmptySignal.h; sourceTree = "<group>"; };
 		DFB6944C5FEE4CAC5BA2FE2B3480DE86 /* MKAnnotationView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+RACSignalSupport.h"; path = "ReactiveObjC/MKAnnotationView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		E0240013F62A846EFBD510CB1BC309C5 /* RACKVOChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOChannel.h; path = ReactiveObjC/RACKVOChannel.h; sourceTree = "<group>"; };
+		E0275B585C025930C3FE803A19D0CCA8 /* UIImage+myImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+myImage.m"; sourceTree = "<group>"; };
+		E0AE4167CA2ADD3EB0F3BC58B3EAD9BA /* PosPay_Resource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = PosPay_Resource.bundle; sourceTree = "<group>"; };
 		E15151F3D2FC976AEE49136AD3D837C6 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
 		E20274D030330A6A257A5DDA375E207E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E24DD389120ADDA0B8DA06B4DA52DB4E /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = WeChatSDK1.8.4/WXApi.h; sourceTree = "<group>"; };
 		E29F79BC83742F7E1A0E47AD930F2DD7 /* UITableViewCell+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+RACSignalSupport.m"; path = "ReactiveObjC/UITableViewCell+RACSignalSupport.m"; sourceTree = "<group>"; };
 		E374EF90BACEBD44BE40260E569B34D9 /* SDImageLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoader.h; path = SDWebImage/SDImageLoader.h; sourceTree = "<group>"; };
-		E3E01CFEC117F97EB9B77A485762FCC6 /* WhitestripModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WhitestripModel.h; sourceTree = "<group>"; };
+		E3E46809D2422C961731CE2534E837F2 /* UMSPPPayPluginSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayPluginSettings.h; sourceTree = "<group>"; };
 		E439EE71BC265B6F499E2352DA4ECBC9 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		E478D09BD8BCB84E57B5A02F831FB6A8 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		E55F475CA733F7300664ADCBF3EE996E /* UIGestureRecognizer+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+RACSignalSupport.m"; path = "ReactiveObjC/UIGestureRecognizer+RACSignalSupport.m"; sourceTree = "<group>"; };
 		E736B7B1ECB45D54488FA74AB7D120A9 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		E7882651B08EB2CECDA47B748114419F /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		E7DD23B2E98CD144D27D58A10B8C99A1 /* PasswordModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PasswordModel.h; sourceTree = "<group>"; };
 		E7ED50ED649115AAC6223AEA17B2619F /* RACIndexSetSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACIndexSetSequence.m; path = ReactiveObjC/RACIndexSetSequence.m; sourceTree = "<group>"; };
 		E8F483CCA259DF4134DC5F22535287F7 /* SDImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageIOCoder.m; path = SDWebImage/SDImageIOCoder.m; sourceTree = "<group>"; };
+		E96485B1CB5638D384F343A94063CA92 /* libUMSPosPayOnly.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libUMSPosPayOnly.a; sourceTree = "<group>"; };
 		E97A2B1B8B027F616D6506147D7FF543 /* RACImmediateScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACImmediateScheduler.m; path = ReactiveObjC/RACImmediateScheduler.m; sourceTree = "<group>"; };
 		E9A300E1EE4986E51160AD780D2583B9 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		EA27902E85118C9583DB619FF4DC61A5 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		EAAC1747FCA0D97D1431107F75013BF4 /* SDImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCodersManager.m; path = SDWebImage/SDImageCodersManager.m; sourceTree = "<group>"; };
 		EBF59915A1E8005FA9398EB02B8ACB57 /* NSObject+RACLifting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACLifting.m"; path = "ReactiveObjC/NSObject+RACLifting.m"; sourceTree = "<group>"; };
-		EC3AB36A907AF17E51348B44C3B6AD75 /* PasswordModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PasswordModel.m; sourceTree = "<group>"; };
 		EF55752BB2BDC75266584A4A929F92D3 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
 		F09CFEBF3DA2E39A623EE4AC12E8E32E /* NSString+XQCPwdRsaTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+XQCPwdRsaTool.h"; path = "XQCPaymentPasswordInputView/Classes/NSString+XQCPwdRsaTool.h"; sourceTree = "<group>"; };
-		F0BF76EA4CE8F24BEA61925146E32E41 /* XQCPayHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCPayHeaderView.h; sourceTree = "<group>"; };
 		F0C26F4A64DFE1577FB496F08CCCB744 /* RACTestScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTestScheduler.h; path = ReactiveObjC/RACTestScheduler.h; sourceTree = "<group>"; };
 		F0CF46E00B4C9CDC0097F018F7003FB1 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
-		F1754C8D30B88670CF3B415448036BD5 /* UIImage+myImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+myImage.m"; sourceTree = "<group>"; };
 		F340A898A58ADDF103E640249796DB5F /* UITableViewCell+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+RACSignalSupport.h"; path = "ReactiveObjC/UITableViewCell+RACSignalSupport.h"; sourceTree = "<group>"; };
 		F38EA7ED80995E481E56CD4A30FE382C /* UITextField+MyExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+MyExtension.h"; path = "XQCPaymentPasswordInputView/Classes/UITextField+MyExtension.h"; sourceTree = "<group>"; };
+		F495A3A190BDFF9DB4D727BBB969DC15 /* UMSPPPayOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UMSPPPayOrder.h; sourceTree = "<group>"; };
 		F4AC6EEE4779FFFD5223A27E52F79334 /* SDImageAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAssetManager.h; path = SDWebImage/Private/SDImageAssetManager.h; sourceTree = "<group>"; };
+		F59E5DBD2AE664A6F2723DF71F0FFE85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F6ADE5AAD3468991E6B9760DAFC180F0 /* XQCPayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XQCPayViewController.m; sourceTree = "<group>"; };
 		F6C89E8A2CDE62D6F8A33CA5432FCA10 /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
 		F74F0D4D7A24B880DC66C42558B81772 /* SDWebImageDownloaderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderConfig.h; path = SDWebImage/SDWebImageDownloaderConfig.h; sourceTree = "<group>"; };
 		F76CDECD440F00ABBECC277874BE423E /* RACBlockTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACBlockTrampoline.h; path = ReactiveObjC/RACBlockTrampoline.h; sourceTree = "<group>"; };
 		F7E3349F3A3704F720EA09E112210EC7 /* UIAlertView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+RACSignalSupport.m"; path = "ReactiveObjC/UIAlertView+RACSignalSupport.m"; sourceTree = "<group>"; };
-		F86DCBBD895A7B839CEE1BE6AC63B901 /* WhitestripModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WhitestripModel.m; sourceTree = "<group>"; };
 		F88A02B27A0E364A571EF9DBEC994F2D /* XQCPaymentPasswordInputView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XQCPaymentPasswordInputView.framework; path = XQCPaymentPasswordInputView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A7F3E5E3E6A5BC60414EF5301A2981 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		FA8987DD250A81779B0087E35A5E567D /* RACStringSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACStringSequence.h; path = ReactiveObjC/RACStringSequence.h; sourceTree = "<group>"; };
 		FA948B81E39437BE04E6F0181ED58E4A /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		FAB6023CBAC51FFD2400C6EE7701C721 /* XQCNavBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XQCNavBarView.h; sourceTree = "<group>"; };
 		FC77C83621803006AE147A1DA6D611B4 /* RACSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriber.h; path = ReactiveObjC/RACSubscriber.h; sourceTree = "<group>"; };
-		FC8EA1912002D953828E470F1A58BF84 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FC81786855CB724B62E2793FE07C8AC4 /* XQCPaySDK_Objc.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XQCPaySDK_Objc.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FCD30FD3BA1BB610F5E687F1C6D304FB /* UIControl+RACSignalSupportPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+RACSignalSupportPrivate.m"; path = "ReactiveObjC/UIControl+RACSignalSupportPrivate.m"; sourceTree = "<group>"; };
+		FDE96555649D6A1135CCECAB62D1A69A /* checked.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = checked.png; path = XQCPaySDK_Objc/Assets/checked.png; sourceTree = "<group>"; };
 		FE0725CB69FC0168101451837E2CCCFD /* RACTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTuple.m; path = ReactiveObjC/RACTuple.m; sourceTree = "<group>"; };
-		FE0E12C9AE3ACDBC54EE5E8C37694BED /* XQCPaySDK_Objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XQCPaySDK_Objc-dummy.m"; sourceTree = "<group>"; };
-		FE4AFC5D7D5B1E373FB81724651D7717 /* navi_back_black.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = navi_back_black.png; path = XQCPaySDK_Objc/Assets/navi_back_black.png; sourceTree = "<group>"; };
 		FE59F74F1D5CEDB56379248B438DE45C /* RACSubscriptionScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriptionScheduler.m; path = ReactiveObjC/RACSubscriptionScheduler.m; sourceTree = "<group>"; };
 		FE74AE557A3CAC6201E8261B3D5F96A9 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
-		FE9E8919B01A649251EBB9AE048201DF /* PosPay_Resource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = PosPay_Resource.bundle; path = XQCPaySDK_Objc/Classes/UMSPosPayOnly/PosPay_Resource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1169,6 +1172,26 @@
 			path = "Target Support Files/Pods-XQCPaySDK_Objc_Tests";
 			sourceTree = "<group>";
 		};
+		018BD5F01DD592B364552BE3FA71F3B9 /* UMSPosPayOnly */ = {
+			isa = PBXGroup;
+			children = (
+				E0AE4167CA2ADD3EB0F3BC58B3EAD9BA /* PosPay_Resource.bundle */,
+				599AC186AEA9EF09E203E33580F9ABF9 /* UMSSecKeyboardLibResource.bundle */,
+			);
+			name = UMSPosPayOnly;
+			path = UMSPosPayOnly;
+			sourceTree = "<group>";
+		};
+		01CF6479ACAD02631BB5992FB34595B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				16C07FAE2BF712E609637D4190F522D5 /* XQCNetworking.h */,
+				BD1F4626B1698EC5DDF38DF21FEA50DA /* XQCNetworking.m */,
+			);
+			name = Networking;
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		035EAEE63EDD8B2A9B627537CE0888A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1180,19 +1203,6 @@
 				8E8D906D3DF1E10D8E12EB8534E0A7BB /* XQCPaymentPasswordInputView */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		08327CBE1337A234D232B1961D61FE34 /* SdkManager */ = {
-			isa = PBXGroup;
-			children = (
-				76129DF2AD161CB84631EC87FA08A9A5 /* Api.h */,
-				48528C182FC83D275C50BD9B35F4EA00 /* Api.m */,
-				1E11AA1ABC195B50ECA4754442673874 /* XQCPayManager.h */,
-				D48A198C78B7F42EE131175C946B2672 /* XQCPayManager.m */,
-				9DD7009F92329C5186218839AF0F5B79 /* Model */,
-			);
-			name = SdkManager;
-			path = SdkManager;
 			sourceTree = "<group>";
 		};
 		09B8BAB1049C30CB908C6F5B43F8234F /* ReactiveObjC */ = {
@@ -1403,36 +1413,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		172BDB57965C5CBDE032F51EF65ACF09 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				85BBEB353AE770E3CA11705FC5028217 /* baitiao.png */,
-				0EE7752F7004426FB47903DB22D45AA5 /* checked.png */,
-				FE4AFC5D7D5B1E373FB81724651D7717 /* navi_back_black.png */,
-				FE9E8919B01A649251EBB9AE048201DF /* PosPay_Resource.bundle */,
-				5479539E86C0C9B72ECA9A205262294E /* UMSSecKeyboardLibResource.bundle */,
-				B58AF0F86D4E7B199B751F23CF54AEB2 /* unchecked.png */,
-				A1B36B4AD6222EE91EC61F7E5D7F6268 /* xqc.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		1ED83C0AA4CA08283A95FB6FBB762456 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				08FB35EC26B92D2F2207E2C3BEB38BBC /* NSBundle+loadImage.h */,
-				74BC4F7ABA772F2AFF6905D1CF6AD5AF /* NSBundle+loadImage.m */,
-				8FA5310F6B34319EF1429B2EB4B0E230 /* NSString+number.h */,
-				73AC46BC9900E72C3BC34C8366930C1D /* NSString+number.m */,
-				84706E09F6C43D07E35200A8E025778E /* UIButton+paySDkBtn.h */,
-				240AEC76CE538A55D2437F08C00DFBD1 /* UIButton+paySDkBtn.m */,
-				92BB9D72C1C6FDAB423EEDFDF92437E9 /* UIImage+myImage.h */,
-				F1754C8D30B88670CF3B415448036BD5 /* UIImage+myImage.m */,
-			);
-			name = Category;
-			path = XQCPaySDK_Objc/Classes/Category;
-			sourceTree = "<group>";
-		};
 		253BC17C8EB773B14EB8CBF6FBBC660D /* Pods-XQCPaySDK_Objc_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -1449,16 +1429,6 @@
 			);
 			name = "Pods-XQCPaySDK_Objc_Example";
 			path = "Target Support Files/Pods-XQCPaySDK_Objc_Example";
-			sourceTree = "<group>";
-		};
-		2A99BB78C35A96F8B4CBF70953F1C668 /* PayAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				0061E74E78603B74049597B623ECB109 /* PayAlertView.h */,
-				BDD79A07B83D9870DD1368178A85855B /* PayAlertView.m */,
-			);
-			name = PayAlertView;
-			path = PayAlertView;
 			sourceTree = "<group>";
 		};
 		2EDEB007023B738F432423B4FB1A8865 /* Products */ = {
@@ -1501,18 +1471,14 @@
 			path = "../Target Support Files/SDWebImage";
 			sourceTree = "<group>";
 		};
-		33D23D2461E2E952EA71B9E4EFB5794E /* UMSPosPayOnly */ = {
+		33E1EF3C1DFB84A1E7E8C2C7B632A84E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				8C42FBB23D703BD1EC95FD0BF553994F /* UMSPPPayFastPay.h */,
-				26EC7D213C07C4B76F6C3448E6895C73 /* UMSPPPayOrder.h */,
-				357F710F21551C0FC2FBB1442D8D350C /* UMSPPPayPluginSettings.h */,
-				2434AF944FC9CF80DB89F4419AB1120E /* UMSPPPayPosPay.h */,
-				21B50F0F03DCFE789C6D59C976A3CD70 /* UMSPPPayUnifyPayPlugin.h */,
-				853BE34315683DE316E3F2E8E8D9FFC1 /* UMSPPPayVersionsInfo.h */,
+				73BD8E8AB29E10EDD8092C7348189D14 /* LICENSE */,
+				F59E5DBD2AE664A6F2723DF71F0FFE85 /* README.md */,
+				FC81786855CB724B62E2793FE07C8AC4 /* XQCPaySDK_Objc.podspec */,
 			);
-			name = UMSPosPayOnly;
-			path = UMSPosPayOnly;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		3AA8B62FC0F97FA09A278854D80E13AF /* Masonry */ = {
@@ -1549,24 +1515,34 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		45A094CDE8DC741CCE56FC46C7B51FAC /* Networking */ = {
+		4D67942D55332036538D8633ABB243B8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				85C8C6A3BBAEF2D84786564CE06A1CDF /* XQCNetworking.h */,
-				52554D1641A5B2B02CA5CA4FA73AFB4D /* XQCNetworking.m */,
+				8A16C7656E3316B57DE9F51CC77325A7 /* NSBundle+loadImage.h */,
+				1757FA11FC7F65F1E7F9F54AD0C7B1BF /* NSBundle+loadImage.m */,
+				BE6F18B166AE5E47D1FDDD335CF9C041 /* NSString+number.h */,
+				51EF1B14B337A66CCDE0C7A00CB280AA /* NSString+number.m */,
+				69977B44A5D0DCEAF963D49C2114E611 /* UIButton+paySDkBtn.h */,
+				127D08E0B5D4CA6EEEBAECD938B51234 /* UIButton+paySDkBtn.m */,
+				2F15E599CB4B36891AFBD67E45FB7C40 /* UIImage+myImage.h */,
+				E0275B585C025930C3FE803A19D0CCA8 /* UIImage+myImage.m */,
 			);
-			name = Networking;
-			path = Networking;
+			name = Category;
+			path = XQCPaySDK_Objc/Classes/Category;
 			sourceTree = "<group>";
 		};
-		4F684665E000AEAB304CF12414B4DAC8 /* UMSPosPayOnly */ = {
+		4F108534D24BB445D5AAF4125E480F5C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				93309B1C269B024330205B07970BE892 /* libUMSPosPayOnly.a */,
-				D9146EFE4A73319E72F9A18D93B5EEA1 /* include */,
+				7CAFCF04EE77009B557C99021648BE18 /* baitiao.png */,
+				FDE96555649D6A1135CCECAB62D1A69A /* checked.png */,
+				288623F8AB6D001ADD4D72B759FAC6E1 /* navi_back_black.png */,
+				7A5AB900D99CF66A73F1A8E377CD39F8 /* unchecked.png */,
+				C48D1E347B56AFFB174754BE2280A5A4 /* xqc.png */,
+				9469FCECDA87F4C47A222D433D7BEEC2 /* Classes */,
+				F215DD7C36569E47940632FEC533D46D /* Frameworks */,
 			);
-			name = UMSPosPayOnly;
-			path = XQCPaySDK_Objc/Classes/UMSPosPayOnly;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		5ADE69509CF733C96FDBDC897C5988A0 /* Support Files */ = {
@@ -1596,39 +1572,30 @@
 			path = WechatOpenSDK;
 			sourceTree = "<group>";
 		};
-		6260544CFA201947B2126D6D7702E21B /* Frameworks */ = {
+		5E85E779FF080AF2AD544A197D374755 /* PayAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				34F8A788ADD64A7E2937615FF33BF12D /* YSEPaySDK.framework */,
+				689A630AFC7A85C1FE58E7C8CA531958 /* PayAlertView.h */,
+				A712207E5F9C3F9F4ADAB7E9B21590FA /* PayAlertView.m */,
 			);
-			name = Frameworks;
+			name = PayAlertView;
+			path = PayAlertView;
 			sourceTree = "<group>";
 		};
-		69A03B4631E330A3ADE3C0263CA28D36 /* Pod */ = {
+		77A4FB15523A8274BABF940B27412AAD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC8EA1912002D953828E470F1A58BF84 /* LICENSE */,
-				6CE2B1160E12136D0BE994AA8030C434 /* README.md */,
-				243FD66B0359C0597863C7FB28A72BA6 /* XQCPaySDK_Objc.podspec */,
+				062AF04FF033EADF5F5D385648E84046 /* ChannelModel.h */,
+				87E014F79726E5A7C0E11DDF9849CB04 /* ChannelModel.m */,
+				4DB7C0DAE0A90863EB10DA8B0FADC58F /* PasswordModel.h */,
+				2C3E2C7E39BDAD0CBE27CAD9BC3AFF0D /* PasswordModel.m */,
+				D5B8B38BFBCAF8A0C9CD86BE9A049D77 /* ResponseModel.h */,
+				8F0BC60DF14C16EC5EAF683C7BAC031D /* ResponseModel.m */,
+				B4396A8E47099843E39E3A789618F621 /* WhitestripModel.h */,
+				DB899C70C2B14FFA96593EF170460FD1 /* WhitestripModel.m */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		714F90BDBDBBC151C796D90C54F2E23B /* XQCPaySDK_Objc */ = {
-			isa = PBXGroup;
-			children = (
-				1ED83C0AA4CA08283A95FB6FBB762456 /* Category */,
-				6260544CFA201947B2126D6D7702E21B /* Frameworks */,
-				69A03B4631E330A3ADE3C0263CA28D36 /* Pod */,
-				172BDB57965C5CBDE032F51EF65ACF09 /* Resources */,
-				A0509D076A69663C7CE7479859505509 /* Support Files */,
-				E2D91458EC1711FFCF363B9B01E754BB /* Tools */,
-				8772196A463E2D9564B43791381D07AB /* UI */,
-				4F684665E000AEAB304CF12414B4DAC8 /* UMSPosPayOnly */,
-				E89636FF162B4C516157A4366A24F534 /* UPPaymentControl */,
-			);
-			name = XQCPaySDK_Objc;
-			path = ../..;
+			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		78D811B79A85AA2DBB8346B65DD8F3F1 /* Support Files */ = {
@@ -1651,26 +1618,6 @@
 				1FAC041171BFA946ECB49F8DC642B14D /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		8772196A463E2D9564B43791381D07AB /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				D8D5D840747511BEE8354EDE01467F42 /* XQCNavBarView.h */,
-				0B008FBE70230092227872CA4341CE66 /* XQCNavBarView.m */,
-				76335AA144A104978988AA6A76886ED7 /* XQCPayFootView.h */,
-				D09D0D8DD3001A5FC965AA9A96E240ED /* XQCPayFootView.m */,
-				F0BF76EA4CE8F24BEA61925146E32E41 /* XQCPayHeaderView.h */,
-				B001CB2410A40AC3A9976B2AC89D5AE3 /* XQCPayHeaderView.m */,
-				612B2FC05CA98C5ABA07DB74E5E4D6AF /* XQCPayItemView.h */,
-				33EA8ABAD822F80A31C2F16D9B10D0E9 /* XQCPayItemView.m */,
-				BFFC60C6CB59BE6E02C361FD29FA1D48 /* XQCPayViewController.h */,
-				233C3F750627FF44503F2B8E6085C4BC /* XQCPayViewController.m */,
-				8C075AB56C402F933FA0BFC851C4F1C9 /* XQCWhiteStripTableViewCell.h */,
-				399898C05BED50A73C6593C7BDE0DDC7 /* XQCWhiteStripTableViewCell.m */,
-			);
-			name = UI;
-			path = XQCPaySDK_Objc/Classes/UI;
 			sourceTree = "<group>";
 		};
 		8E8D906D3DF1E10D8E12EB8534E0A7BB /* XQCPaymentPasswordInputView */ = {
@@ -1696,6 +1643,15 @@
 			);
 			name = XQCPaymentPasswordInputView;
 			path = XQCPaymentPasswordInputView;
+			sourceTree = "<group>";
+		};
+		9469FCECDA87F4C47A222D433D7BEEC2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				018BD5F01DD592B364552BE3FA71F3B9 /* UMSPosPayOnly */,
+			);
+			name = Classes;
+			path = XQCPaySDK_Objc/Classes;
 			sourceTree = "<group>";
 		};
 		9A24AAE67F075E3BBD222200E0F96AD8 /* SVProgressHUD */ = {
@@ -1847,35 +1803,46 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		9DD7009F92329C5186218839AF0F5B79 /* Model */ = {
+		9FBFCC6E7A315F8DB33F8CBF1EEE7146 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				115EA91083B05AFBDA98369106127106 /* ChannelModel.h */,
-				8FD509D9953ABD4D5EC502984CE53DA4 /* ChannelModel.m */,
-				E7DD23B2E98CD144D27D58A10B8C99A1 /* PasswordModel.h */,
-				EC3AB36A907AF17E51348B44C3B6AD75 /* PasswordModel.m */,
-				6456BD4FACA29548EB75D93702953E19 /* ResponseModel.h */,
-				DBC7EC2E0EB26B12D4F1EFD9CBF7405B /* ResponseModel.m */,
-				E3E01CFEC117F97EB9B77A485762FCC6 /* WhitestripModel.h */,
-				F86DCBBD895A7B839CEE1BE6AC63B901 /* WhitestripModel.m */,
+				D8CE4EC7B6B664802E1E42ECAECDB6BD /* PaySDKHeader.h */,
+				01CF6479ACAD02631BB5992FB34595B5 /* Networking */,
+				5E85E779FF080AF2AD544A197D374755 /* PayAlertView */,
+				AF20D106D26CF457C3749F2ED9FD4D8C /* SdkManager */,
 			);
-			name = Model;
-			path = Model;
+			name = Tools;
+			path = XQCPaySDK_Objc/Classes/Tools;
 			sourceTree = "<group>";
 		};
-		A0509D076A69663C7CE7479859505509 /* Support Files */ = {
+		A3A43DD419BE62ECE82FB7FE2F50FF27 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				C3DFD901408BCD315B73D96C3D18CB0B /* ResourceBundle-XQCPaySDK_Objc-XQCPaySDK_Objc-Info.plist */,
-				2583921E21175DEF7739F923383FA099 /* XQCPaySDK_Objc.modulemap */,
-				722E205A5E60D2CEF372B91882041799 /* XQCPaySDK_Objc.xcconfig */,
-				FE0E12C9AE3ACDBC54EE5E8C37694BED /* XQCPaySDK_Objc-dummy.m */,
-				83BCE0814804B58FA7D8D91E2DBFF3E7 /* XQCPaySDK_Objc-Info.plist */,
-				D858D0C844B07F0683B56A666C52CAD5 /* XQCPaySDK_Objc-prefix.pch */,
-				B39001E0B4C116A279DD0FDF8925A5DC /* XQCPaySDK_Objc-umbrella.h */,
+				FAB6023CBAC51FFD2400C6EE7701C721 /* XQCNavBarView.h */,
+				9EC603C3AFCE75CCF9E5A3CC8DD3F864 /* XQCNavBarView.m */,
+				3EBCB98A38AAF06C971F98F63C4889F8 /* XQCPayFootView.h */,
+				BB5B276D0C4D69AD5FFF7531C4919EE0 /* XQCPayFootView.m */,
+				25D4C20C6406C70041E8D397FC47BA27 /* XQCPayHeaderView.h */,
+				3250EE02177EF498AB980EC95C5C4670 /* XQCPayHeaderView.m */,
+				082B287470840F07382EB8013E524874 /* XQCPayItemView.h */,
+				7DE0993B65B1ABE0395EEED3B2BD75F4 /* XQCPayItemView.m */,
+				8580F6A12D96A961C2EB4EF639AD2341 /* XQCPayViewController.h */,
+				F6ADE5AAD3468991E6B9760DAFC180F0 /* XQCPayViewController.m */,
+				D1E391ABCB4BD4B0D02373726D5BB099 /* XQCWhiteStripTableViewCell.h */,
+				3E4247CD7E59F7CE2E54E46A9BF19E8F /* XQCWhiteStripTableViewCell.m */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XQCPaySDK_Objc";
+			name = UI;
+			path = XQCPaySDK_Objc/Classes/UI;
+			sourceTree = "<group>";
+		};
+		A54A67D33B03E3DC6702B6BB76267C40 /* UMSPosPayOnly */ = {
+			isa = PBXGroup;
+			children = (
+				E96485B1CB5638D384F343A94063CA92 /* libUMSPosPayOnly.a */,
+				DDEDD90ACEE124AD41C3F7B50910D075 /* include */,
+			);
+			name = UMSPosPayOnly;
+			path = XQCPaySDK_Objc/Classes/UMSPosPayOnly;
 			sourceTree = "<group>";
 		};
 		AAEAA02190BC796BBCEA4E4582E00647 /* iOS */ = {
@@ -1889,10 +1856,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		AF20D106D26CF457C3749F2ED9FD4D8C /* SdkManager */ = {
+			isa = PBXGroup;
+			children = (
+				074527FBC9DE1BC41971BB0021FFCD10 /* Api.h */,
+				D30ABA62B636986B7982B3D51271A5DE /* Api.m */,
+				0E3BB01F1960F8C1DB2B1BFF5C4453FE /* XQCPayManager.h */,
+				D09EBC50759D69C361CBB41E6B550412 /* XQCPayManager.m */,
+				77A4FB15523A8274BABF940B27412AAD /* Model */,
+			);
+			name = SdkManager;
+			path = SdkManager;
+			sourceTree = "<group>";
+		};
 		B17DDE7E478AB5DCCB06CB527F515B17 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				714F90BDBDBBC151C796D90C54F2E23B /* XQCPaySDK_Objc */,
+				F792D7067D2556BC59A2642D4BDF83A5 /* XQCPaySDK_Objc */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -1910,6 +1890,15 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/XQCPaymentPasswordInputView";
+			sourceTree = "<group>";
+		};
+		B693779F416F0A3EB252A286F2BFEBC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849DF5814EE4E9B9B34F4D76503270AD /* AlipaySDK.framework */,
+				7EC5C290FAFCC7EC8757EA38CBADE0D5 /* YSEPaySDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CCA291E70DB278C26285A97888003735 /* Support Files */ = {
@@ -1946,10 +1935,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D9146EFE4A73319E72F9A18D93B5EEA1 /* include */ = {
+		DDEDD90ACEE124AD41C3F7B50910D075 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				33D23D2461E2E952EA71B9E4EFB5794E /* UMSPosPayOnly */,
+				F28ACD50D43EF9849B2845AB385A8159 /* UMSPosPayOnly */,
 			);
 			name = include;
 			path = include;
@@ -1964,18 +1953,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E2D91458EC1711FFCF363B9B01E754BB /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				25356DAEE8912F708318AEA0DC5C4020 /* PaySDKHeader.h */,
-				45A094CDE8DC741CCE56FC46C7B51FAC /* Networking */,
-				2A99BB78C35A96F8B4CBF70953F1C668 /* PayAlertView */,
-				08327CBE1337A234D232B1961D61FE34 /* SdkManager */,
-			);
-			name = Tools;
-			path = XQCPaySDK_Objc/Classes/Tools;
-			sourceTree = "<group>";
-		};
 		E76B180C285B642719B92C4DA244A05A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1985,14 +1962,69 @@
 			path = "../Target Support Files/WechatOpenSDK";
 			sourceTree = "<group>";
 		};
-		E89636FF162B4C516157A4366A24F534 /* UPPaymentControl */ = {
+		EA5C5348D79AD75141ED31355EC87B50 /* UPPaymentControl */ = {
 			isa = PBXGroup;
 			children = (
-				A61574D19AA8F46C47B10072AA8FA330 /* libPaymentControl.a */,
-				A05E11F0484067A19F97B8505D78D6FD /* UPPaymentControl.h */,
+				62AAD4A8C4DD5B7113BF3C8A97DA81C4 /* libPaymentControl.a */,
+				751A0EFDAC6BF85FF8C5D00943756589 /* UPPaymentControl.h */,
 			);
 			name = UPPaymentControl;
 			path = XQCPaySDK_Objc/Classes/UPPaymentControl;
+			sourceTree = "<group>";
+		};
+		F215DD7C36569E47940632FEC533D46D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88BDAABC4494BEBAABF17DF9D5A8DA30 /* AlipaySDK.bundle */,
+			);
+			name = Frameworks;
+			path = XQCPaySDK_Objc/Frameworks;
+			sourceTree = "<group>";
+		};
+		F28ACD50D43EF9849B2845AB385A8159 /* UMSPosPayOnly */ = {
+			isa = PBXGroup;
+			children = (
+				8D9905A7C2DF6AEE47DF66A6C5D4A184 /* UMSPPPayFastPay.h */,
+				F495A3A190BDFF9DB4D727BBB969DC15 /* UMSPPPayOrder.h */,
+				E3E46809D2422C961731CE2534E837F2 /* UMSPPPayPluginSettings.h */,
+				30925D30B4A439B0FE48BBAE9F8628E1 /* UMSPPPayPosPay.h */,
+				100E95765AB85ED7353D11018D78BDAE /* UMSPPPayUnifyPayPlugin.h */,
+				D3FDAA417FE0C4C9B93DCC690075F43E /* UMSPPPayVersionsInfo.h */,
+			);
+			name = UMSPosPayOnly;
+			path = UMSPosPayOnly;
+			sourceTree = "<group>";
+		};
+		F34E561D900F83A51E437063A4292871 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				070698D9207BB63DC6C40D3CDA17F564 /* ResourceBundle-XQCPaySDK_Objc-XQCPaySDK_Objc-Info.plist */,
+				9A84E9EA40350EC73347234625D0C08E /* XQCPaySDK_Objc.modulemap */,
+				497D6E3A495450D3CEBF5F1DE4530577 /* XQCPaySDK_Objc.xcconfig */,
+				11C7BA4CF1310C58B545FA7DC91A5D84 /* XQCPaySDK_Objc-dummy.m */,
+				8B721FE5A3E288848D85460ABDCDDDB9 /* XQCPaySDK_Objc-Info.plist */,
+				5025DB49D151DF64B3FFAE9A48D07E18 /* XQCPaySDK_Objc-prefix.pch */,
+				3522F244B4135261509DFDA692F89D59 /* XQCPaySDK_Objc-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XQCPaySDK_Objc";
+			sourceTree = "<group>";
+		};
+		F792D7067D2556BC59A2642D4BDF83A5 /* XQCPaySDK_Objc */ = {
+			isa = PBXGroup;
+			children = (
+				4D67942D55332036538D8633ABB243B8 /* Category */,
+				B693779F416F0A3EB252A286F2BFEBC0 /* Frameworks */,
+				33E1EF3C1DFB84A1E7E8C2C7B632A84E /* Pod */,
+				4F108534D24BB445D5AAF4125E480F5C /* Resources */,
+				F34E561D900F83A51E437063A4292871 /* Support Files */,
+				9FBFCC6E7A315F8DB33F8CBF1EEE7146 /* Tools */,
+				A3A43DD419BE62ECE82FB7FE2F50FF27 /* UI */,
+				A54A67D33B03E3DC6702B6BB76267C40 /* UMSPosPayOnly */,
+				EA5C5348D79AD75141ED31355EC87B50 /* UPPaymentControl */,
+			);
+			name = XQCPaySDK_Objc;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2417,7 +2449,7 @@
 				634D8ADF60AEAA1BDACCE740CE370EE1 /* Headers */,
 				8E6460B91ED608DF424B908621ECD026 /* Sources */,
 				FDA149A2E19CFAB94ED09C9F183B2EEA /* Frameworks */,
-				CFDB974DEBF446A41C707EA031C730B8 /* Resources */,
+				B56B59F0EE2FFBFA0E1F5B3B805797A3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -2559,13 +2591,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFDB974DEBF446A41C707EA031C730B8 /* Resources */ = {
+		B56B59F0EE2FFBFA0E1F5B3B805797A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				697C68262CAF523C2F4479DFDF9A1790 /* PosPay_Resource.bundle in Resources */,
-				6A74FCBC4C87B1568FD052C96CFE396C /* UMSSecKeyboardLibResource.bundle in Resources */,
-				BEA27DAF0101D20973DCDC19125F3208 /* XQCPaySDK_Objc.bundle in Resources */,
+				82C9CF8F3049B15252B7FEBACFE0258A /* AlipaySDK.bundle in Resources */,
+				6BEF20B8830F1A95273A5E05D6BE69B1 /* PosPay_Resource.bundle in Resources */,
+				E215A0BD61F18954168F40110BFBC95E /* UMSSecKeyboardLibResource.bundle in Resources */,
+				44697F9E3C2D1BAB3BC0ED76C6117364 /* XQCPaySDK_Objc.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3057,7 +3090,7 @@
 		};
 		1E983EF79EE0077BC604CDAD1E8868AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 722E205A5E60D2CEF372B91882041799 /* XQCPaySDK_Objc.xcconfig */;
+			baseConfigurationReference = 497D6E3A495450D3CEBF5F1DE4530577 /* XQCPaySDK_Objc.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XQCPaySDK_Objc";
@@ -3073,7 +3106,7 @@
 		};
 		23FF102B5DB131D0562AB8EB6B9062D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 722E205A5E60D2CEF372B91882041799 /* XQCPaySDK_Objc.xcconfig */;
+			baseConfigurationReference = 497D6E3A495450D3CEBF5F1DE4530577 /* XQCPaySDK_Objc.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3118,7 +3151,7 @@
 		};
 		4588F6A5553E6EA3049BE4CAD83415C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 722E205A5E60D2CEF372B91882041799 /* XQCPaySDK_Objc.xcconfig */;
+			baseConfigurationReference = 497D6E3A495450D3CEBF5F1DE4530577 /* XQCPaySDK_Objc.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XQCPaySDK_Objc";
@@ -3225,7 +3258,7 @@
 		};
 		7DAB72E4BA011BD6E93F9919CCFE3D9C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 722E205A5E60D2CEF372B91882041799 /* XQCPaySDK_Objc.xcconfig */;
+			baseConfigurationReference = 497D6E3A495450D3CEBF5F1DE4530577 /* XQCPaySDK_Objc.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

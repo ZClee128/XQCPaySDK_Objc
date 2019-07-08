@@ -13,7 +13,7 @@
 #import <YSEPaySDK/YSEPay.h>
 #import "UMSPPPayUnifyPayPlugin.h"
 #import "UMSPPPayPluginSettings.h"
-
+#import <AlipaySDK/AlipaySDK.h>
 NS_ASSUME_NONNULL_BEGIN
 
 /**

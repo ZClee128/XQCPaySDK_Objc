@@ -452,12 +452,14 @@
 				"${PODS_ROOT}/Target Support Files/Pods-XQCPaySDK_Objc_Example/Pods-XQCPaySDK_Objc_Example-resources.sh",
 				"${PODS_ROOT}/../../XQCPaySDK_Objc/Classes/UMSPosPayOnly/PosPay_Resource.bundle",
 				"${PODS_ROOT}/../../XQCPaySDK_Objc/Classes/UMSPosPayOnly/UMSSecKeyboardLibResource.bundle",
+				"${PODS_ROOT}/../../XQCPaySDK_Objc/Frameworks/AlipaySDK.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/XQCPaySDK_Objc/XQCPaySDK_Objc.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PosPay_Resource.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSSecKeyboardLibResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XQCPaySDK_Objc.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
