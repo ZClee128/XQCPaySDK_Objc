@@ -244,7 +244,7 @@ static NSString *ALIPAY_HYL = @"ALIPAY_HYL";
  @param password 密码
  @param result 结果
  */
-+ (void)checkPayPwd:(NSString *)password reuslt:(void(^)(PasswordModel *model))result;
++ (void)checkPayPwd:(NSString *)password reuslt:(void(^)(PasswordModel *model))result error:(void(^)(NSString *errorMsg))errorMsg;
 
 /**
  查询订单

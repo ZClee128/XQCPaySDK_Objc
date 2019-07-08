@@ -77,10 +77,10 @@ static XQCPayManager *_sharedManager = nil;
 - (void)setConfig:(NSString *)url {
     self.orderUrl = [NSString stringWithFormat:@"%@/api/v1/trade/unifiedPay",url];
     self.queryUrl = [NSString stringWithFormat:@"%@/api/v1/trade/query",url];
-//    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/trade/channelQuery",url];
-//    self.whitestripUrl = [NSString stringWithFormat:@"%@/api/v1/trade/iousQuery",url];
-//    self.payPasswordUrl = [NSString stringWithFormat:@"%@/api/v1/trade/checkPayPwd",url];
-    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/combopay/app/v1/getchannels",url];
+    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/trade/channelQuery",url];
+    self.whitestripUrl = [NSString stringWithFormat:@"%@/api/v1/trade/iousQuery",url];
+    self.payPasswordUrl = [NSString stringWithFormat:@"%@/api/v1/trade/checkPayPwd",url];
+//    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/combopay/app/v1/getchannels",url];
 }
 
 + (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void (^)(NSArray * _Nonnull))res{
@@ -131,8 +131,8 @@ static XQCPayManager *_sharedManager = nil;
     }];
 }
 
-+ (void)checkPayPwd:(NSString *)password reuslt:(nonnull void (^)(PasswordModel * _Nonnull))result{
-    [Api checkPayPwd:password reuslt:result];
++ (void)checkPayPwd:(NSString *)password reuslt:(nonnull void (^)(PasswordModel * _Nonnull))result error:(nonnull void (^)(NSString * _Nonnull))errorMsg{
+    [Api checkPayPwd:password reuslt:result error:errorMsg];
 }
 
 + (void)queryOrder:(NSString *)orderId reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result {
@@ -258,11 +258,16 @@ static XQCPayManager *_sharedManager = nil;
 
 
 + (void)showPasswordViewControllerResult:(void (^)(void))success {
-    
     [[[XQCPaymentPasswordInputView alloc] initWithStyle:(XQCPaymentPasswordStyleXQC) payButtonclick:^RACSignal * _Nonnull(NSString * _Nonnull pwd) {
+        [[RACScheduler mainThreadScheduler] schedule:^{
+           [SVProgressHUD showWithStatus:@""];
+        }];
         return [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
             [XQCPayManager checkPayPwd:pwd reuslt:^(PasswordModel * _Nonnull Passmodel) {
                 if ([Passmodel.state intValue] == 1) {
+                    [[RACScheduler mainThreadScheduler] schedule:^{
+                        [SVProgressHUD dismiss];
+                    }];
                     success();
                     [subscriber sendCompleted];
                 }else {
@@ -278,6 +283,10 @@ static XQCPayManager *_sharedManager = nil;
 //                        }];
                     }];
                 }
+            } error:^(NSString * _Nonnull errorMsg) {
+                [[RACScheduler mainThreadScheduler] schedule:^{
+                    [SVProgressHUD showErrorWithStatus:errorMsg];
+                }];
             }];
             return [RACDisposable disposableWithBlock:^{
                 

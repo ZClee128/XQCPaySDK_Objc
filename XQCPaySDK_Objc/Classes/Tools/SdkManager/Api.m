@@ -31,7 +31,7 @@
 }
 
 
-+ (void)checkPayPwd:(NSString *)password reuslt:(nonnull void (^)(PasswordModel * _Nonnull))result{
++ (void)checkPayPwd:(NSString *)password reuslt:(nonnull void (^)(PasswordModel * _Nonnull))result error:(nonnull void (^)(NSString * _Nonnull))errorMsg{
     NSMutableDictionary *para = [@{
                                    @"agentNo": [manager getAgentNo],
                                    @"companyOpenId":[manager getCompanyOpenId],
@@ -42,7 +42,8 @@
         PasswordModel *model = [[PasswordModel alloc] initWithDict:responseObject];
         result(model);
     } failure:^(NSString * _Nonnull error) {
-        
+        NSLog(@"error >>>%@",error);
+        errorMsg(error);
     }];
 }
 

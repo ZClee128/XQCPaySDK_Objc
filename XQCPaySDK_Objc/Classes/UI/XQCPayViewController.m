@@ -82,12 +82,12 @@
         });
     }];
     
-    //    [XQCPayManager whitestripAgentNo:[manager getAgentNo] companyOpenId:[manager getCompanyOpenId] userOpenId:[manager getUserOpenId] respon:^(NSArray * _Nonnull list) {
-    //        self.whiteStripSource = [list mutableCopy];
-    //        dispatch_async(dispatch_get_main_queue(), ^{
-    //            [self.myTable reloadData];
-    //        });
-    //    }];
+        [XQCPayManager whitestripAgentNo:[manager getAgentNo] companyOpenId:[manager getCompanyOpenId] userOpenId:[manager getUserOpenId] respon:^(NSArray * _Nonnull list) {
+            self.whiteStripSource = [list mutableCopy];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.myTable reloadData];
+            });
+        }];
 }
 
 - (void)navBack {
