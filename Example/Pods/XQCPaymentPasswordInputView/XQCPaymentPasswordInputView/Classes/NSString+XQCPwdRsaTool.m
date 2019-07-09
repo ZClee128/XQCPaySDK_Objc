@@ -6,9 +6,8 @@
 //
 
 #import "NSString+XQCPwdRsaTool.h"
-#import "RSAEncryptor.h"
 #import "NSString+XQCMd5.h"
-
+#import "RSAEncryptor.h"
 
 #define Pwd_PublicKey  @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCA3+uOOSPIfCszVdz6NPHhjgfSCNoPPUWmDcKWSW5yepiDw6Met7XKy2ETLbUCBcTTJXMqZNTh2I4b72oQgcF62JTzuV1faCJUQTM73vJUwxbXJKTGBIn2dZYHGG35whdgqL5dcL53oU7cUaXqXHCn5rfJVo7FHnC+ePEKAtSGzQIDAQAB" //加密密码用的公钥
 

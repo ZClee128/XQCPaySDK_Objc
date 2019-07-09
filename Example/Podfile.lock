@@ -1,15 +1,17 @@
 PODS:
   - Masonry (1.1.0)
   - ReactiveObjC (3.1.1)
+  - RSAEncryptor (0.0.1)
   - SDWebImage (5.0.6):
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
   - SVProgressHUD (2.2.5)
   - WechatOpenSDK (1.8.4)
-  - XQCPaymentPasswordInputView (1.1.6):
+  - XQCPaymentPasswordInputView (1.2.1):
     - Masonry
     - ReactiveObjC
-  - XQCPaySDK_Objc (1.2.1):
+    - RSAEncryptor
+  - XQCPaySDK_Objc (1.2.2):
     - SDWebImage
     - SVProgressHUD
     - WechatOpenSDK
@@ -22,6 +24,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Masonry
     - ReactiveObjC
+    - RSAEncryptor
     - SDWebImage
     - SVProgressHUD
     - WechatOpenSDK
@@ -34,11 +37,12 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  RSAEncryptor: d0c9c7f81493aa42e6cdf64e533bcb6ce37377b7
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
-  XQCPaymentPasswordInputView: f9c01239ea751082128b2a55341aafe3ed5acdd5
-  XQCPaySDK_Objc: fa891fddad23a1e66fe5965a81e622532c4e102e
+  XQCPaymentPasswordInputView: 3d083aa47127892eaea3600a8f1958bb34f9ff62
+  XQCPaySDK_Objc: b841ce9514e6613797d8fed5aca1659afaef2488
 
 PODFILE CHECKSUM: 3829ca28413959508c73f8860f3bd4e9e5ef159f
 

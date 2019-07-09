@@ -156,20 +156,6 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
 
 @implementation XQCPaymentPasswordInputView
 
-- (instancetype)initWithForgetPwd:(BOOL)showForgetPwd payButtonclick:(RACSignal * (^)(NSString *pwd))payButtonClick
-{
-    self = [super init];
-    
-    if (self) {
-        
-        _labels = [NSMutableArray new];
-        self.subTitle = @"";
-        self.payCompletion = payButtonClick;
-    }
-    
-    return self;
-}
-
 - (instancetype)initWithStyle:(XQCPaymentPasswordStyle)style payButtonclick:(RACSignal * (^)(NSString *pwd))payButtonClick
 {
     self = [super init];
@@ -333,6 +319,20 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
     
     [self.textField setHidden:YES];
     self.closeButton.hidden = YES;
+    
+    
+    UITapGestureRecognizer *hidetapGesture = [[UITapGestureRecognizer alloc] init];
+
+    [[[hidetapGesture rac_gestureSignal]deliverOn:[RACScheduler mainThreadScheduler]]subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {
+        
+        @strongify(self);
+        
+        [self removeFromSuperview];
+        [self.NumKeyBoard dismiss];
+        self.NumKeyBoard = nil;
+    }];
+     
+     [self addGestureRecognizer:hidetapGesture];
 }
 
 - (UIView *)contentView
@@ -539,6 +539,11 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
         }
         i++;
     }
+}
+
+- (void)setBtnColor:(UIColor *)color
+{
+    [self.payButton setTitleColor:color forState:(UIControlStateNormal)];
 }
 
 - (NSString *)subTitle {

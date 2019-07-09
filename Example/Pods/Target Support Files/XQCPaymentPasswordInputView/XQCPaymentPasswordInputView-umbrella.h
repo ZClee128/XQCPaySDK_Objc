@@ -12,7 +12,6 @@
 
 #import "NSString+XQCMd5.h"
 #import "NSString+XQCPwdRsaTool.h"
-#import "RSAEncryptor.h"
 #import "UIButton+Extension.h"
 #import "UIImage+xqcBundle.h"
 #import "UITextField+MyExtension.h"

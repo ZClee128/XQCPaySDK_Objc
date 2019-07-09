@@ -20,16 +20,24 @@ typedef NS_ENUM(NSUInteger, XQCPaymentPasswordStyle) {
 };
 
 @class RACSignal;
+
 @interface XQCPaymentPasswordInputView : UIView
 
 /**
- 初始化
- @param showForgetPwd   是否显示“忘记密码”
- @param payButtonClick  点击立即支付回调
- */
-- (instancetype)initWithForgetPwd:(BOOL)showForgetPwd payButtonclick:(RACSignal * (^)(NSString *pwd))payButtonClick;
+ 弹出密码框
 
+ @param style 密码框弹出样式
+ @param payButtonClick 点即立即支付回调
+ @return 密码框
+ */
 - (instancetype)initWithStyle:(XQCPaymentPasswordStyle)style payButtonclick:(RACSignal * (^)(NSString *pwd))payButtonClick;
+
+/**
+ 改变立即支付按钮的颜色
+
+ @param color 颜色
+ */
+- (void)setBtnColor:(UIColor *)color;
 
 - (void)show;
 
