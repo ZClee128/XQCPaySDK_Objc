@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  返回按钮回调
  */
-@property (nonatomic,copy)void(^back)(void);
+//@property (nonatomic,copy)void(^back)(void);
 
 @end
 

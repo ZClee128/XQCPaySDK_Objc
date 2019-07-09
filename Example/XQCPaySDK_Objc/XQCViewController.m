@@ -34,10 +34,6 @@
 //        支付结果回调
         NSLog(@"model===>%@,%@",model.payType,model.message);
     };
-//    pay.back = ^{
-////        这里是手动返回操作，如果不需要则不需要实现
-//    };
-//
     [self presentViewController:pay animated:YES completion:nil];
     
 //    [XQCPayManager showPasswordViewControllerResult:^{

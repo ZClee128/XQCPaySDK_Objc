@@ -82,12 +82,12 @@
         });
     }];
     
-        [XQCPayManager whitestripAgentNo:[manager getAgentNo] companyOpenId:[manager getCompanyOpenId] userOpenId:[manager getUserOpenId] respon:^(NSArray * _Nonnull list) {
-            self.whiteStripSource = [list mutableCopy];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.myTable reloadData];
-            });
-        }];
+    [XQCPayManager whitestripAgentNo:[manager getAgentNo] companyOpenId:[manager getCompanyOpenId] userOpenId:[manager getUserOpenId] respon:^(NSArray * _Nonnull list) {
+        self.whiteStripSource = [list mutableCopy];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.myTable reloadData];
+        });
+    }];
 }
 
 - (void)navBack {
@@ -100,10 +100,9 @@
     NSDictionary *dict = @{@"amount": @(self.price * 100),
                            @"outTradeNo" : self.orderId,
                            @"payState" : @(10),
-                           @"payType" : payType,
-                           @"isBack" : @(YES),
                            };
     ResponseModel *model = [[ResponseModel alloc] initWithDict:dict];
+    model.payType = payType;
     if ([XQCPayManager defaultManager].result) {
         [XQCPayManager defaultManager].result(model);
     }
@@ -116,16 +115,16 @@
 }
 
 - (void)close {
-    if (self.back) {
-        self.back();
-    }else {
-        UINavigationController *navigation = self.navigationController;
-        if (navigation) {
-            [navigation popViewControllerAnimated:YES];
-        } else {
-            [self dissmissAllModalControllerAnimated:YES];
-        }
+//    if (self.back) {
+//        self.back();
+//    }else {
+    UINavigationController *navigation = self.navigationController;
+    if (navigation) {
+        [navigation popViewControllerAnimated:YES];
+    } else {
+        [self dissmissAllModalControllerAnimated:YES];
     }
+//    }
 }
 
 - (void)dissmissAllModalControllerAnimated:(BOOL)flag{

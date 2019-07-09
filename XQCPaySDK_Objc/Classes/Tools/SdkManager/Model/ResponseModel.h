@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 支付渠道类型
 @property (nonatomic,copy)NSString *payType;
 // 返回按钮标识
-@property (nonatomic,assign) BOOL  isBack;
+//@property (nonatomic,assign) BOOL  isBack;
 - (id)initWithDict:(NSDictionary *)dict;
 @end
 

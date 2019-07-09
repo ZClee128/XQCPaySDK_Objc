@@ -41,6 +41,9 @@
             case 9:
                 self.message = @"交易关闭";
                 break;
+            case 10:
+                self.message = @"用户取消";
+                break;
             default:
                 self.message = @"未知";
                 break;
