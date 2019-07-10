@@ -152,6 +152,14 @@ NSInteger const Interval = 10;
     return [self convertToJsonData:param];
 }
 
+
+/**
+ 处理参数
+
+ @param param 参数
+ @param keyValue 签名
+ @return 后台需要的格式
+ */
 + (NSString *)formDatadealWithParam:(NSMutableDictionary *)param keyValue:(NSString *)keyValue
 {
     NSArray *allkeys = [param allKeys];
@@ -176,6 +184,13 @@ NSInteger const Interval = 10;
     return [self keyValue:param];
 }
 
+
+/**
+ 适配通过application/x-www-form-urlencoded方式请求的参数
+
+ @param param 处理好的字典
+ @return 处理好的key=value&key1=value2的格式返回
+ */
 + (NSString *)keyValue:(NSMutableDictionary *)param {
     NSArray *allkeys = [param allKeys];
     NSMutableArray *strs = [[NSMutableArray alloc] init];
