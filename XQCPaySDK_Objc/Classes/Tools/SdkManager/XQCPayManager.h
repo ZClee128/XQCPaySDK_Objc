@@ -279,6 +279,11 @@ static NSString *ALIPAY_HYL = @"ALIPAY_HYL";
 + (void)showPasswordViewControllerResult:(void(^)(void))success;
 
 
+/**
+ 配置好易联环境
+
+ @param enviroment UMSPluginEnvironment
+ */
 + (void)setUmspEnviroment:(UMSPluginEnvironment)enviroment;
 @end
 
