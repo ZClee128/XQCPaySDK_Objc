@@ -7,7 +7,7 @@ PODS:
   - SDWebImage/Core (5.0.6)
   - SVProgressHUD (2.2.5)
   - WechatOpenSDK (1.8.4)
-  - XQCPaymentPasswordInputView (1.2.1):
+  - XQCPaymentPasswordInputView (1.2.3):
     - Masonry
     - ReactiveObjC
     - RSAEncryptor
@@ -41,7 +41,7 @@ SPEC CHECKSUMS:
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
-  XQCPaymentPasswordInputView: 3d083aa47127892eaea3600a8f1958bb34f9ff62
+  XQCPaymentPasswordInputView: ad21a3670785a03c6153a0584576dda32ea7d4e8
   XQCPaySDK_Objc: b841ce9514e6613797d8fed5aca1659afaef2488
 
 PODFILE CHECKSUM: 3829ca28413959508c73f8860f3bd4e9e5ef159f

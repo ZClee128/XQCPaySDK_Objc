@@ -260,7 +260,7 @@ static XQCPayManager *_sharedManager = nil;
 
 
 + (void)showPasswordViewControllerResult:(void (^)(void))success {
-    [[[XQCPaymentPasswordInputView alloc] initWithStyle:(XQCPaymentPasswordStyleXQC) payButtonclick:^RACSignal * _Nonnull(NSString * _Nonnull pwd) {
+    [[[XQCPaymentPasswordInputView alloc] initWithStyle:(XQCPaymentIousPasswordStyleLimit) payButtonclick:^RACSignal * _Nonnull(NSString * _Nonnull pwd) {
         [[RACScheduler mainThreadScheduler] schedule:^{
            [SVProgressHUD showWithStatus:@""];
         }];

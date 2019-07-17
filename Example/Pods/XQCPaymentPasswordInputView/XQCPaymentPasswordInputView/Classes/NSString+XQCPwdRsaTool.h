@@ -19,4 +19,12 @@
 
 -(NSString*)rasedPwdStrWithOldPwd;
 
+//白条
+- (NSString *)rasedPwdStrForSDKWithiousPwd;
+
+-(NSString *)md532BitLowerWithSalt;
+
+//获取当前时间戳  （以毫秒为单位）
++(NSString *)getNowTimeTimestamp3;
+
 @end

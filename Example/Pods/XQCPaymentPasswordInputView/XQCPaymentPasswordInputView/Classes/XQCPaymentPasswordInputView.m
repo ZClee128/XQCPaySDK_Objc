@@ -455,7 +455,7 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
                     
                     if (self.payCompletion) {
                         
-                        [self.payCompletion([self.textField.text rasedPwdStr])subscribeCompleted:^{
+                        [self.payCompletion((self.style == XQCPaymentIousPasswordStyleLimit) ? [self.textField.text rasedPwdStrForSDKWithiousPwd] : [self.textField.text rasedPwdStr])subscribeCompleted:^{
                             
                             [self removeFromSuperview];
                             [self.NumKeyBoard dismiss];
@@ -563,6 +563,9 @@ typedef void(^ForgottenWithStyle)(XQCPaymentPasswordStyle);
             break;
             case XQCPaymentPasswordStyleLimit:
             subTitle = @"薪白条支付密码";
+            break;
+            case XQCPaymentIousPasswordStyleLimit:
+            subTitle = @"白条支付";
             break;
         default:
             break;

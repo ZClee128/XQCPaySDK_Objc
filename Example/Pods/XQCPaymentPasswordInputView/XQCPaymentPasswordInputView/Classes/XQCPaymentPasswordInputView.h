@@ -17,6 +17,8 @@ typedef NS_ENUM(NSUInteger, XQCPaymentPasswordStyle) {
     XQCPaymentPasswordStylePlainText,       // 纯文字不加密
     XQCPaymentPasswordStyleUMS,             // 银联商务 最新银联密控
     XQCPaymentPasswordStyleLimit,           // 薪白条
+    XQCPaymentIousPasswordStyleLimit,       // 白条
+
 };
 
 @class RACSignal;
