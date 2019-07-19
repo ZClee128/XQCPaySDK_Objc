@@ -167,7 +167,7 @@
 
 - (void)send {
     BOOL isHasAlipay = [[YSEPay sharedInstance] isAliPayAppInstalled];
-    BOOL isHasWechat = [WXApi isWXAppInstalled];
+    BOOL isHasWechat = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"weixin://"]];
     if (self.price < 0.1) {
         [SVProgressHUD showErrorWithStatus:@"支付金额不能低于0.1元"];
         return;
