@@ -25,6 +25,8 @@
         if (!bundleURL) {
             bundleURL = [[NSBundle mainBundle]  URLForResource:@"XQCPaySDK_Objc" withExtension:@"bundle"];
         }
+    }else{
+        bundleURL = [[NSBundle mainBundle]  URLForResource:@"XQCPaySDK_Objc" withExtension:@"bundle"];
     }
     return bundleURL;
 }
