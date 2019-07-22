@@ -187,18 +187,16 @@
                 }
             }
             if ([model.channelType isEqualToString:IOUSPAY]) {
-                @weakify(self);
+//                @weakify(self);
                 for (WhitestripModel *whiteModel in self.whiteStripSource) {
                     if (whiteModel.isCheck) {
-                        [XQCPayManager showPasswordViewControllerResult:^{
-                            [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:whiteModel.iousCode FeeType:self.myFeeType viewController:self reuslt:^(ResponseModel * _Nonnull model) {
-                                @strongify(self);
-                                if ([XQCPayManager defaultManager].result) {
-                                    [XQCPayManager defaultManager].result(model);
-                                }
-                                [self close];
+                        if (model.isCheckPayPwd) {
+                            [XQCPayManager showPasswordViewControllerResult:^{
+                                [self OrederIousWithModel:model WithIousModel:whiteModel];
                             }];
-                        }];
+                        }else {
+                            [self OrederIousWithModel:model WithIousModel:whiteModel];
+                        }
                         return;
                     }
                 }
@@ -212,6 +210,17 @@
             return;
         }
     }
+}
+
+- (void)OrederIousWithModel:(ChannelModel *)model WithIousModel:(WhitestripModel *)whiteModel{
+    @weakify(self);
+    [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:whiteModel.iousCode FeeType:self.myFeeType viewController:self reuslt:^(ResponseModel * _Nonnull model) {
+        @strongify(self);
+        if ([XQCPayManager defaultManager].result) {
+            [XQCPayManager defaultManager].result(model);
+        }
+        [self close];
+    }];
 }
 
 - (void)sendPrice:(CGFloat )price feeType:(feeType)type{

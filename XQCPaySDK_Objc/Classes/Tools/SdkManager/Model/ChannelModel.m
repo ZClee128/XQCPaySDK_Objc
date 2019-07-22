@@ -18,6 +18,7 @@
         self.isCheckPayPwd = [[dict valueForKey:@"isCheckPayPwd"] boolValue];
         self.paymentUrl = [dict valueForKey:@"paymentUrl"];
         self.sort = [[dict valueForKey:@"sort"] integerValue];
+        self.isCheckPayPwd = [[dict valueForKey:@"isCheckPayPwd"] boolValue];
         if (self.sort == 1) {
             self.isClick = true;
         }else {
