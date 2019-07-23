@@ -128,14 +128,16 @@
 }
 
 - (void)dissmissAllModalControllerAnimated:(BOOL)flag{
-    UIViewController *presentingViewController = self.presentingViewController ;
-    UIViewController *lastVC = self ;
-    while (presentingViewController) {
-        id temp = presentingViewController;
-        presentingViewController = [presentingViewController presentingViewController];
-        lastVC = temp ;
-    }
-    [lastVC dismissViewControllerAnimated:flag completion:^{}];
+    [[RACScheduler mainThreadScheduler] schedule:^{
+        UIViewController *presentingViewController = self.presentingViewController ;
+        UIViewController *lastVC = self ;
+        while (presentingViewController) {
+            id temp = presentingViewController;
+            presentingViewController = [presentingViewController presentingViewController];
+            lastVC = temp ;
+        }
+        [lastVC dismissViewControllerAnimated:flag completion:nil];
+    }];
 }
 
 
