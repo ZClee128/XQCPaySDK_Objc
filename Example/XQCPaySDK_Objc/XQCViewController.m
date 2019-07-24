@@ -53,9 +53,9 @@
 //    }];
     
 //    弹框忘记密码回调
-//    [XQCPayManager defaultManager].ForgetPassword = ^{
-//        NSLog(@"forget");
-//    };
+    [XQCPayManager showPasswordViewControllerResult:^{
+        
+    }];
 }
 
 - (NSString *)getOrderId {
