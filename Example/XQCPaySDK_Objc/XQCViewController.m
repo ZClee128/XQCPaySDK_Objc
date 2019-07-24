@@ -32,6 +32,11 @@
     btn.frame = CGRectMake(100, 150, 100, 100);
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(click) forControlEvents:(UIControlEventTouchUpInside)];
+//    NSString *url = @"http://24p426488q.qicp.vip/api/v1&merchantId=146601100000627&bizCode=1006&amount=10&outTradeNo=2019072412345678900001&body=普通商品&notifyUrl=http://sltest.juboon.com:9500/bonade-omall-web/omall/mallPayment/v1/payCallBack&feeType=1001&key=UFVMAJWSYR8C8TUN8CZ9GJFI6U1D7QAE";
+//    NSString * encodedString = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)url, NULL, (CFStringRef)@"!*’();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
+//    NSString *newstr = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@"!*’();:@&=+$,/?%#[]"]];
+//    NSLog(@"url>>>%@",encodedString);
+//    NSLog(@"url>>>%@",encodedString);
 }
 
 - (void)click {
@@ -53,9 +58,9 @@
 //    }];
     
 //    弹框忘记密码回调
-    [XQCPayManager showPasswordViewControllerResult:^{
-        
-    }];
+//    [XQCPayManager showPasswordViewControllerResult:^{
+//
+//    }];
 }
 
 - (NSString *)getOrderId {
