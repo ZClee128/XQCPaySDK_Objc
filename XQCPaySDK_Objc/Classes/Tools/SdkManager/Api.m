@@ -148,12 +148,6 @@
 //                    }
                 }];
                 errorMsg(@"");
-            }else {
-//                WXLaunchMiniProgramReq *launchMiniProgramReq = [WXLaunchMiniProgramReq object];
-//                launchMiniProgramReq.userName = @"gh_xxxx"; //拉起的小程序的username
-//                launchMiniProgramReq.path = @"/pages/ums/result?orderToken="+orderToken; ; //拉起小程序页面的可带参路径，不填默认拉起小程序首页
-//                launchMiniProgramReq.miniProgramType = WXMiniProgramTypeRelease; //拉起小程序的类型
-//                return [WXApi sendReq:launchMiniProgramReq];
             }
         });
     } failure:^(NSString * _Nonnull error) {

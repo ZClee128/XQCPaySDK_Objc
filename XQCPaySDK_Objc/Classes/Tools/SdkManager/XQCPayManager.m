@@ -12,7 +12,7 @@
 #import "XQCPaymentPasswordInputView.h"
 #import "ReactiveObjC.h"
 #import "PayAlertView.h"
-
+#import "WXApi.h"
 
 static NSString *outTradeNo = @"";
 static NSString *PayType = @"";
@@ -46,7 +46,8 @@ static BOOL isEnterForeground = NO;
 @property (nonatomic,copy)NSString *companyOpenId;
 @property (nonatomic,copy)NSString *userOpenId;
 
-
+@property (nonatomic,copy)NSString *baseUrl;
+@property (nonatomic,copy)NSString *wechatuserName;
 @end
 
 @implementation XQCPayManager
@@ -75,12 +76,17 @@ static XQCPayManager *_sharedManager = nil;
 }
 
 - (void)setConfig:(NSString *)url {
+    self.baseUrl = url;
     self.orderUrl = [NSString stringWithFormat:@"%@/api/v1/trade/unifiedPay",url];
     self.queryUrl = [NSString stringWithFormat:@"%@/api/v1/trade/query",url];
 //    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/trade/channelQuery",url];
     self.whitestripUrl = [NSString stringWithFormat:@"%@/api/v1/trade/iousQuery",url];
     self.payPasswordUrl = [NSString stringWithFormat:@"%@/api/v1/trade/checkPayPwd",url];
     self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/combopay/app/v1/getchannels",url];
+}
+
+- (void)setWeChatUserName:(NSString *)userName {
+    _wechatuserName = userName;
 }
 
 + (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void (^)(NSArray * _Nonnull))res{
@@ -233,7 +239,7 @@ static XQCPayManager *_sharedManager = nil;
         [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
             NSLog(@"result = %@",resultDic);
         }];
-        return YES;
+        return NO;
     }
     if ([PayType isEqualToString:WECHATPAY_YS] || [PayType isEqualToString:WECHATPAY]) {
         return [[YSEPay sharedInstance] handleApplicationOpenURL:url];
@@ -301,6 +307,18 @@ static XQCPayManager *_sharedManager = nil;
 + (void)showAlertViewWithTitle:(NSString *)title leftBtnTitle:(NSString *)leftTitle rightBtnTitle:(NSString *)rightTitle leftBolck:(void (^)(void))leftBlock rightBlock:(void (^)(void))rightBlock {
     PayAlertView *payAler = [[PayAlertView alloc] initWithWithTitle:title leftBtnTitle:leftTitle rightBtnTitle:rightTitle leftBolck:leftBlock rightBlock:rightBlock];
     [payAler show];
+}
+
++ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat)amount outTradeNo:(NSString *)outTrade body:(NSString *)body {
+    XQCPayManager *manager = [XQCPayManager defaultManager];
+    outTradeNo = outTrade;
+    NSString *url = [NSString stringWithFormat:@"%@/api/v1&merchantId=%@&bizCode=%@&amount=%@&outTradeNo=%@&body=%@&notifyUrl=%@&key=%@",manager.baseUrl,manager.merchantId,bizCode,[NSString stringWithFormat:@"%.f",[[NSString stringWithFormat:@"%.2f",amount] floatValue] * 100],outTrade,body,manager.notify,manager.signKey];
+    NSString * encodedUrl = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)url, NULL, (CFStringRef)@"!*’();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
+    WXLaunchMiniProgramReq *launchMiniProgramReq = [WXLaunchMiniProgramReq object];
+    launchMiniProgramReq.userName = manager.wechatuserName; //拉起的小程序的username
+    launchMiniProgramReq.path = [NSString stringWithFormat:@"/pages/ums/result?requestUrl=%@",encodedUrl]; //拉起小程序页面的可带参路径，不填默认拉起小程序首页
+    launchMiniProgramReq.miniProgramType = WXMiniProgramTypeRelease; //拉起小程序的类型
+    return [WXApi sendReq:launchMiniProgramReq];
 }
 
 #pragma mark =======================YSEPayDelegate================

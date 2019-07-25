@@ -51,7 +51,7 @@ static NSString *ALIPAY = @"ALIPAY";
 static NSString *WECHATPAY = @"WECHATPAY";
 static NSString *IOUSPAY = @"IOUSPAY";
 static NSString *ALIPAY_HYL = @"ALIPAY_HYL";
-
+static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
 
 @interface XQCPayManager : NSObject
 
@@ -109,6 +109,14 @@ static NSString *ALIPAY_HYL = @"ALIPAY_HYL";
  @param wechatKey 微信key
  */
 - (void)setWechatKey:(NSString *)wechatKey;
+
+
+/**
+ 设置微信小程序支付userName
+
+ @param userName userName
+ */
+- (void)setWeChatUserName:(NSString *)userName;
 
 /**
  设置参数
@@ -285,6 +293,20 @@ static NSString *ALIPAY_HYL = @"ALIPAY_HYL";
  @param enviroment UMSPluginEnvironment
  */
 + (void)setUmspEnviroment:(UMSPluginEnvironment)enviroment;
+
+
+
+/**
+ 唤起好易联微信小程序支付
+ 内部使用，外部不能调用
+
+ @param bizCode bizCode
+ @param amount amount
+ @param outTradeNo outTradeNo
+ @param body body
+ @return bool
+ */
++ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat )amount outTradeNo:(NSString *)outTradeNo body:(NSString *)body;
 @end
 
 NS_ASSUME_NONNULL_END

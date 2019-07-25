@@ -15,7 +15,8 @@
     // Override point for customization after application launch.
     [XQCPayManager setUmspEnviroment:UMSP_TEST];
     [[XQCPayManager defaultManager] setWechatKey:@"wx88d30b27f1df7354"];
-//    [[XQCPayManager defaultManager] setConfig:@"https://openfulipayapi.bndxqc.com"];
+    [[XQCPayManager defaultManager] setWeChatUserName:@""];
+    [[XQCPayManager defaultManager] setConfig:@"https://openfulipayapi.bndxqc.com"];
     [[XQCPayManager defaultManager] setConfig:@"https://fulipayapi.bndxqc.com"];
     [[XQCPayManager defaultManager] setMacSignKey:@"IZJOIBXZCLJQBIOSGVZL4FNHGL8X74PZ" AgentKey:@"CEB9011C0946E23D4959C13EE5E1B785" MerchantId:@"111401100000212" PartnerId:@"XQC_payforapp" Password:@"xQcMy20Pwd19" Notify:@"http://abc.com" AgentNo:@"1000001114" CompanyOpenId:@"123456789" UserOpenId:@"112233"];
 //    [[XQCPayManager defaultManager] setConfig:@"http://172.16.2.11:8081/"];
