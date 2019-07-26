@@ -14,7 +14,7 @@
 #import "UMSPPPayUnifyPayPlugin.h"
 #import "UMSPPPayPluginSettings.h"
 #import <AlipaySDK/AlipaySDK.h>
-
+#import "WXApi.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -112,11 +112,12 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
 
 
 /**
- 设置微信小程序支付userName
+ 设置微信小程序支付userName 和设置唤起小程序类型 WXMiniProgramType
 
  @param userName userName
+ @param type WXMiniProgramType
  */
-- (void)setWeChatUserName:(NSString *)userName;
+- (void)setWeChatUserName:(NSString *)userName miniProgramType:(WXMiniProgramType)type;
 
 /**
  设置参数
@@ -260,7 +261,7 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
  @param orderId 订单id
  @param result 结果
  */
-+ (void)queryOrder:(NSString *)orderId reuslt:(void(^)(ResponseModel *model))result;
++ (void)queryOrder:(NSString *)orderId reuslt:(void(^)(ResponseModel *model))result error:(void(^)(NSString *errorMsg))errorMsg;
 
 /**
  处理通过URL唤起APP的URL
@@ -306,7 +307,7 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
  @param body body
  @return bool
  */
-+ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat )amount outTradeNo:(NSString *)outTradeNo body:(NSString *)body;
++ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat )amount outTradeNo:(NSString *)outTradeNo body:(NSString *)body feeType:(feeType )type;
 @end
 
 NS_ASSUME_NONNULL_END

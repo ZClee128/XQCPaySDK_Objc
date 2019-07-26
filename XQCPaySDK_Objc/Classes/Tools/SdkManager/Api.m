@@ -13,7 +13,7 @@
 
 #define manager [XQCPayManager defaultManager]
 
-+ (void)queryOrder:(NSString *)orderId PayType:(nonnull NSString *)paytype reuslt:(void (^)(ResponseModel *))result{
++ (void)queryOrder:(NSString *)orderId PayType:(nonnull NSString *)paytype reuslt:(void (^)(ResponseModel *))result error:(nonnull void (^)(NSString * _Nonnull))errorMsg{
     if ([manager getMerchantId]) {
         NSMutableDictionary *para = [@{
                                        @"outTradeNo": orderId,
@@ -25,7 +25,7 @@
             model.payType = paytype;
             result(model);
         } failure:^(NSString * _Nonnull error) {
-            
+            errorMsg(error);
         }];
     }
 }

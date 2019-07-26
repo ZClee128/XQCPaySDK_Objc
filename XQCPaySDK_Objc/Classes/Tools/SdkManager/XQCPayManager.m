@@ -12,7 +12,7 @@
 #import "XQCPaymentPasswordInputView.h"
 #import "ReactiveObjC.h"
 #import "PayAlertView.h"
-#import "WXApi.h"
+
 
 static NSString *outTradeNo = @"";
 static NSString *PayType = @"";
@@ -48,6 +48,7 @@ static BOOL isEnterForeground = NO;
 
 @property (nonatomic,copy)NSString *baseUrl;
 @property (nonatomic,copy)NSString *wechatuserName;
+@property (nonatomic,assign)WXMiniProgramType miniProgramType;
 @end
 
 @implementation XQCPayManager
@@ -85,8 +86,9 @@ static XQCPayManager *_sharedManager = nil;
     self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/combopay/app/v1/getchannels",url];
 }
 
-- (void)setWeChatUserName:(NSString *)userName {
+- (void)setWeChatUserName:(NSString *)userName miniProgramType:(WXMiniProgramType)type{
     _wechatuserName = userName;
+    _miniProgramType = type;
 }
 
 + (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void (^)(NSArray * _Nonnull))res{
@@ -131,7 +133,9 @@ static XQCPayManager *_sharedManager = nil;
             [SVProgressHUD showErrorWithStatus:error];
         }
         if ([type isEqualToString:IOUSPAY]) {
-            [self queryOrder:orderId reuslt:result];
+            [self queryOrder:orderId reuslt:result error:^(NSString * _Nonnull errorMsg) {
+                [SVProgressHUD showErrorWithStatus:error];
+            }];
         }else {
             result([[ResponseModel alloc] init]);
         }
@@ -143,8 +147,8 @@ static XQCPayManager *_sharedManager = nil;
     [Api checkPayPwd:password reuslt:result error:errorMsg];
 }
 
-+ (void)queryOrder:(NSString *)orderId reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result {
-    [Api queryOrder:orderId PayType:PayType reuslt:result];
++ (void)queryOrder:(NSString *)orderId reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result error:(nonnull void (^)(NSString * _Nonnull))errorMsg{
+    [Api queryOrder:orderId PayType:PayType reuslt:result error:errorMsg];
 }
 
 
@@ -259,6 +263,8 @@ static XQCPayManager *_sharedManager = nil;
                     if ([XQCPayManager defaultManager].result) {
                         [XQCPayManager defaultManager].result(model);
                     }
+                }error:^(NSString * _Nonnull errorMsg) {
+                    [SVProgressHUD showErrorWithStatus:errorMsg];
                 }];
             }];
         }
@@ -309,16 +315,22 @@ static XQCPayManager *_sharedManager = nil;
     [payAler show];
 }
 
-+ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat)amount outTradeNo:(NSString *)outTrade body:(NSString *)body {
++ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat)amount outTradeNo:(NSString *)outTrade body:(NSString *)body feeType:(feeType )type{
     XQCPayManager *manager = [XQCPayManager defaultManager];
     outTradeNo = outTrade;
-    NSString *url = [NSString stringWithFormat:@"%@/api/v1&merchantId=%@&bizCode=%@&amount=%@&outTradeNo=%@&body=%@&notifyUrl=%@&key=%@",manager.baseUrl,manager.merchantId,bizCode,[NSString stringWithFormat:@"%.f",[[NSString stringWithFormat:@"%.2f",amount] floatValue] * 100],outTrade,body,manager.notify,manager.signKey];
-    NSString * encodedUrl = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)url, NULL, (CFStringRef)@"!*’();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
+    PayType = WECHATPAY_MINI_HYL;
+    NSString *base = [self encode:[NSString stringWithFormat:@"%@/api/v1",manager.baseUrl]];
+    NSString *notityUrl = [self encode:[NSString stringWithFormat:@"%@",manager.notify]];
+    NSString *url = [NSString stringWithFormat:@"%@&merchantId=%@&bizCode=%@&amount=%@&outTradeNo=%@&body=%@&notifyUrl=%@&feeType=%lu&key=%@",base,manager.merchantId,bizCode,[NSString stringWithFormat:@"%.f",[[NSString stringWithFormat:@"%.2f",amount] floatValue] * 100],outTrade,body,notityUrl,(unsigned long)type,manager.signKey];
     WXLaunchMiniProgramReq *launchMiniProgramReq = [WXLaunchMiniProgramReq object];
     launchMiniProgramReq.userName = manager.wechatuserName; //拉起的小程序的username
-    launchMiniProgramReq.path = [NSString stringWithFormat:@"/pages/ums/result?requestUrl=%@",encodedUrl]; //拉起小程序页面的可带参路径，不填默认拉起小程序首页
-    launchMiniProgramReq.miniProgramType = WXMiniProgramTypeRelease; //拉起小程序的类型
+    launchMiniProgramReq.path = [NSString stringWithFormat:@"/pages/ums/result?requestUrl=%@",url]; //拉起小程序页面的可带参路径，不填默认拉起小程序首页
+    launchMiniProgramReq.miniProgramType = manager.miniProgramType; //拉起小程序的类型
     return [WXApi sendReq:launchMiniProgramReq];
+}
+
++ (NSString *)encode:(NSString *)url {
+    return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)url, NULL, (CFStringRef)@"!*’();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
 }
 
 #pragma mark =======================YSEPayDelegate================

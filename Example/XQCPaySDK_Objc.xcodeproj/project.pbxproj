@@ -348,7 +348,7 @@
 				ORGANIZATIONNAME = ZClee128;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = VB37Y62JDE;
+						DevelopmentTeam = MXEAV3WBEM;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -632,14 +632,14 @@
 			baseConfigurationReference = F8A3A20F801C47246088A73E /* Pods-XQCPaySDK_Objc_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VB37Y62JDE;
+				DEVELOPMENT_TEAM = MXEAV3WBEM;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XQCPaySDK_Objc/XQCPaySDK_Objc-Prefix.pch";
 				INFOPLIST_FILE = "XQCPaySDK_Objc/XQCPaySDK_Objc-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongpin.paymallAS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -651,14 +651,14 @@
 			baseConfigurationReference = DFA63AD70824BED19D5B4776 /* Pods-XQCPaySDK_Objc_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VB37Y62JDE;
+				DEVELOPMENT_TEAM = MXEAV3WBEM;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XQCPaySDK_Objc/XQCPaySDK_Objc-Prefix.pch";
 				INFOPLIST_FILE = "XQCPaySDK_Objc/XQCPaySDK_Objc-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongpin.paymallAS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
