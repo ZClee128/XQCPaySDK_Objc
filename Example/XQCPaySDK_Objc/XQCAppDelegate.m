@@ -17,7 +17,7 @@
 //    wxb5845b139ba66170
 //    wx88d30b27f1df7354
     [[XQCPayManager defaultManager] setWechatKey:@"wxb5845b139ba66170"];
-    [[XQCPayManager defaultManager] setWeChatUserName:@"gh_5504ae2c3a05" miniProgramType:(WXMiniProgramTypeTest)];
+    [[XQCPayManager defaultManager] setWeChatUserName:@"gh_5504ae2c3a05" miniProgramType:(WXMiniProgramTypeRelease)];
 //    [[XQCPayManager defaultManager] setConfig:@"https://openfulipayapi.bndxqc.com"];
 //    [[XQCPayManager defaultManager] setConfig:@"https://fulipayapi.bndxqc.com"];
 //    [[XQCPayManager defaultManager] setMacSignKey:@"IZJOIBXZCLJQBIOSGVZL4FNHGL8X74PZ" AgentKey:@"CEB9011C0946E23D4959C13EE5E1B785" MerchantId:@"111401100000212" PartnerId:@"XQC_payforapp" Password:@"xQcMy20Pwd19" Notify:@"http://abc.com" AgentNo:@"1000001114" CompanyOpenId:@"123456789" UserOpenId:@"112233"];
@@ -25,7 +25,7 @@
 //    [[XQCPayManager defaultManager] setMacSignKey:@"XSXORALBEXNCUIAI9RS2MEI9BAKGSJKK" AgentKey:@"AB6578B81922467C8E92E9D7B61DDC4A" MerchantId:@"137801100000583" PartnerId:@"XQC_payforapp" Password:@"xQcMy20Pwd19" Notify:@"http://abc.com" AgentNo:@"1000001378" CompanyOpenId:@"123456789" UserOpenId:@"112233"];
     
 //    好易联
-    [[XQCPayManager defaultManager] setConfig:@"http://24p426488q.qicp.vip"];
+    [[XQCPayManager defaultManager] setConfig:@"https://fulipayapi.bndxqc.com"];
     [[XQCPayManager defaultManager] setMacSignKey:@"UFVMAJWSYR8C8TUN8CZ9GJFI6U1D7QAE" AgentKey:@"C06D1693E7D6BD5B8702B3731BE19979" MerchantId:@"146601100000627" PartnerId:@"XQC_payforapp" Password:@"xQcMy20Pwd19" Notify:@"http://sltest.juboon.com:9500/bonade-omall-web/omall/mallPayment/v1/payCallBack" AgentNo:@"1000001466" CompanyOpenId:@"123456789" UserOpenId:@"112233"];
     return YES;
 }
