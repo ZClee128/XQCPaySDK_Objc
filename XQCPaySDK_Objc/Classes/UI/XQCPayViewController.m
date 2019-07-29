@@ -203,7 +203,7 @@
                     }
                 }
             }else if ([model.channelType isEqualToString:WECHATPAY_MINI_HYL]){
-                [XQCPayManager sendWexinMiniPayWithBizCode:model.bizCode amount:self.price outTradeNo:self.orderId body:self.orderTitle feeType:self.myFeeType];
+                [XQCPayManager sendWexinMiniPayWithBizCode:model.bizCode amount:self.price outTradeNo:self.orderId body:self.orderTitle feeType:self.myFeeType] ? [self close] : [SVProgressHUD showErrorWithStatus:@"唤起小程序失败"];
             } else {
                 @weakify(self);
                 [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:@"" FeeType:self.myFeeType viewController:self reuslt:^(ResponseModel * _Nonnull model) {
