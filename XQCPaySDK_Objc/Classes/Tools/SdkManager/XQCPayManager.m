@@ -48,6 +48,7 @@ static BOOL isEnterForeground = NO;
 
 @property (nonatomic,copy)NSString *baseUrl;
 @property (nonatomic,copy)NSString *wechatuserName;
+@property (nonatomic,copy)NSString *aliSchemes;
 @property (nonatomic,assign)WXMiniProgramType miniProgramType;
 @end
 
@@ -89,6 +90,10 @@ static XQCPayManager *_sharedManager = nil;
 - (void)setWeChatUserName:(NSString *)userName miniProgramType:(WXMiniProgramType)type{
     _wechatuserName = userName;
     _miniProgramType = type;
+}
+
+- (void)setAliPaySchemes:(NSString *)schemes {
+    _aliSchemes = schemes;
 }
 
 + (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void (^)(NSArray * _Nonnull))res{
@@ -226,6 +231,10 @@ static XQCPayManager *_sharedManager = nil;
 
 - (NSString *)getPassword {
     return _password;
+}
+
++ (NSString *)getAliSchemes {
+    return _sharedManager.aliSchemes;
 }
 
 - (void)setWechatKey:(NSString *)wechatKey {

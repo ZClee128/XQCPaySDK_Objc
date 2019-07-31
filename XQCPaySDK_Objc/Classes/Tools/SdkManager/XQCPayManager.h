@@ -112,6 +112,13 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
 
 
 /**
+ 设置支付宝的schemes
+
+ @param schemes url schemes
+ */
+- (void)setAliPaySchemes:(NSString *)schemes;
+
+/**
  设置微信小程序支付userName 和设置唤起小程序类型 WXMiniProgramType
 
  @param userName userName
@@ -214,6 +221,7 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
  */
 - (NSString *)getPassword;
 
++ (NSString *)getAliSchemes;
 /**
  获取渠道
 

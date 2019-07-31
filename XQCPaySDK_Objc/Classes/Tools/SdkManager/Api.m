@@ -132,7 +132,7 @@
                 [WXApi sendReq:request];
                 errorMsg(@"");
             }else if ([type isEqualToString:ALIPAY]) {
-                [[AlipaySDK defaultService] payOrder:@"" fromScheme:@"" callback:^(NSDictionary *resultDic) {
+                [[AlipaySDK defaultService] payOrder:responseObject[@"payInfo"] fromScheme:[XQCPayManager getAliSchemes] callback:^(NSDictionary *resultDic) {
                     NSLog(@"reslut = %@",resultDic);
                 }];
                 errorMsg(@"");
