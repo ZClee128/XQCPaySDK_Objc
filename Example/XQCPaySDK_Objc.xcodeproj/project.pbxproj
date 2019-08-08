@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9B3DF27522FC249200376BFB /* XQCTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3DF27422FC249200376BFB /* XQCTwoViewController.m */; };
 		9B5AA2A122CC5D7300D0DC0F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5AA2A022CC5D7300D0DC0F /* libz.tbd */; };
 		9B5AA2A322CC7CAB00D0DC0F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5AA2A222CC7CAB00D0DC0F /* libsqlite3.0.tbd */; };
 		9BB31D5222B238FD001A633D /* XQC_payforapp.pfx in Resources */ = {isa = PBXBuildFile; fileRef = 9BB31D5122B238FD001A633D /* XQC_payforapp.pfx */; };
@@ -88,6 +89,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		923B199CD3210BDC8CB70218 /* XQCPaySDK_Objc.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XQCPaySDK_Objc.podspec; path = ../XQCPaySDK_Objc.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B3DF27322FC249200376BFB /* XQCTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XQCTwoViewController.h; sourceTree = "<group>"; };
+		9B3DF27422FC249200376BFB /* XQCTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XQCTwoViewController.m; sourceTree = "<group>"; };
 		9B5AA2A022CC5D7300D0DC0F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9B5AA2A222CC7CAB00D0DC0F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		9BB31D5122B238FD001A633D /* XQC_payforapp.pfx */ = {isa = PBXFileReference; lastKnownFileType = file; path = XQC_payforapp.pfx; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* XQCViewController.h */,
 				6003F5A6195388D20070C39A /* XQCViewController.m */,
+				9B3DF27322FC249200376BFB /* XQCTwoViewController.h */,
+				9B3DF27422FC249200376BFB /* XQCTwoViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -504,6 +509,7 @@
 			files = (
 				6003F59E195388D20070C39A /* XQCAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* XQCViewController.m in Sources */,
+				9B3DF27522FC249200376BFB /* XQCTwoViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
