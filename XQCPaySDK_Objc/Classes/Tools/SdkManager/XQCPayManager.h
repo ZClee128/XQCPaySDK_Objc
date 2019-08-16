@@ -59,6 +59,8 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
 + (instancetype)defaultManager;
 
 @property (nonatomic,copy)void(^result)(ResponseModel *model);
+// 是否唤起了支付
+@property (nonatomic,assign,readonly)BOOL isPay;
 // 弹窗忘记密码回调
 //@property (nonatomic,copy)void(^ForgetPassword)(void);
 /**

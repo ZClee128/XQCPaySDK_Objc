@@ -115,29 +115,29 @@
 }
 
 - (void)close {
-//    if (self.back) {
-//        self.back();
-//    }else {
+    //    if (self.back) {
+    //        self.back();
+    //    }else {
     UINavigationController *navigation = self.navigationController;
     if (navigation) {
         [navigation popViewControllerAnimated:YES];
     } else {
         [self dissmissAllModalControllerAnimated:YES];
     }
-//    }
+    //    }
 }
 
 - (void)dissmissAllModalControllerAnimated:(BOOL)flag{
     [[RACScheduler mainThreadScheduler] schedule:^{
         UIViewController *presentingViewController = self.presentingViewController ;
         NSLog(@"presentingViewController2>>>>%@",NSStringFromClass([presentingViewController class]));
-//        UIViewController *lastVC = self ;
-//        while (presentingViewController) {
-//            id temp = presentingViewController;
-//            presentingViewController = [presentingViewController presentingViewController];
-//            NSLog(@"presentingViewController>>>>%@",NSStringFromClass([presentingViewController class]));
-//            lastVC = temp ;
-//        }
+        //        UIViewController *lastVC = self ;
+        //        while (presentingViewController) {
+        //            id temp = presentingViewController;
+        //            presentingViewController = [presentingViewController presentingViewController];
+        //            NSLog(@"presentingViewController>>>>%@",NSStringFromClass([presentingViewController class]));
+        //            lastVC = temp ;
+        //        }
         [presentingViewController dismissViewControllerAnimated:flag completion:nil];
     }];
 }
@@ -191,7 +191,7 @@
                 }
             }
             if ([model.channelType isEqualToString:IOUSPAY]) {
-//                @weakify(self);
+                //                @weakify(self);
                 for (WhitestripModel *whiteModel in self.whiteStripSource) {
                     if (whiteModel.isCheck) {
                         if (model.isCheckPayPwd) {
@@ -205,11 +205,12 @@
                     }
                 }
             }else if ([model.channelType isEqualToString:WECHATPAY_MINI_HYL]){
-                [XQCPayManager sendWexinMiniPayWithBizCode:model.bizCode amount:self.price outTradeNo:self.orderId body:self.orderTitle feeType:self.myFeeType] ? [self close] : [SVProgressHUD showErrorWithStatus:@"唤起小程序失败"];
+                [XQCPayManager sendWexinMiniPayWithBizCode:model.bizCode amount:self.price outTradeNo:self.orderId body:self.orderTitle feeType:self.myFeeType] ? ({[[XQCPayManager defaultManager] setValue:@(YES) forKey:NSStringFromSelector(@selector(isPay))];[self close];}) : [SVProgressHUD showErrorWithStatus:@"唤起小程序失败"];
             } else {
                 @weakify(self);
                 [XQCPayManager payRequsetAmount:self.price payType:model.channelType bizCode:model.bizCode Body:self.orderTitle orderId:self.orderId iousCode:@"" FeeType:self.myFeeType viewController:self reuslt:^(ResponseModel * _Nonnull model) {
                     @strongify(self);
+                    [[XQCPayManager defaultManager] setValue:@(YES) forKey:NSStringFromSelector(@selector(isPay))];
                     [self close];
                 }];
             }

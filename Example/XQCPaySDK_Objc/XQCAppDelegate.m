@@ -16,7 +16,7 @@
     [XQCPayManager setUmspEnviroment:UMSP_TEST];
 //    wxb5845b139ba66170
 //    wx88d30b27f1df7354
-    [[XQCPayManager defaultManager] setWechatKey:@"wxb5845b139ba66170"];
+    [[XQCPayManager defaultManager] setWechatKey:@"wx88d30b27f1df7354"];
     [[XQCPayManager defaultManager] setAliPaySchemes:@"xqcpay"];
     [[XQCPayManager defaultManager] setWeChatUserName:@"gh_5504ae2c3a05" miniProgramType:(WXMiniProgramTypeRelease)];
     [[XQCPayManager defaultManager] setConfig:@"https://openfulipayapi.bndxqc.com"];

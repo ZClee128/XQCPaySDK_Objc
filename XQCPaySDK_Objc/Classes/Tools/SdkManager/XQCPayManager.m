@@ -136,6 +136,7 @@ static XQCPayManager *_sharedManager = nil;
             });
         }else {
             [SVProgressHUD showErrorWithStatus:error];
+            return;
         }
         if ([type isEqualToString:IOUSPAY]) {
             [self queryOrder:orderId reuslt:result error:^(NSString * _Nonnull errorMsg) {
@@ -265,8 +266,8 @@ static XQCPayManager *_sharedManager = nil;
 
 + (void)applicationWillEnterForeground:(UIApplication *)application {
         [[YSEPay sharedInstance] applicationWillEnterForeground:application];
-        isEnterForeground = YES;
-        if (isEnterForeground) {
+        if (_sharedManager.isPay) {
+            [_sharedManager setValue:@(NO) forKey:NSStringFromSelector(@selector(isPay))];
             [[RACScheduler mainThreadScheduler] afterDelay:0.1 schedule:^{
                 [self queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
                     if ([XQCPayManager defaultManager].result) {

@@ -42,17 +42,17 @@
 
 - (void)click {
 //    订单名  订单id
-//    if (self.payText.text.length == 0) {
-//        [SVProgressHUD showErrorWithStatus:@"请输入金额"];
-//        return;
-//    }
-//    XQCPayViewController *pay = [[XQCPayViewController alloc] initWithOrderTitle:@"薪起程测试" OrderId:[self getOrderId]];
-//    [pay sendPrice:[self.payText.text floatValue] feeType:(feeTypeLife)]; // 设置金额
-//    [XQCPayManager defaultManager].result = ^(ResponseModel * _Nonnull model) {
-////        支付结果回调
-//        NSLog(@"model===>%@,%@",model.payType,model.message);
-//    };
-//    [self presentViewController:pay animated:YES completion:nil];
+    if (self.payText.text.length == 0) {
+        [SVProgressHUD showErrorWithStatus:@"请输入金额"];
+        return;
+    }
+    XQCPayViewController *pay = [[XQCPayViewController alloc] initWithOrderTitle:@"薪起程测试" OrderId:[self getOrderId]];
+    [pay sendPrice:[self.payText.text floatValue] feeType:(feeTypeLife)]; // 设置金额
+    [XQCPayManager defaultManager].result = ^(ResponseModel * _Nonnull model) {
+//        支付结果回调
+        NSLog(@"model===>%@,%@",model.payType,model.message);
+    };
+    [self presentViewController:pay animated:YES completion:nil];
     
 //    [XQCPayManager showPasswordViewControllerResult:^{
 //    
@@ -62,7 +62,7 @@
 //    [XQCPayManager showPasswordViewControllerResult:^{
 //
 //    }];
-    [self presentViewController:[[XQCTwoViewController alloc] init] animated:YES completion:nil];
+//    [self presentViewController:[[XQCTwoViewController alloc] init] animated:YES completion:nil];
 }
 
 - (NSString *)getOrderId {
