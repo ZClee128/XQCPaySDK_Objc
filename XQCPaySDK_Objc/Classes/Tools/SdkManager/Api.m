@@ -54,6 +54,10 @@
     NSMutableArray *list = [[NSMutableArray alloc] init];
     [XQCNetworking PostWithURL:[manager GetChannelUrl] Params:params keyValue:[manager getAgentKey] success:^(id  _Nonnull responseObject) {
         NSLog(@"responseObject%@",responseObject);
+        if ([responseObject[@"status"] integerValue] == 404) {
+            [SVProgressHUD showErrorWithStatus:responseObject[@"message"]];
+            return;
+        }
         for (NSDictionary *dict in responseObject[@"data"]) {
             ChannelModel *model = [[ChannelModel alloc] initWithDict:dict];
             [list addObject:model];
@@ -69,6 +73,10 @@
     NSMutableArray *list = [[NSMutableArray alloc] init];
     [XQCNetworking PostWithURL:[manager GetWhitesTripUrl] Params:[@{@"agentNo":agentNo,@"companyOpenId":companyOpenId,@"userOpenId":userOpenId} mutableCopy] keyValue:[manager getAgentKey] success:^(id  _Nonnull responseObject) {
         NSLog(@"whitestripUrl%@",responseObject);
+        if ([responseObject[@"status"] integerValue] == 404) {
+            [SVProgressHUD showErrorWithStatus:responseObject[@"message"]];
+            return;
+        }
         for (NSDictionary *dict in responseObject[@"data"]) {
             WhitestripModel *model = [[WhitestripModel alloc] initWithDict:dict];
             [list addObject:model];
