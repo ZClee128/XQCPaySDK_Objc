@@ -21,6 +21,10 @@
                                        @"queryType": @"1"
                                        } mutableCopy];
         [XQCNetworking PostWithURL:[manager GetQuerUrl] Params:para keyValue:[manager getSignKey] success:^(id  _Nonnull responseObject) {
+            if (!responseObject) {
+                NSLog(@"解析错误");
+                return;
+            }
             ResponseModel *model = [[ResponseModel alloc] initWithDict:responseObject];
             model.payType = paytype;
             result(model);
@@ -39,6 +43,10 @@
                                    @"password" : password
                                    } mutableCopy];
     [XQCNetworking PostWithURL:[manager GetPasswordUrl] Params:para keyValue:[manager getAgentKey] success:^(id  _Nonnull responseObject) {
+        if (!responseObject) {
+            NSLog(@"解析错误");
+            return;
+        }
         PasswordModel *model = [[PasswordModel alloc] initWithDict:responseObject];
         result(model);
     } failure:^(NSString * _Nonnull error) {
@@ -54,8 +62,8 @@
     NSMutableArray *list = [[NSMutableArray alloc] init];
     [XQCNetworking PostWithURL:[manager GetChannelUrl] Params:params keyValue:[manager getAgentKey] success:^(id  _Nonnull responseObject) {
         NSLog(@"responseObject%@",responseObject);
-        if ([responseObject[@"status"] integerValue] == 404) {
-            [SVProgressHUD showErrorWithStatus:responseObject[@"message"]];
+        if (!responseObject || [responseObject isKindOfClass:[NSNull class]] || ![responseObject[@"data"] isKindOfClass:[NSArray class]]) {
+            NSLog(@"参数错误");
             return;
         }
         for (NSDictionary *dict in responseObject[@"data"]) {
@@ -73,8 +81,8 @@
     NSMutableArray *list = [[NSMutableArray alloc] init];
     [XQCNetworking PostWithURL:[manager GetWhitesTripUrl] Params:[@{@"agentNo":agentNo,@"companyOpenId":companyOpenId,@"userOpenId":userOpenId} mutableCopy] keyValue:[manager getAgentKey] success:^(id  _Nonnull responseObject) {
         NSLog(@"whitestripUrl%@",responseObject);
-        if ([responseObject[@"status"] integerValue] == 404) {
-            [SVProgressHUD showErrorWithStatus:responseObject[@"message"]];
+        if (!responseObject || [responseObject isKindOfClass:[NSNull class]] || ![responseObject[@"data"] isKindOfClass:[NSArray class]]) {
+            NSLog(@"参数错误");
             return;
         }
         for (NSDictionary *dict in responseObject[@"data"]) {
@@ -105,6 +113,10 @@
     }
     [XQCNetworking PostWithURL:[manager GetOrderUrl] Params:para keyValue:[manager getSignKey] success:^(id  _Nonnull responseObject) {
         NSLog(@"order>>%@",responseObject);
+        if (!responseObject) {
+            NSLog(@"解析错误");
+            return;
+        }
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([responseObject[@"code"] intValue] != 0000) {
                 errorMsg(responseObject[@"msg"]);
