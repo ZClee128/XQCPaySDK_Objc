@@ -332,11 +332,11 @@ static XQCPayManager *_sharedManager = nil;
     NSString *base = [self encode:[NSString stringWithFormat:@"%@/api/v1",manager.baseUrl]];
     NSString *notityUrl = [self encode:[NSString stringWithFormat:@"%@",manager.notify]];
     NSString *url = [NSString stringWithFormat:@"%@&merchantId=%@&bizCode=%@&amount=%@&outTradeNo=%@&body=%@&notifyUrl=%@&feeType=%lu&key=%@",base,manager.merchantId,bizCode,[NSString stringWithFormat:@"%.f",[[NSString stringWithFormat:@"%.2f",amount] floatValue] * 100],outTrade,body,notityUrl,(unsigned long)type,manager.signKey];
-    NSLog(@"url>>>%@",url);
+//    NSLog(@"url>>>%@",url);
     WXLaunchMiniProgramReq *launchMiniProgramReq = [WXLaunchMiniProgramReq object];
     launchMiniProgramReq.userName = manager.wechatuserName; //拉起的小程序的username
     launchMiniProgramReq.path = [NSString stringWithFormat:@"/pages/ums/result?requestUrl=%@",url]; //拉起小程序页面的可带参路径，不填默认拉起小程序首页
-    NSLog(@"path>>>%@",launchMiniProgramReq.path);
+//    NSLog(@"path>>>%@",launchMiniProgramReq.path);
     launchMiniProgramReq.miniProgramType = manager.miniProgramType; //拉起小程序的类型
     return [WXApi sendReq:launchMiniProgramReq];
 }
