@@ -61,7 +61,7 @@
     [params setValue:channelType forKey:@"channelType"];
     NSMutableArray *list = [[NSMutableArray alloc] init];
     [XQCNetworking PostWithURL:[manager GetChannelUrl] Params:params keyValue:[manager getAgentKey] success:^(id  _Nonnull responseObject) {
-        NSLog(@"responseObject%@",responseObject);
+//        NSLog(@"responseObject%@",responseObject);
         if (!responseObject || [responseObject isKindOfClass:[NSNull class]] || ![responseObject[@"data"] isKindOfClass:[NSArray class]]) {
             NSLog(@"参数错误");
             return;
@@ -80,7 +80,7 @@
 + (void)whitestripAgentNo:(NSString *)agentNo companyOpenId:(NSString *)companyOpenId userOpenId:(NSString *)userOpenId respon:(void (^)(NSArray * _Nonnull))res {
     NSMutableArray *list = [[NSMutableArray alloc] init];
     [XQCNetworking PostWithURL:[manager GetWhitesTripUrl] Params:[@{@"agentNo":agentNo,@"companyOpenId":companyOpenId,@"userOpenId":userOpenId} mutableCopy] keyValue:[manager getAgentKey] success:^(id  _Nonnull responseObject) {
-        NSLog(@"whitestripUrl%@",responseObject);
+//        NSLog(@"whitestripUrl%@",responseObject);
         if (!responseObject || [responseObject isKindOfClass:[NSNull class]] || ![responseObject[@"data"] isKindOfClass:[NSArray class]]) {
             NSLog(@"参数错误");
             return;
