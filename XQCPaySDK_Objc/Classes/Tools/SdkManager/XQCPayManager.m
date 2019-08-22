@@ -81,10 +81,10 @@ static XQCPayManager *_sharedManager = nil;
     self.baseUrl = url;
     self.orderUrl = [NSString stringWithFormat:@"%@/api/v1/trade/unifiedPay",url];
     self.queryUrl = [NSString stringWithFormat:@"%@/api/v1/trade/query",url];
-    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/trade/channelQuery",url];
+//    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/trade/channelQuery",url];
     self.whitestripUrl = [NSString stringWithFormat:@"%@/api/v1/trade/iousQuery",url];
     self.payPasswordUrl = [NSString stringWithFormat:@"%@/api/v1/trade/checkPayPwd",url];
-//    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/combopay/app/v1/getchannels",url];
+    self.getChannelUrl = [NSString stringWithFormat:@"%@/api/v1/combopay/app/v1/getchannels",url];
 }
 
 - (void)setWeChatUserName:(NSString *)userName miniProgramType:(WXMiniProgramType)type{
