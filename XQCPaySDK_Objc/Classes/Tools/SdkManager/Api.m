@@ -95,7 +95,7 @@
     }];
 }
 
-+ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(feeType)myFeeType viewController:(nonnull UIViewController *)vc error:(nonnull void (^)(NSString * _Nonnull))errorMsg{
++ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(int)myFeeType viewController:(nonnull UIViewController *)vc error:(nonnull void (^)(NSString * _Nonnull))errorMsg{
     NSMutableDictionary *para = [@{
                                    @"amount": [NSString stringWithFormat:@"%.f",[[NSString stringWithFormat:@"%.2f",amount] floatValue] * 100],
                                    @"bizCode": bizCode,

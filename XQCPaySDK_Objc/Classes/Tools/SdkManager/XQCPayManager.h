@@ -18,32 +18,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- 费用类型
- 1000:薪商城
- 1001:薪集采
- 1002:薪礼品
- 1003:本地生活
- 1004:薪福利
- 1005:薪宴请
- 1006:话费
- - feeTypeShop: 薪商城
- - feeTypeLife: 本地生活
- - feeTypeGift: 薪礼品
- - feeTypeBanquet: 薪宴请
- - feeTypeWelfare: 薪福利
- - feeTypeCollection: 薪集采
- - feeTypeTel: 话费
- */
-typedef NS_ENUM(NSUInteger, feeType) {
-    feeTypeShop = 1000,
-    feeTypeCollection = 1001,
-    feeTypeGift = 1002,
-    feeTypeLife = 1003,
-    feeTypeWelfare = 1004,
-    feeTypeBanquet = 1005,
-    feeTypeTel = 1006,
-};
 
 static NSString *WECHATPAY_YS = @"WECHATPAY_YS";
 static NSString *ALIPAY_YS = @"ALIPAY_YS";
@@ -255,7 +229,7 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
  @param vc 控制器
  @param result 结果
  */
-+ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(feeType)Mytype viewController:(UIViewController *)vc reuslt:(void(^)(ResponseModel *model))result;
++ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(int )Mytype viewController:(UIViewController *)vc reuslt:(void(^)(ResponseModel *model))result;
 
 /**
  交易支付密码
@@ -317,7 +291,7 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
  @param body body
  @return bool
  */
-+ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat )amount outTradeNo:(NSString *)outTradeNo body:(NSString *)body feeType:(feeType )type;
++ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat )amount outTradeNo:(NSString *)outTradeNo body:(NSString *)body feeType:(int )type;
 @end
 
 NS_ASSUME_NONNULL_END

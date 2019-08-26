@@ -126,7 +126,7 @@ static XQCPayManager *_sharedManager = nil;
     }];
 }
 
-+ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(feeType)Mytype viewController:(nonnull UIViewController *)vc reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result {
++ (void)payRequsetAmount:(CGFloat)amount payType:(NSString *)type bizCode:(NSString *)bizCode Body:(NSString *)body orderId:(NSString *)orderId iousCode:(NSString *)iousCode FeeType:(int)Mytype viewController:(nonnull UIViewController *)vc reuslt:(nonnull void (^)(ResponseModel * _Nonnull))result {
     PayType = type;
     [SVProgressHUD showWithStatus:@"  支付中   "];
     [Api payRequsetAmount:amount payType:type bizCode:bizCode Body:body orderId:orderId iousCode:iousCode FeeType:Mytype viewController:vc error:^(NSString * _Nonnull error) {
@@ -325,7 +325,7 @@ static XQCPayManager *_sharedManager = nil;
     [payAler show];
 }
 
-+ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat)amount outTradeNo:(NSString *)outTrade body:(NSString *)body feeType:(feeType )type{
++ (BOOL)sendWexinMiniPayWithBizCode:(NSString *)bizCode amount:(CGFloat)amount outTradeNo:(NSString *)outTrade body:(NSString *)body feeType:(int )type{
     XQCPayManager *manager = [XQCPayManager defaultManager];
     outTradeNo = outTrade;
     PayType = WECHATPAY_MINI_HYL;

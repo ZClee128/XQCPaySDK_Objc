@@ -26,7 +26,7 @@
 @property (nonatomic,strong)NSMutableArray *whiteStripSource;
 @property (nonatomic,strong)XQCPayHeaderView *tableHeaderView;
 @property (nonatomic,assign) CGFloat  price;
-@property (nonatomic,assign) feeType  myFeeType;
+@property (nonatomic,assign) int  myFeeType;
 @property (nonatomic,copy)NSString *orderTitle;
 @property (nonatomic,copy)NSString *orderId;
 @property (nonatomic,strong)XQCPayFootView *tableFootView;
@@ -230,7 +230,7 @@
     }];
 }
 
-- (void)sendPrice:(CGFloat )price feeType:(feeType)type{
+- (void)sendPrice:(CGFloat )price feeType:(int)type{
     self.price = price;
     self.myFeeType = type;
 }

@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param price 金额
  */
-- (void)sendPrice:(CGFloat)price feeType:(feeType)type;
+- (void)sendPrice:(CGFloat)price feeType:(int )type;
 
 /**
  初始化

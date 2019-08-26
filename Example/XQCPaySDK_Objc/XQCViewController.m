@@ -47,7 +47,7 @@
         return;
     }
     XQCPayViewController *pay = [[XQCPayViewController alloc] initWithOrderTitle:@"薪起程测试" OrderId:[self getOrderId]];
-    [pay sendPrice:[self.payText.text floatValue] feeType:(feeTypeLife)]; // 设置金额
+    [pay sendPrice:[self.payText.text floatValue] feeType:(1001)]; // 设置金额
     [XQCPayManager defaultManager].result = ^(ResponseModel * _Nonnull model) {
 //        支付结果回调
         NSLog(@"model===>%@,%@",model.payType,model.message);
