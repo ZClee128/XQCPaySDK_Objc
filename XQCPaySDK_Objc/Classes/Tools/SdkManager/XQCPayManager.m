@@ -50,6 +50,7 @@ static BOOL isEnterForeground = NO;
 @property (nonatomic,copy)NSString *wechatuserName;
 @property (nonatomic,copy)NSString *aliSchemes;
 @property (nonatomic,assign)WXMiniProgramType miniProgramType;
+@property (nonatomic,copy)NSString *channelType;
 @end
 
 @implementation XQCPayManager
@@ -102,6 +103,16 @@ static XQCPayManager *_sharedManager = nil;
     }];
 }
 
+- (void)setProhibitChannelType:(NSString *)channelType {
+    _channelType = channelType;
+}
+
++ (NSString *)getChannelType {
+    if (_sharedManager.channelType == nil) {
+        return @"";
+    }
+    return _sharedManager.channelType;
+}
 
 + (void)whitestripAgentNo:(NSString *)agentNo companyOpenId:(NSString *)companyOpenId userOpenId:(NSString *)userOpenId respon:(nonnull void (^)(NSArray * _Nonnull))res {
     if ([_sharedManager getAgentKey].length == 0 && [_sharedManager getAgentKey] == nil) {

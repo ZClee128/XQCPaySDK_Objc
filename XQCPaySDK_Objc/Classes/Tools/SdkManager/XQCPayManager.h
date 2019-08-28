@@ -19,13 +19,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-static NSString *WECHATPAY_YS = @"WECHATPAY_YS";
-static NSString *ALIPAY_YS = @"ALIPAY_YS";
-static NSString *ALIPAY = @"ALIPAY";
-static NSString *WECHATPAY = @"WECHATPAY";
-static NSString *IOUSPAY = @"IOUSPAY";
-static NSString *ALIPAY_HYL = @"ALIPAY_HYL";
-static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
+static NSString *WECHATPAY_YS = @"WECHATPAY_YS";  //微信银盛
+static NSString *ALIPAY_YS = @"ALIPAY_YS"; // 支付宝银盛
+static NSString *ALIPAY = @"ALIPAY"; //直连支付宝
+static NSString *WECHATPAY = @"WECHATPAY"; // 直连微信
+static NSString *IOUSPAY = @"IOUSPAY"; // 白条
+static NSString *ALIPAY_HYL = @"ALIPAY_HYL"; // 好易联支付宝
+static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL"; //好易联微信小程序
 
 @interface XQCPayManager : NSObject
 
@@ -134,6 +134,13 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
  */
 - (void)setUserOpenId:(NSString *)userOpenId;
 
+
+/**
+ 设置需要的支付渠道
+
+ @param channelType 参数格式为字符串以逗号拼接，eg：@"WECHATPAY_YS,ALIPAY_YS,..."
+ */
+- (void)setProhibitChannelType:(NSString *)channelType;
 /**
  获取商户签名
 
@@ -198,6 +205,9 @@ static NSString *WECHATPAY_MINI_HYL = @"WECHATPAY_MINI_HYL";
 - (NSString *)getPassword;
 
 + (NSString *)getAliSchemes;
+
+// 获取设置的支付渠道
++ (NSString *)getChannelType;
 /**
  获取渠道
 

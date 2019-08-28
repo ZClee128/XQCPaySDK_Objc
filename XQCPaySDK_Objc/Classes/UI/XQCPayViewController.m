@@ -74,7 +74,7 @@
     };
     [self setUI];
     XQCPayManager *manager = [XQCPayManager defaultManager];
-    [XQCPayManager getChannels:@"" agentNo:[manager getAgentNo] respon:^(NSArray * _Nonnull list) {
+    [XQCPayManager getChannels:[XQCPayManager getChannelType] agentNo:[manager getAgentNo] respon:^(NSArray * _Nonnull list) {
         NSLog(@"list ==>%@",list);
         self.dataSource = [list mutableCopy];
         dispatch_async(dispatch_get_main_queue(), ^{
