@@ -276,19 +276,21 @@ static XQCPayManager *_sharedManager = nil;
 
 
 + (void)applicationWillEnterForeground:(UIApplication *)application {
+    if ([PayType isEqualToString:ALIPAY_YS] || [PayType isEqualToString:WECHATPAY_YS]) {
         [[YSEPay sharedInstance] applicationWillEnterForeground:application];
-        if (_sharedManager.isPay) {
-            [_sharedManager setValue:@(NO) forKey:NSStringFromSelector(@selector(isPay))];
-            [[RACScheduler mainThreadScheduler] afterDelay:0.1 schedule:^{
-                [self queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
-                    if ([XQCPayManager defaultManager].result) {
-                        [XQCPayManager defaultManager].result(model);
-                    }
-                }error:^(NSString * _Nonnull errorMsg) {
-                    [SVProgressHUD showErrorWithStatus:errorMsg];
-                }];
+    }
+    if (_sharedManager.isPay) {
+        [_sharedManager setValue:@(NO) forKey:NSStringFromSelector(@selector(isPay))];
+        [[RACScheduler mainThreadScheduler] afterDelay:0.1 schedule:^{
+            [self queryOrder:outTradeNo reuslt:^(ResponseModel * _Nonnull model) {
+                if ([XQCPayManager defaultManager].result) {
+                    [XQCPayManager defaultManager].result(model);
+                }
+            }error:^(NSString * _Nonnull errorMsg) {
+                [SVProgressHUD showErrorWithStatus:errorMsg];
             }];
-        }
+        }];
+    }
 }
 
 
