@@ -55,9 +55,10 @@
     }];
 }
 
-+ (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo respon:(void (^)(NSArray * _Nonnull))res {
++ (void)getChannels:(NSString *)channelType agentNo:(NSString *)agentNo merchantId:(NSString *)merchantId respon:(void (^)(NSArray * _Nonnull))res {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     [params setValue:agentNo forKey:@"agentNo"];
+    [params setValue:merchantId forKey:@"merchantId"];
     [params setValue:channelType forKey:@"channelType"];
     NSMutableArray *list = [[NSMutableArray alloc] init];
     [XQCNetworking PostWithURL:[manager GetChannelUrl] Params:params keyValue:[manager getAgentKey] success:^(id  _Nonnull responseObject) {
